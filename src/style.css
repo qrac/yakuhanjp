@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/* ===================================================
+*
+*  Title: Yaku Han JP
+*  Author: Qrac
+*  URL: https://twitter.com/Qrac_jp
+*
+=================================================== */
+/*----------------------------------------------------
+  Qrac UI Reset.CSS
+  Version: 1.0
+  Author: Qrac
+  Author URL: https://twitter.com/Qrac_jp
+  License: CC0 1.0 Public Domain
+  Caution: 1rem = 10px, html font-size = 62.5%
+----------------------------------------------------*/
+/*
+ * Normalization
+ * Excerpts from "sanitize.css"
+ * v3.3.0
+ * Latest tested: Android 6, Chrome 48, Edge 13,
+ * Firefox 44, Internet Explorer 11, iOS 9, Opera 35,
+ * Safari 9, Windows Phone 8.1
+ * github.com/10up/sanitize.css
+ */
+abbr[title] {
+  text-decoration: underline;
+  /* Chrome 48+, Edge 12+, Internet Explorer 11-, Safari 9+ */
+  text-decoration: underline dotted;
+  /* Firefox 40+ */
+}
+
+audio:not([controls]) {
+  display: none;
+  /* Chrome 44-, iOS 8+, Safari 9+ */
+}
+
+b,
+strong {
+  font-weight: bolder;
+  /* Edge 12+, Safari 6.2+, and Chrome 18+ */
+}
+
+button {
+  -webkit-appearance: button;
+  /* iOS 8+ */
+  overflow: visible;
+  /* Internet Explorer 11- */
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  /* Firefox 4+ */
+  padding: 0;
+  /* Firefox 4+ */
+}
+
+button:-moz-focusring, input:-moz-focusring {
+  outline: 1px dotted ButtonText;
+  /* Firefox 4+ */
+}
+
+button,
+select {
+  text-transform: none;
+  /* Firefox 40+, Internet Explorer 11- */
+}
+
+details {
+  display: block;
+  /* Edge 12+, Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* Edge 12+, Internet Explorer 11- */
+  overflow-y: scroll;
+  /* All browsers without overlaying scrollbars */
+  -webkit-text-size-adjust: 100%;
+  /* iOS 8+, Windows Phone 8.1+ */
+}
+
+hr {
+  overflow: visible;
+  /* Internet Explorer 11-, Edge 12+ */
+}
+
+input {
+  -webkit-border-radius: 0;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* iOS 8+ */
+}
+
+input[type="number"] {
+  width: auto;
+  /* Firefox 36+ */
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Chrome 45+, Safari 9+ */
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  /* Chrome 45+, Safari 9+ */
+}
+
+main {
+  display: block;
+  /* Android 4.3-, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+pre {
+  overflow: auto;
+  /* Internet Explorer 11- */
+}
+
+progress {
+  display: inline-block;
+  /* Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+summary {
+  display: block;
+  /* Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  /* Internet Explorer 11- */
+}
+
+template {
+  display: none;
+  /* Android 4.3-, Internet Explorer 11-, iOS 7-, Safari 7-, Windows Phone 8.1+ */
+}
+
+textarea {
+  overflow: auto;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+[hidden] {
+  display: none;
+  /* Internet Explorer 10- */
+}
+
+/*
+ * Reset CSS
+ * Updating an individual.
+ * https://twitter.com/Qrac_jp
+ */
+/* base reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  list-style: none;
+  vertical-align: baseline;
+  background: transparent;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+/* more reset (from sanitize.css) */
+select {
+  -moz-appearance: none;
+  /* Firefox 40+ */
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+select::-ms-value {
+  color: currentColor;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+svg {
+  fill: currentColor;
+}
+
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled] {
+  cursor: default;
+}
+
+[hidden][aria-hidden="false"] {
+  clip: rect(0 0 0 0);
+  display: inherit;
+  position: absolute;
+}
+
+[hidden][aria-hidden="false"]:focus {
+  clip: auto;
+}
+
+/*----------------------------------------------------
+YakuHanJP CSS
+----------------------------------------------------*/
+* {
+  font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(90deg, #ddd 50%, #F2F2F2 50%);
+  color: #333;
+}
+
+.test {
+  font-size: 30px;
+  font-size: 3rem;
+  padding: 50px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.header {
+  padding: 100px 20px 70px;
+  text-align: center;
+}
+
+.header .-svg_logo_YakuHanJP {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 30px;
+}
+
+.header .-title {
+  font-size: 44px;
+  font-size: 4.4rem;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+
+.header .-disc {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 0 0 20px;
+}
+
+.header a.-github {
+  font-size: 15px;
+  font-size: 1.5rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 36px;
+  color: #333;
+  background: #fff;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.header a.-github > .-svg_github {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  color: #333;
+  margin: 0 3px 0 0;
+}
+
+.main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main .-heading {
+  font-size: 30px;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.main .-type {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+
+.main .-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .-example {
+  font-size: 20px;
+  font-size: 2rem;
+  padding: 20px;
+  line-height: 1.4;
+  background: #fff;
+  margin: 0 0 30px;
+}
+
+.main .-row .-example {
+  font-size: 16px;
+  font-size: 1.6rem;
+  width: 50%;
+  position: relative;
+}
+
+.main .-row .-example:first-child {
+  background: #f3f3f3;
+}
+
+.main .-row .-example:first-child:before {
+  content: "Before";
+  font-size: 10px;
+  font-size: 1rem;
+  padding: 3px 7px;
+  color: #fff;
+  background: #1a1a1a;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main .-row .-example:last-child:before {
+  content: "After";
+  font-size: 10px;
+  font-size: 1rem;
+  padding: 3px 7px;
+  color: #fff;
+  background: #4d4d4d;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main .-bold {
+  font-weight: bold;
+}
+
+.main .-example.V0 {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+}
+
+.main .-example.V1 {
+  font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+}
+
+.main .-example.V2 {
+  font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  font-weight: 100;
+}
+
+.main .-example.V3 {
+  font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  font-weight: 200;
+}
+
+.main .-example.V4 {
+  font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  font-weight: 300;
+}
+
+.main .-example.V5 {
+  font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  font-weight: 400;
+}
+
+.main .-example.V6 {
+  font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  font-weight: 500;
+}
+
+.main .-example.V7 {
+  font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  font-weight: 700;
+}
+
+.main .-example.V8 {
+  font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  font-weight: 900;
+}
+
+.main .-pre {
+  font-size: 20px;
+  font-size: 2rem;
+  padding: 20px;
+  line-height: 1.4;
+  background: #fff;
+  margin: 0 0 30px;
+}
+
+.main .-lisence {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 20px;
+  line-height: 1.4;
+  background: #fff;
+}
+
+.main .-lisence a {
+  color: #4d4d4d;
+  text-decoration: underline;
+}
+
+.footer {
+  padding: 20px 20px 80px;
+  text-align: center;
+}
+
+.footer a > .-svg_twitter {
+  width: 30px;
+  height: 30px;
+  fill: #333;
+  color: #333;
+  margin: 0 auto;
+}

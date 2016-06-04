@@ -1,0 +1,32 @@
+.-svg {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.-svg_name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+#-svg_logo_YakuHanJP .path1 {
+	fill: #1a1a1a;
+}
+#-svg_logo_YakuHanJP .path2 {
+	fill: #4d4d4d;
+}
+#-svg_logo_YakuHanJP .path3, #-svg_logo_YakuHanJP .path4 {
+	fill: #fff;
+}
+
+.-svg_twitter {
+	width: 0.9285703301429749em;
+}
+
+.-svg_github {
+	width: 0.8571436107158661em;
+}

@@ -1,0 +1,298 @@
+/* ===================================================
+*
+*  Title: Yaku Han JP
+*  Author: Qrac
+*  URL: https://twitter.com/Qrac_jp
+*
+=================================================== */
+
+// Font Size "Rem"
+@mixin rem($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+// Base CSS
+@import "quireset";
+
+/*----------------------------------------------------
+YakuHanJP CSS
+----------------------------------------------------*/
+
+* {
+  font-family:
+  "YakuHanJP",
+  //Avenir, "Open Sans",
+  //Helvetica Neue, Helvetica,
+  //Verdana, Roboto,
+  //"Noto Sans Japanese",
+  //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+  "Meiryo UI", Meiryo, メイリオ, Osaka,
+  "ＭＳ Ｐゴシック", "MS PGothic",
+  arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(90deg, #ddd 50%, #F2F2F2 50%);
+  color: #333;
+}
+
+.test {
+  @include rem(30);
+  padding: 50px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.header {
+  padding: 100px 20px 70px;
+  text-align: center;
+  .-svg_logo_YakuHanJP {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 30px;
+  }
+  .-title {
+    @include rem(44);
+    font-weight: bold;
+    margin: 0 0 15px;
+  }
+  .-disc {
+    @include rem(14);
+    margin: 0 0 20px;
+  }
+  a.-github {
+    @include rem(15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 36px;
+    color: #333;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+  }
+  a.-github > .-svg_github {
+    width: 24px;
+    height: 24px;
+    fill: #333;
+    color: #333;
+    margin: 0 3px 0 0;
+  }
+}
+
+.main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  .-heading {
+    @include rem(30);
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .-type {
+    @include rem(14);
+    margin: 0 0 10px;
+  }
+  .-row {
+    display: flex;
+  }
+  .-example {
+    @include rem(20);
+    padding: 20px;
+    line-height: 1.4;
+    background: #fff;
+    margin: 0 0 30px;
+  }
+  .-row .-example {
+    @include rem(16);
+    width: 50%;
+    position: relative;
+    &:first-child {
+      background: #f3f3f3;
+      &:before {
+        content: "Before";
+        @include rem(10);
+        padding: 3px 7px;
+        color: #fff;
+        background: #1a1a1a;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    &:last-child {
+      &:before {
+        content: "After";
+        @include rem(10);
+        padding: 3px 7px;
+        color: #fff;
+        background: #4d4d4d;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  .-bold {
+    font-weight: bold;
+  }
+  .-example.V0 {
+    font-family:
+    //"YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    //"Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+  }
+  .-example.V1 {
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    //"Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+  }
+  .-example.V2 {
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    "Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+    font-weight: 100;
+  }
+  .-example.V3 {
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    "Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+    font-weight: 200;
+  }
+  .-example.V4 {
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    "Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+    font-weight: 300;
+  }
+  .-example.V5 {
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    "Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+    font-weight: 400;
+  }
+  .-example.V6 {
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    "Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+    font-weight: 500;
+  }
+  .-example.V7 {
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    "Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+    font-weight: 700;
+  }
+  .-example.V8 {
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    "Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+    font-weight: 900;
+  }
+  .-pre {
+    @include rem(20);
+    padding: 20px;
+    line-height: 1.4;
+    background: #fff;
+    margin: 0 0 30px;
+  }
+  .-lisence {
+    @include rem(14);
+    padding: 20px;
+    line-height: 1.4;
+    background: #fff;
+    a {
+      color: #4d4d4d;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer {
+  padding: 20px 20px 80px;
+  text-align: center;
+  a > .-svg_twitter {
+    width: 30px;
+    height: 30px;
+    fill: #333;
+    color: #333;
+    margin: 0 auto;
+  }
+}
