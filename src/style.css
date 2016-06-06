@@ -446,7 +446,7 @@ body {
   margin: 0 0 30px;
 }
 
-.main .-lisence {
+.main .-license {
   font-size: 14px;
   font-size: 1.4rem;
   padding: 20px;
@@ -454,7 +454,7 @@ body {
   background: #fff;
 }
 
-.main .-lisence a {
+.main .-license a {
   color: #4d4d4d;
   text-decoration: underline;
 }
