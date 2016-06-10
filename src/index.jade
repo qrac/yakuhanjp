@@ -4,7 +4,7 @@
 -var page_url = "https://qrac.github.io/yakuhanjp/";
 -var twitter_id = "Qrac_jp";
 -var example_text01 = "「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。";
--var example_text02 = "、。《》「」『』【】〔〕・（）：；［］｛｝"
+-var example_text02 = "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝"
 
 doctype html
 html(lang="ja")
@@ -51,72 +51,77 @@ html(lang="ja")
         svg.-svg.-svg_github: use(xlink:href="#-svg_github")
         span GitHub
     main.main
-      h3.-heading Example
-      h4.-type Normal(YakuHanJP + ヒラギノ角ゴ or MeiryoUI)
-      .-row
-        p.-example.V0 #{example_text01}
-        p.-example.V1 #{example_text01}
-      h4.-type Bold(YakuHanJP + ヒラギノ角ゴ or MeiryoUI)
-      .-row
-        p.-example.-bold.V0 #{example_text01}
-        p.-example.-bold.V1 #{example_text01}
-      h4.-type Thin W100(YakuHanJP + NotoSansJP)
-      p.-example.V2 #{example_text01}
-      h4.-type Light W200(YakuHanJP + NotoSansJP)
-      p.-example.V3 #{example_text01}
-      h4.-type DemiLight W300(YakuHanJP + NotoSansJP)
-      p.-example.V4 #{example_text01}
-      h4.-type Regular W400(YakuHanJP + NotoSansJP)
-      p.-example.V5 #{example_text01}
-      h4.-type Medium W500(YakuHanJP + NotoSansJP)
-      p.-example.V6 #{example_text01}
-      h4.-type Bold W700(YakuHanJP + NotoSansJP)
-      p.-example.V7 #{example_text01}
-      h4.-type Black W900(YakuHanJP + NotoSansJP)
-      p.-example.V8 #{example_text01}
-      h4.-type YakuHanJP Include Fonts
-      p.-example.V1 #{example_text02}
-      h3.-heading Now Test
-      h4.-type CDN
-      pre.-pre.
-        &lt;link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/1.0/dist/css/yakuhanjp.css"&gt;
-      h4.-type CSS
-      pre.-pre.
-        &lt;style&gt;
-          * {
-            font-family: "YakuHanJP",
-            "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-            "Meiryo UI", Meiryo, メイリオ, Osaka,
-            "ＭＳ Ｐゴシック", "MS PGothic",
-            arial, sans-serif;
-          }
-        &lt;/style&gt;
-      h3.-heading How To Use
-      h4.-type DATA
-      pre.-pre.
-        dist/css/yakuhanjp.css
-        dist/fonts/YakuHanJP/~
-      h4.-type HTML
-      pre.-pre.
-        &lt;link rel="stylesheet" href="dist/css/yakuhanjp.css"&gt;
-      h4.-type CSS
-      pre.-pre.
-        &lt;style&gt;
-          * {
-            font-family: "YakuHanJP",
-            "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-            "Meiryo UI", Meiryo, メイリオ, Osaka,
-            "ＭＳ Ｐゴシック", "MS PGothic",
-            arial, sans-serif;
-          }
-        &lt;/style&gt;
-      h3.-heading License
-      .-license
-        p
-          | SIL / Author: 
-          a(href="https://twitter.com/Qrac_jp" target="_blank") Qrac
-        p
-          a(href="https://www.google.com/get/noto/#/") Noto Sans CJK JP
-          |  licensed under the SIL Open Font License
+      section.-section
+        h3.-heading Example
+        h4.-type Normal（YakuHanJP + ヒラギノ角ゴ or MeiryoUI）
+        .-row
+          p.-example.V0 #{example_text01}
+          p.-example.V1 #{example_text01}
+        h4.-type Bold（YakuHanJP + ヒラギノ角ゴ or MeiryoUI）
+        .-row
+          p.-example.-bold.V0 #{example_text01}
+          p.-example.-bold.V1 #{example_text01}
+        h4.-type Thin W100（YakuHanJP + NotoSansJP）
+        p.-example.V2 #{example_text01}
+        h4.-type Light W200（YakuHanJP + NotoSansJP）
+        p.-example.V3 #{example_text01}
+        h4.-type DemiLight W300（YakuHanJP + NotoSansJP）
+        p.-example.V4 #{example_text01}
+        h4.-type Regular W400（YakuHanJP + NotoSansJP）
+        p.-example.V5 #{example_text01}
+        h4.-type Medium W500（YakuHanJP + NotoSansJP）
+        p.-example.V6 #{example_text01}
+        h4.-type Bold W700（YakuHanJP + NotoSansJP）
+        p.-example.V7 #{example_text01}
+        h4.-type Black W900（YakuHanJP + NotoSansJP）
+        p.-example.V8 #{example_text01}
+      section.-section
+        h3.-heading Include Fonts
+        p.-example.V1 #{example_text02}
+      section.-section
+        h3.-heading Now Test
+        h4.-type CDN
+        pre.-pre.
+          &lt;link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp.css"&gt;
+        h4.-type CSS
+        pre.-pre.
+          &lt;style&gt;
+            * {
+              font-family: "YakuHanJP",
+              "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+              "Meiryo UI", Meiryo, メイリオ, Osaka,
+              "ＭＳ Ｐゴシック", "MS PGothic",
+              arial, sans-serif;
+            }
+          &lt;/style&gt;
+      section.-section
+        h3.-heading How To Use
+        h4.-type DATA
+        pre.-pre.
+          dist/css/yakuhanjp.css
+          dist/fonts/YakuHanJP/~
+        h4.-type HTML
+        pre.-pre.
+          &lt;link rel="stylesheet" href="dist/css/yakuhanjp.css"&gt;
+        h4.-type CSS
+        pre.-pre.
+          &lt;style&gt;
+            * {
+              font-family: "YakuHanJP",
+              "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+              "Meiryo UI", Meiryo, メイリオ, Osaka,
+              "ＭＳ Ｐゴシック", "MS PGothic",
+              arial, sans-serif;
+            }
+          &lt;/style&gt;
+      section.-section
+        h3.-heading License
+        .-license
+          p
+            | SIL / Author: 
+            a(href="https://twitter.com/Qrac_jp" target="_blank") Qrac
+          p
+            a(href="https://www.google.com/get/noto/#/") Noto Sans CJK JP
+            |  licensed under the SIL Open Font License
     footer.footer
       a(href="https://twitter.com/Qrac_jp" target="_blank"): svg.-svg.-svg_twitter: use(xlink:href="#-svg_twitter")

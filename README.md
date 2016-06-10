@@ -24,7 +24,7 @@ GoogleのNoto Sans Japaneseをベースにしており、7ウェイト対応が�
 2. 適応させたいCSSのfont-familyの頭に「YakuHanJP」を追加する。
 
 ```
-<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/1.0/dist/css/yakuhanjp.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp.css">
 ・・・
 <style>
 * {

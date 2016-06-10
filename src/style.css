@@ -323,8 +323,12 @@ body {
 
 .main {
   padding: 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.main .-section {
+  padding: 0 0 60px;
 }
 
 .main .-heading {
@@ -337,7 +341,9 @@ body {
 .main .-type {
   font-size: 14px;
   font-size: 1.4rem;
-  margin: 0 0 10px;
+  font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+  letter-spacing: 0.05rem;
+  margin: 0 0 15px;
 }
 
 .main .-row {
@@ -350,7 +356,8 @@ body {
   font-size: 20px;
   font-size: 2rem;
   padding: 20px;
-  line-height: 1.6;
+  line-height: 1.75;
+  letter-spacing: 0.05rem;
   background: #fff;
   margin: 0 0 30px;
 }
@@ -438,8 +445,8 @@ body {
 }
 
 .main .-pre {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   padding: 20px;
   line-height: 1.4;
   background: #fff;
