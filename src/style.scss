@@ -88,8 +88,11 @@ body {
 
 .main {
   padding: 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
+  .-section {
+    padding: 0 0 60px;
+  }
   .-heading {
     @include rem(30);
     text-align: center;
@@ -97,7 +100,19 @@ body {
   }
   .-type {
     @include rem(14);
-    margin: 0 0 10px;
+    font-family:
+    "YakuHanJP",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    //"Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+    letter-spacing: 0.05rem;
+    margin: 0 0 15px;
   }
   .-row {
     display: flex;
@@ -105,7 +120,8 @@ body {
   .-example {
     @include rem(20);
     padding: 20px;
-    line-height: 1.6;
+    line-height: 1.75;
+    letter-spacing: 0.05rem;
     background: #fff;
     margin: 0 0 30px;
   }
@@ -267,7 +283,7 @@ body {
     font-weight: 900;
   }
   .-pre {
-    @include rem(20);
+    @include rem(18);
     padding: 20px;
     line-height: 1.4;
     background: #fff;
