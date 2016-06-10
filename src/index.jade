@@ -3,7 +3,7 @@
 -var page_description = "約物半角専用のWebフォント";
 -var page_url = "https://qrac.github.io/yakuhanjp/";
 -var twitter_id = "Qrac_jp";
--var example_text01 = "この通り「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。";
+-var example_text01 = "「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。";
 -var example_text02 = "、。《》「」『』【】〔〕・（）：；［］｛｝"
 
 doctype html
@@ -76,6 +76,21 @@ html(lang="ja")
       p.-example.V8 #{example_text01}
       h4.-type YakuHanJP Include Fonts
       p.-example.V1 #{example_text02}
+      h3.-heading Now Test
+      h4.-type CDN
+      pre.-pre.
+        &lt;link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/1.0/dist/css/yakuhanjp.css"&gt;
+      h4.-type CSS
+      pre.-pre.
+        &lt;style&gt;
+          * {
+            font-family: "YakuHanJP",
+            "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+            "Meiryo UI", Meiryo, メイリオ, Osaka,
+            "ＭＳ Ｐゴシック", "MS PGothic",
+            arial, sans-serif;
+          }
+        &lt;/style&gt;
       h3.-heading How To Use
       h4.-type DATA
       pre.-pre.
