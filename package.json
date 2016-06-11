@@ -1,0 +1,20 @@
+{
+  "name": "yakuhanjp",
+  "description": "Yakumono-Hankaku Only Web Fonts",
+  "version": "1.1.0",
+  "style": "dist/css/yakuhanjp.css",
+  "keywords": ["font", "webfont", "yakuhan", "yakumono", "hankaku", "japanese"],
+  "homepage": "https://github.com/qrac/yakuhanjp",
+  "bugs": {
+    "url" : "https://github.com/qrac/yakuhanjp"
+  },
+  "author": {
+    "name": "Qrac",
+    "web": "https://twitter.com/Qrac_jp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrac/yakuhanjp.git"
+  },
+  "license": "(OFL-1.1 AND MIT)"
+}
