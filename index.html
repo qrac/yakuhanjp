@@ -22,6 +22,7 @@
     <link rel="shortcut icon" href="src/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
     <link rel="stylesheet" href="dist/css/yakuhanjp.css">
+    <link rel="stylesheet" href="dist/css/yakuhanjp_s.css">
     <link rel="stylesheet" href="src/style.css">
   </head>
   <body><svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -57,15 +58,25 @@
     <main class="main">
       <section class="-section">
         <h3 class="-heading">Example</h3>
-        <h4 class="-type">Normal（YakuHanJP + ヒラギノ角ゴ or MeiryoUI）</h4>
+        <h4 class="-type">Full Normal（YakuHanJP + ヒラギノ角ゴ or MeiryoUI）</h4>
         <div class="-row">
           <p class="-example V0">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
           <p class="-example V1">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
         </div>
-        <h4 class="-type">Bold（YakuHanJP + ヒラギノ角ゴ or MeiryoUI）</h4>
+        <h4 class="-type">Small Amount Normal（YakuHanJPs + ヒラギノ角ゴ or MeiryoUI）</h4>
+        <div class="-row">
+          <p class="-example V0">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
+          <p class="-example V9">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
+        </div>
+        <h4 class="-type">Full Bold（YakuHanJP + ヒラギノ角ゴ or MeiryoUI）</h4>
         <div class="-row">
           <p class="-example -bold V0">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
           <p class="-example -bold V1">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
+        </div>
+        <h4 class="-type">Small Amount Bold（YakuHanJPs + ヒラギノ角ゴ or MeiryoUI）</h4>
+        <div class="-row">
+          <p class="-example -bold V0">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
+          <p class="-example -bold V9">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
         </div>
         <h4 class="-type">Thin W100（YakuHanJP + NotoSansJP）</h4>
         <p class="-example V2">「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。</p>
@@ -84,22 +95,48 @@
       </section>
       <section class="-section">
         <h3 class="-heading">Include Fonts</h3>
+        <h4 class="-type">Full Version</h4>
         <p class="-example V1">、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝</p>
+        <h4 class="-type">Small Amount Version</h4>
+        <p class="-example V9">〈〉《》「」『』【】〔〕（）［］｛｝</p>
       </section>
       <section class="-section">
         <h3 class="-heading">How To Use</h3>
         <h4 class="-type">CDN</h4>
-        <pre class="-pre">&lt;link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp.css"&gt;</pre>
+        <pre class="-pre">// Full
+&lt;link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp.css"&gt;
+
+// Small
+&lt;link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp_s.css"&gt;</pre>
         <h4 class="-type">npm</h4>
         <pre class="-pre">npm install yakuhanjp</pre>
         <h4 class="-type">DATA</h4>
-        <pre class="-pre">dist/css/yakuhanjp.css
-dist/fonts/YakuHanJP/~</pre>
+        <pre class="-pre">// Full
+dist/css/yakuhanjp.css
+dist/fonts/YakuHanJP/~
+
+// Small
+dist/css/yakuhanjp_s.css
+dist/fonts/YakuHanJPs/~</pre>
         <h4 class="-type">HTML</h4>
-        <pre class="-pre">&lt;link rel="stylesheet" href="dist/css/yakuhanjp.css"&gt;</pre>
+        <pre class="-pre">// Full
+&lt;link rel="stylesheet" href="dist/css/yakuhanjp.css"&gt;
+
+// Small
+&lt;link rel="stylesheet" href="dist/css/yakuhanjp_s.css"&gt;</pre>
         <h4 class="-type">CSS</h4>
-        <pre class="-pre">* {
+        <pre class="-pre">// Full
+* {
   font-family: "YakuHanJP",
+  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+  "Meiryo UI", Meiryo, メイリオ, Osaka,
+  "ＭＳ Ｐゴシック", "MS PGothic",
+  arial, sans-serif;
+}
+
+// Small
+* {
+  font-family: "YakuHanJPs",
   "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
   "Meiryo UI", Meiryo, メイリオ, Osaka,
   "ＭＳ Ｐゴシック", "MS PGothic",

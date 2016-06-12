@@ -10,9 +10,7 @@
 
 FontとCSSの合計容量が164KBという軽さなので、表示速度やパフォーマンスを重視するサイトでの使用にも安心です。
 
-特に、個別にテキストを調整できない動的なサイト（WordPressなど）のの見出しや長文に効果的です。静的なサイトの場合でも、CSSやJSを使った文字間調整の工数を大幅に削減できます。
-
-IllustratorやPhotoshopで「約物半角」機能を活用してきたデザイナーが、より理想的なWebデザインを作れるようになってくれれば幸いです。
+特に、個別にテキストを調整できない動的なサイト（WordPressなど）の見出しや長文に効果的です。静的なサイトの場合でも、CSSやJSを使った文字間調整の工数を大幅に削減できます。
 
 ## Detail
 
@@ -28,12 +26,38 @@ IllustratorやPhotoshopで「約物半角」機能を活用してきたデザイ
 - Bold ( font-weight: 700 )
 - Black ( font-weight: 900 )
 
+また、バージョン1.2より、カッコだけを半角にするSmall版（少量版）の「YakuHanJPs」を追加しました。文章中に息継ぎが必要だと感じた場合はこちらを適応ください。最小限のフォントでカッコの隙間のみを詰められます。
+
+### Full版：約物すべて
+
+- stylesheet="yakuhanjp.css"
+- font-family="YakuHanJP"
+
+```
+// Include Fonts
+、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝
+```
+
+### Small版：カッコのみ
+
+- stylesheet="yakuhanjp_s.css"
+- font-family="YakuHanJPs"
+
+```
+// Include Fonts
+〈〉《》「」『』【】〔〕（）［］｛｝
+```
+
 ## How to use
 
 ### CDN
 
 ```
+// Full
 <link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp.css">
+
+// Small
+<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp_s.css">
 ```
 
 ### npm
@@ -44,18 +68,36 @@ npm install yakuhanjp
 
 ### Local
 
-1. データをダウンロード。
-2. distフォルダ以下「css」「fonts」を制作サイトに配置。
-3. headで「yakuhanjp.css」を読み込む。
-4. 適応させたいCSSのfont-familyの頭に「YakuHanJP」を追加。
+1. データをダウンロード
+2. distフォルダ以下「css」「fonts」を制作サイトに配置
+3. headでCSSを読み込む
+  - Full版：約物すべてを使う場合は「yakuhanjp.css」
+  - Small版：カッコだけを使う場合は「yakuhanjp_s.css」
+4. 適応させたいCSSのfont-familyの頭に以下を追加
+  - Full版：約物すべてを使う場合は「YakuHanJP」
+  - Small版：カッコだけを使う場合は「YakuHanJPs」
 
 ```
+// Full
 <link rel="stylesheet" href="dist/css/yakuhanjp.css">
+
+// Small
+<link rel="stylesheet" href="dist/css/yakuhanjp_s.css">
 ```
 
 ```
+// Full
 * {
   font-family: "YakuHanJP",
+  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+  "Meiryo UI", Meiryo, メイリオ, Osaka,
+  "ＭＳ Ｐゴシック", "MS PGothic",
+  arial, sans-serif;
+}
+
+// Small
+* {
+  font-family: "YakuHanJPs",
   "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
   "Meiryo UI", Meiryo, メイリオ, Osaka,
   "ＭＳ Ｐゴシック", "MS PGothic",

@@ -444,6 +444,10 @@ body {
   font-weight: 900;
 }
 
+.main .-example.V9 {
+  font-family: "YakuHanJPs", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+}
+
 .main .-pre {
   font-size: 18px;
   font-size: 1.8rem;
