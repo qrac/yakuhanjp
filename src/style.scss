@@ -282,6 +282,19 @@ body {
     arial, sans-serif;
     font-weight: 900;
   }
+  .-example.V9 {
+    font-family:
+    "YakuHanJPs",
+    //Avenir, "Open Sans",
+    //Helvetica Neue, Helvetica,
+    //Verdana, Roboto,
+    //"Noto Sans Japanese",
+    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Meiryo UI", Meiryo, メイリオ, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic",
+    arial, sans-serif;
+  }
   .-pre {
     @include rem(18);
     padding: 20px;
