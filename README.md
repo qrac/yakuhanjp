@@ -8,7 +8,7 @@
 
 "Yaku Han JP"は、Web上の日本語テキストに含まれる約物を半角にする「約物半角専用Webフォント」です。GoogleのNoto Sans Japaneseをベースにしており、7ウェイト対応が可能となっています。
 
-FontとCSSの合計容量が164KBという軽さなので、表示速度やパフォーマンスを重視するサイトでの使用にも安心です。
+7ウェイトをwoffタイプですべて読み込んでも、FontとCSSの合計容量が57KBという軽さなので、表示速度やパフォーマンスを重視するサイトでの使用にも安心です。
 
 特に、個別にテキストを調整できない動的なサイト（WordPressなど）の見出しや長文に効果的です。静的なサイトの場合でも、CSSやJSを使った文字間調整の工数を大幅に削減できます。
 
@@ -30,7 +30,7 @@ FontとCSSの合計容量が164KBという軽さなので、表示速度やパ�
 
 ### Full版：約物すべて
 
-- stylesheet="yakuhanjp.css"
+- stylesheet="yakuhanjp.min.css"
 - font-family="YakuHanJP"
 
 ```
@@ -40,7 +40,7 @@ FontとCSSの合計容量が164KBという軽さなので、表示速度やパ�
 
 ### Small版：カッコのみ
 
-- stylesheet="yakuhanjp_s.css"
+- stylesheet="yakuhanjp_s.min.css"
 - font-family="YakuHanJPs"
 
 ```
@@ -52,13 +52,7 @@ FontとCSSの合計容量が164KBという軽さなので、表示速度やパ�
 
 ### CDN
 
-```
-// Full
-<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp.css">
-
-// Small
-<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp_s.css">
-```
+※申請中
 
 ### npm
 
@@ -71,39 +65,37 @@ npm install yakuhanjp
 1. データをダウンロード
 2. distフォルダ以下「css」「fonts」を制作サイトに配置
 3. headでCSSを読み込む
-  - Full版：約物すべてを使う場合は「yakuhanjp.css」
-  - Small版：カッコだけを使う場合は「yakuhanjp_s.css」
+  - Full版：約物すべてを使う場合は「yakuhanjp.min.css」
+  - Small版：カッコだけを使う場合は「yakuhanjp_s.min.css」
 4. 適応させたいCSSのfont-familyの頭に以下を追加
   - Full版：約物すべてを使う場合は「YakuHanJP」
   - Small版：カッコだけを使う場合は「YakuHanJPs」
 
 ```
 // Full
-<link rel="stylesheet" href="dist/css/yakuhanjp.css">
+<link rel="stylesheet" href="dist/css/yakuhanjp.min.css">
 
 // Small
-<link rel="stylesheet" href="dist/css/yakuhanjp_s.css">
+<link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css">
 ```
 
 ```
 // Full
 * {
-  font-family: "YakuHanJP",
-  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-  "Meiryo UI", Meiryo, メイリオ, Osaka,
-  "ＭＳ Ｐゴシック", "MS PGothic",
-  arial, sans-serif;
+  font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 // Small
 * {
-  font-family: "YakuHanJPs",
-  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-  "Meiryo UI", Meiryo, メイリオ, Osaka,
-  "ＭＳ Ｐゴシック", "MS PGothic",
-  arial, sans-serif;
+  font-family: "YakuHanJPs", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 ```
+
+## Media
+
+- [YakuHanJPを作ったときの話 – Qrac.JP](https://qrac.jp/archives/296)
+- [HTML5 Conference 2016のLT大会に出てしまった – Qrac.JP](https://qrac.jp/archives/279)
+- [HTML5 Conference 2016 LT "Yaku Han JP" by Qrac // Speaker Deck](https://speakerdeck.com/qrac/html5-conference-2016-lt-yaku-han-jp-by-qrac)
 
 ## Library
 

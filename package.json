@@ -1,7 +1,7 @@
 {
   "name": "yakuhanjp",
   "description": "Yakumono-Hankaku Only Web Fonts",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "style": "dist/css/yakuhanjp.css",
   "keywords": ["font", "webfont", "yakuhan", "yakumono", "hankaku", "japanese"],
   "homepage": "https://github.com/qrac/yakuhanjp",

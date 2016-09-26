@@ -10,38 +10,27 @@
 doctype html
 html(lang="ja")
   head
-    //- Encording
-    meta(charset='UTF-8')
-    //- Site Meta
+    meta(charset="UTF-8")
     title #{page_title} - #{site_title}
     meta(name="description" content="#{page_description}")
-    meta(name='keywords', content='#{page_keywords}')
-    //- Viewport
-    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui")
-    //-meta(name="viewport" content="width=1024")
-    //- Facebook OGP
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(property="og:title" content="#{page_title}")
     meta(property="og:description" content="#{page_description}")
     meta(property="og:url" content="#{page_url}")
     meta(property="og:image" content="#{page_url}src/ogp.png")
     meta(property="og:site_name" content="#{site_title}")
     meta(property="og:type" content="website")
-    //- Twitter Card
-    meta(name='twitter:card', content='summary_large_image')
-    meta(name='twitter:site', content='#{twitter_id}')
-    meta(name='twitter:creator', content='#{twitter_id}')
-    meta(name='twitter:title', content='#{page_title}')
-    meta(name='twitter:description', content='#{page_description}')
-    meta(name='twitter:image:src', content='#{page_url}src/ogp.png')
-    //- Icon
+    meta(name="twitter:card", content="summary_large_image")
+    meta(name="twitter:site", content="#{twitter_id}")
+    meta(name="twitter:creator", content="#{twitter_id}")
+    meta(name="twitter:title", content="#{page_title}")
+    meta(name="twitter:description", content="#{page_description}")
+    meta(name="twitter:image:src", content="#{page_url}src/ogp.png")
     link(rel="apple-touch-icon" href="src/apple-touch-icon.png")
     link(rel="shortcut icon" href="src/favicon.ico")
-    //- Path to Library CSS
-    //-link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
-    //- Path to Custom CSS
-    link(rel="stylesheet" href="dist/css/yakuhanjp.css")
-    link(rel="stylesheet" href="dist/css/yakuhanjp_s.css")
+    link(rel="stylesheet" href="dist/css/yakuhanjp.min.css")
+    link(rel="stylesheet" href="dist/css/yakuhanjp_s.min.css")
     link(rel="stylesheet" href="src/style.css")
   body
     include icomoon/symbol-defs.svg
@@ -55,19 +44,19 @@ html(lang="ja")
     main.main
       section.-section
         h3.-heading Example
-        h4.-type Full Normal（YakuHanJP + ヒラギノ角ゴ or MeiryoUI）
+        h4.-type Full Normal（YakuHanJP + ヒラギノ角ゴ or Meiryo）
         .-row
           p.-example.V0 #{example_text01}
           p.-example.V1 #{example_text01}
-        h4.-type Small Amount Normal（YakuHanJPs + ヒラギノ角ゴ or MeiryoUI）
+        h4.-type Small Amount Normal（YakuHanJPs + ヒラギノ角ゴ or Meiryo）
         .-row
           p.-example.V0 #{example_text01}
           p.-example.V9 #{example_text01}
-        h4.-type Full Bold（YakuHanJP + ヒラギノ角ゴ or MeiryoUI）
+        h4.-type Full Bold（YakuHanJP + ヒラギノ角ゴ or Meiryo）
         .-row
           p.-example.-bold.V0 #{example_text01}
           p.-example.-bold.V1 #{example_text01}
-        h4.-type Small Amount Bold（YakuHanJPs + ヒラギノ角ゴ or MeiryoUI）
+        h4.-type Small Amount Bold（YakuHanJPs + ヒラギノ角ゴ or Meiryo）
         .-row
           p.-example.-bold.V0 #{example_text01}
           p.-example.-bold.V9 #{example_text01}
@@ -93,50 +82,35 @@ html(lang="ja")
         p.-example.V9 #{example_text03}
       section.-section
         h3.-heading How To Use
-        h4.-type CDN
-        pre.-pre.
-          // Full
-          &lt;link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp.css"&gt;
-          
-          // Small
-          &lt;link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp_s.css"&gt;
         h4.-type npm
         pre.-pre.
           npm install yakuhanjp
         h4.-type DATA
         pre.-pre.
           // Full
-          dist/css/yakuhanjp.css
+          dist/css/yakuhanjp.min.css
           dist/fonts/YakuHanJP/~
           
           // Small
-          dist/css/yakuhanjp_s.css
+          dist/css/yakuhanjp_s.min.css
           dist/fonts/YakuHanJPs/~
         h4.-type HTML
         pre.-pre.
           // Full
-          &lt;link rel="stylesheet" href="dist/css/yakuhanjp.css"&gt;
+          &lt;link rel="stylesheet" href="dist/css/yakuhanjp.min.css"&gt;
           
           // Small
-          &lt;link rel="stylesheet" href="dist/css/yakuhanjp_s.css"&gt;
+          &lt;link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css"&gt;
         h4.-type CSS
         pre.-pre.
           // Full
           * {
-            font-family: "YakuHanJP",
-            "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-            "Meiryo UI", Meiryo, メイリオ, Osaka,
-            "ＭＳ Ｐゴシック", "MS PGothic",
-            arial, sans-serif;
+            font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
           }
           
           // Small
           * {
-            font-family: "YakuHanJPs",
-            "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-            "Meiryo UI", Meiryo, メイリオ, Osaka,
-            "ＭＳ Ｐゴシック", "MS PGothic",
-            arial, sans-serif;
+            font-family: "YakuHanJPs", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
           }
       section.-section
         h3.-heading License

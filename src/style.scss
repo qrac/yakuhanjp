@@ -20,17 +20,8 @@ YakuHanJP CSS
 ----------------------------------------------------*/
 
 * {
-  font-family:
-  "YakuHanJP",
-  //Avenir, "Open Sans",
-  //Helvetica Neue, Helvetica,
-  //Verdana, Roboto,
-  //"Noto Sans Japanese",
-  //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-  "Meiryo UI", Meiryo, メイリオ, Osaka,
-  "ＭＳ Ｐゴシック", "MS PGothic",
-  arial, sans-serif;
+  font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,13 +30,6 @@ YakuHanJP CSS
 body {
   background: linear-gradient(90deg, #ddd 50%, #F2F2F2 50%);
   color: #333;
-}
-
-.test {
-  @include rem(30);
-  padding: 50px;
-  line-height: 1.4;
-  font-weight: 400;
 }
 
 .header {
@@ -100,17 +84,7 @@ body {
   }
   .-type {
     @include rem(14);
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    //"Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     letter-spacing: 0.05rem;
     margin: 0 0 15px;
   }
@@ -159,141 +133,41 @@ body {
     font-weight: bold;
   }
   .-example.V0 {
-    font-family:
-    //"YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    //"Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   }
   .-example.V1 {
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    //"Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   }
   .-example.V2 {
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    "Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 100;
   }
   .-example.V3 {
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    "Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 200;
   }
   .-example.V4 {
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    "Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 300;
   }
   .-example.V5 {
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    "Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 400;
   }
   .-example.V6 {
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    "Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 500;
   }
   .-example.V7 {
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    "Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 700;
   }
   .-example.V8 {
-    font-family:
-    "YakuHanJP",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    "Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJP", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 900;
   }
   .-example.V9 {
-    font-family:
-    "YakuHanJPs",
-    //Avenir, "Open Sans",
-    //Helvetica Neue, Helvetica,
-    //Verdana, Roboto,
-    //"Noto Sans Japanese",
-    //"游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Meiryo UI", Meiryo, メイリオ, Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    arial, sans-serif;
+    font-family: "YakuHanJPs", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   }
   .-pre {
     @include rem(18);
