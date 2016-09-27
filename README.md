@@ -1,7 +1,5 @@
 # Yaku Han JP
 
-[![NPM](https://nodei.co/npm/yakuhanjp.png?downloads=true)](https://nodei.co/npm/yakuhanjp/)
-
 [> Demo Page](https://qrac.github.io/yakuhanjp)
 
 ## About
