@@ -8,9 +8,11 @@
 
 "Yaku Han JP"は、Web上の日本語テキストに含まれる約物を半角にする「約物半角専用Webフォント」です。GoogleのNoto Sans Japaneseをベースにしており、7ウェイト対応が可能となっています。
 
+特に、個別にテキストを調整できない動的なサイト（WordPressなど）の見出しや長文に効果的です。静的なサイトの場合でも、CSSやJSを使った文字間調整の工数を大幅に削減できます。
+
 7ウェイトをwoffタイプですべて読み込んでも、FontとCSSの合計容量が57KBという軽さなので、表示速度やパフォーマンスを重視するサイトでの使用にも安心です。
 
-特に、個別にテキストを調整できない動的なサイト（WordPressなど）の見出しや長文に効果的です。静的なサイトの場合でも、CSSやJSを使った文字間調整の工数を大幅に削減できます。
+2016.09.27 > CDNサービス「[jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp)」に登録
 
 ## Detail
 
@@ -50,9 +52,15 @@
 
 ## How to use
 
-### CDN
+### CDN ([jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp))
 
-※申請中
+```
+// Full
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.2.3/css/yakuhanjp.min.css">
+
+// Small
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.2.3/css/yakuhanjp_s.min.css">
+```
 
 ### npm
 

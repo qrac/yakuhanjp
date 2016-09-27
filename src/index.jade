@@ -29,8 +29,8 @@ html(lang="ja")
     link(rel="apple-touch-icon" href="src/apple-touch-icon.png")
     link(rel="shortcut icon" href="src/favicon.ico")
     link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
-    link(rel="stylesheet" href="dist/css/yakuhanjp.min.css")
-    link(rel="stylesheet" href="dist/css/yakuhanjp_s.min.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.2.3/css/yakuhanjp.min.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.2.3/css/yakuhanjp_s.min.css")
     link(rel="stylesheet" href="src/style.css")
   body
     include icomoon/symbol-defs.svg
@@ -82,6 +82,13 @@ html(lang="ja")
         p.-example.V9 #{example_text03}
       section.-section
         h3.-heading How To Use
+        h4.-type CDN
+        pre.-pre.
+          // Full
+          &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.2.3/css/yakuhanjp.min.css"&gt;
+          
+          // Small
+          &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.2.3/css/yakuhanjp_s.min.css"&gt;
         h4.-type npm
         pre.-pre.
           npm install yakuhanjp
