@@ -63,10 +63,10 @@
 
 ```
 // Full
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.0/css/yakuhanjp.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.1/css/yakuhanjp.min.css">
 
 // Small
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.0/css/yakuhanjp_s.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.1/css/yakuhanjp_s.min.css">
 ```
 
 ### npm
