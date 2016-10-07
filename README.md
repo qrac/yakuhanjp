@@ -99,6 +99,7 @@ npm install yakuhanjp
 
 ## Media
 
+- [YakuHanJPをCDNサービス「jsDelivr」で公開 – Qrac.JP](https://qrac.jp/archives/311)
 - [YakuHanJPを作ったときの話 – Qrac.JP](https://qrac.jp/archives/296)
 - [HTML5 Conference 2016のLT大会に出てしまった – Qrac.JP](https://qrac.jp/archives/279)
 - [HTML5 Conference 2016 LT "Yaku Han JP" by Qrac // Speaker Deck](https://speakerdeck.com/qrac/html5-conference-2016-lt-yaku-han-jp-by-qrac)
