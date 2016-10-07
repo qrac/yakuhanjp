@@ -285,6 +285,11 @@ body {
   margin: 0 0 20px;
 }
 
+.header .-version {
+  font-size: 1.8rem;
+  margin: 0 0 20px;
+}
+
 .header a.-github {
   font-size: 15px;
   font-size: 1.5rem;
