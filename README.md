@@ -12,14 +12,14 @@
 
 ## Update
 
-- 16/10/07 IE10/11のみ「text-overflow: ellipsis;」の「…」が文字化けする問題に対応（1.3）
-- 16/09/28 CDNサービス「[jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp)」に登録
-- 16/09/27 .min.cssファイルを追加
-- 16/06/12 YakuHanJPsリリース（1.2）
-- 16/06/12 npm公開
-- 16/06/11 編集用ファイル追加
-- 16/06/11 文字の追加「！？〈〉」＆余白の調整「、。」（1.1）
-- 16/06/04 YakuHanJPリリース（1.0）
+- 16/10/07 > IE10/11のみ「text-overflow: ellipsis;」の「…」が文字化けする問題に対応（1.3.0）
+- 16/09/28 > CDNサービス「[jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp)」に登録
+- 16/09/27 > .min.cssファイルを追加
+- 16/06/12 > YakuHanJPsリリース（1.2.0）
+- 16/06/12 > npm公開
+- 16/06/11 > 編集用ファイル追加
+- 16/06/11 > 文字の追加「！？〈〉」＆余白の調整「、。」（1.1.0）
+- 16/06/04 > YakuHanJPリリース（1.0.0）
 
 ## Detail
 
@@ -63,10 +63,10 @@
 
 ```
 // Full
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.2.3/css/yakuhanjp.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.0/css/yakuhanjp.min.css">
 
 // Small
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.2.3/css/yakuhanjp_s.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.0/css/yakuhanjp_s.min.css">
 ```
 
 ### npm
