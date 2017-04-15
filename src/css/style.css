@@ -1,0 +1,347 @@
+/* Yaku Han JP Demo CSS */
+*.is-font-sans {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-yakuhanjp {
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJP, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-yakuhanjps {
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-hiragino {
+  font-family: "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-hiragino-yakuhanjp {
+  font-family: YakuHanJP, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-hiragino-yakuhanjps {
+  font-family: YakuHanJPs, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-yugo {
+  font-family: "Yu Gothic", YuGothic, "Hiragino Sans", Meiryo, sans-serif;
+}
+
+*.is-font-sans-yugo-yakuhanjp {
+  font-family: YakuHanJP, "Yu Gothic", YuGothic, "Hiragino Sans", Meiryo, sans-serif;
+}
+
+*.is-font-sans-yugo-yakuhanjps {
+  font-family: YakuHanJPs, "Yu Gothic", YuGothic, "Hiragino Sans", Meiryo, sans-serif;
+}
+
+*.is-font-sans-noto {
+  font-family: "Noto Sans Japanese", "Hiragino Sans", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-noto-yakuhanjp {
+  font-family: YakuHanJP, "Noto Sans Japanese", "Hiragino Sans", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-noto-yakuhanjps {
+  font-family: YakuHanJPs, "Noto Sans Japanese", "Hiragino Sans", YuGothic, Meiryo, sans-serif;
+}
+
+*.is-font-sans-meiryo {
+  font-family: Meiryo, "Hiragino Sans", "Yu Gothic", YuGothic, sans-serif;
+}
+
+*.is-font-sans-meiryo-yakuhanjp {
+  font-family: YakuHanJP, Meiryo, "Hiragino Sans", "Yu Gothic", YuGothic, sans-serif;
+}
+
+*.is-font-sans-meiryo-yakuhanjps {
+  font-family: YakuHanJPs, Meiryo, "Hiragino Sans", "Yu Gothic", YuGothic, sans-serif;
+}
+
+*.is-font-serif {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-yakuhanmp {
+  font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-yakuhanmps {
+  font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-hiragino {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-hiragino-yakuhanmp {
+  font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-hiragino-yakuhanmps {
+  font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-yumi {
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", serif;
+}
+
+*.is-font-serif-yumi-yakuhanmp {
+  font-family: YakuHanMP, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", serif;
+}
+
+*.is-font-serif-yumi-yakuhanmps {
+  font-family: YakuHanMPs, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", serif;
+}
+
+*.is-font-serif-noto {
+  font-family: "Noto Serif Japanese", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-noto-yakuhanmp {
+  font-family: YakuHanMP, "Noto Serif Japanese", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-noto-yakuhanmps {
+  font-family: YakuHanMPs, "Noto Serif Japanese", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-meiryo {
+  font-family: meiryo, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-meiryo-yakuhanmp {
+  font-family: YakuHanMP, meiryo, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-font-serif-meiryo-yakuhanmps {
+  font-family: YakuHanMPs, meiryo, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+*.is-weight-100 {
+  font-weight: 100;
+}
+
+*.is-weight-200 {
+  font-weight: 200;
+}
+
+*.is-weight-300 {
+  font-weight: 300;
+}
+
+*.is-weight-400 {
+  font-weight: 400;
+}
+
+*.is-weight-500 {
+  font-weight: 500;
+}
+
+*.is-weight-700 {
+  font-weight: 700;
+}
+
+*.is-weight-900 {
+  font-weight: 900;
+}
+
+*.is-size-xxl {
+  font-size: 200%;
+}
+
+*.is-size-xl {
+  font-size: 150%;
+}
+
+*.is-size-lg {
+  font-size: 125%;
+}
+
+*.is-size-md {
+  font-size: 100%;
+}
+
+*.is-size-sm {
+  font-size: 87.5%;
+}
+
+*.is-size-xs {
+  font-size: 75%;
+}
+
+*.is-size-xxs {
+  font-size: 62.5%;
+}
+
+*.is-color-transparent {
+  color: transparent;
+}
+
+.col.is-fit {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.list > .item.is-block + .item.is-block {
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 992px) {
+  .list {
+    margin-right: 1.5em;
+  }
+}
+
+.table .box.is-paint,
+.table .box.is-paint-5 {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.pre {
+  border-radius: 0;
+}
+
+.pre.is-label:before {
+  border-radius: 0;
+}
+
+.table {
+  border-radius: 0;
+}
+
+.table:not(.is-line) > thead > tr:first-child > :first-child,
+.table:not(.is-line) > thead > tr:first-child > :last-child,
+.table:not(.is-line) > :last-child > tr:last-child > :first-child,
+.table:not(.is-line) > :last-child > tr:last-child > :last-child {
+  border-radius: 0;
+}
+
+.yakuhanjp.yakuhanjp-demo {
+  background: linear-gradient(90deg, #ddd 50%, #F2F2F2 50%);
+}
+
+.section.is-topcover {
+  padding: 100px 0 70px;
+}
+
+.section.is-footer {
+  padding: 40px 0;
+}
+
+.logo.is-title {
+  width: 100px;
+}
+
+.text.is-title {
+  font-size: 3em;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  line-height: 1.25;
+}
+
+.grid > .col.is-bg-smoke {
+  background-color: whitesmoke;
+}
+
+.grid > .col.is-bg-white {
+  background-color: #ffffff;
+}
+
+.grid > .col.is-before {
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.grid > .col.is-before:before {
+  content: "Before";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 7px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 62.5%;
+}
+
+.grid > .col.is-after {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.grid > .col.is-after:after {
+  content: "After";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 7px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 62.5%;
+}
+
+.grid > .col > .inner {
+  padding: 1.25em;
+}
+
+.group.is-card {
+  background-color: #ffffff;
+}
+
+.group.is-card > .inner {
+  padding: 1.25em;
+}
+
+.tabs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tab {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.25em 1.75em;
+  background-color: #fafafa;
+  transition: ease 0.2s;
+}
+
+.tab:not(.is-active) {
+  cursor: pointer;
+}
+
+.tab:not(.is-active):not(.is-disable):hover, .tab:not(.is-active):not(.is-disable):active {
+  color: #1cb4c7;
+}
+
+.tab.is-active {
+  font-weight: 700;
+}
+
+.tab.is-active:not(.is-disable) {
+  color: #1cb4c7;
+}
+
+.tab.is-disable {
+  color: #d75653;
+  text-decoration: line-through;
+}
+
+.texts.is-before, .texts.is-after {
+  transition: ease 0.2s;
+}

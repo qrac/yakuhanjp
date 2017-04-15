@@ -1,72 +1,62 @@
 # Yaku Han JP
 
-[> Demo Page](https://qrac.github.io/yakuhanjp)
+## Demo
+
+- [Demo Page](https://qrac.github.io/yakuhanjp)
 
 ## About
 
-"Yaku Han JP"は、Web上の日本語テキストに含まれる約物を半角にする「約物半角専用Webフォント」です。GoogleのNoto Sans Japaneseをベースにしており、7ウェイト対応が可能となっています。
-
-特に、個別にテキストを調整できない動的なサイト（WordPressなど）の見出しや長文に効果的です。静的なサイトの場合でも、CSSやJSを使った文字間調整の工数を大幅に削減できます。
-
-7ウェイトをwoffタイプですべて読み込んでも、FontとCSSの合計容量が57KBという軽さなので、表示速度やパフォーマンスを重視するサイトでの使用にも安心です。
-
-## Update
-
-- 16/10/07 > IE10/11のみ「text-overflow: ellipsis;」の「…」が文字化けする問題に対応（1.3.0）
-- 16/09/28 > CDNサービス「[jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp)」に登録
-- 16/09/27 > .min.cssファイルを追加
-- 16/06/12 > YakuHanJPsリリース（1.2.0）
-- 16/06/12 > npm公開
-- 16/06/11 > 編集用ファイル追加
-- 16/06/11 > 文字の追加「！？〈〉」＆余白の調整「、。」（1.1.0）
-- 16/06/04 > YakuHanJPリリース（1.0.0）
+"Yaku Han JP"は、Web上の日本語テキストに含まれる約物を半角にする「約物半角専用Webフォント」です。Googleの"Noto Sans CJK JP（源ノ角ゴシック）"と"Noto Serif CJK JP（源ノ明朝）"をベースにしており、ゴシック体と明朝体でそれぞれ7ウェイト対応できます。
 
 ## Detail
 
-仕組みは日本語サイトの英語に欧文フォントを当てる場合と同じで、文字幅を調整した約物のみで構成されたフォントをデバイスフォントの前に優先適応させるというシンプルなものです。
+仕組みは、文字幅を調整した「約物だけのフォント」をデバイスフォントよりも前に優先的適応することです。font-family（CSS）のフォールバック機能を利用しています。旧ブラウザ対応に優れ、動的コンテンツへの利用に最適。1つのフォントが4〜5KBと軽量なので、表示速度やパフォーマンスを重視するサイトへの使用も安心です。
 
-ウェイトは7段階あり、CSSでは以下のfont-weightで指定できます。
+## Valuation
 
-- Thin ( font-weight: 100 )
-- Light ( font-weight: 200 )
-- DemiLight ( font-weight: 300 )
-- Regular ( font-weight: 400 )
-- Medium ( font-weight: 500 )
-- Bold ( font-weight: 700 )
-- Black ( font-weight: 900 )
+4種類のフォントを用意しています。ゴシック体と明朝体を使い分けられる他、カッコだけを半角にするSmall Amount（少量版）が使えます。
 
-また、バージョン1.2以降、カッコだけを半角にするSmall版（少量版）の「YakuHanJPs」を追加しました。文章中に息継ぎが必要だと感じた場合はこちらを適応ください。最小限のフォントでカッコの隙間のみを詰められます。
+- YakuHanJP : ゴシック体 All Include（全部入り版）
+- YakuHanJPs : ゴシック体 Small Amount（少量版）
+- YakuHanMP : 明朝体 All Include（全部入り版）
+- YakuHanMPs : 明朝体 Small Amount（少量版）
 
-### Full版：約物すべて
+内包する文字はそれぞれ以下の通りです。
 
-- stylesheet="yakuhanjp.min.css"
-- font-family="YakuHanJP"
+### All Include（全部入り版） : 約物すべて
 
-```
-// Include Fonts
-、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝…
-```
+> 、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝…
 
-### Small版：カッコのみ
+### Small Amount（少量版） : カッコのみ
 
-- stylesheet="yakuhanjp_s.min.css"
-- font-family="YakuHanJPs"
+> 〈〉《》「」『』【】〔〕（）［］｛｝…
 
-```
-// Include Fonts
-〈〉《》「」『』【】〔〕（）［］｛｝…
-```
+ウェイトは7段階。付属のCSSでは以下のfont-weightで指定できます。※Noto Sans CJK JPとNoto Serif CJK JPでウエイト・ファイル名が若干異なるため、当ライブラリ内のファイル名もそれに準じています。
 
-## How to use
+- font-weight: 100;
+- font-weight: 200;
+- font-weight: 300;
+- font-weight: 400;
+- font-weight: 500;
+- font-weight: 700;
+- font-weight: 900;
 
-### CDN ([jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp))
+## How To Use
+
+### CDN （ [jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp) ）
 
 ```
-// Full
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.1/css/yakuhanjp.min.css">
+// YakuHanJP
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp.min.css">
 
-// Small
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.1/css/yakuhanjp_s.min.css">
+// YakuHanJPs
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp_s.min.css">
+
+// YakuHanMP
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp.min.css">
+
+// YakuHanMPs
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp_s.min.css">
 ```
 
 ### npm
@@ -75,50 +65,78 @@
 npm install yakuhanjp
 ```
 
-### Local
+### Download
 
-1. データをダウンロード
-2. distフォルダ以下「css」「fonts」を制作サイトに配置
+1. データを[ダウンロード](https://github.com/qrac/yakuhanjp/archive/master.zip)
+2. distフォルダ内の「css」「fonts」を制作サイトに配置
 3. headでCSSを読み込む
-  - Full版：約物すべてを使う場合は「yakuhanjp.min.css」
-  - Small版：カッコだけを使う場合は「yakuhanjp_s.min.css」
-4. 適応させたいCSSのfont-familyの頭に以下を追加
-  - Full版：約物すべてを使う場合は「YakuHanJP」
-  - Small版：カッコだけを使う場合は「YakuHanJPs」
+  - ゴシック体
+    - 約物すべてを使う場合は「yakuhanjp.min.css」
+    - カッコだけを使う場合は「yakuhanjp_s.min.css」
+  - 明朝体
+    - 約物すべてを使う場合は「yakuhanmp.min.css」
+    - カッコだけを使う場合は「yakuhanmp_s.min.css」
+4. CSSでフォントを適応
+  - ゴシック体
+    - 約物すべてを使う場合は「YakuHanJP」
+    - カッコだけを使う場合は「YakuHanJPs」
+  - 明朝体
+    - 約物すべてを使う場合は「YakuHanMP」
+    - カッコだけを使う場合は「YakuHanMPs」
 
 ```
-// Full
+// YakuHanJP
 <link rel="stylesheet" href="dist/css/yakuhanjp.min.css">
 
-// Small
+// YakuHanJPs
 <link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css">
+
+// YakuHanMP
+<link rel="stylesheet" href="dist/css/yakuhanmp.min.css">
+
+// YakuHanMPs
+<link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css">
 ```
 
 ```
-// Full
-* {
-  font-family: "YakuHanJP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+// YakuHanJP
+.yakuhanjp {
+  font-family: YakuHanJP, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
 }
 
-// Small
-* {
-  font-family: "YakuHanJPs", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+// YakuHanJPs
+.yakuhanjps {
+  font-family: YakuHanJPs, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+}
+
+// YakuHanMP
+.yakuhanmp {
+  font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+// YakuHanMPs
+.yakuhanmps {
+  font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
 }
 ```
+
+## Support
+
+| Chrome | Firefox | IE | Ege | Opera | Safari(Mac) |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 5~ | 3.6~ | 6~ | 12~ | 11.5~ | 5.1~ |
+
+| Safari(iOS) | Chrome(Android) | Browser(Android) |
+|:------------:|:------------:|:------------:|
+| 5.1~ | 56~ | 4.4~ |
 
 ## Media
 
-- [YakuHanJPをCDNサービス「jsDelivr」で公開 – Qrac.JP](https://qrac.jp/archives/311)
-- [YakuHanJPを作ったときの話 – Qrac.JP](https://qrac.jp/archives/296)
-- [HTML5 Conference 2016のLT大会に出てしまった – Qrac.JP](https://qrac.jp/archives/279)
 - [HTML5 Conference 2016 LT "Yaku Han JP" by Qrac // Speaker Deck](https://speakerdeck.com/qrac/html5-conference-2016-lt-yaku-han-jp-by-qrac)
-
-## Library
-
-["Noto Sans CJK JP"](https://www.google.com/get/noto/#/) licensed under the SIL Open Font License
 
 ## License
 
-SIL Open Font License
-
-Author: [Qrac](https://twitter.com/Qrac_jp)
+- Yaku Han JP : SIL OFL 1.1
+- Author : [Qrac](https://twitter.com/Qrac_JP)
+- Gothic fonts : Based on ["Noto Sans CJK JP"](https://www.google.com/get/noto/#sans-jpan) licensed under the SIL OFL 1.1
+- Mincho fonts : Based on ["Noto Serif CJK JP"](https://www.google.com/get/noto/#serif-jpan) licensed under the SIL OFL 1.1

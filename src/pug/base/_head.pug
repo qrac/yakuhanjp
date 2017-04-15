@@ -1,0 +1,117 @@
+//----------------------------------------------------
+//- Base: Head
+//----------------------------------------------------
+
+meta(charset="UTF-8")
+title #{page.title} - #{site.title}
+meta(name="description" content=page.desc)
+//-meta(name="robots" content="nofollow")
+meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+//-meta(name="viewport" content="width=1024")
+meta(name="format-detection" content="telephone=no, email=no, address=no")
+meta(http-equiv="x-ua-compatible" content="ie=edge")
+
+//----------------------------------------------------
+//- / facebook
+//----------------------------------------------------
+
+meta(property="og:title" content=page.title)
+meta(property="og:description" content=page.desc)
+meta(property="og:url" content=site.url+"/"+page.url)
+meta(property="og:image" content=site.url+"/"+path.img+"/"+page.ogp)
+meta(property="og:site_name" content=site.title)
+meta(property="og:type" content="website")
+//-meta(property="og:type" content="blog")
+
+//----------------------------------------------------
+//- / Twitter
+//----------------------------------------------------
+
+meta(name="twitter:card" content="summary_large_image")
+//-meta(name="twitter:card" content="summary")
+meta(name="twitter:site" content=twitter.id)
+meta(name="twitter:creator" content=twitter.id)
+meta(name="twitter:title" content=page.title)
+meta(name="twitter:description" content=page.desc)
+meta(name="twitter:image:src" content=site.url+"/"+path.img+"/"+page.ogp)
+
+//----------------------------------------------------
+//- / Icon
+//----------------------------------------------------
+
+link(rel="apple-touch-icon" href=path.img+"/apple-touch-icon.png")
+link(rel="shortcut icon" href=path.img+"/favicon.ico")
+
+//----------------------------------------------------
+//- / CDN - MUSUBii
+//----------------------------------------------------
+
+link(rel="stylesheet" href="https://cdn.jsdelivr.net/musubii/1.2.0/css/musubii.min.css")
+
+//----------------------------------------------------
+//- / CDN - Yaku Han JP
+//----------------------------------------------------
+
+//-link(rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp.min.css")
+//-link(rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp_s.min.css")
+
+//----------------------------------------------------
+//- / CDN - Font Awesome
+//----------------------------------------------------
+
+//-link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+link(rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css")
+
+//----------------------------------------------------
+//- / CDN - Material Icons
+//----------------------------------------------------
+
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+//----------------------------------------------------
+//- / CDN - Google Fonts
+//----------------------------------------------------
+
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900")
+link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:900")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,700")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chango")
+
+//----------------------------------------------------
+//- / CDN - Google Fonts + Japanese Early Access
+//----------------------------------------------------
+
+link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/hannari.css")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/kokoro.css")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nikukyu.css")
+//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nicomoji.css")
+
+//----------------------------------------------------
+//- / Local - IcoMoon
+//----------------------------------------------------
+
+//-link(rel="stylesheet" href=path.font"/IcoMoon/style.css")
+
+//----------------------------------------------------
+//- / Local - Yaku Han JP
+//----------------------------------------------------
+
+link(rel="stylesheet" href="dist/css/yakuhanjp.min.css")
+link(rel="stylesheet" href="dist/css/yakuhanjp_s.min.css")
+
+//----------------------------------------------------
+//- / Local - CSS
+//----------------------------------------------------
+
+link(rel="stylesheet" href=path.css+"/style.min.css")

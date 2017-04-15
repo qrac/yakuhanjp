@@ -1,0 +1,303 @@
+//----------------------------------------------------
+//- Page: Index
+//----------------------------------------------------
+
+extends base/_layout.pug
+
+block vars
+  include base/_config.pug
+  - var key = "index"
+  - var page = pages[key]
+
+block contents
+
+  header.section.is-topcover.is-center
+    .inner
+      .group
+        img.logo.is-title(src=path.img+"/"+"icon-yakuhanjp.svg" alt=page.title)
+      .texts
+        h1.text.is-title #{page.title}
+        h2.text.is-lg #{page.desc}
+      p.texts.is-strong #{github.ver}
+      p.texts
+        i.fa.fa-github(aria-hidden="true")
+        a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo ontouchstart="")
+          span.text Repository
+        | &nbsp;/&nbsp;
+        a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo+"/releases" ontouchstart="")
+          span.text Releases
+      .btns.is-center
+        a.btn.is-lg.is-plain.is-round.is-primary(href=github.url+"/"+github.id+"/"+github.repo+"/archive/master.zip" download=github.repo+"-master.zip" ontouchstart="")
+          i.fa.fa-download(aria-hidden="true")
+          span.text Download
+
+  main.section.is-main
+    .inner
+
+      .groups
+        h3.heading.is-xxl.is-center Example
+
+        .group
+          .grid.is-space-1
+            .col.is-fit
+              ul.tabs.is-xs
+                li.tab.is-switch-font-family.is-switch-gothic.is-active(ontouchstart="") Gothic
+                li.tab.is-switch-font-family.is-switch-mincho(ontouchstart="") Mincho
+            .col.is-fit
+              ul.tabs.is-xs
+                li.tab.is-switch-font-family.is-switch-full.is-active(ontouchstart="") Full
+                li.tab.is-switch-font-family.is-switch-small(ontouchstart="") Small
+            .col.is-fit
+              ul.tabs.is-xs
+                li.tab.is-switch-font-family.is-switch-hiragino.is-active(ontouchstart="") Hiragino
+                li.tab.is-switch-font-family.is-switch-yu(ontouchstart="") Yu
+                li.tab.is-switch-font-family.is-switch-noto(ontouchstart="") Noto
+                li.tab.is-switch-font-family.is-switch-meiryo(ontouchstart="") Meiryo
+            .col.is-fit
+              ul.tabs.is-xs
+                li.tab.is-switch-font-weight.is-switch-w100(ontouchstart="") w100
+                li.tab.is-switch-font-weight.is-switch-w200(ontouchstart="") w200
+                li.tab.is-switch-font-weight.is-switch-w300.is-active(ontouchstart="") w300
+                li.tab.is-switch-font-weight.is-switch-w400(ontouchstart="") w400
+                li.tab.is-switch-font-weight.is-switch-w500(ontouchstart="") w500
+                li.tab.is-switch-font-weight.is-switch-w700(ontouchstart="") w700
+                li.tab.is-switch-font-weight.is-switch-w900(ontouchstart="") w900
+            .col.is-fit
+              ul.tabs.is-xs
+                li.tab.is-switch-font-size.is-switch-xxs(ontouchstart="") 0.625em
+                li.tab.is-switch-font-size.is-switch-xs(ontouchstart="") 0.75em
+                li.tab.is-switch-font-size.is-switch-sm(ontouchstart="") 0.875em
+                li.tab.is-switch-font-size.is-switch-md.is-active(ontouchstart="") 1em
+                li.tab.is-switch-font-size.is-switch-lg(ontouchstart="") 1.25em
+                li.tab.is-switch-font-size.is-switch-xl(ontouchstart="") 1.5em
+                li.tab.is-switch-font-size.is-switch-xxl(ontouchstart="") 2em
+
+        .group
+          .grid
+            .col.is-mobile-6.is-stretch.is-before
+              .inner
+                p.texts.is-before.is-font-sans-hiragino #{example.text01}
+            .col.is-mobile-6.is-stretch.is-after
+              .inner
+                p.texts.is-after.is-font-sans-hiragino-yakuhanjp #{example.text01}
+
+      .groups
+        h3.heading.is-xxl.is-center Include Fonts
+
+        .group
+          .grid
+            .col.is-mobile-6.is-stretch.is-bg-smoke
+              .inner
+                h4.heading
+                  span.text.is-inline-block.is-strong YakuHanJP
+                  | &nbsp;
+                  span.text.is-inline-block.is-strong.is-xxs ゴシック体 All Include（全部入り版）
+                p.texts.is-lg.is-font-sans-yakuhanjp #{example.text02}
+                h4.heading
+                  span.text.is-inline-block.is-strong YakuHanJPs
+                  | &nbsp;
+                  span.text.is-inline-block.is-strong.is-xxs ゴシック体 Small Amount（少量版）
+                p.texts.is-lg.is-font-sans-yakuhanjps #{example.text03}
+            .col.is-mobile-6.is-stretch.is-bg-white
+              .inner
+                h4.heading
+                  span.text.is-inline-block.is-strong YakuHanMP
+                  | &nbsp;
+                  span.text.is-inline-block.is-strong.is-xxs 明朝体 All Include（全部入り版）
+                p.texts.is-lg.is-font-serif-yakuhanmp #{example.text02}
+                h4.heading
+                  span.text.is-inline-block.is-strong YakuHanMPs
+                  | &nbsp;
+                  span.text.is-inline-block.is-strong.is-xxs 明朝体 Small Amount（少量版）
+                p.texts.is-lg.is-font-serif-yakuhanmps #{example.text03}
+
+      .groups
+        h3.heading.is-xxl.is-center How To Use
+
+        .group.is-card
+          .inner
+            h4.heading.is-strong.is-lg
+              span.text CDN
+              span.text （
+              a.text.is-link-reverse.is-primary(href="https://www.jsdelivr.com/projects/yakuhanjp") jsDelivr
+              span.text ）
+            ol.list.is-decimal
+              li.item.is-block
+                pre.pre.is-label.is-html
+                  code.code.
+                    // YakuHanJP
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp.min.css"&gt;
+
+                    // YakuHanJPs
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp_s.min.css"&gt;
+
+                    // YakuHanMP
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp.min.css"&gt;
+
+                    // YakuHanMPs
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp_s.min.css"&gt;
+
+        .group.is-card
+          .inner
+            h4.heading.is-strong.is-lg npm
+            ol.list.is-decimal
+              li.item.is-block
+                pre.pre.is-label.is-command
+                  code.code.
+                    npm install yakuhanjp
+
+        .group.is-card
+          .inner
+            h4.heading.is-strong.is-lg Local
+            ol.list.is-decimal
+              li.item.is-block
+                p.texts
+                  | データを
+                  a.text.is-link-reverse.is-primary(href=github.url+"/"+github.id+"/"+github.repo+"/archive/master.zip" download=github.repo+"-master.zip" ontouchstart="") ダウンロード
+              li.item.is-block
+                p.texts distフォルダ内の「css」「fonts」を制作サイトに配置
+              li.item.is-block
+                p.texts headでCSSを読み込む
+                pre.pre.is-label.is-html
+                  code.code.
+                    // YakuHanJP
+                    &lt;link rel="stylesheet" href="dist/css/yakuhanjp.min.css"&gt;
+
+                    // YakuHanJPs
+                    &lt;link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css"&gt;
+
+                    // YakuHanMP
+                    &lt;link rel="stylesheet" href="dist/css/yakuhanmp.min.css"&gt;
+
+                    // YakuHanMPs
+                    &lt;link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css"&gt;
+              li.item.is-block
+                p.texts CSSでフォントを適応
+                pre.pre.is-label.is-css
+                  code.code.
+                    // YakuHanJP
+                    .yakuhanjp {
+                      font-family: YakuHanJP, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+                    }
+
+                    // YakuHanJPs
+                    .yakuhanjps {
+                      font-family: YakuHanJPs, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+                    }
+
+                    // YakuHanMP
+                    .yakuhanmp {
+                      font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+                    }
+
+                    // YakuHanMPs
+                    .yakuhanmps {
+                      font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+                    }
+
+      .groups
+        h3.heading.is-xxl.is-center Support
+
+        .group.is-card
+          .inner
+            .group
+              .grid.is-space-2
+                .col.is-mobile-12.is-wide-7
+                  .group.is-scroll-x
+                    table.table.is-sm.is-center.is-nowrap.is-middle.is-border
+                      thead
+                        tr.box.is-paint
+                          th
+                            i.fa.fa-chrome(aria-hidden="true")
+                            span.text Chrome
+                          th
+                            i.fa.fa-firefox(aria-hidden="true")
+                            span.text Firefox
+                          th
+                            i.fa.fa-internet-explorer(aria-hidden="true")
+                            span.text IE
+                          th
+                            i.fa.fa-edge(aria-hidden="true")
+                            span.text Ege
+                          th
+                            i.fa.fa-opera(aria-hidden="true")
+                            span.text Opera
+                          th
+                            i.fa.fa-safari(aria-hidden="true")
+                            span.text Safari(Mac)
+                      tbody
+                        tr
+                          td
+                            span.text 5~
+                          td
+                            span.text 3.6~
+                          td
+                            span.text 6~
+                          td
+                            span.text 12~
+                          td
+                            span.text 11.5~
+                          td
+                            span.text 5.1~
+                .col.is-mobile-12.is-wide-5
+                  .group.is-scroll-x
+                    table.table.is-sm.is-center.is-nowrap.is-middle.is-border
+                      thead
+                        tr.box.is-paint
+                          th
+                            i.fa.fa-safari(aria-hidden="true")
+                            span.text Safari(iOS)
+                          th
+                            i.fa.fa-chrome(aria-hidden="true")
+                            span.text Chrome(Android)
+                          th
+                            i.fa.fa-globe(aria-hidden="true")
+                            span.text Browser(Android)
+                      tbody
+                        tr
+                          td
+                            span.text 5.1~
+                          td
+                            span.text 56~
+                          td
+                            span.text 4.4~
+
+      .groups
+        h3.heading.is-xxl.is-center License
+
+        .group.is-card
+          .inner
+            ol.list.is-disc
+              li.item
+                | Yaku Han JP : SIL OFL 1.1
+              li.item
+                | Gothic fonts : Based on&nbsp;
+                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#sans-jpan" ontouchstart="") Noto Sans CJK JP
+                | &nbsp;licensed under the SIL OFL 1.1
+              li.item
+                | Mincho fonts : Based on&nbsp;
+                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#serif-jpan" ontouchstart="") Noto Serif CJK JP
+                | &nbsp;licensed under the SIL OFL 1.1
+
+  footer.section.is-footer
+    .btns.is-center
+      a.btn.is-lg.is-plain.is-round(href=twitter.url+"/"+twitter.id ontouchstart="")
+        i.fa.fa-twitter(aria-hidden="true")
+        span.text Contact
+    p.texts.is-center.is-color-transparent
+      span.text.is-font-sans-noto
+        span.text.is-weight-100 の
+        span.text.is-weight-200 と
+        span.text.is-weight-300 の
+        span.text.is-weight-400 と
+        span.text.is-weight-500 の
+        span.text.is-weight-700 と
+        span.text.is-weight-900 の
+      span.text.is-font-serif-noto
+        span.text.is-weight-100 の
+        span.text.is-weight-200 と
+        span.text.is-weight-300 の
+        span.text.is-weight-400 と
+        span.text.is-weight-500 の
+        span.text.is-weight-700 と
+        span.text.is-weight-900 の

@@ -1,0 +1,309 @@
+//----------------------------------------------------
+/* Yaku Han JP Demo CSS */
+//----------------------------------------------------
+
+@import "variable/_customize";
+@import "variable/_moftone";
+@import "variable/_mdtone";
+@import "variable/_iostone";
+@import "variable/_color";
+@import "variable/_breakpoint";
+@import "variable/_split";
+@import "variable/_font";
+@import "variable/_shadow";
+@import "mixin/_mediaquery";
+@import "mixin/_placeholder";
+
+//----------------------------------------------------
+// MUSUBii Custom CSS
+//----------------------------------------------------
+
+* {
+  &.is-font-sans {
+    font-family: $font-sans;
+  }
+  &.is-font-sans-yakuhanjp {
+    font-family: $font-sans-yakuhanjp;
+  }
+  &.is-font-sans-yakuhanjps {
+    font-family: $font-sans-yakuhanjps;
+  }
+  &.is-font-sans-hiragino {
+    font-family: $font-sans-hiragino;
+  }
+  &.is-font-sans-hiragino-yakuhanjp {
+    font-family: $font-sans-hiragino-yakuhanjp;
+  }
+  &.is-font-sans-hiragino-yakuhanjps {
+    font-family: $font-sans-hiragino-yakuhanjps;
+  }
+  &.is-font-sans-yugo {
+    font-family: $font-sans-yugo;
+  }
+  &.is-font-sans-yugo-yakuhanjp {
+    font-family: $font-sans-yugo-yakuhanjp;
+  }
+  &.is-font-sans-yugo-yakuhanjps {
+    font-family: $font-sans-yugo-yakuhanjps;
+  }
+  &.is-font-sans-noto {
+    font-family: $font-sans-noto;
+  }
+  &.is-font-sans-noto-yakuhanjp {
+    font-family: $font-sans-noto-yakuhanjp;
+  }
+  &.is-font-sans-noto-yakuhanjps {
+    font-family: $font-sans-noto-yakuhanjps;
+  }
+  &.is-font-sans-meiryo {
+    font-family: $font-sans-meiryo;
+  }
+  &.is-font-sans-meiryo-yakuhanjp {
+    font-family: $font-sans-meiryo-yakuhanjp;
+  }
+  &.is-font-sans-meiryo-yakuhanjps {
+    font-family: $font-sans-meiryo-yakuhanjps;
+  }
+  &.is-font-serif {
+    font-family: $font-serif;
+  }
+  &.is-font-serif-yakuhanmp {
+    font-family: $font-serif-yakuhanmp;
+  }
+  &.is-font-serif-yakuhanmps {
+    font-family: $font-serif-yakuhanmps;
+  }
+  &.is-font-serif-hiragino {
+    font-family: $font-serif-hiragino;
+  }
+  &.is-font-serif-hiragino-yakuhanmp {
+    font-family: $font-serif-hiragino-yakuhanmp;
+  }
+  &.is-font-serif-hiragino-yakuhanmps {
+    font-family: $font-serif-hiragino-yakuhanmps;
+  }
+  &.is-font-serif-yumi {
+    font-family: $font-serif-yumi;
+  }
+  &.is-font-serif-yumi-yakuhanmp {
+    font-family: $font-serif-yumi-yakuhanmp;
+  }
+  &.is-font-serif-yumi-yakuhanmps {
+    font-family: $font-serif-yumi-yakuhanmps;
+  }
+  &.is-font-serif-noto {
+    font-family: $font-serif-noto;
+  }
+  &.is-font-serif-noto-yakuhanmp {
+    font-family: $font-serif-noto-yakuhanmp;
+  }
+  &.is-font-serif-noto-yakuhanmps {
+    font-family: $font-serif-noto-yakuhanmps;
+  }
+  &.is-font-serif-meiryo {
+    font-family: $font-serif-meiryo;
+  }
+  &.is-font-serif-meiryo-yakuhanmp {
+    font-family: $font-serif-meiryo-yakuhanmp;
+  }
+  &.is-font-serif-meiryo-yakuhanmps {
+    font-family: $font-serif-meiryo-yakuhanmps;
+  }
+  &.is-weight-100 {
+    font-weight: 100;
+  }
+  &.is-weight-200 {
+    font-weight: 200;
+  }
+  &.is-weight-300 {
+    font-weight: 300;
+  }
+  &.is-weight-400 {
+    font-weight: 400;
+  }
+  &.is-weight-500 {
+    font-weight: 500;
+  }
+  &.is-weight-700 {
+    font-weight: 700;
+  }
+  &.is-weight-900 {
+    font-weight: 900;
+  }
+  &.is-size-xxl {
+    font-size: 200%;
+  }
+  &.is-size-xl {
+    font-size: 150%;
+  }
+  &.is-size-lg {
+    font-size: 125%;
+  }
+  &.is-size-md {
+    font-size: 100%;
+  }
+  &.is-size-sm {
+    font-size: 87.5%;
+  }
+  &.is-size-xs {
+    font-size: 75%;
+  }
+  &.is-size-xxs {
+    font-size: 62.5%;
+  }
+}
+
+* {
+  &.is-color-transparent {
+    color: transparent;
+  }
+}
+
+.col.is-fit {
+  flex: 1 1 auto;
+}
+
+.list > .item.is-block + .item.is-block {
+  margin-top: 1em;
+}
+
+.list {
+  @include desktop {
+    margin-right: 1.5em;
+  }
+}
+
+.table .box.is-paint,
+.table .box.is-paint-5 {
+  background: $dark-2;
+}
+
+.pre {
+  border-radius: 0;
+  &.is-label:before {
+    border-radius: 0;
+  }
+}
+
+.table {
+  border-radius: 0;
+  &:not(.is-line) > thead > tr:first-child > :first-child,
+  &:not(.is-line) > thead > tr:first-child > :last-child,
+  &:not(.is-line) > :last-child > tr:last-child> :first-child,
+  &:not(.is-line) > :last-child > tr:last-child > :last-child {
+    border-radius: 0;
+  }
+}
+
+//----------------------------------------------------
+// Project CSS
+//----------------------------------------------------
+
+.yakuhanjp.yakuhanjp-demo {
+  background: linear-gradient(90deg, #ddd 50%, #F2F2F2 50%);
+}
+
+.section.is-topcover {
+  padding: 100px 0 70px;
+}
+
+.section.is-footer {
+  padding: 40px 0;
+}
+
+.logo.is-title {
+  width: 100px;
+}
+
+.text.is-title {
+  font-size: 3em;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  line-height: 1.25;
+}
+
+.grid > .col {
+  &.is-bg-smoke {
+    background-color: $grey-100;
+  }
+  &.is-bg-white {
+    background-color: $light;
+  }
+  &.is-before {
+    position: relative;
+    background-color: $grey-100;
+    &:before {
+      content: "Before";
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 3px 7px;
+      background-color: $dark-3;
+      color: $light;
+      font-size: 62.5%;
+    }
+  }
+  &.is-after {
+    position: relative;
+    background-color: $light;
+    &:after {
+      content: "After";
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 3px 7px;
+      background-color: $dark-3;
+      color: $light;
+      font-size: 62.5%;
+    }
+  }
+  > .inner {
+    padding: 1.25em;
+  }
+}
+
+.group.is-card {
+  background-color: $light;
+  > .inner {
+    padding: 1.25em;
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab {
+  display: flex;
+  flex: 1 0 0%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25em 1.75em;
+  background-color: $grey-50;
+  transition: ease 0.2s;
+  &:not(.is-active) {
+    cursor: pointer;
+  }
+  &:not(.is-active):not(.is-disable):hover,
+  &:not(.is-active):not(.is-disable):active {
+    color: $cyan-500;
+  }
+  &.is-active {
+    font-weight: 700;
+  }
+  &.is-active:not(.is-disable) {
+    color: $cyan-500;
+  }
+  &.is-disable {
+    color: $red-600;
+    text-decoration: line-through;
+  }
+}
+
+.texts {
+  &.is-before,
+  &.is-after {
+    transition: ease 0.2s;
+  }
+}
