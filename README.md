@@ -51,18 +51,30 @@
 
 ### CDN （ [jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp) ）
 
+※jsDelivrにv2.0.0を[申請中](https://github.com/jsdelivr/jsdelivr/pull/17602)です。現在はv1.3.1（明朝体が無い）までしか本番利用には使えません。
+
 ```
 // YakuHanJP
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.1/css/yakuhanjp.min.css">
 
 // YakuHanJPs
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp_s.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/1.3.1/css/yakuhanjp_s.min.css">
+```
 
-// YakuHanMP
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp.min.css">
+※RawGitでv2.0.0のテストが可能です。[個人運用サービスなので](https://github.com/rgrove/rawgit/blob/master/FAQ.md#beta)本番利用には適しません。
 
-// YakuHanMPs
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp_s.min.css">
+```
+// YakuHanJP (TEST)
+<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/2.0.0/dist/css/yakuhanjp.min.css">
+
+// YakuHanJPs (TEST)
+<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/2.0.0/dist/css/yakuhanjp_s.min.css">
+
+// YakuHanMP (TEST)
+<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/2.0.0/dist/css/yakuhanmp.min.css">
+
+// YakuHanMPs (TEST)
+<link rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/2.0.0/dist/css/yakuhanmp_s.min.css">
 ```
 
 ### npm
