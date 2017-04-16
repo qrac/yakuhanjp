@@ -1,0 +1,3538 @@
+{
+.appVersion = "983";
+copyright = "Copyright © 2014, 2015 Adobe Systems Incorporated (http://www.adobe.com/).";
+customParameters = (
+{
+name = description;
+value = "Dr. Ken Lunde (project architect, glyph set definition & overall production); Masataka HATTORI 服部正貴 (production & ideograph elements)";
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+},
+{
+name = licenseURL;
+value = "http://scripts.sil.org/OFL";
+},
+{
+name = vendorID;
+value = GOOG;
+},
+{
+name = panose;
+value = (
+2,
+11,
+8,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+);
+},
+{
+name = unicodeRanges;
+value = (
+0,
+1,
+28,
+29,
+36,
+42,
+43,
+44,
+45,
+48,
+49,
+50,
+51,
+52,
+54,
+55,
+56,
+57,
+59,
+61,
+65,
+66,
+68
+);
+},
+{
+name = codePageRanges;
+value = (
+1252,
+1250,
+1251,
+1258,
+932,
+936,
+949,
+1361
+);
+},
+{
+name = ROS;
+value = "Adobe, Identity, 0";
+},
+{
+name = glyphOrder;
+value = (
+.notdef,
+space
+);
+}
+);
+date = "2015-06-15 05:08:03 +0000";
+designer = "Ryoko NISHIZUKA 西塚涼子 (kana & ideographs); Paul D. Hunt (Latin, Greek & Cyrillic); Wenlong ZHANG 张文龙 (bopomofo); Sandoll Communication 산돌커뮤니케이션, Soo-young JANG 장수영 & Joo-yeon KANG 강주연 (hangul elements, letters & syllables)";
+designerURL = "http://www.adobe.com/type/";
+familyName = "Yaku Han JP s";
+fontMaster = (
+{
+alignmentZones = (
+"{1900, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{1100, 0}",
+"{743, 12}",
+"{743, 12}",
+"{743, 12}",
+"{743, 0}",
+"{740, 14}",
+"{740, 14}",
+"{724, 14}",
+"{724, 14}",
+"{562, 13}",
+"{562, 13}",
+"{561, 0}",
+"{560, 14}",
+"{0, 0}",
+"{0, -12}",
+"{0, -12}",
+"{0, -14}",
+"{0, -14}",
+"{0, -14}",
+"{0, -14}",
+"{-197, -12}",
+"{-215, -14}",
+"{-215, -15}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-250, 0}",
+"{-1100, 0}"
+);
+ascender = 880;
+capHeight = 733;
+customParameters = (
+{
+name = typoAscender;
+value = 880;
+},
+{
+name = typoDescender;
+value = -120;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = winAscent;
+value = 1160;
+},
+{
+name = winDescent;
+value = 320;
+},
+{
+name = hheaAscender;
+value = 1160;
+},
+{
+name = hheaDescender;
+value = -320;
+},
+{
+name = underlinePosition;
+value = -150;
+}
+);
+descender = -120;
+horizontalStems = (
+114,
+138,
+115,
+124,
+154,
+84,
+113,
+124,
+37,
+91,
+117,
+112,
+142,
+161,
+40,
+120,
+44,
+99,
+75,
+94,
+105,
+108,
+125,
+137,
+86,
+113,
+133,
+86,
+113,
+133,
+112,
+124,
+96,
+107,
+122,
+69,
+95,
+121,
+62,
+94,
+119,
+91,
+119,
+146,
+86,
+174,
+191,
+103,
+118,
+132,
+62,
+92,
+117
+);
+id = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+verticalStems = (
+139,
+148,
+124,
+134,
+154,
+85,
+116,
+127,
+37,
+91,
+117,
+118,
+146,
+176,
+40,
+120,
+44,
+88,
+81,
+106,
+118,
+72,
+84,
+99,
+109,
+137,
+148,
+109,
+137,
+148,
+134,
+147,
+99,
+125,
+151,
+78,
+104,
+130,
+62,
+102,
+125,
+96,
+138,
+152,
+99,
+131,
+184,
+120,
+134,
+147,
+64,
+97,
+122
+);
+weight = Bold;
+weightValue = 700;
+widthValue = 5;
+xHeight = 543;
+}
+);
+glyphs = (
+{
+glyphname = .notdef;
+lastChange = "2017-04-15 13:02:00 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"100 -120 LINE",
+"900 -120 LINE",
+"900 880 LINE",
+"100 880 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"500 421 LINE",
+"182 830 LINE",
+"818 830 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"532 380 LINE",
+"850 789 LINE",
+"850 -29 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"182 -70 LINE",
+"500 339 LINE",
+"818 -70 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"150 789 LINE",
+"468 380 LINE",
+"150 -29 LINE"
+);
+}
+);
+width = 1000;
+}
+);
+note = .notdef;
+},
+{
+glyphname = space;
+lastChange = "2017-04-15 13:02:00 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+width = 220;
+}
+);
+note = cid00001;
+unicode = 0020;
+},
+{
+glyphname = ellipsis;
+lastChange = "2017-04-15 13:02:00 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"86 335 OFFCURVE",
+"122 299 OFFCURVE",
+"167 299 CURVE SMOOTH",
+"212 299 OFFCURVE",
+"248 335 OFFCURVE",
+"248 380 CURVE SMOOTH",
+"248 425 OFFCURVE",
+"212 461 OFFCURVE",
+"167 461 CURVE SMOOTH",
+"122 461 OFFCURVE",
+"86 425 OFFCURVE",
+"86 380 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"419 335 OFFCURVE",
+"455 299 OFFCURVE",
+"500 299 CURVE SMOOTH",
+"545 299 OFFCURVE",
+"581 335 OFFCURVE",
+"581 380 CURVE SMOOTH",
+"581 425 OFFCURVE",
+"545 461 OFFCURVE",
+"500 461 CURVE SMOOTH",
+"455 461 OFFCURVE",
+"419 425 OFFCURVE",
+"419 380 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"752 335 OFFCURVE",
+"788 299 OFFCURVE",
+"833 299 CURVE SMOOTH",
+"878 299 OFFCURVE",
+"914 335 OFFCURVE",
+"914 380 CURVE SMOOTH",
+"914 425 OFFCURVE",
+"878 461 OFFCURVE",
+"833 461 CURVE SMOOTH",
+"788 461 OFFCURVE",
+"752 425 OFFCURVE",
+"752 380 CURVE SMOOTH"
+);
+}
+);
+width = 1000;
+}
+);
+note = cid00728;
+unicode = 2026;
+},
+{
+glyphname = anglebracketleft;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"325 380 LINE",
+"586 809 LINE",
+"487 852 LINE",
+"200 380 LINE",
+"487 -92 LINE",
+"586 -49 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 616;
+}
+);
+note = cid01397;
+unicode = 3008;
+},
+{
+glyphname = anglebracketright;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"129 -92 LINE",
+"416 380 LINE",
+"129 852 LINE",
+"30 809 LINE",
+"291 380 LINE",
+"30 -49 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 616;
+}
+);
+note = cid01398;
+unicode = 3009;
+},
+{
+glyphname = blacklenticularbracketleft;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"200 852 LINE",
+"200 -92 LINE",
+"512 -92 LINE",
+"512 -87 LINE",
+"403 7 OFFCURVE",
+"314 175 OFFCURVE",
+"314 380 CURVE SMOOTH",
+"314 585 OFFCURVE",
+"403 753 OFFCURVE",
+"512 847 CURVE",
+"512 852 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 542;
+}
+);
+note = cid01405;
+unicode = 3010;
+},
+{
+glyphname = blacklenticularbracketright;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"342 852 LINE",
+"30 852 LINE",
+"30 847 LINE",
+"139 753 OFFCURVE",
+"228 585 OFFCURVE",
+"228 380 CURVE SMOOTH",
+"228 175 OFFCURVE",
+"139 7 OFFCURVE",
+"30 -87 CURVE",
+"30 -92 LINE",
+"342 -92 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 542;
+}
+);
+note = cid01406;
+unicode = 3011;
+},
+{
+glyphname = braceleft.full;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"486 -96 LINE",
+"486 -19 LINE",
+"456 -19 LINE SMOOTH",
+"405 -19 OFFCURVE",
+"392 1 OFFCURVE",
+"392 66 CURVE SMOOTH",
+"392 127 OFFCURVE",
+"397 182 OFFCURVE",
+"397 251 CURVE SMOOTH",
+"397 332 OFFCURVE",
+"372 365 OFFCURVE",
+"318 378 CURVE",
+"318 382 LINE",
+"372 396 OFFCURVE",
+"397 429 OFFCURVE",
+"397 509 CURVE SMOOTH",
+"397 579 OFFCURVE",
+"392 634 OFFCURVE",
+"392 695 CURVE SMOOTH",
+"392 760 OFFCURVE",
+"405 780 OFFCURVE",
+"456 780 CURVE SMOOTH",
+"486 780 LINE",
+"486 856 LINE",
+"422 856 LINE SMOOTH",
+"328 856 OFFCURVE",
+"284 819 OFFCURVE",
+"284 701 CURVE SMOOTH",
+"284 623 OFFCURVE",
+"294 577 OFFCURVE",
+"294 505 CURVE SMOOTH",
+"294 465 OFFCURVE",
+"272 424 OFFCURVE",
+"200 422 CURVE",
+"200 339 LINE",
+"272 337 OFFCURVE",
+"294 295 OFFCURVE",
+"294 255 CURVE SMOOTH",
+"294 184 OFFCURVE",
+"284 138 OFFCURVE",
+"284 59 CURVE SMOOTH",
+"284 -59 OFFCURVE",
+"328 -96 OFFCURVE",
+"422 -96 CURVE SMOOTH"
+);
+}
+);
+vertWidth = 1000;
+width = 516;
+}
+);
+note = cid59082;
+unicode = FF5B;
+},
+{
+glyphname = braceright.full;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"94 -96 LINE SMOOTH",
+"188 -96 OFFCURVE",
+"232 -59 OFFCURVE",
+"232 59 CURVE SMOOTH",
+"232 138 OFFCURVE",
+"222 184 OFFCURVE",
+"222 255 CURVE SMOOTH",
+"222 295 OFFCURVE",
+"244 337 OFFCURVE",
+"316 339 CURVE",
+"316 422 LINE",
+"244 424 OFFCURVE",
+"222 465 OFFCURVE",
+"222 505 CURVE SMOOTH",
+"222 577 OFFCURVE",
+"232 623 OFFCURVE",
+"232 701 CURVE SMOOTH",
+"232 819 OFFCURVE",
+"188 856 OFFCURVE",
+"94 856 CURVE SMOOTH",
+"30 856 LINE",
+"30 780 LINE",
+"60 780 LINE SMOOTH",
+"111 780 OFFCURVE",
+"124 760 OFFCURVE",
+"124 695 CURVE SMOOTH",
+"124 634 OFFCURVE",
+"119 579 OFFCURVE",
+"119 509 CURVE SMOOTH",
+"119 429 OFFCURVE",
+"144 396 OFFCURVE",
+"198 382 CURVE",
+"198 378 LINE",
+"144 365 OFFCURVE",
+"119 332 OFFCURVE",
+"119 251 CURVE SMOOTH",
+"119 182 OFFCURVE",
+"124 127 OFFCURVE",
+"124 66 CURVE SMOOTH",
+"124 1 OFFCURVE",
+"111 -19 OFFCURVE",
+"60 -19 CURVE SMOOTH",
+"30 -19 LINE",
+"30 -96 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 516;
+}
+);
+note = cid59084;
+unicode = FF5D;
+},
+{
+glyphname = cornerbracketleft;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"200 213 LINE",
+"318 213 LINE",
+"318 744 LINE",
+"531 744 LINE",
+"531 852 LINE",
+"200 852 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 561;
+}
+);
+note = cid01401;
+unicode = 300C;
+},
+{
+glyphname = cornerbracketright;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"362 547 LINE",
+"243 547 LINE",
+"243 16 LINE",
+"30 16 LINE",
+"30 -92 LINE",
+"362 -92 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 562;
+}
+);
+note = cid01402;
+unicode = 300D;
+},
+{
+glyphname = dblanglebracketleft;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"293 380 LINE",
+"482 826 LINE",
+"399 852 LINE",
+"200 380 LINE",
+"399 -92 LINE",
+"482 -66 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"465 380 LINE",
+"655 826 LINE",
+"571 852 LINE",
+"373 380 LINE",
+"571 -92 LINE",
+"655 -66 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 685;
+}
+);
+note = cid01399;
+unicode = 300A;
+},
+{
+glyphname = dblanglebracketright;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"286 -92 LINE",
+"485 380 LINE",
+"286 852 LINE",
+"203 826 LINE",
+"392 380 LINE",
+"203 -66 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"114 -92 LINE",
+"312 380 LINE",
+"114 852 LINE",
+"30 826 LINE",
+"220 380 LINE",
+"30 -66 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 685;
+}
+);
+note = cid01400;
+unicode = 300B;
+},
+{
+glyphname = tortoiseshellbracketleft;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"434 -104 LINE",
+"482 -25 LINE",
+"310 85 LINE",
+"310 675 LINE",
+"482 785 LINE",
+"434 864 LINE",
+"200 714 LINE",
+"200 46 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 512;
+}
+);
+note = cid01409;
+unicode = 3014;
+},
+{
+glyphname = tortoiseshellbracketright;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"312 46 LINE",
+"312 714 LINE",
+"78 864 LINE",
+"30 785 LINE",
+"202 675 LINE",
+"202 85 LINE",
+"30 -25 LINE",
+"78 -104 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 512;
+}
+);
+note = cid01410;
+unicode = 3015;
+},
+{
+glyphname = whitecornerbracketleft;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"572 674 LINE",
+"572 852 LINE",
+"200 852 LINE",
+"200 191 LINE",
+"392 191 LINE",
+"392 674 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"528 808 LINE",
+"528 718 LINE",
+"349 718 LINE",
+"349 235 LINE",
+"244 235 LINE",
+"244 808 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 602;
+}
+);
+note = cid01403;
+unicode = 300E;
+},
+{
+glyphname = whitecornerbracketright;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"30 86 LINE",
+"30 -92 LINE",
+"402 -92 LINE",
+"402 569 LINE",
+"210 569 LINE",
+"210 86 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"74 -48 LINE",
+"74 42 LINE",
+"253 42 LINE",
+"253 525 LINE",
+"358 525 LINE",
+"358 -48 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 602;
+}
+);
+note = cid01404;
+unicode = 300F;
+},
+{
+glyphname = whitelenticularbracketleft;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"543 -75 LINE",
+"385 -1 OFFCURVE",
+"280 156 OFFCURVE",
+"280 380 CURVE SMOOTH",
+"280 604 OFFCURVE",
+"385 761 OFFCURVE",
+"543 835 CURVE",
+"543 852 LINE",
+"200 852 LINE",
+"200 -92 LINE",
+"543 -92 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"225 -67 LINE",
+"225 827 LINE",
+"477 827 LINE",
+"382 768 OFFCURVE",
+"255 636 OFFCURVE",
+"255 380 CURVE SMOOTH",
+"255 124 OFFCURVE",
+"382 -8 OFFCURVE",
+"477 -67 CURVE"
+);
+}
+);
+vertWidth = 1000;
+width = 573;
+}
+);
+note = cid01411;
+unicode = 3016;
+},
+{
+glyphname = whitelenticularbracketright;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"30 -92 LINE",
+"373 -92 LINE",
+"373 852 LINE",
+"30 852 LINE",
+"30 835 LINE",
+"188 761 OFFCURVE",
+"293 604 OFFCURVE",
+"293 380 CURVE SMOOTH",
+"293 156 OFFCURVE",
+"188 -1 OFFCURVE",
+"30 -75 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"96 -67 LINE",
+"191 -8 OFFCURVE",
+"318 124 OFFCURVE",
+"318 380 CURVE SMOOTH",
+"318 636 OFFCURVE",
+"191 768 OFFCURVE",
+"96 827 CURVE",
+"348 827 LINE",
+"348 -67 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 573;
+}
+);
+note = cid01412;
+unicode = 3017;
+},
+{
+glyphname = bracketleft.full;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"200 -92 LINE",
+"459 -92 LINE",
+"459 -13 LINE",
+"310 -13 LINE",
+"310 773 LINE",
+"459 773 LINE",
+"459 852 LINE",
+"200 852 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 489;
+}
+);
+note = cid59050;
+unicode = FF3B;
+},
+{
+glyphname = bracketright.full;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"289 852 LINE",
+"30 852 LINE",
+"30 773 LINE",
+"179 773 LINE",
+"179 -13 LINE",
+"30 -13 LINE",
+"30 -92 LINE",
+"289 -92 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 489;
+}
+);
+note = cid59052;
+unicode = FF3D;
+},
+{
+glyphname = parenleft.full;
+lastChange = "2017-04-16 02:31:13 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"492 -58 LINE",
+"392 50 OFFCURVE",
+"313 188 OFFCURVE",
+"313 380 CURVE SMOOTH",
+"313 572 OFFCURVE",
+"392 710 OFFCURVE",
+"492 818 CURVE",
+"397 860 LINE",
+"289 754 OFFCURVE",
+"200 594 OFFCURVE",
+"200 380 CURVE SMOOTH",
+"200 166 OFFCURVE",
+"289 6 OFFCURVE",
+"397 -100 CURVE"
+);
+}
+);
+vertWidth = 1000;
+width = 522;
+}
+);
+note = cid58999;
+unicode = FF08;
+},
+{
+glyphname = parenright.full;
+lastChange = "2017-04-16 02:31:23 +0000";
+layers = (
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"30 818 LINE",
+"130 710 OFFCURVE",
+"209 572 OFFCURVE",
+"209 380 CURVE SMOOTH",
+"209 188 OFFCURVE",
+"130 50 OFFCURVE",
+"30 -58 CURVE",
+"125 -100 LINE",
+"233 6 OFFCURVE",
+"322 166 OFFCURVE",
+"322 380 CURVE SMOOTH",
+"322 594 OFFCURVE",
+"233 754 OFFCURVE",
+"125 860 CURVE"
+);
+}
+);
+vertWidth = 1000;
+width = 522;
+}
+);
+note = cid59000;
+unicode = FF09;
+}
+);
+instances = (
+{
+instanceInterpolations = {
+"6EA7E964-4722-40CD-99E1-83E165A55AF5" = 1;
+};
+name = Bold;
+}
+);
+kerning = {
+"6EA7E964-4722-40CD-99E1-83E165A55AF5" = {
+"@MMK_L_cid00002" = {
+"@MMK_R_cid00719" = -53;
+};
+"@MMK_L_cid00003" = {
+"@MMK_R_cid00013" = -145;
+"@MMK_R_cid00034" = -77;
+"@MMK_R_cid00043" = -123;
+"@MMK_R_cid00052" = -12;
+"@MMK_R_cid00057" = -12;
+"@MMK_R_cid00068" = -22;
+"@MMK_R_cid00084" = -23;
+"@MMK_R_cid00251" = -77;
+"@MMK_R_cid00254" = -77;
+"@MMK_R_cid00271" = -30;
+"@MMK_R_cid00272" = -12;
+"@MMK_R_cid00275" = -22;
+"@MMK_R_cid00289" = -22;
+"@MMK_R_cid00300" = -77;
+"@MMK_R_cid00304" = -91;
+"@MMK_R_cid00311" = -107;
+"@MMK_R_cid00319" = 3;
+"@MMK_R_cid00320" = -30;
+"@MMK_R_cid00321" = -12;
+"@MMK_R_cid00336" = -45;
+"@MMK_R_cid00337" = -22;
+"@MMK_R_cid00343" = -61;
+"@MMK_R_cid00363" = -30;
+};
+"@MMK_L_cid00009" = {
+"@MMK_R_cid00043" = -23;
+"@MMK_R_cid00075" = 91;
+"@MMK_R_cid00304" = 23;
+"@MMK_R_cid00306" = 7;
+"@MMK_R_cid00319" = 7;
+"@MMK_R_cid00336" = 23;
+};
+"@MMK_L_cid00013" = {
+"@MMK_R_cid00003" = -135;
+"@MMK_R_cid00011" = -182;
+"@MMK_R_cid00053" = -113;
+"@MMK_R_cid00054" = -29;
+"@MMK_R_cid00055" = -83;
+"@MMK_R_cid00056" = -42;
+"@MMK_R_cid00058" = -121;
+"@MMK_R_cid00068" = -12;
+"@MMK_R_cid00075" = 38;
+"@MMK_R_cid00085" = -67;
+"@MMK_R_cid00087" = -61;
+"@MMK_R_cid00088" = -36;
+"@MMK_R_cid00090" = -23;
+"@MMK_R_cid00269" = -113;
+"@MMK_R_cid00270" = -121;
+"@MMK_R_cid00271" = -61;
+"@MMK_R_cid00273" = -110;
+"@MMK_R_cid00275" = -12;
+"@MMK_R_cid00289" = -12;
+"@MMK_R_cid00293" = -67;
+"@MMK_R_cid00304" = 45;
+"@MMK_R_cid00311" = 45;
+"@MMK_R_cid00318" = -113;
+"@MMK_R_cid00319" = -23;
+"@MMK_R_cid00320" = -61;
+"@MMK_R_cid00323" = -77;
+"@MMK_R_cid00336" = 45;
+"@MMK_R_cid00337" = -12;
+"@MMK_R_cid00343" = 30;
+"@MMK_R_cid00350" = -67;
+"@MMK_R_cid00351" = -23;
+"@MMK_R_cid00355" = -54;
+"@MMK_R_cid00718" = -129;
+"@MMK_R_cid00719" = -151;
+};
+"@MMK_L_cid00014" = {
+"@MMK_R_cid00043" = -23;
+"@MMK_R_cid00052" = -28;
+"@MMK_R_cid00053" = -61;
+"@MMK_R_cid00055" = -22;
+"@MMK_R_cid00056" = -12;
+"@MMK_R_cid00057" = -39;
+"@MMK_R_cid00058" = -83;
+"@MMK_R_cid00059" = -23;
+"@MMK_R_cid00085" = -26;
+"@MMK_R_cid00087" = -16;
+"@MMK_R_cid00089" = -19;
+"@MMK_R_cid00254" = -16;
+"@MMK_R_cid00256" = -23;
+"@MMK_R_cid00264" = -39;
+"@MMK_R_cid00268" = -39;
+"@MMK_R_cid00269" = -61;
+"@MMK_R_cid00270" = -83;
+"@MMK_R_cid00271" = 3;
+"@MMK_R_cid00272" = -39;
+"@MMK_R_cid00273" = -45;
+"@MMK_R_cid00274" = -8;
+"@MMK_R_cid00293" = -26;
+"@MMK_R_cid00296" = -19;
+"@MMK_R_cid00304" = -22;
+"@MMK_R_cid00306" = -39;
+"@MMK_R_cid00307" = -23;
+"@MMK_R_cid00311" = -22;
+"@MMK_R_cid00318" = -61;
+"@MMK_R_cid00319" = -39;
+"@MMK_R_cid00320" = 3;
+"@MMK_R_cid00321" = -39;
+"@MMK_R_cid00323" = -23;
+"@MMK_R_cid00331" = -31;
+"@MMK_R_cid00336" = -12;
+"@MMK_R_cid00338" = -31;
+"@MMK_R_cid00339" = -35;
+"@MMK_R_cid00343" = -12;
+"@MMK_R_cid00350" = -26;
+"@MMK_R_cid00353" = -19;
+"@MMK_R_cid00361" = -31;
+"@MMK_R_cid00363" = -12;
+};
+"@MMK_L_cid00016" = {
+"@MMK_R_cid00034" = -45;
+"@MMK_R_cid00036" = -12;
+"@MMK_R_cid00043" = -91;
+"@MMK_R_cid00066" = -31;
+"@MMK_R_cid00068" = -23;
+"@MMK_R_cid00072" = -12;
+"@MMK_R_cid00074" = 14;
+"@MMK_R_cid00075" = 14;
+"@MMK_R_cid00086" = -23;
+"@MMK_R_cid00251" = -45;
+"@MMK_R_cid00258" = -12;
+"@MMK_R_cid00275" = -23;
+"@MMK_R_cid00289" = -23;
+"@MMK_R_cid00300" = -45;
+"@MMK_R_cid00314" = -12;
+"@MMK_R_cid00332" = -31;
+"@MMK_R_cid00337" = -23;
+};
+"@MMK_L_cid00027" = {
+"@MMK_R_cid00011" = -39;
+"@MMK_R_cid00058" = -38;
+"@MMK_R_cid00075" = 5;
+"@MMK_R_cid00270" = -38;
+"@MMK_R_cid00304" = 45;
+"@MMK_R_cid00311" = 32;
+"@MMK_R_cid00336" = 30;
+"@MMK_R_cid00343" = 30;
+};
+"@MMK_L_cid00032" = {
+"@MMK_R_cid00719" = -35;
+};
+"@MMK_L_cid00034" = {
+"@MMK_R_cid00003" = -77;
+"@MMK_R_cid00011" = -98;
+"@MMK_R_cid00032" = -38;
+"@MMK_R_cid00034" = -3;
+"@MMK_R_cid00036" = -12;
+"@MMK_R_cid00053" = -77;
+"@MMK_R_cid00054" = -14;
+"@MMK_R_cid00055" = -19;
+"@MMK_R_cid00057" = -4;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00059" = -4;
+"@MMK_R_cid00061" = -45;
+"@MMK_R_cid00066" = 19;
+"@MMK_R_cid00071" = -12;
+"@MMK_R_cid00084" = 19;
+"@MMK_R_cid00085" = -19;
+"@MMK_R_cid00086" = -3;
+"@MMK_R_cid00087" = -16;
+"@MMK_R_cid00088" = -8;
+"@MMK_R_cid00089" = -8;
+"@MMK_R_cid00090" = -16;
+"@MMK_R_cid00109" = -103;
+"@MMK_R_cid00118" = -31;
+"@MMK_R_cid00718" = -89;
+"@MMK_R_cid00719" = -66;
+"@MMK_R_cid00755" = -76;
+};
+"@MMK_L_cid00035" = {
+"@MMK_R_cid00011" = -34;
+"@MMK_R_cid00043" = -21;
+"@MMK_R_cid00052" = -19;
+"@MMK_R_cid00053" = -31;
+"@MMK_R_cid00055" = -12;
+"@MMK_R_cid00056" = -8;
+"@MMK_R_cid00057" = -8;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00059" = -8;
+"@MMK_R_cid00085" = -12;
+"@MMK_R_cid00087" = -19;
+"@MMK_R_cid00088" = -12;
+"@MMK_R_cid00089" = -12;
+"@MMK_R_cid00090" = -19;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00718" = -19;
+"@MMK_R_cid00719" = -23;
+"@MMK_R_cid00755" = -23;
+};
+"@MMK_L_cid00036" = {
+"@MMK_R_cid00014" = -38;
+"@MMK_R_cid00036" = -39;
+"@MMK_R_cid00043" = -12;
+"@MMK_R_cid00052" = -31;
+"@MMK_R_cid00053" = -16;
+"@MMK_R_cid00054" = -19;
+"@MMK_R_cid00055" = -8;
+"@MMK_R_cid00056" = -8;
+"@MMK_R_cid00057" = -8;
+"@MMK_R_cid00058" = -16;
+"@MMK_R_cid00059" = -12;
+"@MMK_R_cid00072" = -23;
+"@MMK_R_cid00085" = -39;
+"@MMK_R_cid00086" = -12;
+"@MMK_R_cid00087" = -19;
+"@MMK_R_cid00088" = -12;
+"@MMK_R_cid00090" = -19;
+"@MMK_R_cid00106" = -19;
+"@MMK_R_cid00118" = -76;
+"@MMK_R_cid00755" = 19;
+};
+"@MMK_L_cid00037" = {
+"@MMK_R_cid00011" = -30;
+"@MMK_R_cid00016" = -16;
+"@MMK_R_cid00034" = -12;
+"@MMK_R_cid00043" = -57;
+"@MMK_R_cid00053" = -31;
+"@MMK_R_cid00055" = -12;
+"@MMK_R_cid00056" = -3;
+"@MMK_R_cid00057" = -28;
+"@MMK_R_cid00058" = -23;
+"@MMK_R_cid00059" = -23;
+"@MMK_R_cid00089" = -19;
+"@MMK_R_cid00091" = -16;
+"@MMK_R_cid00109" = 3;
+"@MMK_R_cid00755" = -38;
+};
+"@MMK_L_cid00038" = {
+"@MMK_R_cid00068" = -12;
+"@MMK_R_cid00085" = -31;
+"@MMK_R_cid00087" = -12;
+"@MMK_R_cid00089" = -46;
+"@MMK_R_cid00090" = -12;
+};
+"@MMK_L_cid00039" = {
+"@MMK_R_cid00013" = -99;
+"@MMK_R_cid00016" = -61;
+"@MMK_R_cid00034" = -44;
+"@MMK_R_cid00036" = -12;
+"@MMK_R_cid00043" = -153;
+"@MMK_R_cid00052" = -29;
+"@MMK_R_cid00055" = -4;
+"@MMK_R_cid00056" = -4;
+"@MMK_R_cid00057" = -31;
+"@MMK_R_cid00058" = -11;
+"@MMK_R_cid00059" = -34;
+"@MMK_R_cid00066" = -42;
+"@MMK_R_cid00068" = -19;
+"@MMK_R_cid00072" = -31;
+"@MMK_R_cid00078" = -23;
+"@MMK_R_cid00084" = -29;
+"@MMK_R_cid00085" = -12;
+"@MMK_R_cid00086" = -21;
+"@MMK_R_cid00087" = -35;
+"@MMK_R_cid00088" = -27;
+"@MMK_R_cid00089" = -38;
+"@MMK_R_cid00090" = -27;
+"@MMK_R_cid00091" = -52;
+"@MMK_R_cid00106" = -23;
+"@MMK_R_cid00109" = 11;
+"@MMK_R_cid00118" = -19;
+"@MMK_R_cid00755" = 20;
+};
+"@MMK_L_cid00040" = {
+"@MMK_R_cid00011" = -27;
+"@MMK_R_cid00034" = -8;
+"@MMK_R_cid00053" = -23;
+"@MMK_R_cid00055" = -19;
+"@MMK_R_cid00056" = -8;
+"@MMK_R_cid00109" = -8;
+"@MMK_R_cid00755" = -6;
+};
+"@MMK_L_cid00043" = {
+"@MMK_R_cid00013" = -31;
+"@MMK_R_cid00043" = -45;
+};
+"@MMK_L_cid00044" = {
+"@MMK_R_cid00003" = -35;
+"@MMK_R_cid00011" = -45;
+"@MMK_R_cid00014" = -52;
+"@MMK_R_cid00032" = -16;
+"@MMK_R_cid00034" = -12;
+"@MMK_R_cid00036" = -29;
+"@MMK_R_cid00052" = -19;
+"@MMK_R_cid00053" = -28;
+"@MMK_R_cid00054" = -19;
+"@MMK_R_cid00055" = -19;
+"@MMK_R_cid00056" = -12;
+"@MMK_R_cid00058" = -27;
+"@MMK_R_cid00068" = -16;
+"@MMK_R_cid00075" = -12;
+"@MMK_R_cid00085" = -54;
+"@MMK_R_cid00086" = -14;
+"@MMK_R_cid00087" = -35;
+"@MMK_R_cid00088" = -27;
+"@MMK_R_cid00089" = -27;
+"@MMK_R_cid00090" = -35;
+"@MMK_R_cid00091" = -19;
+"@MMK_R_cid00106" = -12;
+"@MMK_R_cid00109" = -23;
+"@MMK_R_cid00118" = -61;
+"@MMK_R_cid00122" = -8;
+"@MMK_R_cid00718" = -45;
+"@MMK_R_cid00719" = -45;
+};
+"@MMK_L_cid00045" = {
+"@MMK_R_cid00003" = -143;
+"@MMK_R_cid00011" = -189;
+"@MMK_R_cid00014" = -53;
+"@MMK_R_cid00032" = -53;
+"@MMK_R_cid00034" = -5;
+"@MMK_R_cid00036" = -38;
+"@MMK_R_cid00052" = -30;
+"@MMK_R_cid00053" = -136;
+"@MMK_R_cid00054" = -39;
+"@MMK_R_cid00055" = -89;
+"@MMK_R_cid00056" = -66;
+"@MMK_R_cid00058" = -94;
+"@MMK_R_cid00061" = -91;
+"@MMK_R_cid00068" = -15;
+"@MMK_R_cid00071" = -19;
+"@MMK_R_cid00072" = -8;
+"@MMK_R_cid00085" = -29;
+"@MMK_R_cid00086" = -12;
+"@MMK_R_cid00087" = -55;
+"@MMK_R_cid00088" = -42;
+"@MMK_R_cid00090" = -55;
+"@MMK_R_cid00106" = -30;
+"@MMK_R_cid00109" = -121;
+"@MMK_R_cid00118" = -121;
+"@MMK_R_cid00718" = -114;
+"@MMK_R_cid00719" = -114;
+"@MMK_R_cid00755" = -136;
+};
+"@MMK_L_cid00049" = {
+"@MMK_R_cid00013" = -144;
+"@MMK_R_cid00014" = -30;
+"@MMK_R_cid00016" = -65;
+"@MMK_R_cid00034" = -56;
+"@MMK_R_cid00043" = -162;
+"@MMK_R_cid00052" = -12;
+"@MMK_R_cid00053" = -19;
+"@MMK_R_cid00057" = -31;
+"@MMK_R_cid00058" = -12;
+"@MMK_R_cid00059" = -66;
+"@MMK_R_cid00066" = -41;
+"@MMK_R_cid00068" = -25;
+"@MMK_R_cid00072" = -23;
+"@MMK_R_cid00084" = -12;
+"@MMK_R_cid00089" = -19;
+"@MMK_R_cid00091" = -23;
+"@MMK_R_cid00106" = -23;
+"@MMK_R_cid00109" = 23;
+"@MMK_R_cid00118" = -4;
+};
+"@MMK_L_cid00051" = {
+"@MMK_R_cid00011" = -12;
+"@MMK_R_cid00014" = -35;
+"@MMK_R_cid00034" = -8;
+"@MMK_R_cid00043" = -16;
+"@MMK_R_cid00052" = -16;
+"@MMK_R_cid00053" = -19;
+"@MMK_R_cid00055" = -9;
+"@MMK_R_cid00056" = 3;
+"@MMK_R_cid00057" = -8;
+"@MMK_R_cid00058" = -12;
+"@MMK_R_cid00059" = -12;
+"@MMK_R_cid00066" = -8;
+"@MMK_R_cid00068" = -12;
+"@MMK_R_cid00072" = -8;
+"@MMK_R_cid00089" = -16;
+"@MMK_R_cid00091" = -16;
+"@MMK_R_cid00106" = -34;
+"@MMK_R_cid00109" = 14;
+"@MMK_R_cid00118" = -12;
+"@MMK_R_cid00122" = -19;
+};
+"@MMK_L_cid00052" = {
+"@MMK_R_cid00011" = -15;
+"@MMK_R_cid00014" = 19;
+"@MMK_R_cid00043" = -19;
+"@MMK_R_cid00052" = -19;
+"@MMK_R_cid00053" = -23;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00085" = -31;
+"@MMK_R_cid00091" = -12;
+"@MMK_R_cid00109" = -5;
+"@MMK_R_cid00118" = -12;
+"@MMK_R_cid00719" = -24;
+};
+"@MMK_L_cid00053" = {
+"@MMK_R_cid00013" = -129;
+"@MMK_R_cid00014" = -75;
+"@MMK_R_cid00016" = -84;
+"@MMK_R_cid00027" = -23;
+"@MMK_R_cid00034" = -45;
+"@MMK_R_cid00036" = -31;
+"@MMK_R_cid00043" = -140;
+"@MMK_R_cid00052" = -33;
+"@MMK_R_cid00057" = -23;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00059" = -53;
+"@MMK_R_cid00066" = -75;
+"@MMK_R_cid00068" = -83;
+"@MMK_R_cid00071" = -16;
+"@MMK_R_cid00072" = -75;
+"@MMK_R_cid00078" = -49;
+"@MMK_R_cid00084" = -67;
+"@MMK_R_cid00085" = -16;
+"@MMK_R_cid00086" = -49;
+"@MMK_R_cid00087" = -30;
+"@MMK_R_cid00088" = -30;
+"@MMK_R_cid00089" = -33;
+"@MMK_R_cid00090" = -30;
+"@MMK_R_cid00091" = -76;
+"@MMK_R_cid00106" = -61;
+"@MMK_R_cid00109" = 23;
+"@MMK_R_cid00118" = -76;
+"@MMK_R_cid00122" = -45;
+"@MMK_R_cid00133" = -82;
+"@MMK_R_cid00755" = 30;
+};
+"@MMK_L_cid00054" = {
+"@MMK_R_cid00013" = -27;
+"@MMK_R_cid00016" = -23;
+"@MMK_R_cid00034" = -15;
+"@MMK_R_cid00043" = -61;
+"@MMK_R_cid00052" = -12;
+"@MMK_R_cid00055" = -8;
+"@MMK_R_cid00057" = -12;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00066" = -8;
+"@MMK_R_cid00072" = -12;
+"@MMK_R_cid00084" = -8;
+"@MMK_R_cid00089" = -16;
+};
+"@MMK_L_cid00055" = {
+"@MMK_R_cid00013" = -83;
+"@MMK_R_cid00014" = -22;
+"@MMK_R_cid00016" = -37;
+"@MMK_R_cid00034" = -19;
+"@MMK_R_cid00036" = -12;
+"@MMK_R_cid00043" = -75;
+"@MMK_R_cid00052" = -12;
+"@MMK_R_cid00054" = -12;
+"@MMK_R_cid00055" = 12;
+"@MMK_R_cid00059" = -22;
+"@MMK_R_cid00066" = -36;
+"@MMK_R_cid00068" = -20;
+"@MMK_R_cid00072" = -23;
+"@MMK_R_cid00078" = -23;
+"@MMK_R_cid00084" = -19;
+"@MMK_R_cid00086" = -34;
+"@MMK_R_cid00087" = -11;
+"@MMK_R_cid00088" = -11;
+"@MMK_R_cid00089" = -20;
+"@MMK_R_cid00090" = -11;
+"@MMK_R_cid00091" = -25;
+"@MMK_R_cid00106" = -23;
+"@MMK_R_cid00109" = 58;
+"@MMK_R_cid00118" = -6;
+"@MMK_R_cid00122" = -28;
+"@MMK_R_cid00719" = 7;
+"@MMK_R_cid00755" = 65;
+};
+"@MMK_L_cid00056" = {
+"@MMK_R_cid00013" = -42;
+"@MMK_R_cid00014" = -12;
+"@MMK_R_cid00016" = -16;
+"@MMK_R_cid00036" = -3;
+"@MMK_R_cid00043" = -59;
+"@MMK_R_cid00052" = -3;
+"@MMK_R_cid00059" = -3;
+"@MMK_R_cid00066" = -15;
+"@MMK_R_cid00072" = -7;
+"@MMK_R_cid00091" = -12;
+"@MMK_R_cid00106" = -12;
+"@MMK_R_cid00109" = 33;
+"@MMK_R_cid00122" = -27;
+"@MMK_R_cid00719" = 7;
+"@MMK_R_cid00755" = 42;
+};
+"@MMK_L_cid00057" = {
+"@MMK_R_cid00003" = -12;
+"@MMK_R_cid00011" = -12;
+"@MMK_R_cid00014" = -39;
+"@MMK_R_cid00034" = -5;
+"@MMK_R_cid00036" = -28;
+"@MMK_R_cid00043" = -12;
+"@MMK_R_cid00052" = -19;
+"@MMK_R_cid00053" = -23;
+"@MMK_R_cid00054" = -12;
+"@MMK_R_cid00066" = -12;
+"@MMK_R_cid00068" = -16;
+"@MMK_R_cid00071" = -27;
+"@MMK_R_cid00085" = -27;
+"@MMK_R_cid00086" = -12;
+"@MMK_R_cid00087" = -27;
+"@MMK_R_cid00088" = -19;
+"@MMK_R_cid00089" = -12;
+"@MMK_R_cid00090" = -27;
+"@MMK_R_cid00091" = -19;
+"@MMK_R_cid00106" = -19;
+"@MMK_R_cid00109" = -8;
+"@MMK_R_cid00118" = -45;
+"@MMK_R_cid00122" = -19;
+"@MMK_R_cid00718" = -16;
+"@MMK_R_cid00719" = -16;
+"@MMK_R_cid00755" = 23;
+};
+"@MMK_L_cid00058" = {
+"@MMK_R_cid00013" = -120;
+"@MMK_R_cid00014" = -83;
+"@MMK_R_cid00016" = -60;
+"@MMK_R_cid00027" = -37;
+"@MMK_R_cid00032" = -16;
+"@MMK_R_cid00034" = -19;
+"@MMK_R_cid00036" = -19;
+"@MMK_R_cid00043" = -113;
+"@MMK_R_cid00052" = -21;
+"@MMK_R_cid00053" = -19;
+"@MMK_R_cid00054" = -12;
+"@MMK_R_cid00059" = -26;
+"@MMK_R_cid00066" = -84;
+"@MMK_R_cid00068" = -58;
+"@MMK_R_cid00072" = -68;
+"@MMK_R_cid00078" = -45;
+"@MMK_R_cid00084" = -58;
+"@MMK_R_cid00085" = -51;
+"@MMK_R_cid00086" = -42;
+"@MMK_R_cid00087" = -19;
+"@MMK_R_cid00088" = -31;
+"@MMK_R_cid00089" = -42;
+"@MMK_R_cid00090" = -19;
+"@MMK_R_cid00091" = -61;
+"@MMK_R_cid00106" = -77;
+"@MMK_R_cid00109" = 30;
+"@MMK_R_cid00118" = -61;
+"@MMK_R_cid00122" = -56;
+"@MMK_R_cid00755" = 49;
+};
+"@MMK_L_cid00059" = {
+"@MMK_R_cid00014" = -30;
+"@MMK_R_cid00034" = -3;
+"@MMK_R_cid00036" = -23;
+"@MMK_R_cid00043" = -30;
+"@MMK_R_cid00052" = -34;
+"@MMK_R_cid00054" = -12;
+"@MMK_R_cid00055" = -3;
+"@MMK_R_cid00056" = -3;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00059" = -15;
+"@MMK_R_cid00066" = -15;
+"@MMK_R_cid00068" = -18;
+"@MMK_R_cid00071" = -23;
+"@MMK_R_cid00072" = -14;
+"@MMK_R_cid00085" = -19;
+"@MMK_R_cid00086" = -19;
+"@MMK_R_cid00087" = -15;
+"@MMK_R_cid00088" = -15;
+"@MMK_R_cid00089" = -31;
+"@MMK_R_cid00090" = -15;
+"@MMK_R_cid00106" = -30;
+"@MMK_R_cid00109" = 23;
+"@MMK_R_cid00118" = -68;
+"@MMK_R_cid00755" = 23;
+};
+"@MMK_L_cid00061" = {
+"@MMK_R_cid00053" = -82;
+"@MMK_R_cid00054" = -22;
+"@MMK_R_cid00055" = -52;
+"@MMK_R_cid00056" = -22;
+"@MMK_R_cid00058" = -75;
+"@MMK_R_cid00072" = 30;
+"@MMK_R_cid00075" = 75;
+"@MMK_R_cid00087" = -23;
+"@MMK_R_cid00088" = -12;
+"@MMK_R_cid00090" = 7;
+"@MMK_R_cid00143" = -22;
+"@MMK_R_cid00269" = -82;
+"@MMK_R_cid00270" = -75;
+"@MMK_R_cid00318" = -82;
+"@MMK_R_cid00351" = 7;
+};
+"@MMK_L_cid00066" = {
+"@MMK_R_cid00011" = -53;
+"@MMK_R_cid00032" = -31;
+"@MMK_R_cid00053" = -31;
+"@MMK_R_cid00055" = -27;
+"@MMK_R_cid00056" = -8;
+"@MMK_R_cid00058" = -31;
+"@MMK_R_cid00085" = -19;
+"@MMK_R_cid00719" = -27;
+};
+"@MMK_L_cid00067" = {
+"@MMK_R_cid00003" = -22;
+"@MMK_R_cid00011" = -14;
+"@MMK_R_cid00013" = -12;
+"@MMK_R_cid00014" = 3;
+"@MMK_R_cid00032" = -31;
+"@MMK_R_cid00053" = -67;
+"@MMK_R_cid00055" = -22;
+"@MMK_R_cid00057" = -8;
+"@MMK_R_cid00058" = -61;
+"@MMK_R_cid00061" = -38;
+"@MMK_R_cid00066" = -14;
+"@MMK_R_cid00071" = -5;
+"@MMK_R_cid00084" = -5;
+"@MMK_R_cid00085" = -28;
+"@MMK_R_cid00087" = -8;
+"@MMK_R_cid00088" = -8;
+"@MMK_R_cid00089" = -28;
+"@MMK_R_cid00090" = -8;
+"@MMK_R_cid00091" = -12;
+"@MMK_R_cid00109" = -16;
+"@MMK_R_cid00718" = -7;
+"@MMK_R_cid00719" = -38;
+};
+"@MMK_L_cid00068" = {
+"@MMK_R_cid00014" = -35;
+"@MMK_R_cid00053" = -23;
+"@MMK_R_cid00055" = -19;
+"@MMK_R_cid00058" = -31;
+"@MMK_R_cid00066" = -12;
+"@MMK_R_cid00068" = -30;
+"@MMK_R_cid00072" = -12;
+"@MMK_R_cid00085" = -12;
+"@MMK_R_cid00087" = 3;
+"@MMK_R_cid00088" = 3;
+"@MMK_R_cid00090" = 3;
+"@MMK_R_cid00106" = -19;
+"@MMK_R_cid00109" = 11;
+"@MMK_R_cid00118" = -19;
+};
+"@MMK_L_cid00070" = {
+"@MMK_R_cid00011" = -30;
+"@MMK_R_cid00014" = 12;
+"@MMK_R_cid00032" = -16;
+"@MMK_R_cid00043" = -23;
+"@MMK_R_cid00052" = -23;
+"@MMK_R_cid00053" = -31;
+"@MMK_R_cid00055" = -27;
+"@MMK_R_cid00056" = -12;
+"@MMK_R_cid00058" = -38;
+"@MMK_R_cid00061" = -35;
+"@MMK_R_cid00066" = -14;
+"@MMK_R_cid00071" = -5;
+"@MMK_R_cid00072" = -12;
+"@MMK_R_cid00085" = -12;
+"@MMK_R_cid00087" = -4;
+"@MMK_R_cid00088" = -4;
+"@MMK_R_cid00089" = -16;
+"@MMK_R_cid00090" = -4;
+"@MMK_R_cid00091" = -6;
+"@MMK_R_cid00106" = -12;
+"@MMK_R_cid00109" = -12;
+"@MMK_R_cid00118" = -8;
+"@MMK_R_cid00719" = -12;
+"@MMK_R_cid00755" = -28;
+};
+"@MMK_L_cid00071" = {
+"@MMK_R_cid00002" = 7;
+"@MMK_R_cid00003" = 45;
+"@MMK_R_cid00010" = 45;
+"@MMK_R_cid00013" = -69;
+"@MMK_R_cid00014" = -19;
+"@MMK_R_cid00016" = -7;
+"@MMK_R_cid00032" = 26;
+"@MMK_R_cid00053" = 49;
+"@MMK_R_cid00055" = 71;
+"@MMK_R_cid00056" = 49;
+"@MMK_R_cid00057" = 30;
+"@MMK_R_cid00058" = 56;
+"@MMK_R_cid00061" = 45;
+"@MMK_R_cid00066" = -23;
+"@MMK_R_cid00068" = -12;
+"@MMK_R_cid00072" = -14;
+"@MMK_R_cid00075" = -12;
+"@MMK_R_cid00084" = -8;
+"@MMK_R_cid00087" = 7;
+"@MMK_R_cid00089" = -8;
+"@MMK_R_cid00091" = -19;
+"@MMK_R_cid00109" = 65;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00718" = 30;
+"@MMK_R_cid00719" = 30;
+"@MMK_R_cid00755" = 83;
+};
+"@MMK_L_cid00072" = {
+"@MMK_R_cid00010" = 7;
+"@MMK_R_cid00011" = -30;
+"@MMK_R_cid00016" = 38;
+"@MMK_R_cid00032" = -49;
+"@MMK_R_cid00053" = -38;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00066" = -21;
+"@MMK_R_cid00068" = -19;
+"@MMK_R_cid00075" = 50;
+"@MMK_R_cid00087" = -8;
+"@MMK_R_cid00088" = -8;
+"@MMK_R_cid00090" = 8;
+"@MMK_R_cid00091" = -19;
+"@MMK_R_cid00109" = 7;
+"@MMK_R_cid00118" = -4;
+};
+"@MMK_L_cid00073" = {
+"@MMK_R_cid00011" = -30;
+"@MMK_R_cid00032" = -16;
+"@MMK_R_cid00053" = -31;
+"@MMK_R_cid00055" = -12;
+"@MMK_R_cid00058" = -27;
+"@MMK_R_cid00719" = -23;
+"@MMK_R_cid00755" = -23;
+};
+"@MMK_L_cid00076" = {
+"@MMK_R_cid00011" = -23;
+"@MMK_R_cid00013" = 7;
+"@MMK_R_cid00014" = -83;
+"@MMK_R_cid00027" = 7;
+"@MMK_R_cid00032" = -31;
+"@MMK_R_cid00053" = -54;
+"@MMK_R_cid00058" = -18;
+"@MMK_R_cid00066" = -12;
+"@MMK_R_cid00068" = -29;
+"@MMK_R_cid00072" = -12;
+"@MMK_R_cid00075" = -12;
+"@MMK_R_cid00085" = -35;
+"@MMK_R_cid00086" = -19;
+"@MMK_R_cid00089" = -16;
+"@MMK_R_cid00091" = -16;
+"@MMK_R_cid00106" = -38;
+"@MMK_R_cid00109" = -12;
+"@MMK_R_cid00118" = -38;
+"@MMK_R_cid00122" = -24;
+"@MMK_R_cid00719" = -38;
+"@MMK_R_cid00755" = -23;
+};
+"@MMK_L_cid00077" = {
+"@MMK_R_cid00075" = 12;
+};
+"@MMK_L_cid00082" = {
+"@MMK_R_cid00011" = -19;
+"@MMK_R_cid00053" = -23;
+"@MMK_R_cid00055" = -19;
+"@MMK_R_cid00058" = -34;
+};
+"@MMK_L_cid00083" = {
+"@MMK_R_cid00013" = -90;
+"@MMK_R_cid00014" = -31;
+"@MMK_R_cid00016" = -30;
+"@MMK_R_cid00027" = 14;
+"@MMK_R_cid00034" = -19;
+"@MMK_R_cid00043" = -77;
+"@MMK_R_cid00059" = -12;
+"@MMK_R_cid00061" = 7;
+"@MMK_R_cid00066" = -31;
+"@MMK_R_cid00068" = -12;
+"@MMK_R_cid00072" = -12;
+"@MMK_R_cid00084" = -8;
+"@MMK_R_cid00087" = 14;
+"@MMK_R_cid00088" = 10;
+"@MMK_R_cid00090" = 14;
+"@MMK_R_cid00091" = -8;
+"@MMK_R_cid00106" = -23;
+"@MMK_R_cid00109" = 45;
+"@MMK_R_cid00118" = -15;
+"@MMK_R_cid00718" = 30;
+};
+"@MMK_L_cid00084" = {
+"@MMK_R_cid00011" = -39;
+"@MMK_R_cid00014" = 12;
+"@MMK_R_cid00032" = -24;
+"@MMK_R_cid00053" = -31;
+"@MMK_R_cid00055" = -12;
+"@MMK_R_cid00058" = -23;
+"@MMK_R_cid00085" = -23;
+"@MMK_R_cid00719" = -24;
+};
+"@MMK_L_cid00085" = {
+"@MMK_R_cid00013" = -8;
+"@MMK_R_cid00014" = -38;
+"@MMK_R_cid00027" = 7;
+"@MMK_R_cid00032" = -38;
+"@MMK_R_cid00053" = -19;
+"@MMK_R_cid00058" = -8;
+"@MMK_R_cid00066" = -23;
+"@MMK_R_cid00068" = -19;
+"@MMK_R_cid00072" = -12;
+"@MMK_R_cid00084" = -12;
+"@MMK_R_cid00085" = -23;
+"@MMK_R_cid00089" = -15;
+"@MMK_R_cid00106" = -16;
+"@MMK_R_cid00109" = 30;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00122" = -19;
+};
+"@MMK_L_cid00087" = {
+"@MMK_R_cid00011" = -12;
+"@MMK_R_cid00013" = -61;
+"@MMK_R_cid00014" = -16;
+"@MMK_R_cid00016" = -23;
+"@MMK_R_cid00034" = -14;
+"@MMK_R_cid00043" = -45;
+"@MMK_R_cid00053" = -23;
+"@MMK_R_cid00055" = -11;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00059" = -12;
+"@MMK_R_cid00066" = -23;
+"@MMK_R_cid00068" = -8;
+"@MMK_R_cid00075" = -12;
+"@MMK_R_cid00091" = -31;
+"@MMK_R_cid00109" = 36;
+};
+"@MMK_L_cid00088" = {
+"@MMK_R_cid00011" = -12;
+"@MMK_R_cid00013" = -82;
+"@MMK_R_cid00016" = -4;
+"@MMK_R_cid00034" = -8;
+"@MMK_R_cid00043" = -34;
+"@MMK_R_cid00053" = -31;
+"@MMK_R_cid00055" = -11;
+"@MMK_R_cid00057" = -19;
+"@MMK_R_cid00058" = -31;
+"@MMK_R_cid00066" = -12;
+"@MMK_R_cid00068" = -8;
+"@MMK_R_cid00075" = -12;
+"@MMK_R_cid00091" = -28;
+"@MMK_R_cid00109" = 20;
+};
+"@MMK_L_cid00089" = {
+"@MMK_R_cid00002" = -19;
+"@MMK_R_cid00011" = -24;
+"@MMK_R_cid00013" = -16;
+"@MMK_R_cid00014" = -19;
+"@MMK_R_cid00036" = -12;
+"@MMK_R_cid00052" = -8;
+"@MMK_R_cid00053" = -30;
+"@MMK_R_cid00055" = -20;
+"@MMK_R_cid00057" = -12;
+"@MMK_R_cid00058" = -42;
+"@MMK_R_cid00066" = -12;
+"@MMK_R_cid00068" = -28;
+"@MMK_R_cid00085" = -31;
+"@MMK_R_cid00090" = -12;
+"@MMK_R_cid00106" = -31;
+"@MMK_R_cid00109" = 20;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00122" = -23;
+};
+"@MMK_L_cid00090" = {
+"@MMK_R_cid00013" = -61;
+"@MMK_R_cid00016" = -7;
+"@MMK_R_cid00043" = -45;
+"@MMK_R_cid00053" = -23;
+"@MMK_R_cid00055" = -8;
+"@MMK_R_cid00057" = -8;
+"@MMK_R_cid00058" = -16;
+"@MMK_R_cid00066" = -23;
+"@MMK_R_cid00068" = -8;
+"@MMK_R_cid00075" = -12;
+"@MMK_R_cid00089" = -19;
+"@MMK_R_cid00091" = -31;
+"@MMK_R_cid00106" = -8;
+"@MMK_R_cid00109" = 36;
+"@MMK_R_cid00122" = -8;
+"@MMK_R_cid00755" = 7;
+};
+"@MMK_L_cid00091" = {
+"@MMK_R_cid00014" = -27;
+"@MMK_R_cid00053" = -26;
+"@MMK_R_cid00058" = -22;
+"@MMK_R_cid00066" = -19;
+"@MMK_R_cid00068" = -12;
+"@MMK_R_cid00072" = -3;
+"@MMK_R_cid00086" = -12;
+"@MMK_R_cid00087" = -8;
+"@MMK_R_cid00090" = -8;
+"@MMK_R_cid00109" = 14;
+"@MMK_R_cid00118" = -12;
+"@MMK_R_cid00755" = 7;
+};
+"@MMK_L_cid00096" = {
+"@MMK_R_cid00055" = -53;
+"@MMK_R_cid00056" = -27;
+"@MMK_R_cid00058" = -72;
+"@MMK_R_cid00075" = 30;
+"@MMK_R_cid00270" = -72;
+};
+"@MMK_L_cid00106" = {
+"@MMK_R_cid00053" = -45;
+"@MMK_R_cid00055" = -28;
+"@MMK_R_cid00056" = -28;
+"@MMK_R_cid00057" = -19;
+"@MMK_R_cid00058" = -56;
+"@MMK_R_cid00085" = -19;
+"@MMK_R_cid00087" = -8;
+"@MMK_R_cid00089" = -23;
+"@MMK_R_cid00090" = -8;
+"@MMK_R_cid00268" = -30;
+"@MMK_R_cid00269" = -45;
+"@MMK_R_cid00270" = -56;
+"@MMK_R_cid00272" = -19;
+"@MMK_R_cid00273" = -23;
+"@MMK_R_cid00274" = -8;
+"@MMK_R_cid00277" = -12;
+"@MMK_R_cid00285" = -19;
+"@MMK_R_cid00287" = -12;
+"@MMK_R_cid00290" = -19;
+"@MMK_R_cid00293" = -19;
+"@MMK_R_cid00296" = -23;
+"@MMK_R_cid00306" = -16;
+"@MMK_R_cid00318" = -45;
+"@MMK_R_cid00319" = -39;
+"@MMK_R_cid00321" = -19;
+"@MMK_R_cid00323" = -19;
+"@MMK_R_cid00331" = -23;
+"@MMK_R_cid00338" = -23;
+"@MMK_R_cid00350" = -19;
+"@MMK_R_cid00351" = -8;
+"@MMK_R_cid00353" = -23;
+"@MMK_R_cid00361" = -8;
+"@MMK_R_cid00363" = -23;
+};
+"@MMK_L_cid00118" = {
+"@MMK_R_cid00034" = -31;
+"@MMK_R_cid00052" = -31;
+"@MMK_R_cid00053" = -76;
+"@MMK_R_cid00055" = -38;
+"@MMK_R_cid00057" = -38;
+"@MMK_R_cid00058" = -91;
+"@MMK_R_cid00059" = -38;
+"@MMK_R_cid00089" = -23;
+"@MMK_R_cid00251" = -31;
+"@MMK_R_cid00254" = -39;
+"@MMK_R_cid00256" = -38;
+"@MMK_R_cid00264" = -42;
+"@MMK_R_cid00268" = -61;
+"@MMK_R_cid00269" = -76;
+"@MMK_R_cid00270" = -91;
+"@MMK_R_cid00272" = -38;
+"@MMK_R_cid00273" = -15;
+"@MMK_R_cid00285" = -19;
+"@MMK_R_cid00296" = -23;
+"@MMK_R_cid00300" = -31;
+"@MMK_R_cid00304" = -22;
+"@MMK_R_cid00306" = -28;
+"@MMK_R_cid00318" = -76;
+"@MMK_R_cid00319" = -28;
+"@MMK_R_cid00321" = -38;
+"@MMK_R_cid00323" = -19;
+"@MMK_R_cid00353" = -23;
+};
+"@MMK_L_cid00122" = {
+"@MMK_R_cid00043" = -34;
+"@MMK_R_cid00052" = -34;
+"@MMK_R_cid00053" = -61;
+"@MMK_R_cid00055" = -23;
+"@MMK_R_cid00056" = -12;
+"@MMK_R_cid00057" = -19;
+"@MMK_R_cid00058" = -77;
+"@MMK_R_cid00059" = -16;
+"@MMK_R_cid00085" = -30;
+"@MMK_R_cid00087" = -16;
+"@MMK_R_cid00089" = -31;
+"@MMK_R_cid00090" = -16;
+"@MMK_R_cid00256" = -16;
+"@MMK_R_cid00269" = -61;
+"@MMK_R_cid00270" = -77;
+"@MMK_R_cid00272" = -19;
+"@MMK_R_cid00293" = -30;
+"@MMK_R_cid00296" = -31;
+"@MMK_R_cid00304" = -7;
+"@MMK_R_cid00306" = -28;
+"@MMK_R_cid00307" = -23;
+"@MMK_R_cid00311" = -7;
+"@MMK_R_cid00318" = -61;
+"@MMK_R_cid00319" = -54;
+"@MMK_R_cid00321" = -19;
+"@MMK_R_cid00323" = -45;
+"@MMK_R_cid00331" = -39;
+"@MMK_R_cid00338" = -19;
+"@MMK_R_cid00339" = -19;
+"@MMK_R_cid00350" = -30;
+"@MMK_R_cid00351" = -16;
+"@MMK_R_cid00353" = -31;
+"@MMK_R_cid00361" = -28;
+"@MMK_R_cid00363" = -19;
+};
+"@MMK_L_cid00126" = {
+"@MMK_R_cid00034" = -93;
+"@MMK_R_cid00036" = -83;
+"@MMK_R_cid00052" = -61;
+"@MMK_R_cid00053" = -107;
+"@MMK_R_cid00054" = -57;
+"@MMK_R_cid00055" = -91;
+"@MMK_R_cid00056" = -57;
+"@MMK_R_cid00057" = -70;
+"@MMK_R_cid00058" = -132;
+"@MMK_R_cid00066" = -54;
+"@MMK_R_cid00068" = -35;
+"@MMK_R_cid00071" = -93;
+"@MMK_R_cid00075" = 56;
+"@MMK_R_cid00251" = -93;
+"@MMK_R_cid00258" = -83;
+"@MMK_R_cid00269" = -107;
+"@MMK_R_cid00270" = -132;
+"@MMK_R_cid00272" = -70;
+"@MMK_R_cid00275" = -35;
+"@MMK_R_cid00289" = -35;
+"@MMK_R_cid00300" = -93;
+"@MMK_R_cid00314" = -83;
+"@MMK_R_cid00318" = -107;
+"@MMK_R_cid00321" = -70;
+"@MMK_R_cid00332" = -54;
+"@MMK_R_cid00337" = -35;
+};
+"@MMK_L_cid00157" = {
+"@MMK_R_cid00011" = -51;
+"@MMK_R_cid00016" = -43;
+"@MMK_R_cid00061" = -45;
+"@MMK_R_cid00755" = -31;
+};
+"@MMK_L_cid00158" = {
+"@MMK_R_cid00003" = -84;
+"@MMK_R_cid00032" = -27;
+"@MMK_R_cid00061" = -38;
+"@MMK_R_cid00071" = -8;
+"@MMK_R_cid00085" = -21;
+"@MMK_R_cid00087" = -27;
+"@MMK_R_cid00088" = -19;
+"@MMK_R_cid00089" = 3;
+"@MMK_R_cid00090" = -27;
+"@MMK_R_cid00109" = -54;
+"@MMK_R_cid00718" = -74;
+"@MMK_R_cid00719" = -90;
+};
+"@MMK_L_cid00222" = {
+"@MMK_R_cid00016" = -7;
+"@MMK_R_cid00091" = -8;
+"@MMK_R_cid00109" = 3;
+"@MMK_R_cid00755" = 12;
+};
+"@MMK_L_cid00223" = {
+"@MMK_R_cid00003" = 30;
+"@MMK_R_cid00010" = 23;
+"@MMK_R_cid00032" = 8;
+"@MMK_R_cid00061" = 23;
+"@MMK_R_cid00089" = -8;
+"@MMK_R_cid00091" = -8;
+"@MMK_R_cid00109" = 38;
+"@MMK_R_cid00718" = 23;
+"@MMK_R_cid00719" = 15;
+};
+"@MMK_L_cid00224" = {
+"@MMK_R_cid00011" = 28;
+"@MMK_R_cid00016" = -39;
+"@MMK_R_cid00061" = 52;
+"@MMK_R_cid00066" = -23;
+"@MMK_R_cid00072" = -19;
+"@MMK_R_cid00084" = -23;
+"@MMK_R_cid00089" = -16;
+"@MMK_R_cid00109" = 23;
+"@MMK_R_cid00755" = 61;
+};
+"@MMK_L_cid00225" = {
+"@MMK_R_cid00003" = 61;
+"@MMK_R_cid00010" = 56;
+"@MMK_R_cid00032" = 23;
+"@MMK_R_cid00061" = 62;
+"@MMK_R_cid00066" = -12;
+"@MMK_R_cid00071" = 35;
+"@MMK_R_cid00074" = 25;
+"@MMK_R_cid00075" = 28;
+"@MMK_R_cid00085" = 28;
+"@MMK_R_cid00087" = 12;
+"@MMK_R_cid00088" = 12;
+"@MMK_R_cid00090" = 12;
+"@MMK_R_cid00109" = 75;
+"@MMK_R_cid00718" = 53;
+"@MMK_R_cid00719" = 31;
+};
+"@MMK_L_cid00251" = {
+"@MMK_R_cid00003" = -77;
+"@MMK_R_cid00011" = -98;
+"@MMK_R_cid00032" = -38;
+"@MMK_R_cid00061" = -45;
+"@MMK_R_cid00118" = -31;
+"@MMK_R_cid00251" = -3;
+"@MMK_R_cid00256" = -4;
+"@MMK_R_cid00258" = -12;
+"@MMK_R_cid00269" = -77;
+"@MMK_R_cid00270" = -19;
+"@MMK_R_cid00271" = -16;
+"@MMK_R_cid00272" = -4;
+"@MMK_R_cid00273" = -49;
+"@MMK_R_cid00274" = 3;
+"@MMK_R_cid00277" = -12;
+"@MMK_R_cid00287" = -12;
+"@MMK_R_cid00290" = -8;
+"@MMK_R_cid00293" = -19;
+"@MMK_R_cid00296" = -8;
+"@MMK_R_cid00718" = -89;
+"@MMK_R_cid00719" = -66;
+};
+"@MMK_L_cid00252" = {
+"@MMK_R_cid00011" = -34;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00254" = -8;
+"@MMK_R_cid00256" = -8;
+"@MMK_R_cid00264" = -3;
+"@MMK_R_cid00268" = -3;
+"@MMK_R_cid00269" = -31;
+"@MMK_R_cid00270" = -19;
+"@MMK_R_cid00272" = -8;
+"@MMK_R_cid00273" = -3;
+"@MMK_R_cid00285" = -8;
+"@MMK_R_cid00293" = -12;
+"@MMK_R_cid00296" = -12;
+"@MMK_R_cid00718" = -19;
+"@MMK_R_cid00719" = -23;
+};
+"@MMK_L_cid00253" = {
+"@MMK_R_cid00013" = -177;
+"@MMK_R_cid00014" = -123;
+"@MMK_R_cid00027" = -23;
+"@MMK_R_cid00106" = -75;
+"@MMK_R_cid00109" = 39;
+"@MMK_R_cid00118" = -45;
+"@MMK_R_cid00122" = -59;
+"@MMK_R_cid00251" = -68;
+"@MMK_R_cid00254" = -87;
+"@MMK_R_cid00256" = -49;
+"@MMK_R_cid00258" = -38;
+"@MMK_R_cid00271" = -66;
+"@MMK_R_cid00272" = -28;
+"@MMK_R_cid00274" = -28;
+"@MMK_R_cid00275" = -104;
+"@MMK_R_cid00276" = -15;
+"@MMK_R_cid00277" = -36;
+"@MMK_R_cid00278" = -45;
+"@MMK_R_cid00279" = -82;
+"@MMK_R_cid00280" = -38;
+"@MMK_R_cid00281" = -66;
+"@MMK_R_cid00282" = -38;
+"@MMK_R_cid00283" = -34;
+"@MMK_R_cid00285" = -16;
+"@MMK_R_cid00286" = -56;
+"@MMK_R_cid00287" = -36;
+"@MMK_R_cid00289" = -104;
+"@MMK_R_cid00290" = -36;
+"@MMK_R_cid00291" = -127;
+"@MMK_R_cid00293" = -29;
+"@MMK_R_cid00294" = -40;
+"@MMK_R_cid00296" = -34;
+};
+"@MMK_L_cid00254" = {
+"@MMK_R_cid00003" = -77;
+"@MMK_R_cid00014" = -16;
+"@MMK_R_cid00109" = -69;
+"@MMK_R_cid00118" = -39;
+"@MMK_R_cid00258" = -31;
+"@MMK_R_cid00269" = -73;
+"@MMK_R_cid00270" = -35;
+"@MMK_R_cid00271" = -35;
+"@MMK_R_cid00273" = -76;
+"@MMK_R_cid00277" = -12;
+"@MMK_R_cid00282" = -12;
+"@MMK_R_cid00285" = -24;
+"@MMK_R_cid00287" = -12;
+"@MMK_R_cid00293" = -31;
+"@MMK_R_cid00718" = -66;
+"@MMK_R_cid00719" = -82;
+};
+"@MMK_L_cid00255" = {
+"@MMK_R_cid00271" = -39;
+"@MMK_R_cid00275" = -12;
+"@MMK_R_cid00277" = -31;
+"@MMK_R_cid00278" = -15;
+"@MMK_R_cid00279" = -12;
+"@MMK_R_cid00280" = -12;
+"@MMK_R_cid00282" = -31;
+"@MMK_R_cid00287" = -31;
+"@MMK_R_cid00288" = -12;
+"@MMK_R_cid00289" = -12;
+"@MMK_R_cid00290" = -19;
+"@MMK_R_cid00293" = -31;
+"@MMK_R_cid00294" = -15;
+"@MMK_R_cid00296" = -46;
+};
+"@MMK_L_cid00256" = {
+"@MMK_R_cid00014" = -30;
+"@MMK_R_cid00106" = -30;
+"@MMK_R_cid00118" = -68;
+"@MMK_R_cid00251" = -3;
+"@MMK_R_cid00256" = -15;
+"@MMK_R_cid00258" = -23;
+"@MMK_R_cid00268" = -15;
+"@MMK_R_cid00270" = -19;
+"@MMK_R_cid00271" = -50;
+"@MMK_R_cid00273" = -7;
+"@MMK_R_cid00274" = -3;
+"@MMK_R_cid00275" = -18;
+"@MMK_R_cid00277" = -15;
+"@MMK_R_cid00278" = -38;
+"@MMK_R_cid00279" = -15;
+"@MMK_R_cid00280" = -15;
+"@MMK_R_cid00282" = -38;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00287" = -15;
+"@MMK_R_cid00288" = -3;
+"@MMK_R_cid00289" = -18;
+"@MMK_R_cid00290" = -26;
+"@MMK_R_cid00293" = -19;
+"@MMK_R_cid00294" = -19;
+"@MMK_R_cid00296" = -31;
+};
+"@MMK_L_cid00258" = {
+"@MMK_R_cid00011" = -30;
+"@MMK_R_cid00016" = -16;
+"@MMK_R_cid00251" = -12;
+"@MMK_R_cid00254" = -31;
+"@MMK_R_cid00256" = -23;
+"@MMK_R_cid00268" = -38;
+"@MMK_R_cid00269" = -31;
+"@MMK_R_cid00270" = -23;
+"@MMK_R_cid00272" = -28;
+"@MMK_R_cid00285" = -35;
+"@MMK_R_cid00296" = -19;
+};
+"@MMK_L_cid00260" = {
+"@MMK_R_cid00003" = -35;
+"@MMK_R_cid00011" = -45;
+"@MMK_R_cid00014" = -52;
+"@MMK_R_cid00032" = -16;
+"@MMK_R_cid00106" = -12;
+"@MMK_R_cid00118" = -61;
+"@MMK_R_cid00122" = -8;
+"@MMK_R_cid00251" = -12;
+"@MMK_R_cid00258" = -29;
+"@MMK_R_cid00269" = -28;
+"@MMK_R_cid00270" = -27;
+"@MMK_R_cid00271" = -39;
+"@MMK_R_cid00273" = -19;
+"@MMK_R_cid00275" = -16;
+"@MMK_R_cid00277" = -39;
+"@MMK_R_cid00282" = -12;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00285" = -28;
+"@MMK_R_cid00287" = -39;
+"@MMK_R_cid00289" = -16;
+"@MMK_R_cid00293" = -54;
+"@MMK_R_cid00294" = -8;
+"@MMK_R_cid00296" = -27;
+"@MMK_R_cid00718" = -45;
+"@MMK_R_cid00719" = -45;
+};
+"@MMK_L_cid00264" = {
+"@MMK_R_cid00014" = -39;
+"@MMK_R_cid00118" = -42;
+"@MMK_R_cid00271" = -31;
+"@MMK_R_cid00275" = -12;
+"@MMK_R_cid00277" = -23;
+"@MMK_R_cid00282" = -26;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00287" = -23;
+"@MMK_R_cid00289" = -12;
+"@MMK_R_cid00293" = -23;
+"@MMK_R_cid00294" = -12;
+};
+"@MMK_L_cid00267" = {
+"@MMK_R_cid00013" = -144;
+"@MMK_R_cid00014" = -30;
+"@MMK_R_cid00016" = -65;
+"@MMK_R_cid00106" = -23;
+"@MMK_R_cid00118" = -4;
+"@MMK_R_cid00251" = -56;
+"@MMK_R_cid00254" = -73;
+"@MMK_R_cid00256" = -66;
+"@MMK_R_cid00264" = -28;
+"@MMK_R_cid00268" = -45;
+"@MMK_R_cid00269" = -19;
+"@MMK_R_cid00270" = -12;
+"@MMK_R_cid00272" = -31;
+"@MMK_R_cid00275" = -25;
+"@MMK_R_cid00277" = 3;
+"@MMK_R_cid00278" = -31;
+"@MMK_R_cid00279" = -15;
+"@MMK_R_cid00285" = -61;
+"@MMK_R_cid00287" = 3;
+"@MMK_R_cid00289" = -25;
+"@MMK_R_cid00291" = -45;
+"@MMK_R_cid00296" = -19;
+};
+"@MMK_L_cid00268" = {
+"@MMK_R_cid00003" = -7;
+"@MMK_R_cid00014" = -30;
+"@MMK_R_cid00118" = -68;
+"@MMK_R_cid00256" = -23;
+"@MMK_R_cid00258" = -49;
+"@MMK_R_cid00268" = -23;
+"@MMK_R_cid00269" = -38;
+"@MMK_R_cid00270" = -31;
+"@MMK_R_cid00271" = -71;
+"@MMK_R_cid00273" = -34;
+"@MMK_R_cid00275" = -12;
+"@MMK_R_cid00277" = -31;
+"@MMK_R_cid00278" = -15;
+"@MMK_R_cid00279" = -12;
+"@MMK_R_cid00280" = -19;
+"@MMK_R_cid00282" = -45;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00287" = -31;
+"@MMK_R_cid00288" = -19;
+"@MMK_R_cid00289" = -15;
+"@MMK_R_cid00290" = -31;
+"@MMK_R_cid00293" = -60;
+"@MMK_R_cid00294" = -12;
+"@MMK_R_cid00296" = -39;
+"@MMK_R_cid00718" = -23;
+"@MMK_R_cid00719" = -23;
+};
+"@MMK_L_cid00269" = {
+"@MMK_R_cid00013" = -129;
+"@MMK_R_cid00014" = -75;
+"@MMK_R_cid00016" = -84;
+"@MMK_R_cid00027" = -23;
+"@MMK_R_cid00106" = -61;
+"@MMK_R_cid00118" = -76;
+"@MMK_R_cid00122" = -45;
+"@MMK_R_cid00251" = -45;
+"@MMK_R_cid00254" = -73;
+"@MMK_R_cid00256" = -53;
+"@MMK_R_cid00258" = -31;
+"@MMK_R_cid00268" = -12;
+"@MMK_R_cid00270" = -19;
+"@MMK_R_cid00271" = -51;
+"@MMK_R_cid00272" = -23;
+"@MMK_R_cid00274" = -19;
+"@MMK_R_cid00275" = -83;
+"@MMK_R_cid00276" = -15;
+"@MMK_R_cid00277" = -26;
+"@MMK_R_cid00278" = -38;
+"@MMK_R_cid00279" = -84;
+"@MMK_R_cid00280" = -34;
+"@MMK_R_cid00281" = -49;
+"@MMK_R_cid00282" = -38;
+"@MMK_R_cid00283" = -42;
+"@MMK_R_cid00285" = -19;
+"@MMK_R_cid00286" = -49;
+"@MMK_R_cid00287" = -26;
+"@MMK_R_cid00289" = -83;
+"@MMK_R_cid00290" = -29;
+"@MMK_R_cid00291" = -103;
+"@MMK_R_cid00293" = -16;
+"@MMK_R_cid00294" = -36;
+"@MMK_R_cid00296" = -33;
+};
+"@MMK_L_cid00270" = {
+"@MMK_R_cid00013" = -120;
+"@MMK_R_cid00014" = -83;
+"@MMK_R_cid00016" = -60;
+"@MMK_R_cid00027" = -37;
+"@MMK_R_cid00032" = -16;
+"@MMK_R_cid00106" = -77;
+"@MMK_R_cid00118" = -61;
+"@MMK_R_cid00122" = -56;
+"@MMK_R_cid00251" = -19;
+"@MMK_R_cid00254" = -35;
+"@MMK_R_cid00256" = -26;
+"@MMK_R_cid00258" = -19;
+"@MMK_R_cid00269" = -19;
+"@MMK_R_cid00271" = -19;
+"@MMK_R_cid00274" = -19;
+"@MMK_R_cid00275" = -58;
+"@MMK_R_cid00276" = -23;
+"@MMK_R_cid00277" = -39;
+"@MMK_R_cid00278" = -26;
+"@MMK_R_cid00279" = -58;
+"@MMK_R_cid00280" = -8;
+"@MMK_R_cid00281" = -45;
+"@MMK_R_cid00282" = -19;
+"@MMK_R_cid00283" = -45;
+"@MMK_R_cid00285" = -32;
+"@MMK_R_cid00286" = -45;
+"@MMK_R_cid00287" = -19;
+"@MMK_R_cid00289" = -58;
+"@MMK_R_cid00290" = -50;
+"@MMK_R_cid00291" = -70;
+"@MMK_R_cid00293" = -51;
+"@MMK_R_cid00294" = -45;
+"@MMK_R_cid00296" = -42;
+};
+"@MMK_L_cid00271" = {
+"@MMK_R_cid00003" = -30;
+"@MMK_R_cid00013" = -61;
+"@MMK_R_cid00014" = 3;
+"@MMK_R_cid00032" = -23;
+"@MMK_R_cid00251" = -16;
+"@MMK_R_cid00254" = -35;
+"@MMK_R_cid00256" = -50;
+"@MMK_R_cid00264" = -31;
+"@MMK_R_cid00268" = -42;
+"@MMK_R_cid00269" = -91;
+"@MMK_R_cid00270" = -19;
+"@MMK_R_cid00272" = -46;
+"@MMK_R_cid00273" = -15;
+"@MMK_R_cid00285" = -54;
+"@MMK_R_cid00291" = -8;
+"@MMK_R_cid00296" = -8;
+"@MMK_R_cid00718" = -7;
+"@MMK_R_cid00719" = -30;
+};
+"@MMK_L_cid00272" = {
+"@MMK_R_cid00003" = -12;
+"@MMK_R_cid00011" = -12;
+"@MMK_R_cid00014" = -39;
+"@MMK_R_cid00106" = -19;
+"@MMK_R_cid00118" = -45;
+"@MMK_R_cid00122" = -19;
+"@MMK_R_cid00251" = -5;
+"@MMK_R_cid00258" = -28;
+"@MMK_R_cid00269" = -23;
+"@MMK_R_cid00271" = -46;
+"@MMK_R_cid00273" = -19;
+"@MMK_R_cid00275" = -16;
+"@MMK_R_cid00277" = -19;
+"@MMK_R_cid00282" = -31;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00285" = -35;
+"@MMK_R_cid00287" = -19;
+"@MMK_R_cid00289" = -16;
+"@MMK_R_cid00293" = -27;
+"@MMK_R_cid00296" = -12;
+"@MMK_R_cid00718" = -16;
+"@MMK_R_cid00719" = -16;
+};
+"@MMK_L_cid00273" = {
+"@MMK_R_cid00013" = -110;
+"@MMK_R_cid00014" = -45;
+"@MMK_R_cid00109" = 15;
+"@MMK_R_cid00118" = -15;
+"@MMK_R_cid00122" = -23;
+"@MMK_R_cid00251" = -49;
+"@MMK_R_cid00254" = -76;
+"@MMK_R_cid00256" = -19;
+"@MMK_R_cid00268" = -15;
+"@MMK_R_cid00271" = -15;
+"@MMK_R_cid00272" = -19;
+"@MMK_R_cid00275" = -26;
+"@MMK_R_cid00278" = -23;
+"@MMK_R_cid00279" = -34;
+"@MMK_R_cid00281" = -3;
+"@MMK_R_cid00283" = -12;
+"@MMK_R_cid00285" = -39;
+"@MMK_R_cid00286" = -12;
+"@MMK_R_cid00289" = -26;
+"@MMK_R_cid00291" = -26;
+"@MMK_R_cid00294" = -12;
+};
+"@MMK_L_cid00274" = {
+"@MMK_R_cid00014" = -8;
+"@MMK_R_cid00109" = -5;
+"@MMK_R_cid00122" = -8;
+"@MMK_R_cid00251" = 3;
+"@MMK_R_cid00269" = -19;
+"@MMK_R_cid00270" = -19;
+"@MMK_R_cid00289" = -8;
+"@MMK_R_cid00293" = -16;
+"@MMK_R_cid00719" = -16;
+};
+"@MMK_L_cid00275" = {
+"@MMK_R_cid00277" = -12;
+"@MMK_R_cid00282" = -3;
+"@MMK_R_cid00283" = 3;
+"@MMK_R_cid00287" = -12;
+"@MMK_R_cid00293" = -16;
+"@MMK_R_cid00296" = -8;
+};
+"@MMK_L_cid00276" = {
+"@MMK_R_cid00277" = -23;
+"@MMK_R_cid00287" = -19;
+"@MMK_R_cid00290" = -16;
+"@MMK_R_cid00291" = -12;
+"@MMK_R_cid00293" = -23;
+"@MMK_R_cid00296" = -19;
+"@MMK_R_cid00719" = -39;
+};
+"@MMK_L_cid00277" = {
+"@MMK_R_cid00013" = -32;
+"@MMK_R_cid00122" = -12;
+"@MMK_R_cid00277" = -45;
+"@MMK_R_cid00278" = -16;
+"@MMK_R_cid00279" = -6;
+"@MMK_R_cid00285" = -32;
+"@MMK_R_cid00287" = -32;
+"@MMK_R_cid00289" = -16;
+"@MMK_R_cid00290" = -8;
+"@MMK_R_cid00291" = -12;
+"@MMK_R_cid00293" = -12;
+"@MMK_R_cid00296" = -16;
+};
+"@MMK_L_cid00278" = {
+"@MMK_R_cid00277" = -23;
+"@MMK_R_cid00285" = -24;
+"@MMK_R_cid00287" = -23;
+"@MMK_R_cid00290" = -8;
+"@MMK_R_cid00291" = -12;
+"@MMK_R_cid00293" = -15;
+"@MMK_R_cid00296" = -19;
+};
+"@MMK_L_cid00279" = {
+"@MMK_R_cid00122" = -8;
+"@MMK_R_cid00275" = -19;
+"@MMK_R_cid00277" = -16;
+"@MMK_R_cid00278" = -12;
+"@MMK_R_cid00279" = -8;
+"@MMK_R_cid00280" = -8;
+"@MMK_R_cid00282" = -19;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00285" = -12;
+"@MMK_R_cid00287" = -16;
+"@MMK_R_cid00288" = -8;
+"@MMK_R_cid00289" = -19;
+"@MMK_R_cid00290" = -8;
+"@MMK_R_cid00291" = -8;
+"@MMK_R_cid00293" = -32;
+"@MMK_R_cid00294" = -12;
+"@MMK_R_cid00296" = -24;
+};
+"@MMK_L_cid00280" = {
+"@MMK_R_cid00010" = 20;
+"@MMK_R_cid00013" = 10;
+"@MMK_R_cid00014" = -23;
+"@MMK_R_cid00118" = -54;
+"@MMK_R_cid00122" = -8;
+"@MMK_R_cid00275" = -42;
+"@MMK_R_cid00276" = 15;
+"@MMK_R_cid00277" = -46;
+"@MMK_R_cid00278" = -23;
+"@MMK_R_cid00279" = -16;
+"@MMK_R_cid00280" = -19;
+"@MMK_R_cid00282" = -39;
+"@MMK_R_cid00283" = -28;
+"@MMK_R_cid00285" = 30;
+"@MMK_R_cid00286" = 15;
+"@MMK_R_cid00287" = -46;
+"@MMK_R_cid00289" = -42;
+"@MMK_R_cid00291" = 15;
+"@MMK_R_cid00293" = -73;
+"@MMK_R_cid00294" = -31;
+"@MMK_R_cid00296" = 25;
+};
+"@MMK_L_cid00281" = {
+"@MMK_R_cid00293" = -8;
+"@MMK_R_cid00719" = -23;
+};
+"@MMK_L_cid00282" = {
+"@MMK_R_cid00285" = -35;
+"@MMK_R_cid00291" = -12;
+"@MMK_R_cid00296" = -15;
+};
+"@MMK_L_cid00283" = {
+"@MMK_R_cid00013" = 16;
+"@MMK_R_cid00027" = 16;
+"@MMK_R_cid00275" = -3;
+"@MMK_R_cid00277" = -8;
+"@MMK_R_cid00282" = -5;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00285" = -8;
+"@MMK_R_cid00287" = -12;
+"@MMK_R_cid00289" = -10;
+"@MMK_R_cid00290" = -19;
+"@MMK_R_cid00293" = -23;
+"@MMK_R_cid00296" = -8;
+"@MMK_R_cid00719" = -39;
+};
+"@MMK_L_cid00284" = {
+"@MMK_R_cid00011" = -23;
+"@MMK_R_cid00013" = 7;
+"@MMK_R_cid00014" = -83;
+"@MMK_R_cid00027" = 7;
+"@MMK_R_cid00032" = -31;
+"@MMK_R_cid00106" = -38;
+"@MMK_R_cid00118" = -38;
+"@MMK_R_cid00122" = -24;
+"@MMK_R_cid00269" = -54;
+"@MMK_R_cid00270" = -18;
+"@MMK_R_cid00275" = -29;
+"@MMK_R_cid00277" = -35;
+"@MMK_R_cid00278" = -16;
+"@MMK_R_cid00280" = -8;
+"@MMK_R_cid00282" = -16;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00285" = -43;
+"@MMK_R_cid00287" = -35;
+"@MMK_R_cid00289" = -29;
+"@MMK_R_cid00290" = -16;
+"@MMK_R_cid00291" = -8;
+"@MMK_R_cid00293" = -35;
+"@MMK_R_cid00294" = -8;
+"@MMK_R_cid00296" = -16;
+"@MMK_R_cid00719" = -38;
+};
+"@MMK_L_cid00285" = {
+"@MMK_R_cid00013" = 16;
+"@MMK_R_cid00027" = 16;
+"@MMK_R_cid00118" = -19;
+"@MMK_R_cid00122" = -19;
+"@MMK_R_cid00275" = -8;
+"@MMK_R_cid00277" = -35;
+"@MMK_R_cid00278" = -8;
+"@MMK_R_cid00280" = -8;
+"@MMK_R_cid00282" = -16;
+"@MMK_R_cid00283" = -8;
+"@MMK_R_cid00285" = -61;
+"@MMK_R_cid00287" = -35;
+"@MMK_R_cid00289" = -16;
+"@MMK_R_cid00290" = -16;
+"@MMK_R_cid00293" = -46;
+"@MMK_R_cid00294" = -12;
+"@MMK_R_cid00296" = -28;
+"@MMK_R_cid00719" = -98;
+};
+"@MMK_L_cid00287" = {
+"@MMK_R_cid00013" = -32;
+"@MMK_R_cid00122" = -12;
+"@MMK_R_cid00277" = -32;
+"@MMK_R_cid00278" = -16;
+"@MMK_R_cid00279" = -6;
+"@MMK_R_cid00285" = -32;
+"@MMK_R_cid00287" = -32;
+"@MMK_R_cid00289" = -16;
+"@MMK_R_cid00290" = -8;
+"@MMK_R_cid00291" = -12;
+"@MMK_R_cid00293" = -12;
+"@MMK_R_cid00296" = -16;
+};
+"@MMK_L_cid00288" = {
+"@MMK_R_cid00010" = 20;
+"@MMK_R_cid00013" = 14;
+"@MMK_R_cid00122" = -8;
+"@MMK_R_cid00275" = -18;
+"@MMK_R_cid00277" = -12;
+"@MMK_R_cid00279" = -16;
+"@MMK_R_cid00283" = -16;
+"@MMK_R_cid00285" = 30;
+"@MMK_R_cid00286" = 15;
+"@MMK_R_cid00287" = -12;
+"@MMK_R_cid00289" = -18;
+"@MMK_R_cid00291" = 15;
+"@MMK_R_cid00294" = -16;
+"@MMK_R_cid00296" = 25;
+};
+"@MMK_L_cid00289" = {
+"@MMK_R_cid00003" = -22;
+"@MMK_R_cid00011" = -14;
+"@MMK_R_cid00013" = -12;
+"@MMK_R_cid00014" = 3;
+"@MMK_R_cid00032" = -31;
+"@MMK_R_cid00061" = -38;
+"@MMK_R_cid00269" = -67;
+"@MMK_R_cid00270" = -61;
+"@MMK_R_cid00272" = -8;
+"@MMK_R_cid00277" = -21;
+"@MMK_R_cid00285" = -24;
+"@MMK_R_cid00287" = -21;
+"@MMK_R_cid00290" = -12;
+"@MMK_R_cid00293" = -28;
+"@MMK_R_cid00296" = -28;
+"@MMK_R_cid00718" = -7;
+"@MMK_R_cid00719" = -38;
+};
+"@MMK_L_cid00290" = {
+"@MMK_R_cid00122" = -19;
+"@MMK_R_cid00275" = -12;
+"@MMK_R_cid00277" = -19;
+"@MMK_R_cid00287" = -19;
+"@MMK_R_cid00289" = -12;
+"@MMK_R_cid00293" = -12;
+};
+"@MMK_L_cid00292" = {
+"@MMK_R_cid00277" = -16;
+"@MMK_R_cid00278" = -12;
+"@MMK_R_cid00279" = -8;
+"@MMK_R_cid00285" = -39;
+"@MMK_R_cid00287" = -16;
+"@MMK_R_cid00289" = -12;
+"@MMK_R_cid00291" = -23;
+"@MMK_R_cid00296" = -16;
+};
+"@MMK_L_cid00293" = {
+"@MMK_R_cid00013" = -8;
+"@MMK_R_cid00014" = -38;
+"@MMK_R_cid00027" = 7;
+"@MMK_R_cid00032" = -38;
+"@MMK_R_cid00106" = -16;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00122" = -19;
+"@MMK_R_cid00269" = -19;
+"@MMK_R_cid00270" = -8;
+"@MMK_R_cid00275" = -19;
+"@MMK_R_cid00279" = -3;
+"@MMK_R_cid00282" = -6;
+"@MMK_R_cid00283" = -7;
+"@MMK_R_cid00285" = -23;
+"@MMK_R_cid00287" = -19;
+"@MMK_R_cid00289" = -19;
+"@MMK_R_cid00291" = -18;
+"@MMK_R_cid00293" = -23;
+"@MMK_R_cid00296" = -15;
+};
+"@MMK_L_cid00294" = {
+"@MMK_R_cid00277" = -12;
+"@MMK_R_cid00285" = -19;
+"@MMK_R_cid00287" = -12;
+"@MMK_R_cid00290" = -15;
+"@MMK_R_cid00293" = -15;
+"@MMK_R_cid00296" = -8;
+};
+"@MMK_L_cid00296" = {
+"@MMK_R_cid00002" = -19;
+"@MMK_R_cid00011" = -24;
+"@MMK_R_cid00013" = -16;
+"@MMK_R_cid00014" = -19;
+"@MMK_R_cid00106" = -31;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00122" = -23;
+"@MMK_R_cid00258" = -12;
+"@MMK_R_cid00269" = -30;
+"@MMK_R_cid00270" = -42;
+"@MMK_R_cid00272" = -12;
+"@MMK_R_cid00275" = -28;
+"@MMK_R_cid00276" = -15;
+"@MMK_R_cid00277" = -23;
+"@MMK_R_cid00278" = -19;
+"@MMK_R_cid00279" = -23;
+"@MMK_R_cid00281" = -12;
+"@MMK_R_cid00282" = -15;
+"@MMK_R_cid00283" = -12;
+"@MMK_R_cid00285" = -39;
+"@MMK_R_cid00287" = -26;
+"@MMK_R_cid00289" = -28;
+"@MMK_R_cid00290" = -19;
+"@MMK_R_cid00291" = -26;
+"@MMK_R_cid00293" = -31;
+"@MMK_R_cid00294" = -12;
+};
+"@MMK_L_cid00299" = {
+"@MMK_R_cid00307" = -31;
+"@MMK_R_cid00320" = -39;
+"@MMK_R_cid00323" = -12;
+"@MMK_R_cid00333" = -19;
+"@MMK_R_cid00337" = -12;
+"@MMK_R_cid00339" = -12;
+"@MMK_R_cid00350" = -31;
+"@MMK_R_cid00351" = -12;
+"@MMK_R_cid00353" = -46;
+"@MMK_R_cid00355" = -19;
+};
+"@MMK_L_cid00300" = {
+"@MMK_R_cid00003" = -77;
+"@MMK_R_cid00011" = -98;
+"@MMK_R_cid00032" = -38;
+"@MMK_R_cid00036" = -12;
+"@MMK_R_cid00053" = -45;
+"@MMK_R_cid00054" = -14;
+"@MMK_R_cid00055" = -19;
+"@MMK_R_cid00057" = -4;
+"@MMK_R_cid00058" = -19;
+"@MMK_R_cid00061" = -45;
+"@MMK_R_cid00071" = -12;
+"@MMK_R_cid00085" = -19;
+"@MMK_R_cid00087" = -19;
+"@MMK_R_cid00090" = -19;
+"@MMK_R_cid00109" = -103;
+"@MMK_R_cid00118" = -31;
+"@MMK_R_cid00300" = -3;
+"@MMK_R_cid00304" = 16;
+"@MMK_R_cid00311" = 16;
+"@MMK_R_cid00314" = -12;
+"@MMK_R_cid00318" = -77;
+"@MMK_R_cid00320" = -16;
+"@MMK_R_cid00321" = -4;
+"@MMK_R_cid00323" = -91;
+"@MMK_R_cid00332" = 19;
+"@MMK_R_cid00336" = 23;
+"@MMK_R_cid00339" = 7;
+"@MMK_R_cid00343" = 23;
+"@MMK_R_cid00350" = -19;
+"@MMK_R_cid00351" = -16;
+"@MMK_R_cid00353" = -8;
+"@MMK_R_cid00355" = -39;
+"@MMK_R_cid00361" = 14;
+"@MMK_R_cid00718" = -89;
+"@MMK_R_cid00719" = -66;
+"@MMK_R_cid00755" = -76;
+};
+"@MMK_L_cid00301" = {
+"@MMK_R_cid00011" = -34;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00304" = 5;
+"@MMK_R_cid00307" = -23;
+"@MMK_R_cid00311" = 5;
+"@MMK_R_cid00318" = -31;
+"@MMK_R_cid00321" = -8;
+"@MMK_R_cid00323" = -19;
+"@MMK_R_cid00339" = -19;
+"@MMK_R_cid00350" = -12;
+"@MMK_R_cid00351" = -19;
+"@MMK_R_cid00353" = -12;
+"@MMK_R_cid00355" = -12;
+"@MMK_R_cid00363" = -12;
+"@MMK_R_cid00718" = -19;
+"@MMK_R_cid00719" = -23;
+};
+"@MMK_L_cid00303" = {
+"@MMK_R_cid00013" = -177;
+"@MMK_R_cid00014" = -123;
+"@MMK_R_cid00027" = -23;
+"@MMK_R_cid00106" = -75;
+"@MMK_R_cid00109" = 23;
+"@MMK_R_cid00118" = -45;
+"@MMK_R_cid00122" = -59;
+"@MMK_R_cid00300" = -68;
+"@MMK_R_cid00304" = -112;
+"@MMK_R_cid00307" = -45;
+"@MMK_R_cid00311" = -112;
+"@MMK_R_cid00314" = -38;
+"@MMK_R_cid00320" = -66;
+"@MMK_R_cid00321" = -28;
+"@MMK_R_cid00331" = -45;
+"@MMK_R_cid00332" = -98;
+"@MMK_R_cid00333" = -45;
+"@MMK_R_cid00334" = -56;
+"@MMK_R_cid00336" = -104;
+"@MMK_R_cid00337" = -104;
+"@MMK_R_cid00339" = -59;
+"@MMK_R_cid00343" = -120;
+"@MMK_R_cid00348" = -56;
+"@MMK_R_cid00350" = -29;
+"@MMK_R_cid00351" = -36;
+"@MMK_R_cid00353" = -34;
+"@MMK_R_cid00355" = -56;
+"@MMK_R_cid00361" = -52;
+"@MMK_R_cid00363" = -112;
+};
+"@MMK_L_cid00304" = {
+"@MMK_R_cid00003" = -8;
+"@MMK_R_cid00010" = 23;
+"@MMK_R_cid00013" = 23;
+"@MMK_R_cid00014" = -12;
+"@MMK_R_cid00027" = 23;
+"@MMK_R_cid00032" = -19;
+"@MMK_R_cid00074" = 16;
+"@MMK_R_cid00299" = -7;
+"@MMK_R_cid00304" = 39;
+"@MMK_R_cid00311" = 39;
+"@MMK_R_cid00314" = -12;
+"@MMK_R_cid00318" = -23;
+"@MMK_R_cid00320" = -12;
+"@MMK_R_cid00323" = -28;
+"@MMK_R_cid00332" = 16;
+"@MMK_R_cid00334" = 16;
+"@MMK_R_cid00336" = 45;
+"@MMK_R_cid00337" = 16;
+"@MMK_R_cid00343" = 38;
+"@MMK_R_cid00348" = 23;
+"@MMK_R_cid00350" = -12;
+"@MMK_R_cid00351" = 3;
+"@MMK_R_cid00355" = -16;
+"@MMK_R_cid00361" = 16;
+"@MMK_R_cid00363" = 8;
+};
+"@MMK_L_cid00306" = {
+"@MMK_R_cid00010" = 7;
+"@MMK_R_cid00014" = -39;
+"@MMK_R_cid00106" = -28;
+"@MMK_R_cid00118" = -31;
+"@MMK_R_cid00122" = -16;
+"@MMK_R_cid00304" = 24;
+"@MMK_R_cid00311" = 32;
+"@MMK_R_cid00314" = -12;
+"@MMK_R_cid00320" = -26;
+"@MMK_R_cid00323" = -15;
+"@MMK_R_cid00333" = -16;
+"@MMK_R_cid00336" = 23;
+"@MMK_R_cid00337" = -16;
+"@MMK_R_cid00339" = 7;
+"@MMK_R_cid00343" = 23;
+"@MMK_R_cid00350" = -34;
+"@MMK_R_cid00351" = -28;
+"@MMK_R_cid00355" = -31;
+"@MMK_R_cid00361" = 22;
+"@MMK_R_cid00363" = -19;
+};
+"@MMK_L_cid00314" = {
+"@MMK_R_cid00011" = -30;
+"@MMK_R_cid00016" = -16;
+"@MMK_R_cid00034" = -12;
+"@MMK_R_cid00043" = -57;
+"@MMK_R_cid00053" = -23;
+"@MMK_R_cid00055" = -12;
+"@MMK_R_cid00057" = -28;
+"@MMK_R_cid00058" = -23;
+"@MMK_R_cid00059" = -23;
+"@MMK_R_cid00109" = 3;
+"@MMK_R_cid00300" = -12;
+"@MMK_R_cid00304" = -19;
+"@MMK_R_cid00306" = -12;
+"@MMK_R_cid00307" = -54;
+"@MMK_R_cid00311" = -15;
+"@MMK_R_cid00318" = -31;
+"@MMK_R_cid00321" = -28;
+"@MMK_R_cid00338" = -8;
+"@MMK_R_cid00339" = -19;
+"@MMK_R_cid00343" = -16;
+"@MMK_R_cid00353" = -19;
+"@MMK_R_cid00361" = -16;
+"@MMK_R_cid00363" = -8;
+"@MMK_R_cid00755" = -38;
+};
+"@MMK_L_cid00316" = {
+"@MMK_R_cid00013" = -144;
+"@MMK_R_cid00014" = -30;
+"@MMK_R_cid00016" = -65;
+"@MMK_R_cid00106" = -23;
+"@MMK_R_cid00118" = -4;
+"@MMK_R_cid00300" = -56;
+"@MMK_R_cid00304" = -82;
+"@MMK_R_cid00307" = -60;
+"@MMK_R_cid00311" = -82;
+"@MMK_R_cid00318" = -19;
+"@MMK_R_cid00319" = -24;
+"@MMK_R_cid00321" = -31;
+"@MMK_R_cid00332" = -41;
+"@MMK_R_cid00336" = -45;
+"@MMK_R_cid00337" = -25;
+"@MMK_R_cid00339" = -23;
+"@MMK_R_cid00343" = -68;
+"@MMK_R_cid00353" = -19;
+"@MMK_R_cid00363" = -23;
+};
+"@MMK_L_cid00317" = {
+"@MMK_R_cid00014" = -38;
+"@MMK_R_cid00106" = -19;
+"@MMK_R_cid00118" = -76;
+"@MMK_R_cid00307" = -12;
+"@MMK_R_cid00314" = -39;
+"@MMK_R_cid00318" = -16;
+"@MMK_R_cid00320" = -53;
+"@MMK_R_cid00321" = -8;
+"@MMK_R_cid00323" = -23;
+"@MMK_R_cid00333" = -23;
+"@MMK_R_cid00350" = -39;
+"@MMK_R_cid00351" = -19;
+"@MMK_R_cid00355" = -45;
+};
+"@MMK_L_cid00318" = {
+"@MMK_R_cid00013" = -129;
+"@MMK_R_cid00014" = -75;
+"@MMK_R_cid00016" = -84;
+"@MMK_R_cid00027" = -23;
+"@MMK_R_cid00106" = -61;
+"@MMK_R_cid00118" = -76;
+"@MMK_R_cid00122" = -45;
+"@MMK_R_cid00300" = -45;
+"@MMK_R_cid00304" = -59;
+"@MMK_R_cid00307" = -31;
+"@MMK_R_cid00311" = -67;
+"@MMK_R_cid00314" = -31;
+"@MMK_R_cid00320" = -51;
+"@MMK_R_cid00321" = -23;
+"@MMK_R_cid00331" = -23;
+"@MMK_R_cid00332" = -75;
+"@MMK_R_cid00333" = -33;
+"@MMK_R_cid00334" = -49;
+"@MMK_R_cid00336" = -90;
+"@MMK_R_cid00337" = -83;
+"@MMK_R_cid00339" = -45;
+"@MMK_R_cid00343" = -105;
+"@MMK_R_cid00348" = -49;
+"@MMK_R_cid00350" = -16;
+"@MMK_R_cid00351" = -30;
+"@MMK_R_cid00353" = -33;
+"@MMK_R_cid00355" = -38;
+"@MMK_R_cid00361" = -41;
+"@MMK_R_cid00363" = -98;
+};
+"@MMK_L_cid00319" = {
+"@MMK_R_cid00010" = 7;
+"@MMK_R_cid00013" = -107;
+"@MMK_R_cid00014" = -45;
+"@MMK_R_cid00032" = 7;
+"@MMK_R_cid00106" = -39;
+"@MMK_R_cid00118" = -28;
+"@MMK_R_cid00122" = -54;
+"@MMK_R_cid00300" = -45;
+"@MMK_R_cid00304" = -68;
+"@MMK_R_cid00307" = -31;
+"@MMK_R_cid00311" = -76;
+"@MMK_R_cid00314" = -8;
+"@MMK_R_cid00319" = -23;
+"@MMK_R_cid00320" = -31;
+"@MMK_R_cid00321" = -39;
+"@MMK_R_cid00323" = -19;
+"@MMK_R_cid00331" = -8;
+"@MMK_R_cid00332" = -31;
+"@MMK_R_cid00333" = -19;
+"@MMK_R_cid00334" = -34;
+"@MMK_R_cid00336" = -68;
+"@MMK_R_cid00337" = -45;
+"@MMK_R_cid00338" = -39;
+"@MMK_R_cid00339" = -42;
+"@MMK_R_cid00343" = -91;
+"@MMK_R_cid00348" = -34;
+"@MMK_R_cid00350" = -19;
+"@MMK_R_cid00351" = -15;
+"@MMK_R_cid00353" = -19;
+"@MMK_R_cid00355" = -23;
+"@MMK_R_cid00361" = -28;
+"@MMK_R_cid00363" = -61;
+"@MMK_R_cid00718" = 12;
+"@MMK_R_cid00719" = 15;
+};
+"@MMK_L_cid00320" = {
+"@MMK_R_cid00003" = -30;
+"@MMK_R_cid00013" = -61;
+"@MMK_R_cid00014" = 3;
+"@MMK_R_cid00032" = -23;
+"@MMK_R_cid00300" = -16;
+"@MMK_R_cid00304" = -33;
+"@MMK_R_cid00306" = -26;
+"@MMK_R_cid00307" = -70;
+"@MMK_R_cid00311" = -33;
+"@MMK_R_cid00318" = -91;
+"@MMK_R_cid00319" = -8;
+"@MMK_R_cid00321" = -46;
+"@MMK_R_cid00331" = -12;
+"@MMK_R_cid00332" = -23;
+"@MMK_R_cid00336" = -19;
+"@MMK_R_cid00338" = -8;
+"@MMK_R_cid00339" = -19;
+"@MMK_R_cid00343" = -19;
+"@MMK_R_cid00353" = -8;
+"@MMK_R_cid00361" = -8;
+"@MMK_R_cid00363" = -8;
+"@MMK_R_cid00718" = -7;
+"@MMK_R_cid00719" = -30;
+};
+"@MMK_L_cid00321" = {
+"@MMK_R_cid00003" = -12;
+"@MMK_R_cid00011" = -12;
+"@MMK_R_cid00014" = -39;
+"@MMK_R_cid00106" = -19;
+"@MMK_R_cid00118" = -45;
+"@MMK_R_cid00122" = -23;
+"@MMK_R_cid00300" = -5;
+"@MMK_R_cid00307" = -12;
+"@MMK_R_cid00314" = -28;
+"@MMK_R_cid00318" = -23;
+"@MMK_R_cid00320" = -46;
+"@MMK_R_cid00323" = -19;
+"@MMK_R_cid00331" = -16;
+"@MMK_R_cid00332" = -12;
+"@MMK_R_cid00333" = -19;
+"@MMK_R_cid00337" = -16;
+"@MMK_R_cid00350" = -27;
+"@MMK_R_cid00351" = -27;
+"@MMK_R_cid00353" = -12;
+"@MMK_R_cid00355" = -50;
+"@MMK_R_cid00361" = 7;
+"@MMK_R_cid00718" = -16;
+"@MMK_R_cid00719" = -16;
+};
+"@MMK_L_cid00326" = {
+"@MMK_R_cid00003" = -82;
+"@MMK_R_cid00032" = -39;
+"@MMK_R_cid00304" = 8;
+"@MMK_R_cid00306" = -19;
+"@MMK_R_cid00307" = -31;
+"@MMK_R_cid00311" = 5;
+"@MMK_R_cid00318" = -120;
+"@MMK_R_cid00319" = -46;
+"@MMK_R_cid00321" = -12;
+"@MMK_R_cid00323" = -59;
+"@MMK_R_cid00331" = -19;
+"@MMK_R_cid00339" = -15;
+"@MMK_R_cid00350" = -23;
+"@MMK_R_cid00351" = -8;
+"@MMK_R_cid00353" = -12;
+"@MMK_R_cid00355" = -12;
+"@MMK_R_cid00361" = -12;
+"@MMK_R_cid00363" = -8;
+"@MMK_R_cid00718" = -59;
+"@MMK_R_cid00719" = -59;
+};
+"@MMK_L_cid00332" = {
+"@MMK_R_cid00011" = -53;
+"@MMK_R_cid00032" = -31;
+"@MMK_R_cid00318" = -31;
+"@MMK_R_cid00350" = -19;
+"@MMK_R_cid00719" = -27;
+};
+"@MMK_L_cid00333" = {
+"@MMK_R_cid00332" = -12;
+"@MMK_R_cid00338" = -8;
+"@MMK_R_cid00339" = -34;
+"@MMK_R_cid00343" = -12;
+"@MMK_R_cid00350" = -42;
+"@MMK_R_cid00351" = -16;
+"@MMK_R_cid00353" = -28;
+"@MMK_R_cid00355" = -11;
+"@MMK_R_cid00361" = -30;
+"@MMK_R_cid00363" = -12;
+"@MMK_R_cid00719" = -23;
+};
+"@MMK_L_cid00334" = {
+"@MMK_R_cid00339" = -23;
+"@MMK_R_cid00350" = -31;
+"@MMK_R_cid00351" = -8;
+"@MMK_R_cid00355" = -12;
+"@MMK_R_cid00361" = -19;
+"@MMK_R_cid00363" = -8;
+};
+"@MMK_L_cid00335" = {
+"@MMK_R_cid00013" = -113;
+"@MMK_R_cid00014" = -36;
+"@MMK_R_cid00106" = -30;
+"@MMK_R_cid00109" = 43;
+"@MMK_R_cid00332" = -42;
+"@MMK_R_cid00336" = -45;
+"@MMK_R_cid00337" = -41;
+"@MMK_R_cid00338" = -12;
+"@MMK_R_cid00339" = -23;
+"@MMK_R_cid00343" = -68;
+"@MMK_R_cid00351" = -12;
+"@MMK_R_cid00353" = -19;
+"@MMK_R_cid00361" = -19;
+"@MMK_R_cid00363" = -41;
+"@MMK_R_cid00718" = 16;
+};
+"@MMK_L_cid00336" = {
+"@MMK_R_cid00003" = -16;
+"@MMK_R_cid00010" = 23;
+"@MMK_R_cid00013" = 23;
+"@MMK_R_cid00014" = -8;
+"@MMK_R_cid00027" = 23;
+"@MMK_R_cid00332" = 8;
+"@MMK_R_cid00336" = 45;
+"@MMK_R_cid00338" = 3;
+"@MMK_R_cid00343" = 28;
+"@MMK_R_cid00348" = 12;
+"@MMK_R_cid00350" = -19;
+"@MMK_R_cid00351" = -8;
+"@MMK_R_cid00355" = -8;
+};
+"@MMK_L_cid00337" = {
+"@MMK_R_cid00011" = -30;
+"@MMK_R_cid00014" = 12;
+"@MMK_R_cid00032" = -16;
+"@MMK_R_cid00061" = -35;
+"@MMK_R_cid00106" = -12;
+"@MMK_R_cid00118" = -8;
+"@MMK_R_cid00318" = -31;
+"@MMK_R_cid00332" = -14;
+"@MMK_R_cid00338" = -8;
+"@MMK_R_cid00350" = -12;
+"@MMK_R_cid00351" = -4;
+"@MMK_R_cid00353" = -16;
+"@MMK_R_cid00363" = -8;
+"@MMK_R_cid00719" = -12;
+};
+"@MMK_L_cid00338" = {
+"@MMK_R_cid00014" = -31;
+"@MMK_R_cid00106" = -19;
+"@MMK_R_cid00109" = 5;
+"@MMK_R_cid00122" = -23;
+"@MMK_R_cid00332" = -12;
+"@MMK_R_cid00333" = -8;
+"@MMK_R_cid00336" = 32;
+"@MMK_R_cid00337" = -28;
+"@MMK_R_cid00338" = -16;
+"@MMK_R_cid00350" = -28;
+"@MMK_R_cid00351" = -19;
+"@MMK_R_cid00355" = -28;
+"@MMK_R_cid00363" = -32;
+"@MMK_R_cid00719" = -24;
+};
+"@MMK_L_cid00340" = {
+"@MMK_R_cid00011" = -19;
+"@MMK_R_cid00318" = -23;
+};
+"@MMK_L_cid00346" = {
+"@MMK_R_cid00003" = -22;
+"@MMK_R_cid00011" = -14;
+"@MMK_R_cid00013" = -12;
+"@MMK_R_cid00014" = 3;
+"@MMK_R_cid00032" = -31;
+"@MMK_R_cid00061" = -38;
+"@MMK_R_cid00318" = -67;
+"@MMK_R_cid00321" = -8;
+"@MMK_R_cid00332" = -14;
+"@MMK_R_cid00339" = -28;
+"@MMK_R_cid00350" = -28;
+"@MMK_R_cid00351" = -8;
+"@MMK_R_cid00353" = -28;
+"@MMK_R_cid00361" = -30;
+"@MMK_R_cid00363" = -8;
+"@MMK_R_cid00718" = -7;
+"@MMK_R_cid00719" = -38;
+};
+"@MMK_L_cid00349" = {
+"@MMK_R_cid00014" = -35;
+"@MMK_R_cid00106" = -19;
+"@MMK_R_cid00118" = -19;
+"@MMK_R_cid00318" = -23;
+"@MMK_R_cid00332" = -12;
+"@MMK_R_cid00333" = -16;
+"@MMK_R_cid00337" = -30;
+"@MMK_R_cid00343" = 7;
+"@MMK_R_cid00350" = -12;
+"@MMK_R_cid00351" = 3;
+"@MMK_R_cid00355" = -12;
+"@MMK_R_cid00363" = -12;
+};
+"@MMK_L_cid00350" = {
+"@MMK_R_cid00013" = -8;
+"@MMK_R_cid00014" = -38;
+"@MMK_R_cid00027" = 7;
+"@MMK_R_cid00032" = -38;
+"@MMK_R_cid00106" = -16;
+"@MMK_R_cid00109" = 20;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00122" = -19;
+"@MMK_R_cid00318" = -19;
+"@MMK_R_cid00332" = -23;
+"@MMK_R_cid00336" = -27;
+"@MMK_R_cid00337" = -19;
+"@MMK_R_cid00339" = -23;
+"@MMK_R_cid00343" = -45;
+"@MMK_R_cid00350" = -23;
+"@MMK_R_cid00353" = -15;
+"@MMK_R_cid00361" = -12;
+"@MMK_R_cid00363" = -38;
+};
+"@MMK_L_cid00351" = {
+"@MMK_R_cid00013" = -61;
+"@MMK_R_cid00016" = -7;
+"@MMK_R_cid00106" = -8;
+"@MMK_R_cid00122" = -8;
+"@MMK_R_cid00318" = -23;
+"@MMK_R_cid00321" = -8;
+"@MMK_R_cid00332" = -23;
+"@MMK_R_cid00336" = -16;
+"@MMK_R_cid00337" = -8;
+"@MMK_R_cid00338" = -24;
+"@MMK_R_cid00339" = -19;
+"@MMK_R_cid00343" = -16;
+"@MMK_R_cid00353" = -19;
+"@MMK_R_cid00361" = -16;
+"@MMK_R_cid00363" = -24;
+};
+"@MMK_L_cid00353" = {
+"@MMK_R_cid00002" = -19;
+"@MMK_R_cid00011" = -24;
+"@MMK_R_cid00013" = -16;
+"@MMK_R_cid00014" = -19;
+"@MMK_R_cid00106" = -31;
+"@MMK_R_cid00118" = -23;
+"@MMK_R_cid00122" = -23;
+"@MMK_R_cid00314" = -12;
+"@MMK_R_cid00318" = -30;
+"@MMK_R_cid00321" = -12;
+"@MMK_R_cid00332" = -12;
+"@MMK_R_cid00333" = -12;
+"@MMK_R_cid00336" = 32;
+"@MMK_R_cid00337" = -28;
+"@MMK_R_cid00338" = -16;
+"@MMK_R_cid00339" = -16;
+"@MMK_R_cid00350" = -31;
+"@MMK_R_cid00351" = -12;
+"@MMK_R_cid00355" = -19;
+"@MMK_R_cid00363" = -28;
+};
+"@MMK_L_cid00358" = {
+"@MMK_R_cid00003" = -91;
+"@MMK_R_cid00032" = -23;
+"@MMK_R_cid00109" = -77;
+"@MMK_R_cid00338" = -8;
+"@MMK_R_cid00339" = -23;
+"@MMK_R_cid00350" = -75;
+"@MMK_R_cid00351" = -28;
+"@MMK_R_cid00353" = -19;
+"@MMK_R_cid00355" = -30;
+"@MMK_R_cid00361" = -23;
+"@MMK_R_cid00363" = -12;
+"@MMK_R_cid00718" = -59;
+"@MMK_R_cid00719" = -75;
+};
+"@MMK_L_cid00718" = {
+"@MMK_R_cid00013" = -128;
+"@MMK_R_cid00034" = -66;
+"@MMK_R_cid00043" = -100;
+"@MMK_R_cid00052" = -19;
+"@MMK_R_cid00055" = 7;
+"@MMK_R_cid00056" = 7;
+"@MMK_R_cid00057" = -16;
+"@MMK_R_cid00066" = -41;
+"@MMK_R_cid00068" = -30;
+"@MMK_R_cid00071" = -19;
+"@MMK_R_cid00072" = -30;
+"@MMK_R_cid00084" = -12;
+"@MMK_R_cid00096" = -52;
+"@MMK_R_cid00126" = -143;
+"@MMK_R_cid00133" = -82;
+"@MMK_R_cid00251" = -66;
+"@MMK_R_cid00254" = -66;
+"@MMK_R_cid00271" = -23;
+"@MMK_R_cid00272" = -16;
+"@MMK_R_cid00275" = -30;
+"@MMK_R_cid00276" = -7;
+"@MMK_R_cid00278" = -30;
+"@MMK_R_cid00279" = -30;
+"@MMK_R_cid00280" = -23;
+"@MMK_R_cid00285" = -32;
+"@MMK_R_cid00289" = -30;
+"@MMK_R_cid00291" = -30;
+"@MMK_R_cid00300" = -66;
+"@MMK_R_cid00304" = -68;
+"@MMK_R_cid00306" = -8;
+"@MMK_R_cid00311" = -68;
+"@MMK_R_cid00320" = -23;
+"@MMK_R_cid00321" = -16;
+"@MMK_R_cid00332" = -41;
+"@MMK_R_cid00336" = -30;
+"@MMK_R_cid00337" = -30;
+"@MMK_R_cid00338" = -16;
+"@MMK_R_cid00343" = -45;
+"@MMK_R_cid00363" = -31;
+};
+"@MMK_L_cid00719" = {
+"@MMK_R_cid00013" = -167;
+"@MMK_R_cid00034" = -85;
+"@MMK_R_cid00043" = -116;
+"@MMK_R_cid00057" = -16;
+"@MMK_R_cid00066" = -59;
+"@MMK_R_cid00068" = -43;
+"@MMK_R_cid00071" = -15;
+"@MMK_R_cid00072" = -36;
+"@MMK_R_cid00078" = -7;
+"@MMK_R_cid00084" = -45;
+"@MMK_R_cid00091" = -26;
+"@MMK_R_cid00133" = -82;
+"@MMK_R_cid00251" = -85;
+"@MMK_R_cid00254" = -61;
+"@MMK_R_cid00271" = -30;
+"@MMK_R_cid00272" = -16;
+"@MMK_R_cid00275" = -43;
+"@MMK_R_cid00289" = -43;
+"@MMK_R_cid00300" = -85;
+"@MMK_R_cid00304" = -68;
+"@MMK_R_cid00311" = -68;
+"@MMK_R_cid00319" = 23;
+"@MMK_R_cid00320" = -30;
+"@MMK_R_cid00321" = -16;
+"@MMK_R_cid00332" = -59;
+"@MMK_R_cid00334" = -7;
+"@MMK_R_cid00336" = -38;
+"@MMK_R_cid00337" = -43;
+"@MMK_R_cid00343" = -53;
+"@MMK_R_cid00363" = -31;
+};
+};
+};
+manufacturer = "Adobe Systems Incorporated";
+manufacturerURL = "http://www.google.com/get/noto/";
+unitsPerEm = 1000;
+versionMajor = 1;
+versionMinor = 4;
+}
