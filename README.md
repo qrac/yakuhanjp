@@ -16,20 +16,26 @@
 
 4種類のフォントを用意しています。ゴシック体と明朝体を使い分けられる他、カッコだけを半角にするSmall Amount（少量版）が使えます。
 
-- YakuHanJP : ゴシック体 All Include（全部入り版）
-- YakuHanJPs : ゴシック体 Small Amount（少量版）
-- YakuHanMP : 明朝体 All Include（全部入り版）
-- YakuHanMPs : 明朝体 Small Amount（少量版）
+- YakuHanJP : ゴシック体 All Include（全部入り版 : 約物すべて）
+- YakuHanJPs : ゴシック体 Small Amount（少量版 : カッコのみ）
+- YakuHanMP : 明朝体 All Include（全部入り版 : 約物すべて）
+- YakuHanMPs : 明朝体 Small Amount（少量版 : カッコのみ）
 
 内包する文字はそれぞれ以下の通りです。
 
-### All Include（全部入り版） : 約物すべて
+```
+// YakuHanJP
+、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝…
 
-> 、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝…
+// YakuHanJPs
+〈〉《》「」『』【】〔〕（）［］｛｝…
 
-### Small Amount（少量版） : カッコのみ
+// YakuHanMP
+、。！？《》「」『』【】〔〕・（）：；［］｛｝…
 
-> 〈〉《》「」『』【】〔〕（）［］｛｝…
+// YakuHanMPs
+《》「」『』【】〔〕（）［］｛｝…
+```
 
 ウェイトは7段階。付属のCSSでは以下のfont-weightで指定できます。※Noto Sans CJK JPとNoto Serif CJK JPでウエイト・ファイル名が若干異なるため、当ライブラリ内のファイル名もそれに準じています。
 
