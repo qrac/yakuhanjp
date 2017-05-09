@@ -1,26 +1,26 @@
 /* Yaku Han JP Demo CSS */
 *.is-font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-yakuhanjp {
-  font-family: -apple-system, BlinkMacSystemFont, YakuHanJP, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-yakuhanjps {
-  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-hiragino {
-  font-family: "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  font-family: "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-hiragino-yakuhanjp {
-  font-family: YakuHanJP, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-hiragino-yakuhanjps {
-  font-family: YakuHanJPs, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  font-family: YakuHanJPs, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-yugo {
@@ -36,27 +36,27 @@
 }
 
 *.is-font-sans-noto {
-  font-family: "Noto Sans Japanese", "Hiragino Sans", YuGothic, Meiryo, sans-serif;
+  font-family: "Noto Sans Japanese", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-noto-yakuhanjp {
-  font-family: YakuHanJP, "Noto Sans Japanese", "Hiragino Sans", YuGothic, Meiryo, sans-serif;
+  font-family: YakuHanJP, "Noto Sans Japanese", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-noto-yakuhanjps {
-  font-family: YakuHanJPs, "Noto Sans Japanese", "Hiragino Sans", YuGothic, Meiryo, sans-serif;
+  font-family: YakuHanJPs, "Noto Sans Japanese", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 *.is-font-sans-meiryo {
-  font-family: Meiryo, "Hiragino Sans", "Yu Gothic", YuGothic, sans-serif;
+  font-family: Meiryo, "Hiragino Sans", sans-serif;
 }
 
 *.is-font-sans-meiryo-yakuhanjp {
-  font-family: YakuHanJP, Meiryo, "Hiragino Sans", "Yu Gothic", YuGothic, sans-serif;
+  font-family: YakuHanJP, Meiryo, "Hiragino Sans", sans-serif;
 }
 
 *.is-font-sans-meiryo-yakuhanjps {
-  font-family: YakuHanJPs, Meiryo, "Hiragino Sans", "Yu Gothic", YuGothic, sans-serif;
+  font-family: YakuHanJPs, Meiryo, "Hiragino Sans", sans-serif;
 }
 
 *.is-font-serif {
@@ -221,6 +221,7 @@
 
 .yakuhanjp.yakuhanjp-demo {
   background: linear-gradient(90deg, #ddd 50%, #F2F2F2 50%);
+  font-family: -apple-system, BlinkMacSystemFont, YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 .section.is-topcover {
