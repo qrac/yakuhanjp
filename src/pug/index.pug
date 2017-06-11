@@ -38,7 +38,7 @@ block contents
         h3.heading.is-xxl.is-center Example
 
         .group
-          .grid.is-space-1
+          .grid.is-gap-one-quarter
             .col.is-fit
               ul.tabs.is-xs
                 li.tab.is-switch-font-family.is-switch-gothic.is-active(ontouchstart="") Gothic
@@ -73,43 +73,47 @@ block contents
                 li.tab.is-switch-font-size.is-switch-xxl(ontouchstart="") 2em
 
         .group
-          .grid
-            .col.is-mobile-6.is-stretch.is-before
-              .inner
-                p.texts.is-before.is-font-sans-hiragino #{example.text01}
-            .col.is-mobile-6.is-stretch.is-after
-              .inner
-                p.texts.is-after.is-font-sans-hiragino-yakuhanjp #{example.text01}
+          .grid.is-stretch.is-gap-none
+            .col.is-mobile-6
+              .box.is-before
+                .inner
+                  p.texts.is-before.is-font-sans-hiragino #{example.text01}
+            .col.is-mobile-6
+              .box.is-after
+                .inner
+                  p.texts.is-after.is-font-sans-hiragino-yakuhanjp #{example.text01}
 
       .groups
         h3.heading.is-xxl.is-center Include Fonts
 
         .group
-          .grid
-            .col.is-mobile-6.is-stretch.is-bg-smoke
-              .inner
-                h4.heading
-                  span.text.is-inline-block.is-strong YakuHanJP
-                  | &nbsp;
-                  span.text.is-inline-block.is-strong.is-xxs ゴシック体 All Include（全部入り版）
-                p.texts.is-lg.is-font-sans-hiragino-yakuhanjp #{example.text02}
-                h4.heading
-                  span.text.is-inline-block.is-strong YakuHanJPs
-                  | &nbsp;
-                  span.text.is-inline-block.is-strong.is-xxs ゴシック体 Small Amount（少量版）
-                p.texts.is-lg.is-font-sans-hiragino-yakuhanjps #{example.text03}
-            .col.is-mobile-6.is-stretch.is-bg-white
-              .inner
-                h4.heading
-                  span.text.is-inline-block.is-strong YakuHanMP
-                  | &nbsp;
-                  span.text.is-inline-block.is-strong.is-xxs 明朝体 All Include（全部入り版）
-                p.texts.is-lg.is-font-serif-hiragino-yakuhanmp #{example.text04}
-                h4.heading
-                  span.text.is-inline-block.is-strong YakuHanMPs
-                  | &nbsp;
-                  span.text.is-inline-block.is-strong.is-xxs 明朝体 Small Amount（少量版）
-                p.texts.is-lg.is-font-serif-hiragino-yakuhanmps #{example.text05}
+          .grid.is-stretch.is-gap-none
+            .col.is-mobile-6
+              .box.is-bg-smoke
+                .inner
+                  h4.heading
+                    span.text.is-inline-block.is-strong YakuHanJP
+                    | &nbsp;
+                    span.text.is-inline-block.is-strong.is-xxs ゴシック体 All Include（全部入り版）
+                  p.texts.is-lg.is-font-sans-hiragino-yakuhanjp #{example.text02}
+                  h4.heading
+                    span.text.is-inline-block.is-strong YakuHanJPs
+                    | &nbsp;
+                    span.text.is-inline-block.is-strong.is-xxs ゴシック体 Small Amount（少量版）
+                  p.texts.is-lg.is-font-sans-hiragino-yakuhanjps #{example.text03}
+            .col.is-mobile-6
+              .box.is-bg-white
+                .inner
+                  h4.heading
+                    span.text.is-inline-block.is-strong YakuHanMP
+                    | &nbsp;
+                    span.text.is-inline-block.is-strong.is-xxs 明朝体 All Include（全部入り版）
+                  p.texts.is-lg.is-font-serif-hiragino-yakuhanmp #{example.text04}
+                  h4.heading
+                    span.text.is-inline-block.is-strong YakuHanMPs
+                    | &nbsp;
+                    span.text.is-inline-block.is-strong.is-xxs 明朝体 Small Amount（少量版）
+                  p.texts.is-lg.is-font-serif-hiragino-yakuhanmps #{example.text05}
 
       .groups
         h3.heading.is-xxl.is-center How To Use
@@ -117,32 +121,30 @@ block contents
         .group.is-card
           .inner
             h4.heading.is-strong.is-lg
-              span.text CDN
-              span.text （
-              a.text.is-link-reverse.is-primary(href="https://www.jsdelivr.com/projects/yakuhanjp") jsDelivr
-              span.text ）
+              a.text.is-link-reverse.is-primary(href="https://cdn.jsdelivr.net/npm/yakuhanjp/") CDN
             ol.list.is-disc
               li.item.is-block
-                pre.pre.is-label.is-html
+                pre.pre.is-sm
                   code.code.
                     // YakuHanJP
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp.min.css"&gt;
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css"&gt;
 
                     // YakuHanJPs
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp_s.min.css"&gt;
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css"&gt;
 
                     // YakuHanMP
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp.min.css"&gt;
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css"&gt;
 
                     // YakuHanMPs
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp_s.min.css"&gt;
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css"&gt;
 
         .group.is-card
           .inner
-            h4.heading.is-strong.is-lg npm
+            h4.heading.is-strong.is-lg
+              a.text.is-link-reverse.is-primary(href="https://www.npmjs.com/package/yakuhanjp") npm
             ol.list.is-decimal
               li.item.is-block
-                pre.pre.is-label.is-command
+                pre.pre.is-sm
                   code.code.
                     npm install yakuhanjp
 
@@ -158,7 +160,7 @@ block contents
                 p.texts distフォルダ内の「css」「fonts」を制作サイトに配置
               li.item.is-block
                 p.texts headでCSSを読み込む
-                pre.pre.is-label.is-html
+                pre.pre.is-sm
                   code.code.
                     // YakuHanJP
                     &lt;link rel="stylesheet" href="dist/css/yakuhanjp.min.css"&gt;
@@ -173,16 +175,16 @@ block contents
                     &lt;link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css"&gt;
               li.item.is-block
                 p.texts CSSでフォントを適応
-                pre.pre.is-label.is-css
+                pre.pre.is-sm
                   code.code.
                     // YakuHanJP
                     .yakuhanjp {
-                      font-family: YakuHanJP, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+                      font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
                     }
 
                     // YakuHanJPs
                     .yakuhanjps {
-                      font-family: YakuHanJPs, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+                      font-family: YakuHanJPs, "Hiragino Sans", Meiryo, sans-serif;
                     }
 
                     // YakuHanMP
@@ -271,6 +273,9 @@ block contents
               li.item
                 | Yaku Han JP : SIL OFL 1.1
               li.item
+                | Author :&nbsp;
+                a.text.is-link-reverse.is-primary(href=twitter.url+"/"+twitter.id ontouchstart="") Qrac
+              li.item
                 | Gothic fonts : Based on&nbsp;
                 a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#sans-jpan" ontouchstart="") Noto Sans CJK JP
                 | &nbsp;licensed under the SIL OFL 1.1
@@ -281,9 +286,8 @@ block contents
 
   footer.section.is-footer
     .btns.is-center
-      a.btn.is-lg.is-plain.is-round(href=twitter.url+"/"+twitter.id ontouchstart="")
+      a.btn.is-lg.is-plain.is-circle(href=twitter.url+"/"+twitter.id ontouchstart="")
         i.fa.fa-twitter(aria-hidden="true")
-        span.text Contact
     p.texts.is-center.is-color-transparent
       span.text.is-font-sans-hiragino-yakuhanjp
         span.text.is-weight-100 「

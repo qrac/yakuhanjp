@@ -1,0 +1,13 @@
+//----------------------------------------------------
+// Module: List
+//----------------------------------------------------
+
+.list > .item.is-block + .item.is-block {
+  margin-top: 1em;
+}
+
+.list {
+  @include desktop {
+    margin-right: 1.5em;
+  }
+}
