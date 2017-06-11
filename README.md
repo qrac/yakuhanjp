@@ -2,7 +2,7 @@
 
 ## Demo
 
-- [Demo Page](https://qrac.github.io/yakuhanjp)
+- [Demo Page][link-demo]
 
 ## About
 
@@ -47,25 +47,25 @@
 - font-weight: 700;
 - font-weight: 900;
 
-## How To Use
+## Use
 
-### CDN （ [jsDelivr](https://www.jsdelivr.com/projects/yakuhanjp) ）
+### [CDN][link-jsdelivr]
 
-```
+```html
 // YakuHanJP
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
 
 // YakuHanJPs
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanjp_s.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
 
 // YakuHanMP
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
 
 // YakuHanMPs
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/yakuhanjp/2.0.0/css/yakuhanmp_s.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
 ```
 
-### npm
+### [npm][link-npm]
 
 ```
 npm install yakuhanjp
@@ -73,7 +73,7 @@ npm install yakuhanjp
 
 ### Download
 
-1. データを[ダウンロード](https://github.com/qrac/yakuhanjp/archive/master.zip)
+1. データを[ダウンロード][link-download]
 2. distフォルダ内の「css」「fonts」を制作サイトに配置
 3. headでCSSを読み込む
   - ゴシック体
@@ -90,7 +90,7 @@ npm install yakuhanjp
     - 約物すべてを使う場合は「YakuHanMP」
     - カッコだけを使う場合は「YakuHanMPs」
 
-```
+```html
 // YakuHanJP
 <link rel="stylesheet" href="dist/css/yakuhanjp.min.css">
 
@@ -104,15 +104,15 @@ npm install yakuhanjp
 <link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css">
 ```
 
-```
+```css
 // YakuHanJP
 .yakuhanjp {
-  font-family: YakuHanJP, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 // YakuHanJPs
 .yakuhanjps {
-  font-family: YakuHanJPs, "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  font-family: YakuHanJPs, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 // YakuHanMP
@@ -143,6 +143,14 @@ npm install yakuhanjp
 ## License
 
 - Yaku Han JP : SIL OFL 1.1
-- Author : [Qrac](https://twitter.com/Qrac_JP)
-- Gothic fonts : Based on ["Noto Sans CJK JP"](https://www.google.com/get/noto/#sans-jpan) licensed under the SIL OFL 1.1
-- Mincho fonts : Based on ["Noto Serif CJK JP"](https://www.google.com/get/noto/#serif-jpan) licensed under the SIL OFL 1.1
+- Author : [Qrac][link-twitter]
+- Gothic fonts : Based on ["Noto Sans CJK JP"][link-notosans] licensed under the SIL OFL 1.1
+- Mincho fonts : Based on ["Noto Serif CJK JP"][link-notoserif] licensed under the SIL OFL 1.1
+
+[link-demo]:https://qrac.github.io/yakuhanjp
+[link-download]:https://github.com/qrac/yakuhanjp/archive/master.zip
+[link-npm]:https://www.npmjs.com/package/yakuhanjp
+[link-jsdelivr]:https://cdn.jsdelivr.net/npm/yakuhanjp/
+[link-notosans]:https://www.google.com/get/noto/#sans-jpan
+[link-notoserif]:https://www.google.com/get/noto/#serif-jpan
+[link-twitter]:https://twitter.com/Qrac_JP

@@ -1,0 +1,27 @@
+//----------------------------------------------------
+// Module: Text
+//----------------------------------------------------
+
+.text.is-title {
+  font-size: 3em;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  line-height: 1.25;
+}
+
+.texts {
+  &.is-before,
+  &.is-after {
+    transition: ease 0.2s;
+  }
+}
+
+.pre {
+  background-color: $dark-2;
+  border-radius: 0;
+}
+
+.pre,
+.code {
+  color: $light;
+}

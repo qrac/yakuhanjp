@@ -1,0 +1,57 @@
+//----------------------------------------------------
+// Layout: Grid
+//----------------------------------------------------
+
+.grid.is-gap-one-quarter:not(.is-gap-none) {
+  margin-left: -0.125em;
+  margin-bottom: -0.125em;
+  >.col {
+    padding-left: 0.125em;
+    padding-bottom: 0.125em;
+  }
+}
+
+.grid > .col > .box {
+  flex: 1 0 0%;
+  &.is-bg-smoke {
+    background-color: $grey-100;
+  }
+  &.is-bg-white {
+    background-color: $light;
+  }
+  &.is-before {
+    position: relative;
+    background-color: $grey-100;
+    &:before {
+      content: "Before";
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 3px 7px;
+      background-color: $dark-3;
+      color: $light;
+      font-size: 62.5%;
+    }
+  }
+  &.is-after {
+    position: relative;
+    background-color: $light;
+    &:after {
+      content: "After";
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 3px 7px;
+      background-color: $dark-3;
+      color: $light;
+      font-size: 62.5%;
+    }
+  }
+  > .inner {
+    padding: 1.25em;
+  }
+}
+
+.col.is-fit {
+  flex: 1 1 auto;
+}
