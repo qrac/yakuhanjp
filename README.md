@@ -144,6 +144,7 @@ npm install yakuhanjp
 
 - Yaku Han JP : SIL OFL 1.1
 - Author : [Qrac][link-twitter]
+- Author Group: [QRANOKO][link-qranoko]
 - Gothic fonts : Based on ["Noto Sans CJK JP"][link-notosans] licensed under the SIL OFL 1.1
 - Mincho fonts : Based on ["Noto Serif CJK JP"][link-notoserif] licensed under the SIL OFL 1.1
 
@@ -154,3 +155,4 @@ npm install yakuhanjp
 [link-notosans]:https://www.google.com/get/noto/#sans-jpan
 [link-notoserif]:https://www.google.com/get/noto/#serif-jpan
 [link-twitter]:https://twitter.com/Qrac_JP
+[link-qranoko]:https://qranoko.jp

@@ -6,6 +6,13 @@
   padding: 60px 0;
 }
 
+.section.is-main {
+  + .section.is-footer {
+    margin-top: 3em;
+  }
+}
+
 .section.is-footer {
+  background-color: $dark-2;
   padding: 40px 0 10px;
 }

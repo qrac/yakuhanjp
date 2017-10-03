@@ -2,7 +2,7 @@
 // Library: MUSUBii
 //----------------------------------------------------
 
-/*! MUSUBii v3.2.0 MIT by Qrac */
+/*! MUSUBii v3.6.0 MIT by Qrac */
 /*! Shitaji.CSS v4.3.0 CC0 by Qrac */
 *,
 ::before,
@@ -79,6 +79,7 @@ dfn {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -1216,7 +1217,6 @@ img[src$=".svg"] {
 
 .heading {
   position: relative;
-  line-height: 1.25;
 }
 
 .texts {
@@ -1337,9 +1337,9 @@ img[src$=".svg"] {
   display: inline-block;
   align-self: flex-start;
   white-space: nowrap;
-  padding: 0.75em 1em;
+  padding: 0 1em;
   border-radius: 0.1875em;
-  line-height: 1;
+  line-height: 2.5em;
   text-align: center;
   transition: ease-out 0.12s;
 }
@@ -1350,6 +1350,12 @@ img[src$=".svg"] {
 
 .btn.is-disable, .btn[disabled] {
   cursor: default;
+}
+
+.btn.is-full {
+  -webkit-box-flex: 0;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .btn.is-round {
@@ -1375,10 +1381,8 @@ img[src$=".svg"] {
   transform: translate(-50%, -50%);
 }
 
-.btn.is-full {
-  -webkit-box-flex: 0;
-  flex: 0 0 100%;
-  max-width: 100%;
+.btn > .fa {
+  vertical-align: top;
 }
 
 .btn.is-floating:not(.is-disable) {
@@ -1588,7 +1592,7 @@ img[src$=".svg"] {
 
 .btns > .btn.is-mobile-0 {
   -webkit-box-flex: 1;
-  flex: 1 0 auto;
+  flex: 1 0 0%;
   max-width: 100%;
 }
 
@@ -1608,7 +1612,7 @@ img[src$=".svg"] {
 @media screen and (min-width: 576px) {
   .btns > .btn.is-fablet-0 {
     -webkit-box-flex: 1;
-    flex: 1 0 auto;
+    flex: 1 0 0%;
     max-width: 100%;
   }
   .btns > .btn.is-fablet-full {
@@ -1624,17 +1628,17 @@ img[src$=".svg"] {
 }
 
 @media screen and (min-width: 768px) {
-  .btns > .btn.is-touch-0 {
+  .btns > .btn.is-tablet-0 {
     -webkit-box-flex: 1;
-    flex: 1 0 auto;
+    flex: 1 0 0%;
     max-width: 100%;
   }
-  .btns > .btn.is-touch-full {
+  .btns > .btn.is-tablet-full {
     -webkit-box-flex: 0;
     flex: 0 1 100%;
     max-width: 100%;
   }
-  .btns > .btn.is-touch-auto {
+  .btns > .btn.is-tablet-auto {
     -webkit-box-flex: 0;
     flex: 0 1 auto;
     max-width: 100%;
@@ -1644,7 +1648,7 @@ img[src$=".svg"] {
 @media screen and (min-width: 992px) {
   .btns > .btn.is-desktop-0 {
     -webkit-box-flex: 1;
-    flex: 1 0 auto;
+    flex: 1 0 0%;
     max-width: 100%;
   }
   .btns > .btn.is-desktop-full {
@@ -1662,7 +1666,7 @@ img[src$=".svg"] {
 @media screen and (min-width: 1200px) {
   .btns > .btn.is-wide-0 {
     -webkit-box-flex: 1;
-    flex: 1 0 auto;
+    flex: 1 0 0%;
     max-width: 100%;
   }
   .btns > .btn.is-wide-full {
@@ -1677,8 +1681,15 @@ img[src$=".svg"] {
   }
 }
 
+.list > .item:not(:first-child) {
+  margin-top: 0.25em;
+}
+
+.list > .item > .list {
+  margin-top: 0.5em;
+}
+
 .list.is-disc, .list.is-circle, .list.is-decimal {
-  line-height: 1.8;
   margin-left: 1.5em;
 }
 
@@ -1696,6 +1707,15 @@ img[src$=".svg"] {
 
 .list.is-decimal > .item {
   list-style: decimal outside;
+}
+
+.list.is-note > .item {
+  display: -webkit-box;
+  display: flex;
+}
+
+.list.is-note > .item > *:not(:first-child) {
+  margin-left: 0.25em;
 }
 
 .table {
@@ -1766,7 +1786,7 @@ img[src$=".svg"] {
 .table tr.is-spot,
 .table th.is-spot,
 .table td.is-spot {
-  background-color: #f5eeb7;
+  background-color: #f9f2b3;
 }
 
 .table tr.is-danger,
@@ -1788,10 +1808,7 @@ img[src$=".svg"] {
   margin-bottom: -0.5em;
 }
 
-.field > .field,
-.field > .input,
-.field > .textarea,
-.field > .select {
+.field > * {
   margin-left: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -1847,12 +1864,13 @@ img[src$=".svg"] {
 .input[type="time"],
 .input[type="number"] {
   max-width: 100%;
-  height: 2.5em;
-  padding: calc(0.5em - 1.5px) 0.75em;
+  height: calc(2.5em + 2px);
+  padding: 0 0.75em;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.26);
   border-radius: 2px;
   color: rgba(0, 0, 0, 0.7);
+  line-height: 2.5em;
 }
 
 .input[type="text"][disabled],
@@ -2025,12 +2043,13 @@ img[src$=".svg"] {
 
 .select {
   max-width: 100%;
-  height: 2.5em;
-  padding: calc(0.5em - 1.5px) 0.75em;
+  height: calc(2.5em + 2px);
+  padding: 0 0.75em;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.26);
   border-radius: 2px;
   color: rgba(0, 0, 0, 0.7);
+  line-height: 2.5em;
 }
 
 .select[multiple] {
@@ -2053,7 +2072,7 @@ img[src$=".svg"] {
 
 .field > .is-mobile-0 {
   -webkit-box-flex: 1;
-  flex: 1 0 auto;
+  flex: 1 0 0%;
   max-width: 100%;
 }
 
@@ -2072,7 +2091,7 @@ img[src$=".svg"] {
 @media screen and (min-width: 576px) {
   .field > .is-fablet-0 {
     -webkit-box-flex: 1;
-    flex: 1 0 auto;
+    flex: 1 0 0%;
     max-width: 100%;
   }
   .field > .is-fablet-full {
@@ -2088,17 +2107,17 @@ img[src$=".svg"] {
 }
 
 @media screen and (min-width: 768px) {
-  .field > .is-touch-0 {
+  .field > .is-tablet-0 {
     -webkit-box-flex: 1;
-    flex: 1 0 auto;
+    flex: 1 0 0%;
     max-width: 100%;
   }
-  .field > .is-touch-full {
+  .field > .is-tablet-full {
     -webkit-box-flex: 0;
     flex: 0 1 100%;
     max-width: 100%;
   }
-  .field > .is-touch-auto {
+  .field > .is-tablet-auto {
     -webkit-box-flex: 0;
     flex: 0 1 auto;
     max-width: 100%;
@@ -2108,7 +2127,7 @@ img[src$=".svg"] {
 @media screen and (min-width: 992px) {
   .field > .is-desktop-0 {
     -webkit-box-flex: 1;
-    flex: 1 0 auto;
+    flex: 1 0 0%;
     max-width: 100%;
   }
   .field > .is-desktop-full {
@@ -2126,7 +2145,7 @@ img[src$=".svg"] {
 @media screen and (min-width: 1200px) {
   .field > .is-wide-0 {
     -webkit-box-flex: 1;
-    flex: 1 0 auto;
+    flex: 1 0 0%;
     max-width: 100%;
   }
   .field > .is-wide-full {
@@ -2157,7 +2176,7 @@ img[src$=".svg"] {
 .im + .text,
 .fa + .text,
 .material-icons + .text {
-  margin-left: 0.25em;
+  margin-left: 0.375em;
 }
 
 .icon + .icon:not(.is-fit),
@@ -2176,14 +2195,14 @@ img[src$=".svg"] {
 .material-icons + .im:not(.is-fit),
 .material-icons + .fa:not(.is-fit),
 .material-icons + .material-icons:not(.is-fit) {
-  margin-left: 0.25em;
+  margin-left: 0.375em;
 }
 
 .text + .icon,
 .text + .im,
 .text + .fa,
 .text + .material-icons {
-  margin-left: 0.25em;
+  margin-left: 0.375em;
 }
 
 .icon.is-fit,
@@ -2217,8 +2236,8 @@ img[src$=".svg"] {
 }
 
 .alert.is-warning {
-  background: #faf0df;
-  border-color: #f1cf9d;
+  background: #fbf0de;
+  border-color: #f4d09a;
 }
 
 .alert.is-danger {
@@ -2233,7 +2252,6 @@ img[src$=".svg"] {
 .wysiwyg h5,
 .wysiwyg h6 {
   font-weight: 700;
-  line-height: 1.25;
 }
 
 .wysiwyg h1 {
@@ -2497,7 +2515,7 @@ img[src$=".svg"] {
 }
 
 .is-warning:not(.btn) {
-  color: #e1902a;
+  color: #e79024;
 }
 
 .is-danger:not(.btn) {
@@ -2505,11 +2523,11 @@ img[src$=".svg"] {
 }
 
 .is-yakuhanjp {
-  font-family: -apple-system, BlinkMacSystemFont, YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
+  font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 .is-yakuhanjps {
-  font-family: -apple-system, BlinkMacSystemFont, YakuHanJPs, "Hiragino Sans", Meiryo, sans-serif;
+  font-family: YakuHanJPs, -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, sans-serif;
 }
 
 .is-normal {
@@ -2633,54 +2651,63 @@ img[src$=".svg"] {
 }
 
 .is-none,
-.is-none-mobile {
+.is-none-mobile,
+.is-mobile-none {
   display: none;
 }
 
 @media screen and (min-width: 576px) {
-  .is-none-fablet {
+  .is-none-fablet,
+  .is-fablet-none {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .is-none-tablet {
+  .is-none-tablet,
+  .is-tablet-none {
     display: none;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .is-none-desktop {
+  .is-none-desktop,
+  .is-desktop-none {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .is-none-wide {
+  .is-none-wide,
+  .is-wide-none {
     display: none;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .is-none-mobile-only {
+  .is-none-mobile-only,
+  .is-mobile-only-none {
     display: none;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .is-none-fablet-only {
+  .is-none-fablet-only,
+  .is-fablet-only-none {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .is-none-tablet-only {
+  .is-none-tablet-only,
+  .is-tablet-only-none {
     display: none;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .is-none-desktop-only {
+  .is-none-desktop-only,
+  .is-desktop-only-none {
     display: none;
   }
 }
