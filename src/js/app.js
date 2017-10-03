@@ -187,3 +187,5 @@ $(function(){
     });
   }
 });
+
+//-hljs.initHighlightingOnLoad();

@@ -122,10 +122,12 @@ block contents
           .inner
             h4.heading.is-strong.is-lg
               a.text.is-link-reverse.is-primary(href="https://cdn.jsdelivr.net/npm/yakuhanjp/") CDN
-            ol.list.is-disc
+            ol.list.is-decimal
               li.item.is-block
+                p.texts
+                  | jsDelivrで配信しているCSSファイルへのリンクをHTML内に記述
                 pre.pre.is-sm
-                  code.code.
+                  code.code.html.
                     // YakuHanJP
                     &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css"&gt;
 
@@ -144,8 +146,10 @@ block contents
               a.text.is-link-reverse.is-primary(href="https://www.npmjs.com/package/yakuhanjp") npm
             ol.list.is-decimal
               li.item.is-block
+                p.texts
+                  | npmコマンドで任意の場所にインストール
                 pre.pre.is-sm
-                  code.code.
+                  code.code.cmd.
                     npm install yakuhanjp
 
         .group.is-card
@@ -159,9 +163,9 @@ block contents
               li.item.is-block
                 p.texts distフォルダ内の「css」「fonts」を制作サイトに配置
               li.item.is-block
-                p.texts headでCSSを読み込む
+                p.texts HTML内でCSSを読み込む
                 pre.pre.is-sm
-                  code.code.
+                  code.code.html.
                     // YakuHanJP
                     &lt;link rel="stylesheet" href="dist/css/yakuhanjp.min.css"&gt;
 
@@ -176,7 +180,7 @@ block contents
               li.item.is-block
                 p.texts CSSでフォントを適応
                 pre.pre.is-sm
-                  code.code.
+                  code.code.css.
                     // YakuHanJP
                     .yakuhanjp {
                       font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
@@ -195,6 +199,50 @@ block contents
                     // YakuHanMPs
                     .yakuhanmps {
                       font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+                    }
+
+      .groups
+        h3.heading.is-xxl.is-center Custom
+
+        .group.is-card
+          .inner
+            h4.heading.is-strong.is-lg Font face
+            ol.list.is-decimal
+              li.item.is-block
+                p.texts
+                  | 利用するフォントファイルへのリンクを個別に取得（CDNの場合）
+                .group
+                  .grid
+                    .col
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/")
+                        i.fa.fa-folder-o(aria-hidden="true")
+                        span.text YakuHanJP
+                    .col
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJPs/")
+                        i.fa.fa-folder-o(aria-hidden="true")
+                        span.text YakuHanJPs
+                    .col
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMP/")
+                        i.fa.fa-folder-o(aria-hidden="true")
+                        span.text YakuHanMP
+                    .col
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMPs/")
+                        i.fa.fa-folder-o(aria-hidden="true")
+                        span.text YakuHanMPs
+              li.item.is-block
+                p.texts
+                  | CSS内にfont-faceを記述（以下はYakuHanJPで300のウェイトを細くしfont-displayを適応した例）
+                pre.pre.is-sm
+                  code.code.css.
+                    // Demi Light > Light
+                    @font-face {
+                      font-family: "YakuHanJP";
+                      font-style: normal;
+                      font-weight: 300;
+                      src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot");
+                      src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
+                      url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
+                      font-display: swap;
                     }
 
       .groups
@@ -274,17 +322,17 @@ block contents
                 | Yaku Han JP : SIL OFL 1.1
               li.item
                 | Author :&nbsp;
-                a.text.is-link-reverse.is-primary(href=twitter.url+"/"+twitter.id ontouchstart="") Qrac
+                a.text.is-link-reverse.is-primary(href=twitter.url+"/"+twitter.id) Qrac
               li.item
                 | Author Group :&nbsp;
-                a.text.is-link-reverse.is-primary(href=twitter.url+"/"+twitter.id ontouchstart="") QRANOKO
+                a.text.is-link-reverse.is-primary(href=twitter.url+"/"+twitter.id) QRANOKO
               li.item
                 | Gothic fonts : Based on&nbsp;
-                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#sans-jpan" ontouchstart="") Noto Sans CJK JP
+                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#sans-jpan") Noto Sans CJK JP
                 | &nbsp;licensed under the SIL OFL 1.1
               li.item
                 | Mincho fonts : Based on&nbsp;
-                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#serif-jpan" ontouchstart="") Noto Serif CJK JP
+                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#serif-jpan") Noto Serif CJK JP
                 | &nbsp;licensed under the SIL OFL 1.1
 
   footer.section.is-footer
