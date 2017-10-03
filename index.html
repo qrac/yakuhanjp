@@ -144,9 +144,10 @@
           <div class="group is-card">
             <div class="inner">
               <h4 class="heading is-strong is-lg"><a class="text is-link-reverse is-primary" href="https://cdn.jsdelivr.net/npm/yakuhanjp/">CDN</a></h4>
-              <ol class="list is-disc">
+              <ol class="list is-decimal">
                 <li class="item is-block">
-                  <pre class="pre is-sm"><code class="code">// YakuHanJP
+                  <p class="texts">jsDelivrで配信しているCSSファイルへのリンクをHTML内に記述</p>
+                  <pre class="pre is-sm"><code class="code html">// YakuHanJP
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css"&gt;
 
 // YakuHanJPs
@@ -167,7 +168,8 @@
               <h4 class="heading is-strong is-lg"><a class="text is-link-reverse is-primary" href="https://www.npmjs.com/package/yakuhanjp">npm</a></h4>
               <ol class="list is-decimal">
                 <li class="item is-block">
-                  <pre class="pre is-sm"><code class="code">npm install yakuhanjp
+                  <p class="texts">npmコマンドで任意の場所にインストール</p>
+                  <pre class="pre is-sm"><code class="code cmd">npm install yakuhanjp
 </code></pre>
                 </li>
               </ol>
@@ -184,8 +186,8 @@
                   <p class="texts">distフォルダ内の「css」「fonts」を制作サイトに配置</p>
                 </li>
                 <li class="item is-block">
-                  <p class="texts">headでCSSを読み込む</p>
-                  <pre class="pre is-sm"><code class="code">// YakuHanJP
+                  <p class="texts">HTML内でCSSを読み込む</p>
+                  <pre class="pre is-sm"><code class="code html">// YakuHanJP
 &lt;link rel="stylesheet" href="dist/css/yakuhanjp.min.css"&gt;
 
 // YakuHanJPs
@@ -199,7 +201,7 @@
                 </li>
                 <li class="item is-block">
                   <p class="texts">CSSでフォントを適応</p>
-                  <pre class="pre is-sm"><code class="code">// YakuHanJP
+                  <pre class="pre is-sm"><code class="code css">// YakuHanJP
 .yakuhanjp {
   font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
 }
@@ -217,6 +219,41 @@
 // YakuHanMPs
 .yakuhanmps {
   font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+</code></pre>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="groups">
+          <h3 class="heading is-xxl is-center">Custom</h3>
+          <div class="group is-card">
+            <div class="inner">
+              <h4 class="heading is-strong is-lg">Font face</h4>
+              <ol class="list is-decimal">
+                <li class="item is-block">
+                  <p class="texts">利用するフォントファイルへのリンクを個別に取得（CDNの場合）</p>
+                  <div class="group">
+                    <div class="grid">
+                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/"><i class="fa fa-folder-o" aria-hidden="true"></i><span class="text">YakuHanJP</span></a></div>
+                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJPs/"><i class="fa fa-folder-o" aria-hidden="true"></i><span class="text">YakuHanJPs</span></a></div>
+                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMP/"><i class="fa fa-folder-o" aria-hidden="true"></i><span class="text">YakuHanMP</span></a></div>
+                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMPs/"><i class="fa fa-folder-o" aria-hidden="true"></i><span class="text">YakuHanMPs</span></a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item is-block">
+                  <p class="texts">CSS内にfont-faceを記述（以下はYakuHanJPで300のウェイトを細くしfont-displayを適応した例）</p>
+                  <pre class="pre is-sm"><code class="code css">// Demi Light > Light
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot");
+  src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
+  url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
+  font-display: swap;
 }
 </code></pre>
                 </li>
@@ -287,9 +324,10 @@
             <div class="inner">
               <ol class="list is-disc">
                 <li class="item">Yaku Han JP : SIL OFL 1.1</li>
-                <li class="item">Author :&nbsp;<a class="text is-link-reverse is-primary" href="https://twitter.com/Qrac_JP" ontouchstart="">Qrac</a></li>
-                <li class="item">Gothic fonts : Based on&nbsp;<a class="text is-link-reverse is-primary" href="https://www.google.com/get/noto/#sans-jpan" ontouchstart="">Noto Sans CJK JP</a>&nbsp;licensed under the SIL OFL 1.1</li>
-                <li class="item">Mincho fonts : Based on&nbsp;<a class="text is-link-reverse is-primary" href="https://www.google.com/get/noto/#serif-jpan" ontouchstart="">Noto Serif CJK JP</a>&nbsp;licensed under the SIL OFL 1.1</li>
+                <li class="item">Author :&nbsp;<a class="text is-link-reverse is-primary" href="https://twitter.com/Qrac_JP">Qrac</a></li>
+                <li class="item">Author Group :&nbsp;<a class="text is-link-reverse is-primary" href="https://twitter.com/Qrac_JP">QRANOKO</a></li>
+                <li class="item">Gothic fonts : Based on&nbsp;<a class="text is-link-reverse is-primary" href="https://www.google.com/get/noto/#sans-jpan">Noto Sans CJK JP</a>&nbsp;licensed under the SIL OFL 1.1</li>
+                <li class="item">Mincho fonts : Based on&nbsp;<a class="text is-link-reverse is-primary" href="https://www.google.com/get/noto/#serif-jpan">Noto Serif CJK JP</a>&nbsp;licensed under the SIL OFL 1.1</li>
               </ol>
             </div>
           </div>
@@ -297,8 +335,69 @@
       </div>
     </main>
     <footer class="section is-footer">
-      <div class="btns is-center"><a class="btn is-lg is-plain is-circle" href="https://twitter.com/Qrac_JP" ontouchstart=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-      <p class="texts is-center is-color-transparent"><span class="text is-font-sans-hiragino-yakuhanjp"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-sans-hiragino-yakuhanjps"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-serif-hiragino-yakuhanmp"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-serif-hiragino-yakuhanmps"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-sans-noto"><span class="text is-weight-100">の</span><span class="text is-weight-200">と</span><span class="text is-weight-300">の</span><span class="text is-weight-400">と</span><span class="text is-weight-500">の</span><span class="text is-weight-700">と</span><span class="text is-weight-900">の</span></span><span class="text is-font-serif-noto"><span class="text is-weight-100">の</span><span class="text is-weight-200">と</span><span class="text is-weight-300">の</span><span class="text is-weight-400">と</span><span class="text is-weight-500">の</span><span class="text is-weight-700">と</span><span class="text is-weight-900">の</span></span></p>
+      <div class="inner">
+        <div class="groups">
+          <div class="btns is-center is-lg"><a class="btn is-ghost is-circle" href="https://twitter.com/Qrac_JP"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="btn is-ghost is-circle" href="https://github.com/qrac"><i class="fa fa-github" aria-hidden="true"></i></a><a class="btn is-ghost is-circle" href="https://medium.com/@qrac"><i class="fa fa-medium" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="groups">
+          <div class="grid is-center is-gap-6x">
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading"><a href="https://qranoko.jp"><img class="obj is-footer-logo" src="src/img/logo-qranoko-white.svg" alt="Qrac GitHub"></a></p>
+              <ul class="list is-light is-sm">
+                <li class="item"><span class="text">Creative Partners</span></li>
+                <li class="item"><span class="text">Komae, Tokyo, Japan</span></li>
+              </ul>
+              <ul class="list is-note is-light is-sm">
+                <li class="item"><i class="icon fa fa-hand-o-right" aria-hidden="true"></i><a class="text is-link-reverse" href="https://qranoko.jp/about">About</a></li>
+                <li class="item"><i class="icon fa fa-hand-o-right" aria-hidden="true"></i><a class="text is-link-reverse" href="https://qranoko.jp/works">Works</a></li>
+                <li class="item"><i class="icon fa fa-hand-o-right" aria-hidden="true"></i><a class="text is-link-reverse" href="https://qranoko.jp/contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">MEMBER</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text is-link-reverse" href="https://twitter.com/Qrac_JP">Qrac</a></li>
+                <li class="item"><span class="text">Mainoko</span></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">PRODUCE</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text is-link-reverse" href="https://qranoko.jp">QRANOKO</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.jp">Qrac.JP</a></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">PRODUCT</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/musubii/">MUSUBii</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/yakuhanjp/">Yaku Han JP</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/shitajicss/">Shitaji.CSS</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/moftone/">MOFTONE</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/mdtone/">MDTONE</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/iostone/">iOSTONE</a></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">PROJECT</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text">* private</a></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">MORE</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text is-link-reverse" href="https://store.line.me/stickershop/product/1121045/ja">LINE STAMP QTA</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="groups">
+          <p class="texts is-light is-center is-sm"><span class="text">&copy; QRANOKO 2017</span></p>
+        </div>
+        <p class="texts is-center is-color-transparent"><span class="text is-font-sans-hiragino-yakuhanjp"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-sans-hiragino-yakuhanjps"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-serif-hiragino-yakuhanmp"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-serif-hiragino-yakuhanmps"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-sans-noto"><span class="text is-weight-100">の</span><span class="text is-weight-200">と</span><span class="text is-weight-300">の</span><span class="text is-weight-400">と</span><span class="text is-weight-500">の</span><span class="text is-weight-700">と</span><span class="text is-weight-900">の</span></span><span class="text is-font-serif-noto"><span class="text is-weight-100">の</span><span class="text is-weight-200">と</span><span class="text is-weight-300">の</span><span class="text is-weight-400">と</span><span class="text is-weight-500">の</span><span class="text is-weight-700">と</span><span class="text is-weight-900">の</span></span></p>
+      </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="src/js/app.min.js"></script>

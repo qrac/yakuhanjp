@@ -11,6 +11,18 @@
   }
 }
 
+.grid.is-gap-6x:not(.is-gap-none) {
+  margin-left: -3em;
+  margin-bottom: -3em;
+  > .col {
+    padding-left: 3em;
+    padding-bottom: 3em;
+  }
+  + .grid.is-gap-6x:not(.is-gap-none) {
+    margin-top: 3em;
+  }
+}
+
 .grid > .col > .box {
   flex: 1 0 0%;
   &.is-bg-smoke {

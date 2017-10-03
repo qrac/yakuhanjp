@@ -122,10 +122,12 @@ block contents
           .inner
             h4.heading.is-strong.is-lg
               a.text.is-link-reverse.is-primary(href="https://cdn.jsdelivr.net/npm/yakuhanjp/") CDN
-            ol.list.is-disc
+            ol.list.is-decimal
               li.item.is-block
+                p.texts
+                  | jsDelivrで配信しているCSSファイルへのリンクをHTML内に記述
                 pre.pre.is-sm
-                  code.code.
+                  code.code.html.
                     // YakuHanJP
                     &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css"&gt;
 
@@ -144,8 +146,10 @@ block contents
               a.text.is-link-reverse.is-primary(href="https://www.npmjs.com/package/yakuhanjp") npm
             ol.list.is-decimal
               li.item.is-block
+                p.texts
+                  | npmコマンドで任意の場所にインストール
                 pre.pre.is-sm
-                  code.code.
+                  code.code.cmd.
                     npm install yakuhanjp
 
         .group.is-card
@@ -159,9 +163,9 @@ block contents
               li.item.is-block
                 p.texts distフォルダ内の「css」「fonts」を制作サイトに配置
               li.item.is-block
-                p.texts headでCSSを読み込む
+                p.texts HTML内でCSSを読み込む
                 pre.pre.is-sm
-                  code.code.
+                  code.code.html.
                     // YakuHanJP
                     &lt;link rel="stylesheet" href="dist/css/yakuhanjp.min.css"&gt;
 
@@ -176,7 +180,7 @@ block contents
               li.item.is-block
                 p.texts CSSでフォントを適応
                 pre.pre.is-sm
-                  code.code.
+                  code.code.css.
                     // YakuHanJP
                     .yakuhanjp {
                       font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
@@ -195,6 +199,50 @@ block contents
                     // YakuHanMPs
                     .yakuhanmps {
                       font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+                    }
+
+      .groups
+        h3.heading.is-xxl.is-center Custom
+
+        .group.is-card
+          .inner
+            h4.heading.is-strong.is-lg Font face
+            ol.list.is-decimal
+              li.item.is-block
+                p.texts
+                  | 利用するフォントファイルへのリンクを個別に取得（CDNの場合）
+                .group
+                  .grid
+                    .col
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/")
+                        i.fa.fa-folder-o(aria-hidden="true")
+                        span.text YakuHanJP
+                    .col
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJPs/")
+                        i.fa.fa-folder-o(aria-hidden="true")
+                        span.text YakuHanJPs
+                    .col
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMP/")
+                        i.fa.fa-folder-o(aria-hidden="true")
+                        span.text YakuHanMP
+                    .col
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMPs/")
+                        i.fa.fa-folder-o(aria-hidden="true")
+                        span.text YakuHanMPs
+              li.item.is-block
+                p.texts
+                  | CSS内にfont-faceを記述（以下はYakuHanJPで300のウェイトを細くしfont-displayを適応した例）
+                pre.pre.is-sm
+                  code.code.css.
+                    // Demi Light > Light
+                    @font-face {
+                      font-family: "YakuHanJP";
+                      font-style: normal;
+                      font-weight: 300;
+                      src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot");
+                      src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
+                      url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
+                      font-display: swap;
                     }
 
       .groups
@@ -274,66 +322,129 @@ block contents
                 | Yaku Han JP : SIL OFL 1.1
               li.item
                 | Author :&nbsp;
-                a.text.is-link-reverse.is-primary(href=twitter.url+"/"+twitter.id ontouchstart="") Qrac
+                a.text.is-link-reverse.is-primary(href=twitter.url+"/"+twitter.id) Qrac
+              li.item
+                | Author Group :&nbsp;
+                a.text.is-link-reverse.is-primary(href=twitter.url+"/"+twitter.id) QRANOKO
               li.item
                 | Gothic fonts : Based on&nbsp;
-                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#sans-jpan" ontouchstart="") Noto Sans CJK JP
+                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#sans-jpan") Noto Sans CJK JP
                 | &nbsp;licensed under the SIL OFL 1.1
               li.item
                 | Mincho fonts : Based on&nbsp;
-                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#serif-jpan" ontouchstart="") Noto Serif CJK JP
+                a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#serif-jpan") Noto Serif CJK JP
                 | &nbsp;licensed under the SIL OFL 1.1
 
   footer.section.is-footer
-    .btns.is-center
-      a.btn.is-lg.is-plain.is-circle(href=twitter.url+"/"+twitter.id ontouchstart="")
-        i.fa.fa-twitter(aria-hidden="true")
-    p.texts.is-center.is-color-transparent
-      span.text.is-font-sans-hiragino-yakuhanjp
-        span.text.is-weight-100 「
-        span.text.is-weight-200 」
-        span.text.is-weight-300 「
-        span.text.is-weight-400 」
-        span.text.is-weight-500 「
-        span.text.is-weight-700 」
-        span.text.is-weight-900 「
-      span.text.is-font-sans-hiragino-yakuhanjps
-        span.text.is-weight-100 「
-        span.text.is-weight-200 」
-        span.text.is-weight-300 「
-        span.text.is-weight-400 」
-        span.text.is-weight-500 「
-        span.text.is-weight-700 」
-        span.text.is-weight-900 「
-      span.text.is-font-serif-hiragino-yakuhanmp
-        span.text.is-weight-100 「
-        span.text.is-weight-200 」
-        span.text.is-weight-300 「
-        span.text.is-weight-400 」
-        span.text.is-weight-500 「
-        span.text.is-weight-700 」
-        span.text.is-weight-900 「
-      span.text.is-font-serif-hiragino-yakuhanmps
-        span.text.is-weight-100 「
-        span.text.is-weight-200 」
-        span.text.is-weight-300 「
-        span.text.is-weight-400 」
-        span.text.is-weight-500 「
-        span.text.is-weight-700 」
-        span.text.is-weight-900 「
-      span.text.is-font-sans-noto
-        span.text.is-weight-100 の
-        span.text.is-weight-200 と
-        span.text.is-weight-300 の
-        span.text.is-weight-400 と
-        span.text.is-weight-500 の
-        span.text.is-weight-700 と
-        span.text.is-weight-900 の
-      span.text.is-font-serif-noto
-        span.text.is-weight-100 の
-        span.text.is-weight-200 と
-        span.text.is-weight-300 の
-        span.text.is-weight-400 と
-        span.text.is-weight-500 の
-        span.text.is-weight-700 と
-        span.text.is-weight-900 の
+    .inner
+      .groups
+        .btns.is-center.is-lg
+          each val in contact
+            a.btn.is-ghost.is-circle(href="" + val.url + "/" + val.id + "")
+              i.fa(aria-hidden="true" class="fa-" + val.class + "")
+      .groups
+        .grid.is-center.is-gap-6x
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading
+              a(href="https://qranoko.jp")
+                img.obj.is-footer-logo(src=path.img+"/logo-qranoko-white.svg" alt=site.title)
+            ul.list.is-light.is-sm
+              li.item
+                span.text Creative Partners
+              li.item
+                span.text Komae, Tokyo, Japan
+            ul.list.is-note.is-light.is-sm
+              li.item
+                i.icon.fa.fa-hand-o-right(aria-hidden="true")
+                a.text.is-link-reverse(href="https://qranoko.jp/about") About
+              li.item
+                i.icon.fa.fa-hand-o-right(aria-hidden="true")
+                a.text.is-link-reverse(href="https://qranoko.jp/works") Works
+              li.item
+                i.icon.fa.fa-hand-o-right(aria-hidden="true")
+                a.text.is-link-reverse(href="https://qranoko.jp/contact") Contact
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light MEMBER
+            ul.list.is-light.is-sm
+              li.item
+                a.text.is-link-reverse(href="https://twitter.com/Qrac_JP") Qrac
+              li.item
+                span.text Mainoko
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light PRODUCE
+            ul.list.is-light.is-sm
+              each val in produce
+                li.item
+                  a.text.is-link-reverse(href=val.url)= val.title
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light PRODUCT
+            ul.list.is-light.is-sm
+              each val in product
+                li.item
+                  a.text.is-link-reverse(href=val.url)= val.title
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light PROJECT
+            ul.list.is-light.is-sm
+              li.item
+                a.text * private
+              //-each val in project
+                li.item
+                  a.text.is-link-reverse(href=val.url)= val.title
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light MORE
+            ul.list.is-light.is-sm
+              each val in more
+                li.item
+                  a.text.is-link-reverse(href=val.url)= val.title
+      .groups
+        p.texts.is-light.is-center.is-sm
+          span.text &copy; QRANOKO 2017
+      p.texts.is-center.is-color-transparent
+        span.text.is-font-sans-hiragino-yakuhanjp
+          span.text.is-weight-100 「
+          span.text.is-weight-200 」
+          span.text.is-weight-300 「
+          span.text.is-weight-400 」
+          span.text.is-weight-500 「
+          span.text.is-weight-700 」
+          span.text.is-weight-900 「
+        span.text.is-font-sans-hiragino-yakuhanjps
+          span.text.is-weight-100 「
+          span.text.is-weight-200 」
+          span.text.is-weight-300 「
+          span.text.is-weight-400 」
+          span.text.is-weight-500 「
+          span.text.is-weight-700 」
+          span.text.is-weight-900 「
+        span.text.is-font-serif-hiragino-yakuhanmp
+          span.text.is-weight-100 「
+          span.text.is-weight-200 」
+          span.text.is-weight-300 「
+          span.text.is-weight-400 」
+          span.text.is-weight-500 「
+          span.text.is-weight-700 」
+          span.text.is-weight-900 「
+        span.text.is-font-serif-hiragino-yakuhanmps
+          span.text.is-weight-100 「
+          span.text.is-weight-200 」
+          span.text.is-weight-300 「
+          span.text.is-weight-400 」
+          span.text.is-weight-500 「
+          span.text.is-weight-700 」
+          span.text.is-weight-900 「
+        span.text.is-font-sans-noto
+          span.text.is-weight-100 の
+          span.text.is-weight-200 と
+          span.text.is-weight-300 の
+          span.text.is-weight-400 と
+          span.text.is-weight-500 の
+          span.text.is-weight-700 と
+          span.text.is-weight-900 の
+        span.text.is-font-serif-noto
+          span.text.is-weight-100 の
+          span.text.is-weight-200 と
+          span.text.is-weight-300 の
+          span.text.is-weight-400 と
+          span.text.is-weight-500 の
+          span.text.is-weight-700 と
+          span.text.is-weight-900 の

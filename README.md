@@ -51,6 +51,8 @@
 
 ### [CDN][link-jsdelivr]
 
+jsDelivrで配信しているCSSファイルへのリンクをHTML内に記述するだけで全ウェイトのフォントを利用できます。
+
 ```html
 // YakuHanJP
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
@@ -67,6 +69,8 @@
 
 ### [npm][link-npm]
 
+npmコマンドで任意の場所にインストールできます。
+
 ```
 npm install yakuhanjp
 ```
@@ -75,7 +79,7 @@ npm install yakuhanjp
 
 1. データを[ダウンロード][link-download]
 2. distフォルダ内の「css」「fonts」を制作サイトに配置
-3. headでCSSを読み込む
+3. HTML内でCSSを読み込む
   - ゴシック体
     - 約物すべてを使う場合は「yakuhanjp.min.css」
     - カッコだけを使う場合は「yakuhanjp_s.min.css」
@@ -126,6 +130,30 @@ npm install yakuhanjp
 }
 ```
 
+## Custom
+
+### Font face
+
+1. 利用するフォントファイルへのリンクを個別に取得（CDNの場合）
+  - [YakuHanJP](https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/)
+  - [YakuHanJPs](https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJPs/)
+  - [YakuHanMP](https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMP/)
+  - [YakuHanMPs](https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMPs/)
+2. CSS内にfont-faceを記述（以下はYakuHanJPで300のウェイトを細くしfont-displayを適応した例）
+
+```css
+// Demi Light > Light
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot");
+  src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
+  url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
+  font-display: swap;
+}
+```
+
 ## Support
 
 | Chrome | Firefox | IE | Ege | Opera | Safari(Mac) |
@@ -144,6 +172,7 @@ npm install yakuhanjp
 
 - Yaku Han JP : SIL OFL 1.1
 - Author : [Qrac][link-twitter]
+- Author Group: [QRANOKO][link-qranoko]
 - Gothic fonts : Based on ["Noto Sans CJK JP"][link-notosans] licensed under the SIL OFL 1.1
 - Mincho fonts : Based on ["Noto Serif CJK JP"][link-notoserif] licensed under the SIL OFL 1.1
 
@@ -154,3 +183,4 @@ npm install yakuhanjp
 [link-notosans]:https://www.google.com/get/noto/#sans-jpan
 [link-notoserif]:https://www.google.com/get/noto/#serif-jpan
 [link-twitter]:https://twitter.com/Qrac_JP
+[link-qranoko]:https://qranoko.jp
