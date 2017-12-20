@@ -3,31 +3,28 @@
 //----------------------------------------------------
 
 .section.is-topcover {
-  padding: 30px 0;
-  @include tablet {
+  @include desktop {
     padding: 60px 0;
   }
   .box.is-bg-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vmax - 60px);
-    background-image: url("../img/icon-yakuhanjp.svg");
-    background-position: center center;
-    background-size: cover;
-    @include ie {
-      height: calc(100vmax - 60px);
-      background-image: url("../img/apple-touch-icon.png");
-    }
-    @include tablet {
+    height: 100vmax;
+    background-image: linear-gradient(90deg, rgb(26, 26, 26) 50%, rgb(77, 77, 77) 50%);
+    @include desktop {
       height: calc(100vh - 120px);
+      background-image: url("../img/icon-yakuhanjp.svg");
+      background-position: center center;
       background-size: contain;
       @include ie {
         height: calc(100vh - 60px);
+        background-image: url("../img/apple-touch-icon.png");
       }
     }
   }
   .box.is-topcover-content {
+    padding-top: 0.75em;
   }
 }
 

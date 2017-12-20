@@ -14,6 +14,8 @@ block contents
   header.section.is-topcover
     .box.is-bg-logo
       .box.is-topcover-content.is-light.is-center.is-tablet-lg
+        //-.group.is-desktop-none
+          img.logo.is-title(src=path.img+"/"+"icon-yakuhanjp.svg" alt=page.title)
         .texts
           h1.text.is-title #{page.title}
           h2.text #{page.desc}
@@ -89,43 +91,43 @@ block contents
               .box
                 .inner
                   h4.heading
-                    span.text.is-mobile-block.is-strong YakuHanJP&nbsp;
+                    span.text.is-mobile-block.is-strong.is-tablet-xl YakuHanJP&nbsp;
                     span.text.is-mobile-block.is-strong.is-sm
                       span.text.is-mobile-block.is-tablet-inline-block ゴシック体
                       span.text.is-mobile-block.is-tablet-inline-block （約物全部入り）
-                  p.texts.is-lg.is-font-sans-hiragino-yakuhanjp #{example.text02}
+                  p.texts.is-font-sans-hiragino-yakuhanjp.is-include-fonts #{example.text02}
             .col.is-mobile-6
               .box
                 .inner
                   h4.heading
-                    span.text.is-mobile-block.is-strong YakuHanJPs&nbsp;
+                    span.text.is-mobile-block.is-strong.is-tablet-xl YakuHanJPs&nbsp;
                     span.text.is-mobile-block.is-strong.is-sm
                       span.text.is-mobile-block.is-tablet-inline-block ゴシック体
                       span.text.is-mobile-block.is-tablet-inline-block （カッコのみ）
-                  p.texts.is-lg.is-font-sans-hiragino-yakuhanjps #{example.text03}
+                  p.texts.is-font-sans-hiragino-yakuhanjps.is-include-fonts #{example.text03}
         .group.is-bg-smoke-white
           .grid.is-gap-none
             .col.is-mobile-6
               .box
                 .inner
                   h4.heading
-                    span.text.is-mobile-block.is-strong YakuHanMP&nbsp;
+                    span.text.is-mobile-block.is-strong.is-tablet-xl YakuHanMP&nbsp;
                     span.text.is-mobile-block.is-strong.is-sm
                       span.text.is-mobile-block.is-tablet-inline-block 明朝体
                       span.text.is-mobile-block.is-tablet-inline-block （約物全部入り）
-                  p.texts.is-lg.is-font-serif-hiragino-yakuhanmp #{example.text04}
+                  p.texts.is-font-serif-hiragino-yakuhanmp.is-include-fonts #{example.text04}
             .col.is-mobile-6
               .box
                 .inner
                   h4.heading
-                    span.text.is-mobile-block.is-strong YakuHanMPs&nbsp;
+                    span.text.is-mobile-block.is-strong.is-tablet-xl YakuHanMPs&nbsp;
                     span.text.is-mobile-block.is-strong.is-sm
                       span.text.is-mobile-block.is-tablet-inline-block 明朝体
                       span.text.is-mobile-block.is-tablet-inline-block （カッコのみ）
-                  p.texts.is-lg.is-font-serif-hiragino-yakuhanmps #{example.text05}
+                  p.texts.is-font-serif-hiragino-yakuhanmps.is-include-fonts #{example.text05}
         .alert.is-info.is-xs
           i.fas.fa-info-circle.is-fit(aria-hidden="true")
-          span.text バグ回避のため、全フォントに&nbsp;
+          span.text バグ回避のため、全てのフォントに&nbsp;
           code.code .notdef
           | &nbsp;
           code.code space
@@ -144,19 +146,21 @@ block contents
               li.item.is-block
                 p.texts
                   | jsDelivrで配信しているCSSファイルへのリンクをHTML内に記述
-                pre.pre.is-sm
-                  code.code.html.
+                .wysiwyg
+                  :markdown-it
+                    ```html
                     // YakuHanJP
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css"&gt;
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
 
                     // YakuHanJPs
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css"&gt;
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
 
                     // YakuHanMP
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css"&gt;
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
 
                     // YakuHanMPs
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css"&gt;
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+                    ```
         .group.is-card
           .inner
             h4.heading.is-strong.is-lg
@@ -165,9 +169,11 @@ block contents
               li.item.is-block
                 p.texts
                   | npmコマンドで任意の場所にインストール
-                pre.pre.is-sm
-                  code.code.cmd.
+                .wysiwyg
+                  :markdown-it
+                    ```
                     npm install yakuhanjp
+                    ```
         .group.is-card
           .inner
             h4.heading.is-strong.is-lg Local
@@ -180,23 +186,26 @@ block contents
                 p.texts distフォルダ内の「css」「fonts」を制作サイトに配置
               li.item.is-block
                 p.texts HTML内でCSSを読み込む
-                pre.pre.is-sm
-                  code.code.html.
+                .wysiwyg
+                  :markdown-it
+                    ```html
                     // YakuHanJP
-                    &lt;link rel="stylesheet" href="dist/css/yakuhanjp.min.css"&gt;
+                    <link rel="stylesheet" href="dist/css/yakuhanjp.min.css">
 
                     // YakuHanJPs
-                    &lt;link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css"&gt;
+                    <link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css">
 
                     // YakuHanMP
-                    &lt;link rel="stylesheet" href="dist/css/yakuhanmp.min.css"&gt;
+                    <link rel="stylesheet" href="dist/css/yakuhanmp.min.css">
 
                     // YakuHanMPs
-                    &lt;link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css"&gt;
+                    <link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css">
+                    ```
               li.item.is-block
                 p.texts CSSでフォントを適応
-                pre.pre.is-sm
-                  code.code.css.
+                .wysiwyg
+                  :markdown-it
+                    ```css
                     // YakuHanJP
                     .yakuhanjp {
                       font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
@@ -216,6 +225,7 @@ block contents
                     .yakuhanmps {
                       font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
                     }
+                    ```
 
     section.section.is-main-content.is-custom
       .inner-vw
@@ -248,8 +258,9 @@ block contents
               li.item.is-block
                 p.texts
                   | CSS内にfont-faceを記述（以下はYakuHanJPで300のウェイトを細くしfont-displayを適応した例）
-                pre.pre.is-sm
-                  code.code.css.
+                .wysiwyg
+                  :markdown-it
+                    ```css
                     // Demi Light > Light
                     @font-face {
                       font-family: "YakuHanJP";
@@ -260,6 +271,7 @@ block contents
                       url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
                       font-display: swap;
                     }
+                    ```
 
     section.section.is-main-content.is-support
       .inner-vw

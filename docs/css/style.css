@@ -83,10 +83,6 @@
   flex: 1 1 auto;
 }
 
-.section.is-topcover {
-  padding: 30px 0;
-}
-
 .section.is-topcover .box.is-bg-logo {
   display: -webkit-box;
   display: flex;
@@ -94,10 +90,12 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  height: calc(100vmax - 60px);
-  background-image: url("../img/icon-yakuhanjp.svg");
-  background-position: center center;
-  background-size: cover;
+  height: 100vmax;
+  background-image: linear-gradient(90deg, #1a1a1a 50%, #4d4d4d 50%);
+}
+
+.section.is-topcover .box.is-topcover-content {
+  padding-top: 0.75em;
 }
 
 .section.is-main-content {
@@ -143,6 +141,7 @@
 
 .logo.is-title {
   width: 70px;
+  border: 1px solid #ffffff;
 }
 
 .obj.is-footer-logo {
@@ -210,6 +209,10 @@
   transition: ease 0.2s;
 }
 
+.texts.is-include-fonts {
+  font-size: 120%;
+}
+
 .pre {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0;
@@ -224,6 +227,11 @@
 :not(.pre) > .code {
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
+}
+
+.wysiwyg code,
+.wysiwyg pre {
+  color: #eeeeee;
 }
 
 .is-font-sans {
@@ -379,25 +387,24 @@
 }
 
 @media screen and (min-width: 768px) {
+  .texts.is-include-fonts {
+    font-size: 2.65vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .section.is-topcover {
     padding: 60px 0;
   }
 
   .section.is-topcover .box.is-bg-logo {
     height: calc(100vh - 120px);
+    background-image: url("../img/icon-yakuhanjp.svg");
+    background-position: center center;
     background-size: contain;
   }
-}
 
-@media screen and (min-width: 992px) {
   .list {
     margin-right: 1.5em;
-  }
-}
-
-@media all and (-ms-high-contrast: none) {
-  .section.is-topcover .box.is-bg-logo {
-    height: calc(100vmax - 60px);
-    background-image: url("../img/apple-touch-icon.png");
   }
 }

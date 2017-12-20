@@ -16,6 +16,13 @@
   }
 }
 
+.texts.is-include-fonts {
+  font-size: 120%;
+  @include tablet {
+    font-size: 2.65vw;
+  }
+}
+
 .pre {
   background-color: $dark-2;
   border-radius: 0;
