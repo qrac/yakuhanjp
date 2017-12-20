@@ -2,93 +2,123 @@
 // Mixin: Media Query
 //----------------------------------------------------
 
-// Mobile First
+//----------------------------------------------------
+// / Mobile First
+//----------------------------------------------------
+
+// Fablet size or more
 @mixin fablet {
   @media screen and (min-width: $screen-width-fablet) {
     @content;
   }
 }
 
+// Tablet size or more
 @mixin tablet {
   @media screen and (min-width: $screen-width-tablet) {
     @content;
   }
 }
 
+// Desktop size or more
 @mixin desktop {
   @media screen and (min-width: $screen-width-desktop) {
     @content;
   }
 }
 
+// Wide size or more
 @mixin wide {
   @media screen and (min-width: $screen-width-wide) {
     @content;
   }
 }
 
-// Size Only
+//----------------------------------------------------
+// / Size Only
+//----------------------------------------------------
+
+// Mobile size only
 @mixin mobile-only {
   @media screen and (max-width: $screen-width-fablet - 1px) {
     @content;
   }
 }
 
+// Fablet size only
 @mixin fablet-only {
   @media screen and (min-width: $screen-width-fablet) and (max-width: $screen-width-tablet - 1px) {
     @content;
   }
 }
 
+// Tablet size only
 @mixin tablet-only {
   @media screen and (min-width: $screen-width-tablet) and (max-width: $screen-width-desktop - 1px) {
     @content;
   }
 }
 
+// Desktop size only
 @mixin desktop-only {
   @media screen and (min-width: $screen-width-desktop) and (max-width: $screen-width-wide - 1px) {
     @content;
   }
 }
 
+// Wide size only
 @mixin wide-only {
   @media screen and (min-width: $screen-width-wide) {
     @content;
   }
 }
 
-// Combination
+//----------------------------------------------------
+// / Combination
+//----------------------------------------------------
+
+// Mobile size ~ Fablet size
 @mixin mobile-fablet {
   @media screen and (max-width: $screen-width-tablet - 1px) {
     @content;
   }
 }
 
+// Mobile size ~ Tablet size
 @mixin mobile-tablet {
   @media screen and (max-width: $screen-width-desktop - 1px) {
     @content;
   }
 }
 
+// Mobile size ~ Desktop size
 @mixin mobile-desktop {
   @media screen and (max-width: $screen-width-wide - 1px) {
     @content;
   }
 }
 
-// Landscape or Portrait
+//----------------------------------------------------
+// / Landscape or Portrait
+//----------------------------------------------------
+
+// Landscape(tablet size or less)
 @mixin landscape {
-  @media all and (orientation:landscape) {
+  @media all and (orientation:landscape) and (max-width: $screen-width-desktop - 1px) {
     @content;
   }
 }
 
+// Portrait(tablet size or less)
 @mixin portrait {
-  @media all and (orientation:portrait) {
+  @media all and (orientation:portrait) and (max-width: $screen-width-desktop - 1px) {
     @content;
   }
 }
+
+//----------------------------------------------------
+// / Browser
+//----------------------------------------------------
 
 // Chrome and Opera
 @mixin chrome {
@@ -115,5 +145,19 @@
 @mixin ie {
   @media all and (-ms-high-contrast:none) {
     @content;
+  }
+}
+
+//----------------------------------------------------
+// / Pattern
+//----------------------------------------------------
+
+@mixin mediaquery-pattern($mediaquery) {
+  @if $mediaquery == $screen-width-mobile {
+    @content;
+  } @else {
+    @media #{$mediaquery} {
+      @content;
+    }
   }
 }

@@ -3,10 +3,17 @@
   "description": "Yakumono-Hankaku Only Web Fonts",
   "version": "2.0.0",
   "style": "dist/css/yakuhanjp.css",
-  "keywords": ["font", "webfont", "yakuhan", "yakumono", "hankaku", "japanese"],
+  "keywords": [
+    "font",
+    "webfont",
+    "yakuhan",
+    "yakumono",
+    "hankaku",
+    "japanese"
+  ],
   "homepage": "https://github.com/qrac/yakuhanjp",
   "bugs": {
-    "url" : "https://github.com/qrac/yakuhanjp"
+    "url": "https://github.com/qrac/yakuhanjp"
   },
   "author": {
     "name": "Qrac",
@@ -16,5 +23,26 @@
     "type": "git",
     "url": "https://github.com/qrac/yakuhanjp.git"
   },
-  "license": "(OFL-1.1 AND MIT)"
+  "license": "(OFL-1.1 AND MIT)",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.19.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "jstransformer-markdown-it": "^2.0.0"
+  }
 }

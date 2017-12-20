@@ -8,35 +8,3 @@
     padding: 1.25em;
   }
 }
-
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tab {
-  display: flex;
-  flex: 1 0 auto;
-  justify-content: center;
-  align-items: center;
-  padding: 0.25em 1.75em;
-  background-color: $grey-50;
-  transition: ease 0.2s;
-  &:not(.is-active) {
-    cursor: pointer;
-  }
-  &:not(.is-active):not(.is-disable):hover,
-  &:not(.is-active):not(.is-disable):active {
-    color: $cyan-500;
-  }
-  &.is-active {
-    font-weight: 700;
-  }
-  &.is-active:not(.is-disable) {
-    color: $cyan-500;
-  }
-  &.is-disable {
-    color: $red-600;
-    text-decoration: line-through;
-  }
-}

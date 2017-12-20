@@ -1,0 +1,345 @@
+/* Yaku Han JP Demo CSS */
+
+.yakuhanjp.yakuhanjp-demo {
+  background: linear-gradient(90deg, #ddd 50%, #F2F2F2 50%);
+  font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.grid.is-gap-one-quarter:not(.is-gap-none) {
+  margin-left: -0.125em;
+  margin-bottom: -0.125em;
+}
+
+.grid.is-gap-one-quarter:not(.is-gap-none) > .col {
+  padding-left: 0.125em;
+  padding-bottom: 0.125em;
+}
+
+.grid.is-gap-6x:not(.is-gap-none) {
+  margin-left: -3em;
+  margin-bottom: -3em;
+}
+
+.grid.is-gap-6x:not(.is-gap-none) > .col {
+  padding-left: 3em;
+  padding-bottom: 3em;
+}
+
+.grid.is-gap-6x:not(.is-gap-none) + .grid.is-gap-6x:not(.is-gap-none) {
+  margin-top: 3em;
+}
+
+.grid > .col > .box {
+  -webkit-box-flex: 1;
+  flex: 1 0 0%;
+}
+
+.grid > .col > .box.is-bg-smoke {
+  background-color: whitesmoke;
+}
+
+.grid > .col > .box.is-bg-white {
+  background-color: #ffffff;
+}
+
+.grid > .col > .box.is-before {
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.grid > .col > .box.is-before:before {
+  content: "Before";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 7px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 62.5%;
+}
+
+.grid > .col > .box.is-after {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.grid > .col > .box.is-after:after {
+  content: "After";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 7px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 62.5%;
+}
+
+.grid > .col > .box > .inner {
+  padding: 1.25em;
+}
+
+.col.is-fit {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+}
+
+.section.is-topcover {
+  padding: 60px 0;
+}
+
+.section.is-main + .section.is-footer {
+  margin-top: 3em;
+}
+
+.section.is-footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 0 10px;
+}
+
+.group.is-card {
+  background-color: #ffffff;
+}
+
+.group.is-card > .inner {
+  padding: 1.25em;
+}
+
+.list > .item.is-block + .item.is-block {
+  margin-top: 1em;
+}
+
+.logo.is-title {
+  width: 70px;
+}
+
+.obj.is-footer-logo {
+  display: block;
+  width: 8em;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0.25em 1.75em;
+  background-color: #fafafa;
+  transition: ease 0.2s;
+}
+
+.tab:not(.is-active) {
+  cursor: pointer;
+}
+
+.tab:not(.is-active):not(.is-disable):hover,
+.tab:not(.is-active):not(.is-disable):active {
+  color: #1cb4c7;
+}
+
+.tab.is-active {
+  font-weight: 700;
+}
+
+.tab.is-active:not(.is-disable) {
+  color: #1cb4c7;
+}
+
+.tab.is-disable {
+  color: #d75653;
+  text-decoration: line-through;
+}
+
+.table .box.is-paint,
+.table .box.is-paint-5 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text.is-title {
+  font-size: 3em;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  line-height: 1.25;
+}
+
+.texts.is-before,
+.texts.is-after {
+  transition: ease 0.2s;
+}
+
+.pre {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0;
+}
+
+.pre,
+.code {
+  color: #ffffff;
+}
+
+.is-font-sans {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-yakuhanjp {
+  font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-yakuhanjps {
+  font-family: YakuHanJPs, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-hiragino {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-hiragino-yakuhanjp {
+  font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-hiragino-yakuhanjps {
+  font-family: YakuHanJPs, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-yugo {
+  font-family: "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-yugo-yakuhanjp {
+  font-family: YakuHanJP, "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-yugo-yakuhanjps {
+  font-family: YakuHanJPs, "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-noto {
+  font-family: "Noto Sans Japanese", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-noto-yakuhanjp {
+  font-family: YakuHanJP, "Noto Sans Japanese", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-noto-yakuhanjps {
+  font-family: YakuHanJPs, "Noto Sans Japanese", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-meiryo {
+  font-family: Meiryo, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-meiryo-yakuhanjp {
+  font-family: YakuHanJP, Meiryo, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-sans-meiryo-yakuhanjps {
+  font-family: YakuHanJPs, Meiryo, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "Yu Gothic Medium", sans-serif;
+}
+
+.is-font-serif {
+  font-family: "Hiragino Mincho ProN", "Noto Serif Japanese", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-yakuhanmp {
+  font-family: YakuHanMP, "Hiragino Mincho ProN", "Noto Serif Japanese", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-yakuhanmps {
+  font-family: YakuHanMPs, "Hiragino Mincho ProN", "Noto Serif Japanese", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-hiragino {
+  font-family: "Hiragino Mincho ProN", "Noto Serif Japanese", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-hiragino-yakuhanmp {
+  font-family: YakuHanMP, "Hiragino Mincho ProN", "Noto Serif Japanese", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-hiragino-yakuhanmps {
+  font-family: YakuHanMPs, "Hiragino Mincho ProN", "Noto Serif Japanese", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-yumi {
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif Japanese", serif;
+}
+
+.is-font-serif-yumi-yakuhanmp {
+  font-family: YakuHanMP, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif Japanese", serif;
+}
+
+.is-font-serif-yumi-yakuhanmps {
+  font-family: YakuHanMPs, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif Japanese", serif;
+}
+
+.is-font-serif-noto {
+  font-family: "Noto Serif Japanese", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-noto-yakuhanmp {
+  font-family: YakuHanMP, "Noto Serif Japanese", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-noto-yakuhanmps {
+  font-family: YakuHanMPs, "Noto Serif Japanese", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-meiryo {
+  font-family: meiryo, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-meiryo-yakuhanmp {
+  font-family: YakuHanMP, meiryo, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+.is-font-serif-meiryo-yakuhanmps {
+  font-family: YakuHanMPs, meiryo, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+}
+
+.is-color-transparent {
+  color: transparent;
+}
+
+.is-size-xxl {
+  font-size: 200%;
+}
+
+.is-size-xl {
+  font-size: 150%;
+}
+
+.is-size-lg {
+  font-size: 125%;
+}
+
+.is-size-md {
+  font-size: 100%;
+}
+
+.is-size-sm {
+  font-size: 87.5%;
+}
+
+.is-size-xs {
+  font-size: 75%;
+}
+
+.is-size-xxs {
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 992px) {
+  .list {
+    margin-right: 1.5em;
+  }
+}

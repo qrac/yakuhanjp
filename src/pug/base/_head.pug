@@ -5,7 +5,7 @@
 meta(charset="UTF-8")
 title #{page.title} - #{site.title}
 meta(name="description" content=page.desc)
-meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover")
 meta(name="format-detection" content="telephone=no, email=no, address=no")
 meta(http-equiv="x-ua-compatible" content="ie=edge")
 
@@ -36,13 +36,13 @@ meta(name="twitter:image:src" content=site.url+"/"+path.img+"/"+page.ogp)
 //----------------------------------------------------
 
 link(rel="apple-touch-icon" href=path.img+"/apple-touch-icon.png")
-link(rel="shortcut icon" href=path.img+"/favicon.ico")
+link(rel="shortcut icon" href=path.img+"/favicon.png")
 
 //----------------------------------------------------
 //- / CDN - Font Awesome
 //----------------------------------------------------
 
-link(rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css")
+link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css")
 
 //----------------------------------------------------
 //- / CDN - Google Fonts
@@ -70,6 +70,12 @@ link(rel="stylesheet" href="dist/css/yakuhanjp.min.css")
 link(rel="stylesheet" href="dist/css/yakuhanjp_s.min.css")
 link(rel="stylesheet" href="dist/css/yakuhanmp.min.css")
 link(rel="stylesheet" href="dist/css/yakuhanmp_s.min.css")
+
+//----------------------------------------------------
+//- / Local - MUSUBii
+//----------------------------------------------------
+
+link(rel="stylesheet" href="docs/lib/musubii/css/musubii.min.css")
 
 //----------------------------------------------------
 //- / Local - CSS

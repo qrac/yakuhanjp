@@ -20,7 +20,7 @@ block contents
         h2.text.is-lg #{page.desc}
       p.texts.is-strong #{github.ver}
       p.texts
-        i.fa.fa-github(aria-hidden="true")
+        i.fab.fa-github(aria-hidden="true")
         a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo ontouchstart="")
           span.text Repository
         | &nbsp;/&nbsp;
@@ -28,7 +28,7 @@ block contents
           span.text Releases
       .btns.is-center
         a.btn.is-lg.is-plain.is-round.is-primary(href=github.url+"/"+github.id+"/"+github.repo+"/archive/master.zip" download=github.repo+"-master.zip" ontouchstart="")
-          i.fa.fa-download(aria-hidden="true")
+          i.fas.fa-download(aria-hidden="true")
           span.text Download
 
   main.section.is-main
@@ -57,8 +57,8 @@ block contents
               ul.tabs.is-xs
                 li.tab.is-switch-font-weight.is-switch-w100(ontouchstart="") w100
                 li.tab.is-switch-font-weight.is-switch-w200(ontouchstart="") w200
-                li.tab.is-switch-font-weight.is-switch-w300.is-active(ontouchstart="") w300
-                li.tab.is-switch-font-weight.is-switch-w400(ontouchstart="") w400
+                li.tab.is-switch-font-weight.is-switch-w300(ontouchstart="") w300
+                li.tab.is-switch-font-weight.is-switch-w400.is-active(ontouchstart="") w400
                 li.tab.is-switch-font-weight.is-switch-w500(ontouchstart="") w500
                 li.tab.is-switch-font-weight.is-switch-w700(ontouchstart="") w700
                 li.tab.is-switch-font-weight.is-switch-w900(ontouchstart="") w900
@@ -215,19 +215,19 @@ block contents
                   .grid
                     .col
                       a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/")
-                        i.fa.fa-folder-o(aria-hidden="true")
+                        i.fas.fa-folder(aria-hidden="true")
                         span.text YakuHanJP
                     .col
                       a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJPs/")
-                        i.fa.fa-folder-o(aria-hidden="true")
+                        i.fas.fa-folder(aria-hidden="true")
                         span.text YakuHanJPs
                     .col
                       a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMP/")
-                        i.fa.fa-folder-o(aria-hidden="true")
+                        i.fas.fa-folder(aria-hidden="true")
                         span.text YakuHanMP
                     .col
                       a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMPs/")
-                        i.fa.fa-folder-o(aria-hidden="true")
+                        i.fas.fa-folder(aria-hidden="true")
                         span.text YakuHanMPs
               li.item.is-block
                 p.texts
@@ -250,67 +250,63 @@ block contents
 
         .group.is-card
           .inner
-            .group
-              .grid.is-space-2
-                .col.is-mobile-12.is-wide-7
-                  .group.is-scroll-x
-                    table.table.is-sm.is-center.is-nowrap.is-middle.is-border
-                      thead
-                        tr.box.is-paint
-                          th
-                            i.fa.fa-chrome(aria-hidden="true")
-                            span.text Chrome
-                          th
-                            i.fa.fa-firefox(aria-hidden="true")
-                            span.text Firefox
-                          th
-                            i.fa.fa-internet-explorer(aria-hidden="true")
-                            span.text IE
-                          th
-                            i.fa.fa-edge(aria-hidden="true")
-                            span.text Ege
-                          th
-                            i.fa.fa-opera(aria-hidden="true")
-                            span.text Opera
-                          th
-                            i.fa.fa-safari(aria-hidden="true")
-                            span.text Safari(Mac)
-                      tbody
-                        tr
-                          td
-                            span.text 55~
-                          td
-                            span.text 50~
-                          td
-                            span.text 9~
-                          td
-                            span.text 14~
-                          td
-                            span.text 36~
-                          td
-                            span.text 6~
-                .col.is-mobile-12.is-wide-5
-                  .group.is-scroll-x
-                    table.table.is-sm.is-center.is-nowrap.is-middle.is-border
-                      thead
-                        tr.box.is-paint
-                          th
-                            i.fa.fa-safari(aria-hidden="true")
-                            span.text Safari(iOS)
-                          th
-                            i.fa.fa-chrome(aria-hidden="true")
-                            span.text Chrome(Android)
-                          th
-                            i.fa.fa-globe(aria-hidden="true")
-                            span.text Browser(Android)
-                      tbody
-                        tr
-                          td
-                            span.text 7~
-                          td
-                            span.text 51~
-                          td
-                            span.text 4.4~
+            .group.is-scroll-x
+              table.table.is-sm.is-center.is-nowrap.is-middle.is-border
+                thead
+                  tr.box.is-paint
+                    th
+                      i.fab.fa-chrome(aria-hidden="true")
+                      span.text Chrome
+                    th
+                      i.fab.fa-firefox(aria-hidden="true")
+                      span.text Firefox
+                    th
+                      i.fab.fa-internet-explorer(aria-hidden="true")
+                      span.text IE
+                    th
+                      i.fab.fa-edge(aria-hidden="true")
+                      span.text Ege
+                    th
+                      i.fab.fa-opera(aria-hidden="true")
+                      span.text Opera
+                    th
+                      i.fab.fa-safari(aria-hidden="true")
+                      span.text Safari(Mac)
+                tbody
+                  tr
+                    td
+                      span.text 55~
+                    td
+                      span.text 50~
+                    td
+                      span.text 9~
+                    td
+                      span.text 14~
+                    td
+                      span.text 36~
+                    td
+                      span.text 6~
+            .group.is-scroll-x
+              table.table.is-sm.is-center.is-nowrap.is-middle.is-border
+                thead
+                  tr.box.is-paint
+                    th
+                      i.fab.fa-safari(aria-hidden="true")
+                      span.text Safari(iOS)
+                    th
+                      i.fab.fa-chrome(aria-hidden="true")
+                      span.text Chrome(Android)
+                    th
+                      i.fa.fa-globe(aria-hidden="true")
+                      span.text Browser(Android)
+                tbody
+                  tr
+                    td
+                      span.text 7~
+                    td
+                      span.text 51~
+                    td
+                      span.text 4.4~
 
       .groups
         h3.heading.is-xxl.is-center License
@@ -335,116 +331,4 @@ block contents
                 a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#serif-jpan") Noto Serif CJK JP
                 | &nbsp;licensed under the SIL OFL 1.1
 
-  footer.section.is-footer
-    .inner
-      .groups
-        .btns.is-center.is-lg
-          each val in contact
-            a.btn.is-ghost.is-circle(href="" + val.url + "/" + val.id + "")
-              i.fa(aria-hidden="true" class="fa-" + val.class + "")
-      .groups
-        .grid.is-center.is-gap-6x
-          .col.is-mobile-6.is-tablet-3.is-desktop-auto
-            p.heading
-              a(href="https://qranoko.jp")
-                img.obj.is-footer-logo(src=path.img+"/logo-qranoko-white.svg" alt=site.title)
-            ul.list.is-light.is-sm
-              li.item
-                span.text Creative Partners
-              li.item
-                span.text Komae, Tokyo, Japan
-            ul.list.is-note.is-light.is-sm
-              li.item
-                i.icon.fa.fa-hand-o-right(aria-hidden="true")
-                a.text.is-link-reverse(href="https://qranoko.jp/about") About
-              li.item
-                i.icon.fa.fa-hand-o-right(aria-hidden="true")
-                a.text.is-link-reverse(href="https://qranoko.jp/works") Works
-              li.item
-                i.icon.fa.fa-hand-o-right(aria-hidden="true")
-                a.text.is-link-reverse(href="https://qranoko.jp/contact") Contact
-          .col.is-mobile-6.is-tablet-3.is-desktop-auto
-            p.heading.is-strong.is-light MEMBER
-            ul.list.is-light.is-sm
-              li.item
-                a.text.is-link-reverse(href="https://twitter.com/Qrac_JP") Qrac
-              li.item
-                span.text Mainoko
-          .col.is-mobile-6.is-tablet-3.is-desktop-auto
-            p.heading.is-strong.is-light PRODUCE
-            ul.list.is-light.is-sm
-              each val in produce
-                li.item
-                  a.text.is-link-reverse(href=val.url)= val.title
-          .col.is-mobile-6.is-tablet-3.is-desktop-auto
-            p.heading.is-strong.is-light PRODUCT
-            ul.list.is-light.is-sm
-              each val in product
-                li.item
-                  a.text.is-link-reverse(href=val.url)= val.title
-          .col.is-mobile-6.is-tablet-3.is-desktop-auto
-            p.heading.is-strong.is-light PROJECT
-            ul.list.is-light.is-sm
-              li.item
-                a.text * private
-              //-each val in project
-                li.item
-                  a.text.is-link-reverse(href=val.url)= val.title
-          .col.is-mobile-6.is-tablet-3.is-desktop-auto
-            p.heading.is-strong.is-light MORE
-            ul.list.is-light.is-sm
-              each val in more
-                li.item
-                  a.text.is-link-reverse(href=val.url)= val.title
-      .groups
-        p.texts.is-light.is-center.is-sm
-          span.text &copy; QRANOKO 2017
-      p.texts.is-center.is-color-transparent
-        span.text.is-font-sans-hiragino-yakuhanjp
-          span.text.is-weight-100 「
-          span.text.is-weight-200 」
-          span.text.is-weight-300 「
-          span.text.is-weight-400 」
-          span.text.is-weight-500 「
-          span.text.is-weight-700 」
-          span.text.is-weight-900 「
-        span.text.is-font-sans-hiragino-yakuhanjps
-          span.text.is-weight-100 「
-          span.text.is-weight-200 」
-          span.text.is-weight-300 「
-          span.text.is-weight-400 」
-          span.text.is-weight-500 「
-          span.text.is-weight-700 」
-          span.text.is-weight-900 「
-        span.text.is-font-serif-hiragino-yakuhanmp
-          span.text.is-weight-100 「
-          span.text.is-weight-200 」
-          span.text.is-weight-300 「
-          span.text.is-weight-400 」
-          span.text.is-weight-500 「
-          span.text.is-weight-700 」
-          span.text.is-weight-900 「
-        span.text.is-font-serif-hiragino-yakuhanmps
-          span.text.is-weight-100 「
-          span.text.is-weight-200 」
-          span.text.is-weight-300 「
-          span.text.is-weight-400 」
-          span.text.is-weight-500 「
-          span.text.is-weight-700 」
-          span.text.is-weight-900 「
-        span.text.is-font-sans-noto
-          span.text.is-weight-100 の
-          span.text.is-weight-200 と
-          span.text.is-weight-300 の
-          span.text.is-weight-400 と
-          span.text.is-weight-500 の
-          span.text.is-weight-700 と
-          span.text.is-weight-900 の
-        span.text.is-font-serif-noto
-          span.text.is-weight-100 の
-          span.text.is-weight-200 と
-          span.text.is-weight-300 の
-          span.text.is-weight-400 と
-          span.text.is-weight-500 の
-          span.text.is-weight-700 と
-          span.text.is-weight-900 の
+  include common/_footer.pug

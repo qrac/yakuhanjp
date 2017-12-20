@@ -2,6 +2,10 @@
 // Variable: Color
 //----------------------------------------------------
 
+//----------------------------------------------------
+// / Change Tone
+//----------------------------------------------------
+
 $red-50: $mof-red-50 !default;
 $red-100: $mof-red-100 !default;
 $red-200: $mof-red-200 !default;
@@ -278,6 +282,10 @@ $blue-grey-900: $mof-blue-grey-900 !default;
 $black: $mof-black !default;
 $white: $mof-white !default;
 
+//----------------------------------------------------
+// / Theme
+//----------------------------------------------------
+
 $primary: $cyan-500 !default;
 $info: $blue-500 !default;
 $success: $green-a700 !default;
@@ -306,13 +314,40 @@ $light-7: rgba( $white, 0.15 ) !default;
 $light-8: rgba( $white, 0.12 ) !default;
 $light-9: rgba( $white, 0.05 ) !default;
 
-$grey: $grey-50 !default;
-$grey-1: $grey-100 !default;
-$grey-2: $grey-200 !default;
-$grey-3: $grey-300 !default;
-$grey-4: $grey-400 !default;
-$grey-5: $grey-500 !default;
-$grey-6: $grey-600 !default;
-$grey-7: $grey-700 !default;
-$grey-8: $grey-800 !default;
-$grey-9: $grey-900 !default;
+//----------------------------------------------------
+// / Pattern
+//----------------------------------------------------
+
+$pattern-color-theme:(
+  primary: $primary,
+  info: $info,
+  success: $success,
+  warning: $warning,
+  danger: $danger
+);
+
+$pattern-color-dark:(
+  dark: $dark,
+  dark-1: $dark-1,
+  dark-2: $dark-2,
+  dark-3: $dark-3,
+  dark-4: $dark-4,
+  dark-5: $dark-5,
+  dark-6: $dark-6,
+  dark-7: $dark-7,
+  dark-8: $dark-8,
+  dark-9: $dark-9
+);
+
+$pattern-color-light:(
+  light: $light,
+  light-1: $light-1,
+  light-2: $light-2,
+  light-3: $light-3,
+  light-4: $light-4,
+  light-5: $light-5,
+  light-6: $light-6,
+  light-7: $light-7,
+  light-8: $light-8,
+  light-9: $light-9
+);
