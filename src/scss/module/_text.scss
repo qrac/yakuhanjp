@@ -19,9 +19,15 @@
 .pre {
   background-color: $dark-2;
   border-radius: 0;
+  color: $light;
 }
 
 .pre,
 .code {
+  color: $light;
+}
+
+:not(.pre) > .code {
+  background-color: $dark-2;
   color: $light;
 }

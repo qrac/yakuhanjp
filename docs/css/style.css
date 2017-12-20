@@ -213,10 +213,16 @@
 .pre {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0;
+  color: #ffffff;
 }
 
 .pre,
 .code {
+  color: #ffffff;
+}
+
+:not(.pre) > .code {
+  background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
 }
 
