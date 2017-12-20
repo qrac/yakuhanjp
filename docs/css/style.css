@@ -100,8 +100,24 @@
   background-size: cover;
 }
 
-.section.is-main + .section.is-footer {
-  margin-top: 3em;
+.section.is-main-content {
+  padding: 3em 0 4.5em;
+}
+
+.section.is-main-content.is-example {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.section.is-main-content.is-howtouse {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.section.is-main-content.is-support {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.section.is-main-content > .inner-vw > .heading + .group {
+  margin-top: 2em;
 }
 
 .section.is-footer {
@@ -147,7 +163,7 @@
   align-items: center;
   padding: 0.25em 1.75em;
   background-color: #fafafa;
-  transition: ease 0.2s;
+  transition: ease 0.12s;
 }
 
 .tab:not(.is-active) {
@@ -156,7 +172,8 @@
 
 .tab:not(.is-active):not(.is-disable):hover,
 .tab:not(.is-active):not(.is-disable):active {
-  color: #1cb4c7;
+  background-color: #1cb4c7;
+  color: #ffffff;
 }
 
 .tab.is-active {

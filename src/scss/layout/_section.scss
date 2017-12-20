@@ -32,8 +32,27 @@
 }
 
 .section.is-main {
-  + .section.is-footer {
-    margin-top: 3em;
+}
+
+.section.is-main-content {
+  padding: 3em 0 4.5em;
+  &.is-example {
+    background-color: $dark-9;
+  }
+  &.is-include-fonts {
+  }
+  &.is-howtouse {
+    background-color: $dark-9;
+  }
+  &.is-custom {
+  }
+  &.is-support {
+    background-color: $dark-9;
+  }
+  &.is-license {
+  }
+  > .inner-vw > .heading + .group {
+    margin-top: 2em;
   }
 }
 

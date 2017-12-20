@@ -13,7 +13,7 @@ block contents
 
   header.section.is-topcover
     .box.is-bg-logo
-      .box.is-topcover-content.is-light.is-center
+      .box.is-topcover-content.is-light.is-center.is-tablet-lg
         .texts
           h1.text.is-title #{page.title}
           h2.text #{page.desc}
@@ -31,29 +31,28 @@ block contents
             span.text Download
 
   main.section.is-main
-    .inner
 
-      .groups
+    section.section.is-main-content.is-example
+      .inner-vw
         h3.heading.is-xxl.is-center Example
-
         .group
           .grid.is-gap-one-quarter
             .col.is-fit
-              ul.tabs.is-xs
+              ul.tabs.is-mobile-xs.is-fablet-sm.is-tablet-md
                 li.tab.is-switch-font-family.is-switch-gothic.is-active(ontouchstart="") Gothic
                 li.tab.is-switch-font-family.is-switch-mincho(ontouchstart="") Mincho
             .col.is-fit
-              ul.tabs.is-xs
+              ul.tabs.is-mobile-xs.is-fablet-sm.is-tablet-md
                 li.tab.is-switch-font-family.is-switch-full.is-active(ontouchstart="") Full
                 li.tab.is-switch-font-family.is-switch-small(ontouchstart="") Small
             .col.is-fit
-              ul.tabs.is-xs
+              ul.tabs.is-mobile-xs.is-fablet-sm.is-tablet-md
                 li.tab.is-switch-font-family.is-switch-hiragino.is-active(ontouchstart="") Hiragino
                 li.tab.is-switch-font-family.is-switch-yu(ontouchstart="") Yu
                 li.tab.is-switch-font-family.is-switch-noto(ontouchstart="") Noto
                 li.tab.is-switch-font-family.is-switch-meiryo(ontouchstart="") Meiryo
             .col.is-fit
-              ul.tabs.is-xs
+              ul.tabs.is-mobile-xs.is-fablet-sm.is-tablet-md
                 li.tab.is-switch-font-weight.is-switch-w100(ontouchstart="") w100
                 li.tab.is-switch-font-weight.is-switch-w200(ontouchstart="") w200
                 li.tab.is-switch-font-weight.is-switch-w300(ontouchstart="") w300
@@ -62,7 +61,7 @@ block contents
                 li.tab.is-switch-font-weight.is-switch-w700(ontouchstart="") w700
                 li.tab.is-switch-font-weight.is-switch-w900(ontouchstart="") w900
             .col.is-fit
-              ul.tabs.is-xs
+              ul.tabs.is-mobile-xs.is-fablet-sm.is-tablet-md
                 li.tab.is-switch-font-size.is-switch-xxs(ontouchstart="") 0.625em
                 li.tab.is-switch-font-size.is-switch-xs(ontouchstart="") 0.75em
                 li.tab.is-switch-font-size.is-switch-sm(ontouchstart="") 0.875em
@@ -70,7 +69,6 @@ block contents
                 li.tab.is-switch-font-size.is-switch-lg(ontouchstart="") 1.25em
                 li.tab.is-switch-font-size.is-switch-xl(ontouchstart="") 1.5em
                 li.tab.is-switch-font-size.is-switch-xxl(ontouchstart="") 2em
-
         .group
           .grid.is-stretch.is-gap-none
             .col.is-mobile-6
@@ -82,9 +80,9 @@ block contents
                 .inner
                   p.texts.is-after.is-font-sans-hiragino-yakuhanjp #{example.text01}
 
-      .groups
+    section.section.is-main-content.is-include-fonts
+      .inner-vw
         h3.heading.is-xxl.is-center Include Fonts
-
         .group
           .grid.is-stretch.is-gap-none
             .col.is-mobile-6
@@ -114,9 +112,9 @@ block contents
                     span.text.is-inline-block.is-strong.is-xxs 明朝体 Small Amount（少量版）
                   p.texts.is-lg.is-font-serif-hiragino-yakuhanmps #{example.text05}
 
-      .groups
+    section.section.is-main-content.is-howtouse
+      .inner-vw
         h3.heading.is-xxl.is-center How To Use
-
         .group.is-card
           .inner
             h4.heading.is-strong.is-lg
@@ -138,7 +136,6 @@ block contents
 
                     // YakuHanMPs
                     &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css"&gt;
-
         .group.is-card
           .inner
             h4.heading.is-strong.is-lg
@@ -150,7 +147,6 @@ block contents
                 pre.pre.is-sm
                   code.code.cmd.
                     npm install yakuhanjp
-
         .group.is-card
           .inner
             h4.heading.is-strong.is-lg Local
@@ -200,9 +196,9 @@ block contents
                       font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
                     }
 
-      .groups
+    section.section.is-main-content.is-custom
+      .inner-vw
         h3.heading.is-xxl.is-center Custom
-
         .group.is-card
           .inner
             h4.heading.is-strong.is-lg Font face
@@ -244,9 +240,9 @@ block contents
                       font-display: swap;
                     }
 
-      .groups
+    section.section.is-main-content.is-support
+      .inner-vw
         h3.heading.is-xxl.is-center Support
-
         .group.is-card
           .inner
             .group.is-scroll-x
@@ -307,9 +303,9 @@ block contents
                     td
                       span.text 4.4~
 
-      .groups
+    section.section.is-main-content.is-license
+      .inner-vw
         h3.heading.is-xxl.is-center License
-
         .group.is-card
           .inner
             ol.list.is-disc

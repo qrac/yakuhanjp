@@ -14,13 +14,14 @@
   align-items: center;
   padding: 0.25em 1.75em;
   background-color: $grey-50;
-  transition: ease 0.2s;
+  transition: ease 0.12s;
   &:not(.is-active) {
     cursor: pointer;
   }
   &:not(.is-active):not(.is-disable):hover,
   &:not(.is-active):not(.is-disable):active {
-    color: $cyan-500;
+    background-color: $cyan-500;
+    color: $light;
   }
   &.is-active {
     font-weight: 700;
