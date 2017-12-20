@@ -133,6 +133,10 @@
   padding: 1.25em;
 }
 
+.group.is-bg-smoke-white {
+  background: linear-gradient(90deg, whitesmoke 50%, #ffffff 50%);
+}
+
 .list > .item.is-block + .item.is-block {
   margin-top: 1em;
 }

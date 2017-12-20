@@ -8,3 +8,7 @@
     padding: 1.25em;
   }
 }
+
+.group.is-bg-smoke-white {
+  background: linear-gradient(90deg, $grey-100 50%, $light 50%);
+}
