@@ -84,7 +84,20 @@
 }
 
 .section.is-topcover {
-  padding: 60px 0;
+  padding: 30px 0;
+}
+
+.section.is-topcover .box.is-bg-logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: calc(100vmax - 60px);
+  background-image: url("../img/icon-yakuhanjp.svg");
+  background-position: center center;
+  background-size: cover;
 }
 
 .section.is-main + .section.is-footer {
@@ -165,7 +178,7 @@
 }
 
 .text.is-title {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 900;
   font-family: "Lato", sans-serif;
   line-height: 1.25;
@@ -338,8 +351,26 @@
   font-size: 62.5%;
 }
 
+@media screen and (min-width: 768px) {
+  .section.is-topcover {
+    padding: 60px 0;
+  }
+
+  .section.is-topcover .box.is-bg-logo {
+    height: calc(100vh - 120px);
+    background-size: contain;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .list {
     margin-right: 1.5em;
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  .section.is-topcover .box.is-bg-logo {
+    height: calc(100vmax - 60px);
+    background-image: url("../img/apple-touch-icon.png");
   }
 }

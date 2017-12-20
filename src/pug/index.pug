@@ -11,25 +11,24 @@ block vars
 
 block contents
 
-  header.section.is-topcover.is-center
-    .inner
-      .group
-        img.logo.is-title(src=path.img+"/"+"icon-yakuhanjp.svg" alt=page.title)
-      .texts
-        h1.text.is-title #{page.title}
-        h2.text.is-lg #{page.desc}
-      p.texts.is-strong #{github.ver}
-      p.texts
-        i.fab.fa-github(aria-hidden="true")
-        a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo ontouchstart="")
-          span.text Repository
-        | &nbsp;/&nbsp;
-        a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo+"/releases" ontouchstart="")
-          span.text Releases
-      .btns.is-center
-        a.btn.is-lg.is-plain.is-round.is-primary(href=github.url+"/"+github.id+"/"+github.repo+"/archive/master.zip" download=github.repo+"-master.zip" ontouchstart="")
-          i.fas.fa-download(aria-hidden="true")
-          span.text Download
+  header.section.is-topcover
+    .box.is-bg-logo
+      .box.is-topcover-content.is-light.is-center
+        .texts
+          h1.text.is-title #{page.title}
+          h2.text #{page.desc}
+        p.texts.is-strong #{github.ver}
+        p.texts
+          i.fab.fa-github(aria-hidden="true")
+          a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo ontouchstart="")
+            span.text Repository
+          | &nbsp;/&nbsp;
+          a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo+"/releases" ontouchstart="")
+            span.text Releases
+        .btns.is-center
+          a.btn.is-lg.is-ghost.is-round(href=github.url+"/"+github.id+"/"+github.repo+"/archive/master.zip" download=github.repo+"-master.zip" ontouchstart="")
+            i.fas.fa-download(aria-hidden="true")
+            span.text Download
 
   main.section.is-main
     .inner
