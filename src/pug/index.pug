@@ -13,7 +13,7 @@ block contents
 
   header.section.is-topcover
     .box.is-bg-logo
-      .box.is-topcover-content.is-light.is-center.is-tablet-lg
+      .box.is-topcover-content.is-light.is-center.is-wide-lg
         //-.group.is-desktop-none
           img.logo.is-title(src=path.img+"/"+"icon-yakuhanjp.svg" alt=page.title)
         .texts
@@ -208,12 +208,12 @@ block contents
                     ```css
                     // YakuHanJP
                     .yakuhanjp {
-                      font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
+                      font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "Yu Gothic Medium", sans-serif;
                     }
 
                     // YakuHanJPs
                     .yakuhanjps {
-                      font-family: YakuHanJPs, "Hiragino Sans", Meiryo, sans-serif;
+                      font-family: YakuHanJPs, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "Yu Gothic Medium", sans-serif;
                     }
 
                     // YakuHanMP
@@ -257,7 +257,7 @@ block contents
                         span.text YakuHanMPs
               li.item.is-block
                 p.texts
-                  | CSS内にfont-faceを記述（以下はYakuHanJPで300のウェイトを細くしfont-displayを適応した例）
+                  | CSS内にfont-faceを記述（以下はYakuHanJPのウェイトを細くしfont-displayを適応した例）
                 .wysiwyg
                   :markdown-it
                     ```css
@@ -265,7 +265,7 @@ block contents
                     @font-face {
                       font-family: "YakuHanJP";
                       font-style: normal;
-                      font-weight: 300;
+                      font-weight: 400;
                       src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot");
                       src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
                       url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");

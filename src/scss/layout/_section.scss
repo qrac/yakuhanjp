@@ -3,28 +3,43 @@
 //----------------------------------------------------
 
 .section.is-topcover {
+  padding: 1.5em 0;
+  @include landscape {
+    padding: 0 2em;
+  }
+  @include iphone10-portrait {
+    padding: 6em 0;
+  }
   @include desktop {
-    padding: 60px 0;
+    padding: 3.75em 0;
   }
   .box.is-bg-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vmax;
-    background-image: linear-gradient(90deg, rgb(26, 26, 26) 50%, rgb(77, 77, 77) 50%);
+    height: calc(100vh - 3em);
+    //background-image: linear-gradient(90deg, rgb(26, 26, 26) 50%, rgb(77, 77, 77) 50%);
+    background-image: url("../img/icon-yakuhanjp.svg");
+    background-position: center center;
+    background-size: cover;
+    @include ie {
+      background-image: url("../img/apple-touch-icon.png");
+    }
+    @include iphone10-portrait {
+      height: calc(100vh - 12em);
+    }
+    @include landscape {
+      height: 100vh;
+    }
     @include desktop {
-      height: calc(100vh - 120px);
-      background-image: url("../img/icon-yakuhanjp.svg");
-      background-position: center center;
+      height: calc(100vh - 7.5em);
       background-size: contain;
-      @include ie {
-        height: calc(100vh - 60px);
-        background-image: url("../img/apple-touch-icon.png");
-      }
     }
   }
   .box.is-topcover-content {
-    padding-top: 0.75em;
+    @include desktop {
+      padding-top: 0.75em;
+    }
   }
 }
 

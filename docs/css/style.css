@@ -83,6 +83,10 @@
   flex: 1 1 auto;
 }
 
+.section.is-topcover {
+  padding: 1.5em 0;
+}
+
 .section.is-topcover .box.is-bg-logo {
   display: -webkit-box;
   display: flex;
@@ -90,12 +94,10 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  height: 100vmax;
-  background-image: linear-gradient(90deg, #1a1a1a 50%, #4d4d4d 50%);
-}
-
-.section.is-topcover .box.is-topcover-content {
-  padding-top: 0.75em;
+  height: calc(100vh - 3em);
+  background-image: url("../img/icon-yakuhanjp.svg");
+  background-position: center center;
+  background-size: cover;
 }
 
 .section.is-main-content {
@@ -386,6 +388,16 @@
   font-size: 62.5%;
 }
 
+@media only screen and (min-width: 375px) and (min-height: 812px) {
+  .section.is-topcover {
+    padding: 6em 0;
+  }
+
+  .section.is-topcover .box.is-bg-logo {
+    height: calc(100vh - 12em);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .texts.is-include-fonts {
     font-size: 2.65vw;
@@ -394,17 +406,35 @@
 
 @media screen and (min-width: 992px) {
   .section.is-topcover {
-    padding: 60px 0;
+    padding: 3.75em 0;
   }
 
   .section.is-topcover .box.is-bg-logo {
-    height: calc(100vh - 120px);
-    background-image: url("../img/icon-yakuhanjp.svg");
-    background-position: center center;
+    height: calc(100vh - 7.5em);
     background-size: contain;
+  }
+
+  .section.is-topcover .box.is-topcover-content {
+    padding-top: 0.75em;
   }
 
   .list {
     margin-right: 1.5em;
+  }
+}
+
+@media all and (orientation: landscape) and (max-width: 991px) {
+  .section.is-topcover {
+    padding: 0 2em;
+  }
+
+  .section.is-topcover .box.is-bg-logo {
+    height: 100vh;
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  .section.is-topcover .box.is-bg-logo {
+    background-image: url("../img/apple-touch-icon.png");
   }
 }

@@ -35,7 +35,7 @@
   <body class="yakuhanjp yakuhanjp-demo yakuhanjp-demo-index">
     <header class="section is-topcover">
       <div class="box is-bg-logo">
-        <div class="box is-topcover-content is-light is-center is-tablet-lg">
+        <div class="box is-topcover-content is-light is-center is-wide-lg">
           <div class="texts">
             <h1 class="text is-title">Yaku Han JP</h1>
             <h2 class="text">約物半角専用のWebフォント</h2>
@@ -234,12 +234,12 @@
                   <p class="texts">CSSでフォントを適応</p>
                   <div class="wysiwyg"><pre><code class="language-css">// YakuHanJP
 .yakuhanjp {
-  font-family: YakuHanJP, &quot;Hiragino Sans&quot;, Meiryo, sans-serif;
+  font-family: YakuHanJP, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;Yu Gothic Medium&quot;, sans-serif;
 }
 
 // YakuHanJPs
 .yakuhanjps {
-  font-family: YakuHanJPs, &quot;Hiragino Sans&quot;, Meiryo, sans-serif;
+  font-family: YakuHanJPs, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;Yu Gothic Medium&quot;, sans-serif;
 }
 
 // YakuHanMP
@@ -279,12 +279,12 @@
                   </div>
                 </li>
                 <li class="item is-block">
-                  <p class="texts">CSS内にfont-faceを記述（以下はYakuHanJPで300のウェイトを細くしfont-displayを適応した例）</p>
+                  <p class="texts">CSS内にfont-faceを記述（以下はYakuHanJPのウェイトを細くしfont-displayを適応した例）</p>
                   <div class="wysiwyg"><pre><code class="language-css">// Demi Light &gt; Light
 @font-face {
   font-family: &quot;YakuHanJP&quot;;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   src: url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot&quot;);
   src: url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2&quot;) format(&quot;woff2&quot;),
   url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff&quot;) format(&quot;woff&quot;);
