@@ -1,0 +1,64 @@
+/*! Yaku Han RP (Round Gothic - Small Amount) v3.0.0 SIL by Qrac / Based on Rounded M+ 1c */
+
+@font-face {
+  font-family: "YakuHanRPs";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Thin.eot");
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Thin.woff2") format("woff2"),
+  url("../fonts/YakuHanRPs/YakuHanRPs-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanRPs";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Light.eot");
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Light.woff2") format("woff2"),
+  url("../fonts/YakuHanRPs/YakuHanRPs-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanRPs";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Regular.eot");
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Regular.woff2") format("woff2"),
+  url("../fonts/YakuHanRPs/YakuHanRPs-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanRPs";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Medium.eot");
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Medium.woff2") format("woff2"),
+  url("../fonts/YakuHanRPs/YakuHanRPs-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanRPs";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Bold.eot");
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Bold.woff2") format("woff2"),
+  url("../fonts/YakuHanRPs/YakuHanRPs-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanRPs";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-ExtraBold.eot");
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-ExtraBold.woff2") format("woff2"),
+  url("../fonts/YakuHanRPs/YakuHanRPs-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanRPs";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Black.eot");
+  src: url("../fonts/YakuHanRPs/YakuHanRPs-Black.woff2") format("woff2"),
+  url("../fonts/YakuHanRPs/YakuHanRPs-Black.woff") format("woff");
+}

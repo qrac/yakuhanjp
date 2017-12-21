@@ -24,11 +24,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/zenburn.min.css">
     <link rel="stylesheet" href="dist/css/yakuhanjp.min.css">
     <link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css">
     <link rel="stylesheet" href="dist/css/yakuhanmp.min.css">
     <link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css">
+    <link rel="stylesheet" href="dist/css/yakuhanrp.min.css">
+    <link rel="stylesheet" href="dist/css/yakuhanrp_s.min.css">
     <link rel="stylesheet" href="docs/lib/musubii/css/musubii.min.css">
     <link rel="stylesheet" href="docs/css/style.min.css">
   </head>
@@ -40,7 +43,7 @@
             <h1 class="text is-title">Yaku Han JP</h1>
             <h2 class="text">約物半角専用のWebフォント</h2>
           </div>
-          <p class="texts is-strong">v2.0.0</p>
+          <p class="texts is-strong">v3.0.0</p>
           <p class="texts"><i class="fab fa-github" aria-hidden="true"></i><a class="text is-link-reverse" href="https://github.com/qrac/yakuhanjp" ontouchstart=""><span class="text">Repository</span></a>&nbsp;/&nbsp;<a class="text is-link-reverse" href="https://github.com/qrac/yakuhanjp/releases" ontouchstart=""><span class="text">Releases</span></a></p>
           <div class="btns is-center"><a class="btn is-lg is-ghost is-round" href="https://github.com/qrac/yakuhanjp/archive/master.zip" download="yakuhanjp-master.zip" ontouchstart=""><i class="fas fa-download" aria-hidden="true"></i><span class="text">Download</span></a></div>
         </div>
@@ -56,6 +59,7 @@
                 <ul class="simulator-tabs is-mobile-xs is-fablet-sm is-tablet-md">
                   <li class="simulator-tab is-switch-font-family is-switch-gothic is-active" ontouchstart="">Gothic</li>
                   <li class="simulator-tab is-switch-font-family is-switch-mincho" ontouchstart="">Mincho</li>
+                  <li class="simulator-tab is-switch-font-family is-switch-round" ontouchstart="">Round</li>
                 </ul>
               </div>
               <div class="col is-fit">
@@ -80,6 +84,7 @@
                   <li class="simulator-tab is-switch-font-weight is-switch-w400 is-active" ontouchstart="">w400</li>
                   <li class="simulator-tab is-switch-font-weight is-switch-w500" ontouchstart="">w500</li>
                   <li class="simulator-tab is-switch-font-weight is-switch-w700" ontouchstart="">w700</li>
+                  <li class="simulator-tab is-switch-font-weight is-switch-w800 is-disable" ontouchstart="">w800</li>
                   <li class="simulator-tab is-switch-font-weight is-switch-w900" ontouchstart="">w900</li>
                 </ul>
               </div>
@@ -159,6 +164,26 @@
               </div>
             </div>
           </div>
+          <div class="group is-bg-smoke-white">
+            <div class="grid is-gap-none">
+              <div class="col is-mobile-6">
+                <div class="box">
+                  <div class="inner">
+                    <h4 class="heading"><span class="text is-mobile-block is-strong is-tablet-xl">YakuHanRP&nbsp;</span><span class="text is-mobile-block is-strong is-sm"><span class="text is-mobile-block is-tablet-inline-block">丸ゴシック</span><span class="text is-mobile-block is-tablet-inline-block">（約物全部入り）</span></span></h4>
+                    <p class="texts is-font-round-hiragino-yakuhanrp is-include-fonts">、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col is-mobile-6">
+                <div class="box">
+                  <div class="inner">
+                    <h4 class="heading"><span class="text is-mobile-block is-strong is-tablet-xl">YakuHanRPs&nbsp;</span><span class="text is-mobile-block is-strong is-sm"><span class="text is-mobile-block is-tablet-inline-block">丸ゴシック</span><span class="text is-mobile-block is-tablet-inline-block">（カッコのみ）</span></span></h4>
+                    <p class="texts is-font-round-hiragino-yakuhanrps is-include-fonts">〈〉《》「」『』【】〔〕（）［］｛｝</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="alert is-info is-xs"><i class="fas fa-info-circle is-fit" aria-hidden="true"></i><span class="text">バグ回避のため、全てのフォントに&nbsp;</span><code class="code">.notdef</code>&nbsp;<code class="code">space</code>&nbsp;<code class="code">ellipsis</code><span class="text">&nbsp;が含まれています。</span></div>
         </div>
       </section>
@@ -179,41 +204,57 @@
                 <ol class="list is-decimal">
                   <li class="item is-block">
                     <p class="texts">jsDelivrで配信しているCSSファイルへのリンクをHTML内に記述</p>
-                    <div class="wysiwyg"><pre><code class="language-html">// YakuHanJP
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css&quot;&gt;
+                    <div class="wysiwyg"><pre><code class="language-html">// YakuHanJP：ゴシック体（約物全部入り）
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp.min.css&quot;&gt;
 
-// YakuHanJPs
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css&quot;&gt;
+// YakuHanJPs：ゴシック体（カッコのみ）
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp_s.min.css&quot;&gt;
 
-// YakuHanMP
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css&quot;&gt;
+// YakuHanMP：明朝体（約物全部入り）
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanmp.min.css&quot;&gt;
 
-// YakuHanMPs
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css&quot;&gt;
+// YakuHanMPs：明朝体（カッコのみ）
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanmp_s.min.css&quot;&gt;
+
+// YakuHanRP：丸ゴシック（約物全部入り）
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanrp.min.css&quot;&gt;
+
+// YakuHanRPs：丸ゴシック（カッコのみ）
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanrp_s.min.css&quot;&gt;
 </code></pre>
 
                     </div>
                   </li>
                   <li class="item is-block">
                     <p class="texts">CSSでフォントを適応</p>
-                    <div class="wysiwyg"><pre><code class="language-css">// YakuHanJP
+                    <div class="wysiwyg"><pre><code class="language-css">// YakuHanJP：ゴシック体（約物全部入り）
 .yakuhanjp {
   font-family: YakuHanJP, &quot;Hiragino Sans&quot;, Meiryo, &quot;Yu Gothic Medium&quot;, sans-serif;
 }
 
-// YakuHanJPs
+// YakuHanJPs：ゴシック体（カッコのみ）
 .yakuhanjps {
   font-family: YakuHanJPs, &quot;Hiragino Sans&quot;, Meiryo, &quot;Yu Gothic Medium&quot;, sans-serif;
 }
 
-// YakuHanMP
+// YakuHanMP：明朝体（約物全部入り）
 .yakuhanmp {
   font-family: YakuHanMP, &quot;Hiragino Mincho ProN&quot;, &quot;Yu Mincho&quot;, YuMincho, serif;
 }
 
-// YakuHanMPs
+// YakuHanMPs：明朝体（カッコのみ）
 .yakuhanmps {
   font-family: YakuHanMPs, &quot;Hiragino Mincho ProN&quot;, &quot;Yu Mincho&quot;, YuMincho, serif;
+}
+
+// YakuHanRP：丸ゴシック（約物全部入り）
+.yakuhanrp {
+  font-family: YakuHanRP, &quot;Rounded Mplus 1c&quot;, sans-serif;
+}
+
+// YakuHanRPs：丸ゴシック（カッコのみ）
+.yakuhanrps {
+  font-family: YakuHanRPs, &quot;Rounded Mplus 1c&quot;, sans-serif;
 }
 </code></pre>
 
@@ -238,24 +279,34 @@
                   </li>
                   <li class="item is-block">
                     <p class="texts">CSSでフォントを適応</p>
-                    <div class="wysiwyg"><pre><code class="language-css">// YakuHanJP
+                    <div class="wysiwyg"><pre><code class="language-css">// YakuHanJP：ゴシック体（約物全部入り）
 .yakuhanjp {
   font-family: YakuHanJP, &quot;Hiragino Sans&quot;, Meiryo, &quot;Yu Gothic Medium&quot;, sans-serif;
 }
 
-// YakuHanJPs
+// YakuHanJPs：ゴシック体（カッコのみ）
 .yakuhanjps {
   font-family: YakuHanJPs, &quot;Hiragino Sans&quot;, Meiryo, &quot;Yu Gothic Medium&quot;, sans-serif;
 }
 
-// YakuHanMP
+// YakuHanMP：明朝体（約物全部入り）
 .yakuhanmp {
   font-family: YakuHanMP, &quot;Hiragino Mincho ProN&quot;, &quot;Yu Mincho&quot;, YuMincho, serif;
 }
 
-// YakuHanMPs
+// YakuHanMPs：明朝体（カッコのみ）
 .yakuhanmps {
   font-family: YakuHanMPs, &quot;Hiragino Mincho ProN&quot;, &quot;Yu Mincho&quot;, YuMincho, serif;
+}
+
+// YakuHanRP：丸ゴシック（約物全部入り）
+.yakuhanrp {
+  font-family: YakuHanRP, &quot;Rounded Mplus 1c&quot;, sans-serif;
+}
+
+// YakuHanRPs：丸ゴシック（カッコのみ）
+.yakuhanrps {
+  font-family: YakuHanRPs, &quot;Rounded Mplus 1c&quot;, sans-serif;
 }
 </code></pre>
 
@@ -276,41 +327,57 @@
                   </li>
                   <li class="item is-block">
                     <p class="texts">HTML内でCSSを読み込む</p>
-                    <div class="wysiwyg"><pre><code class="language-html">// YakuHanJP
+                    <div class="wysiwyg"><pre><code class="language-html">// YakuHanJP：ゴシック体（約物全部入り）
 &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/css/yakuhanjp.min.css&quot;&gt;
 
-// YakuHanJPs
+// YakuHanJPs：ゴシック体（カッコのみ）
 &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/css/yakuhanjp_s.min.css&quot;&gt;
 
-// YakuHanMP
+// YakuHanMP：明朝体（約物全部入り）
 &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/css/yakuhanmp.min.css&quot;&gt;
 
-// YakuHanMPs
+// YakuHanMPs：明朝体（カッコのみ）
 &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/css/yakuhanmp_s.min.css&quot;&gt;
+
+// YakuHanRP：丸ゴシック（約物全部入り）
+&lt;link rel=&quot;stylesheet&quot; href=&quot;dist/css/yakuhanrp.min.css&quot;&gt;
+
+// YakuHanRPs：丸ゴシック（カッコのみ）
+&lt;link rel=&quot;stylesheet&quot; href=&quot;dist/css/yakuhanrp_s.min.css&quot;&gt;
 </code></pre>
 
                     </div>
                   </li>
                   <li class="item is-block">
                     <p class="texts">CSSでフォントを適応</p>
-                    <div class="wysiwyg"><pre><code class="language-css">// YakuHanJP
+                    <div class="wysiwyg"><pre><code class="language-css">// YakuHanJP：ゴシック体（約物全部入り）
 .yakuhanjp {
   font-family: YakuHanJP, &quot;Hiragino Sans&quot;, Meiryo, &quot;Yu Gothic Medium&quot;, sans-serif;
 }
 
-// YakuHanJPs
+// YakuHanJPs：ゴシック体（カッコのみ）
 .yakuhanjps {
   font-family: YakuHanJPs, &quot;Hiragino Sans&quot;, Meiryo, &quot;Yu Gothic Medium&quot;, sans-serif;
 }
 
-// YakuHanMP
+// YakuHanMP：明朝体（約物全部入り）
 .yakuhanmp {
   font-family: YakuHanMP, &quot;Hiragino Mincho ProN&quot;, &quot;Yu Mincho&quot;, YuMincho, serif;
 }
 
-// YakuHanMPs
+// YakuHanMPs：明朝体（カッコのみ）
 .yakuhanmps {
   font-family: YakuHanMPs, &quot;Hiragino Mincho ProN&quot;, &quot;Yu Mincho&quot;, YuMincho, serif;
+}
+
+// YakuHanRP：丸ゴシック（約物全部入り）
+.yakuhanrp {
+  font-family: YakuHanRP, &quot;Rounded Mplus 1c&quot;, sans-serif;
+}
+
+// YakuHanRPs：丸ゴシック（カッコのみ）
+.yakuhanrps {
+  font-family: YakuHanRPs, &quot;Rounded Mplus 1c&quot;, sans-serif;
 }
 </code></pre>
 
@@ -333,23 +400,23 @@
                   <p class="texts">利用するフォントファイルへのリンクを個別に取得（CDNの場合）</p>
                   <div class="group">
                     <div class="grid">
-                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/"><i class="fas fa-folder" aria-hidden="true"></i><span class="text">YakuHanJP</span></a></div>
-                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJPs/"><i class="fas fa-folder" aria-hidden="true"></i><span class="text">YakuHanJPs</span></a></div>
-                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMP/"><i class="fas fa-folder" aria-hidden="true"></i><span class="text">YakuHanMP</span></a></div>
-                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMPs/"><i class="fas fa-folder" aria-hidden="true"></i><span class="text">YakuHanMPs</span></a></div>
+                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/"><i class="fas fa-folder" aria-hidden="true"></i><span class="text">YakuHanJP</span></a></div>
+                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJPs/"><i class="fas fa-folder" aria-hidden="true"></i><span class="text">YakuHanJPs</span></a></div>
+                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanMP/"><i class="fas fa-folder" aria-hidden="true"></i><span class="text">YakuHanMP</span></a></div>
+                      <div class="col"><a class="text is-primary is-link-reverse" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanMPs/"><i class="fas fa-folder" aria-hidden="true"></i><span class="text">YakuHanMPs</span></a></div>
                     </div>
                   </div>
                 </li>
                 <li class="item is-block">
                   <p class="texts">CSS内にfont-faceを記述（以下はYakuHanJPのウェイトを細くしfont-displayを適応した例）</p>
-                  <div class="wysiwyg"><pre><code class="language-css">// Demi Light &gt; Light
+                  <div class="wysiwyg"><pre><code class="language-css">// Regular &gt; Light
 @font-face {
   font-family: &quot;YakuHanJP&quot;;
   font-style: normal;
   font-weight: 400;
-  src: url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot&quot;);
-  src: url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2&quot;) format(&quot;woff2&quot;),
-  url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff&quot;) format(&quot;woff&quot;);
+  src: url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot&quot;);
+  src: url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2&quot;) format(&quot;woff2&quot;),
+  url(&quot;https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff&quot;) format(&quot;woff&quot;);
   font-display: swap;
 }
 </code></pre>
@@ -423,6 +490,7 @@
                 <li class="item">Author Group :&nbsp;<a class="text is-link-reverse is-primary" href="https://twitter.com/Qrac_JP">QRANOKO</a></li>
                 <li class="item">Gothic fonts : Based on&nbsp;<a class="text is-link-reverse is-primary" href="https://www.google.com/get/noto/#sans-jpan">Noto Sans CJK JP</a>&nbsp;licensed under the SIL OFL 1.1</li>
                 <li class="item">Mincho fonts : Based on&nbsp;<a class="text is-link-reverse is-primary" href="https://www.google.com/get/noto/#serif-jpan">Noto Serif CJK JP</a>&nbsp;licensed under the SIL OFL 1.1</li>
+                <li class="item">Round Gothic fonts : Based on&nbsp;<a class="text is-link-reverse is-primary" href="http://jikasei.me/font/rounded-mplus/">Rounded M+ 1c</a>&nbsp;licensed under the M+ FONTS LICENSE</li>
               </ol>
             </div>
           </div>
@@ -506,7 +574,7 @@
           <p class="texts is-light is-center is-sm"><span class="text">&copy; QRANOKO 2017</span></p>
         </div>
       </div>
-      <p class="texts is-center is-color-transparent"><span class="text is-font-sans-hiragino-yakuhanjp"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-sans-hiragino-yakuhanjps"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-serif-hiragino-yakuhanmp"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-serif-hiragino-yakuhanmps"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-sans-noto"><span class="text is-weight-100">の</span><span class="text is-weight-200">と</span><span class="text is-weight-300">の</span><span class="text is-weight-400">と</span><span class="text is-weight-500">の</span><span class="text is-weight-700">と</span><span class="text is-weight-900">の</span></span><span class="text is-font-serif-noto"><span class="text is-weight-100">の</span><span class="text is-weight-200">と</span><span class="text is-weight-300">の</span><span class="text is-weight-400">と</span><span class="text is-weight-500">の</span><span class="text is-weight-700">と</span><span class="text is-weight-900">の</span></span></p>
+      <p class="texts is-center is-color-transparent is-xs"><span class="text is-font-sans-hiragino-yakuhanjp"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-sans-hiragino-yakuhanjps"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-serif-hiragino-yakuhanmp"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-serif-hiragino-yakuhanmps"><span class="text is-weight-100">「</span><span class="text is-weight-200">」</span><span class="text is-weight-300">「</span><span class="text is-weight-400">」</span><span class="text is-weight-500">「</span><span class="text is-weight-700">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-round-yakuhanrp"><span class="text is-weight-100">「</span><span class="text is-weight-300">」</span><span class="text is-weight-400">「</span><span class="text is-weight-500">」</span><span class="text is-weight-700">「</span><span class="text is-weight-800">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-round-yakuhanrps"><span class="text is-weight-100">「</span><span class="text is-weight-300">」</span><span class="text is-weight-400">「</span><span class="text is-weight-500">」</span><span class="text is-weight-700">「</span><span class="text is-weight-800">」</span><span class="text is-weight-900">「</span></span><span class="text is-font-sans-noto"><span class="text is-weight-100">の</span><span class="text is-weight-200">と</span><span class="text is-weight-300">の</span><span class="text is-weight-400">と</span><span class="text is-weight-500">の</span><span class="text is-weight-700">と</span><span class="text is-weight-900">の</span></span><span class="text is-font-serif-noto"><span class="text is-weight-100">の</span><span class="text is-weight-200">と</span><span class="text is-weight-300">の</span><span class="text is-weight-400">と</span><span class="text is-weight-500">の</span><span class="text is-weight-700">と</span><span class="text is-weight-900">の</span></span><span class="text is-font-round"><span class="text is-weight-100">ら</span><span class="text is-weight-300">う</span><span class="text is-weight-400">ら</span><span class="text is-weight-500">う</span><span class="text is-weight-700">ら</span><span class="text is-weight-800">う</span><span class="text is-weight-900">ら</span></span></p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>

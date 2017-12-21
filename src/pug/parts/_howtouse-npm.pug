@@ -20,26 +20,4 @@
           | モジュールとしてプロジェクトに組み込みフォントを呼び出せるようにする
       li.item.is-block
         p.texts CSSでフォントを適応
-        .wysiwyg
-          :markdown-it
-            ```css
-            // YakuHanJP
-            .yakuhanjp {
-              font-family: YakuHanJP, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif;
-            }
-
-            // YakuHanJPs
-            .yakuhanjps {
-              font-family: YakuHanJPs, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif;
-            }
-
-            // YakuHanMP
-            .yakuhanmp {
-              font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
-            }
-
-            // YakuHanMPs
-            .yakuhanmps {
-              font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
-            }
-            ```
+        include _markdown-css.pug

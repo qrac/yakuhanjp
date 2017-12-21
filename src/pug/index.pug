@@ -46,6 +46,7 @@ block contents
               ul.simulator-tabs.is-mobile-xs.is-fablet-sm.is-tablet-md
                 li.simulator-tab.is-switch-font-family.is-switch-gothic.is-active(ontouchstart="") Gothic
                 li.simulator-tab.is-switch-font-family.is-switch-mincho(ontouchstart="") Mincho
+                li.simulator-tab.is-switch-font-family.is-switch-round(ontouchstart="") Round
             .col.is-fit
               ul.simulator-tabs.is-mobile-xs.is-fablet-sm.is-tablet-md
                 li.simulator-tab.is-switch-font-family.is-switch-full.is-active(ontouchstart="") Full
@@ -64,6 +65,7 @@ block contents
                 li.simulator-tab.is-switch-font-weight.is-switch-w400.is-active(ontouchstart="") w400
                 li.simulator-tab.is-switch-font-weight.is-switch-w500(ontouchstart="") w500
                 li.simulator-tab.is-switch-font-weight.is-switch-w700(ontouchstart="") w700
+                li.simulator-tab.is-switch-font-weight.is-switch-w800.is-disable(ontouchstart="") w800
                 li.simulator-tab.is-switch-font-weight.is-switch-w900(ontouchstart="") w900
             .col.is-fit
               ul.simulator-tabs.is-mobile-xs.is-fablet-sm.is-tablet-md
@@ -128,6 +130,26 @@ block contents
                       span.text.is-mobile-block.is-tablet-inline-block 明朝体
                       span.text.is-mobile-block.is-tablet-inline-block （カッコのみ）
                   p.texts.is-font-serif-hiragino-yakuhanmps.is-include-fonts #{example.text05}
+        .group.is-bg-smoke-white
+          .grid.is-gap-none
+            .col.is-mobile-6
+              .box
+                .inner
+                  h4.heading
+                    span.text.is-mobile-block.is-strong.is-tablet-xl YakuHanRP&nbsp;
+                    span.text.is-mobile-block.is-strong.is-sm
+                      span.text.is-mobile-block.is-tablet-inline-block 丸ゴシック
+                      span.text.is-mobile-block.is-tablet-inline-block （約物全部入り）
+                  p.texts.is-font-round-hiragino-yakuhanrp.is-include-fonts #{example.text02}
+            .col.is-mobile-6
+              .box
+                .inner
+                  h4.heading
+                    span.text.is-mobile-block.is-strong.is-tablet-xl YakuHanRPs&nbsp;
+                    span.text.is-mobile-block.is-strong.is-sm
+                      span.text.is-mobile-block.is-tablet-inline-block 丸ゴシック
+                      span.text.is-mobile-block.is-tablet-inline-block （カッコのみ）
+                  p.texts.is-font-round-hiragino-yakuhanrps.is-include-fonts #{example.text03}
         .alert.is-info.is-xs
           i.fas.fa-info-circle.is-fit(aria-hidden="true")
           span.text バグ回避のため、全てのフォントに&nbsp;
@@ -170,19 +192,19 @@ block contents
                 .group
                   .grid
                     .col
-                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/")
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/")
                         i.fas.fa-folder(aria-hidden="true")
                         span.text YakuHanJP
                     .col
-                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJPs/")
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJPs/")
                         i.fas.fa-folder(aria-hidden="true")
                         span.text YakuHanJPs
                     .col
-                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMP/")
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanMP/")
                         i.fas.fa-folder(aria-hidden="true")
                         span.text YakuHanMP
                     .col
-                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanMPs/")
+                      a.text.is-primary.is-link-reverse(href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanMPs/")
                         i.fas.fa-folder(aria-hidden="true")
                         span.text YakuHanMPs
               li.item.is-block
@@ -191,14 +213,14 @@ block contents
                 .wysiwyg
                   :markdown-it
                     ```css
-                    // Demi Light > Light
+                    // Regular > Light
                     @font-face {
                       font-family: "YakuHanJP";
                       font-style: normal;
                       font-weight: 400;
-                      src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot");
-                      src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
-                      url("https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
+                      src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot");
+                      src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
+                      url("https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
                       font-display: swap;
                     }
                     ```
@@ -288,5 +310,9 @@ block contents
                 | Mincho fonts : Based on&nbsp;
                 a.text.is-link-reverse.is-primary(href="https://www.google.com/get/noto/#serif-jpan") Noto Serif CJK JP
                 | &nbsp;licensed under the SIL OFL 1.1
+              li.item
+                | Round Gothic fonts : Based on&nbsp;
+                a.text.is-link-reverse.is-primary(href="http://jikasei.me/font/rounded-mplus/") Rounded M+ 1c
+                | &nbsp;licensed under the M+ FONTS LICENSE
 
   include common/_footer.pug

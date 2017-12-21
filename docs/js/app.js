@@ -34,10 +34,20 @@ $(function () {
 
     // None label
     if ($(this).is('.is-switch-gothic')) {
-      $('.simulator-tab.is-switch-noto,.simulator-tab.is-switch-meiryo').removeClass('is-disable');
+      $('.simulator-tab.is-switch-hiragino, .simulator-tab.is-switch-yu, .simulator-tab.is-switch-noto, .simulator-tab.is-switch-meiryo').removeClass('is-disable');
+      $('.simulator-tab.is-switch-w200').removeClass('is-disable');
+      $('.simulator-tab.is-switch-w800').addClass('is-disable');
     }
     if ($(this).is('.is-switch-mincho')) {
-      $('.simulator-tab.is-switch-noto,.simulator-tab.is-switch-meiryo').addClass('is-disable');
+      $('.simulator-tab.is-switch-hiragino, .simulator-tab.is-switch-yu').removeClass('is-disable');
+      $('.simulator-tab.is-switch-noto, .simulator-tab.is-switch-meiryo').addClass('is-disable');
+      $('.simulator-tab.is-switch-w200').removeClass('is-disable');
+      $('.simulator-tab.is-switch-w800').addClass('is-disable');
+    }
+    if ($(this).is('.is-switch-round')) {
+      $('.simulator-tab.is-switch-hiragino, .simulator-tab.is-switch-yu, .simulator-tab.is-switch-noto, .simulator-tab.is-switch-meiryo').addClass('is-disable');
+      $('.simulator-tab.is-switch-w800').removeClass('is-disable');
+      $('.simulator-tab.is-switch-w200').addClass('is-disable');
     }
 
     // Gothic full
@@ -112,6 +122,42 @@ $(function () {
       $('.texts.is-after').addClass('is-font-serif-meiryo-yakuhanmps');
     }
 
+    // Round full
+    if ($('.is-switch-round').hasClass('is-active') && $('.is-switch-full').hasClass('is-active') && $('.is-switch-hiragino').hasClass('is-active')) {
+      $('.texts.is-before').addClass('is-font-round-hiragino');
+      $('.texts.is-after').addClass('is-font-round-hiragino-yakuhanrp');
+    }
+    if ($('.is-switch-round').hasClass('is-active') && $('.is-switch-full').hasClass('is-active') && $('.is-switch-yu').hasClass('is-active')) {
+      $('.texts.is-before').addClass('is-font-round-yugo');
+      $('.texts.is-after').addClass('is-font-round-yugo-yakuhanrp');
+    }
+    if ($('.is-switch-round').hasClass('is-active') && $('.is-switch-full').hasClass('is-active') && $('.is-switch-noto').hasClass('is-active')) {
+      $('.texts.is-before').addClass('is-font-round-noto');
+      $('.texts.is-after').addClass('is-font-round-noto-yakuhanrp');
+    }
+    if ($('.is-switch-round').hasClass('is-active') && $('.is-switch-full').hasClass('is-active') && $('.is-switch-meiryo').hasClass('is-active')) {
+      $('.texts.is-before').addClass('is-font-round-meiryo');
+      $('.texts.is-after').addClass('is-font-round-meiryo-yakuhanrp');
+    }
+
+    // Round small
+    if ($('.is-switch-round').hasClass('is-active') && $('.is-switch-small').hasClass('is-active') && $('.is-switch-hiragino').hasClass('is-active')) {
+      $('.texts.is-before').addClass('is-font-round-hiragino');
+      $('.texts.is-after').addClass('is-font-round-hiragino-yakuhanrps');
+    }
+    if ($('.is-switch-round').hasClass('is-active') && $('.is-switch-small').hasClass('is-active') && $('.is-switch-yu').hasClass('is-active')) {
+      $('.texts.is-before').addClass('is-font-round-yugo');
+      $('.texts.is-after').addClass('is-font-round-yugo-yakuhanrps');
+    }
+    if ($('.is-switch-round').hasClass('is-active') && $('.is-switch-small').hasClass('is-active') && $('.is-switch-noto').hasClass('is-active')) {
+      $('.texts.is-before').addClass('is-font-round-noto');
+      $('.texts.is-after').addClass('is-font-round-noto-yakuhanrps');
+    }
+    if ($('.is-switch-round').hasClass('is-active') && $('.is-switch-small').hasClass('is-active') && $('.is-switch-meiryo').hasClass('is-active')) {
+      $('.texts.is-before').addClass('is-font-round-meiryo');
+      $('.texts.is-after').addClass('is-font-round-meiryo-yakuhanrps');
+    }
+
     // Weight
     if ($('.is-switch-w100').hasClass('is-active')) {
       $('.texts.is-before,.texts.is-after').addClass('is-weight-100');
@@ -130,6 +176,9 @@ $(function () {
     }
     if ($('.is-switch-w700').hasClass('is-active')) {
       $('.texts.is-before,.texts.is-after').addClass('is-weight-700');
+    }
+    if ($('.is-switch-w800').hasClass('is-active')) {
+      $('.texts.is-before,.texts.is-after').addClass('is-weight-800');
     }
     if ($('.is-switch-w900').hasClass('is-active')) {
       $('.texts.is-before,.texts.is-after').addClass('is-weight-900');

@@ -122,6 +122,34 @@
   font-family: $font-serif-meiryo-yakuhanmps;
 }
 
+.is-font-round,
+.is-font-round-hiragino,
+.is-font-round-yugo,
+.is-font-round-noto,
+.is-font-round-meiryo {
+  font-family: $font-round;
+}
+
+.is-font-round-yakuhanrp,
+.is-font-round-hiragino-yakuhanrp,
+.is-font-round-yugo-yakuhanrp,
+.is-font-round-noto-yakuhanrp,
+.is-font-round-meiryo-yakuhanrp {
+  font-family: $font-round-yakuhanrp;
+}
+
+.is-font-round-yakuhanrps,
+.is-font-round-hiragino-yakuhanrps,
+.is-font-round-yugo-yakuhanrps,
+.is-font-round-noto-yakuhanrps,
+.is-font-round-meiryo-yakuhanrps {
+  font-family: $font-round-yakuhanrps;
+}
+
+.is-weight-800 {
+  font-weight: 800;
+}
+
 .is-color-transparent {
   color: transparent;
 }
