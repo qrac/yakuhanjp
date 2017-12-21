@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="docs/css/style.min.css">
   </head>
   <body class="yakuhanjp yakuhanjp-demo yakuhanjp-demo-index">
-    <header class="section is-topcover">
+    <header class="section is-topcover" id="topcover">
       <div class="box is-bg-logo">
         <div class="box is-topcover-content is-light is-center is-wide-lg">
           <div class="texts">
@@ -44,10 +44,10 @@
           <p class="texts"><i class="fab fa-github" aria-hidden="true"></i><a class="text is-link-reverse" href="https://github.com/qrac/yakuhanjp" ontouchstart=""><span class="text">Repository</span></a>&nbsp;/&nbsp;<a class="text is-link-reverse" href="https://github.com/qrac/yakuhanjp/releases" ontouchstart=""><span class="text">Releases</span></a></p>
           <div class="btns is-center"><a class="btn is-lg is-ghost is-round" href="https://github.com/qrac/yakuhanjp/archive/master.zip" download="yakuhanjp-master.zip" ontouchstart=""><i class="fas fa-download" aria-hidden="true"></i><span class="text">Download</span></a></div>
         </div>
-      </div>
+      </div><a class="obj is-scroll-point" href="#main"><span class="text is-landscape-none">Example</span><i class="fas fa-arrow-down" aria-hidden="true"></i></a>
     </header>
-    <main class="section is-main">
-      <section class="section is-main-content is-example">
+    <main class="section is-main" id="main">
+      <section class="section is-main-content is-example" id="example">
         <div class="inner-vw">
           <h3 class="heading is-xxl is-center">Example</h3>
           <div class="group">
@@ -116,7 +116,7 @@
           </div>
         </div>
       </section>
-      <section class="section is-main-content is-include-fonts">
+      <section class="section is-main-content is-include-fonts" id="include-fonts">
         <div class="inner-vw">
           <h3 class="heading is-xxl is-center">Include Fonts</h3>
           <div class="group is-bg-smoke-white">
@@ -162,11 +162,11 @@
           <div class="alert is-info is-xs"><i class="fas fa-info-circle is-fit" aria-hidden="true"></i><span class="text">バグ回避のため、全てのフォントに&nbsp;</span><code class="code">.notdef</code>&nbsp;<code class="code">space</code>&nbsp;<code class="code">ellipsis</code><span class="text">&nbsp;が含まれています。</span></div>
         </div>
       </section>
-      <section class="section is-main-content is-howtouse">
+      <section class="section is-main-content is-howtouse" id="howtouse">
         <div class="inner-vw">
           <h3 class="heading is-xxl is-center">How To Use</h3>
           <div class="group is-card">
-            <div class="inner">
+            <div class="inner is-bottom-up">
               <h4 class="heading is-strong is-lg"><a class="text is-link-reverse is-primary" href="https://cdn.jsdelivr.net/npm/yakuhanjp/">CDN</a></h4>
               <ol class="list is-decimal">
                 <li class="item is-block">
@@ -190,7 +190,7 @@
             </div>
           </div>
           <div class="group is-card">
-            <div class="inner">
+            <div class="inner is-bottom-up">
               <h4 class="heading is-strong is-lg"><a class="text is-link-reverse is-primary" href="https://www.npmjs.com/package/yakuhanjp">npm</a></h4>
               <ol class="list is-decimal">
                 <li class="item is-block">
@@ -204,7 +204,7 @@
             </div>
           </div>
           <div class="group is-card">
-            <div class="inner">
+            <div class="inner is-bottom-up">
               <h4 class="heading is-strong is-lg">Local</h4>
               <ol class="list is-decimal">
                 <li class="item is-block">
@@ -260,11 +260,11 @@
           </div>
         </div>
       </section>
-      <section class="section is-main-content is-custom">
+      <section class="section is-main-content is-custom" id="custom">
         <div class="inner-vw">
           <h3 class="heading is-xxl is-center">Custom</h3>
           <div class="group is-card">
-            <div class="inner">
+            <div class="inner is-bottom-up">
               <h4 class="heading is-strong is-lg">Font face</h4>
               <ol class="list is-decimal">
                 <li class="item is-block">
@@ -299,7 +299,7 @@
           </div>
         </div>
       </section>
-      <section class="section is-main-content is-support">
+      <section class="section is-main-content is-support" id="support">
         <div class="inner-vw">
           <h3 class="heading is-xxl is-center">Support</h3>
           <div class="group is-card">
@@ -350,7 +350,7 @@
           </div>
         </div>
       </section>
-      <section class="section is-main-content is-license">
+      <section class="section is-main-content is-license" id="license">
         <div class="inner-vw">
           <h3 class="heading is-xxl is-center">License</h3>
           <div class="group is-card">

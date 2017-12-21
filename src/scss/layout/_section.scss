@@ -3,15 +3,18 @@
 //----------------------------------------------------
 
 .section.is-topcover {
-  padding: 1.5em 0;
+  position: relative;
+  padding: 0.75em 0 2.25em;
+  background-image: linear-gradient(90deg, rgb(26, 26, 26) 50%, rgb(77, 77, 77) 50%);
   @include landscape {
     padding: 0 2em;
   }
   @include iphone10-portrait {
-    padding: 6em 0;
+    padding: 4.5em 0 7.5em;
   }
   @include desktop {
     padding: 3.75em 0;
+    background-image: none;
   }
   .box.is-bg-logo {
     display: flex;
@@ -39,6 +42,36 @@
   .box.is-topcover-content {
     @include desktop {
       padding-top: 0.75em;
+    }
+  }
+  .obj.is-scroll-point {
+    position: absolute;
+    bottom: 0.5em;
+    left: 50%;
+    display: inline-block;
+    padding: 1em;
+    color: $light-3;
+    transition: ease-out 0.12s;
+    transform: translateX(-50%);
+    z-index: 50;
+    @include landscape {
+      bottom: 0;
+      padding: 0.5em 1em;
+    }
+    @include iphone10-portrait {
+      bottom: 4.75em;
+    }
+    @include desktop {
+      bottom: 3.75em;
+      padding: 1.5em;
+    }
+    &:hover {
+      color: $light;
+    }
+  }
+  .obj.is-scroll-point > .fas {
+    @include landscape {
+      margin-left: 0;
     }
   }
 }

@@ -11,7 +11,7 @@ block vars
 
 block contents
 
-  header.section.is-topcover
+  header.section.is-topcover#topcover
     .box.is-bg-logo
       .box.is-topcover-content.is-light.is-center.is-wide-lg
         //-.group.is-desktop-none
@@ -31,10 +31,13 @@ block contents
           a.btn.is-lg.is-ghost.is-round(href=github.url+"/"+github.id+"/"+github.repo+"/archive/master.zip" download=github.repo+"-master.zip" ontouchstart="")
             i.fas.fa-download(aria-hidden="true")
             span.text Download
+    a.obj.is-scroll-point(href="#main")
+      span.text.is-landscape-none Example
+      i.fas.fa-arrow-down(aria-hidden="true")
 
-  main.section.is-main
+  main.section.is-main#main
 
-    section.section.is-main-content.is-example
+    section.section.is-main-content.is-example#example
       .inner-vw
         h3.heading.is-xxl.is-center Example
         .group
@@ -82,7 +85,7 @@ block contents
                 .inner
                   p.texts.is-after.is-font-sans-hiragino-yakuhanjp #{example.text01}
 
-    section.section.is-main-content.is-include-fonts
+    section.section.is-main-content.is-include-fonts#include-fonts
       .inner-vw
         h3.heading.is-xxl.is-center Include Fonts
         .group.is-bg-smoke-white
@@ -135,11 +138,11 @@ block contents
           code.code ellipsis
           span.text &nbsp;が含まれています。
 
-    section.section.is-main-content.is-howtouse
+    section.section.is-main-content.is-howtouse#howtouse
       .inner-vw
         h3.heading.is-xxl.is-center How To Use
         .group.is-card
-          .inner
+          .inner.is-bottom-up
             h4.heading.is-strong.is-lg
               a.text.is-link-reverse.is-primary(href="https://cdn.jsdelivr.net/npm/yakuhanjp/") CDN
             ol.list.is-decimal
@@ -162,7 +165,7 @@ block contents
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
                     ```
         .group.is-card
-          .inner
+          .inner.is-bottom-up
             h4.heading.is-strong.is-lg
               a.text.is-link-reverse.is-primary(href="https://www.npmjs.com/package/yakuhanjp") npm
             ol.list.is-decimal
@@ -175,7 +178,7 @@ block contents
                     npm install yakuhanjp
                     ```
         .group.is-card
-          .inner
+          .inner.is-bottom-up
             h4.heading.is-strong.is-lg Local
             ol.list.is-decimal
               li.item.is-block
@@ -227,11 +230,11 @@ block contents
                     }
                     ```
 
-    section.section.is-main-content.is-custom
+    section.section.is-main-content.is-custom#custom
       .inner-vw
         h3.heading.is-xxl.is-center Custom
         .group.is-card
-          .inner
+          .inner.is-bottom-up
             h4.heading.is-strong.is-lg Font face
             ol.list.is-decimal
               li.item.is-block
@@ -273,7 +276,7 @@ block contents
                     }
                     ```
 
-    section.section.is-main-content.is-support
+    section.section.is-main-content.is-support#support
       .inner-vw
         h3.heading.is-xxl.is-center Support
         .group.is-card
@@ -336,7 +339,7 @@ block contents
                     td
                       span.text 4.4~
 
-    section.section.is-main-content.is-license
+    section.section.is-main-content.is-license#license
       .inner-vw
         h3.heading.is-xxl.is-center License
         .group.is-card
