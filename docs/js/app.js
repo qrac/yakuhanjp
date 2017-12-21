@@ -10,7 +10,7 @@ hljs.initHighlightingOnLoad();
 //----------------------------------------------------
 
 $(function () {
-  $('.tab').click(function () {
+  $('.simulator-tab').click(function () {
 
     // Reset
     if ($(this).not('is-active')) {
@@ -34,10 +34,10 @@ $(function () {
 
     // None label
     if ($(this).is('.is-switch-gothic')) {
-      $('.tab.is-switch-noto,.tab.is-switch-meiryo').removeClass('is-disable');
+      $('.simulator-tab.is-switch-noto,.simulator-tab.is-switch-meiryo').removeClass('is-disable');
     }
     if ($(this).is('.is-switch-mincho')) {
-      $('.tab.is-switch-noto,.tab.is-switch-meiryo').addClass('is-disable');
+      $('.simulator-tab.is-switch-noto,.simulator-tab.is-switch-meiryo').addClass('is-disable');
     }
 
     // Gothic full
@@ -171,5 +171,18 @@ $(function () {
     var position = target.offset().top;
     $('body,html').animate({ scrollTop: position }, speed, 'swing');
     return false;
+  });
+});
+//----------------------------------------------------
+// Tab
+//----------------------------------------------------
+
+$(function () {
+  $('.js-tab').on('click', function () {
+    if ($(this).not('is-active')) {
+      $(this).addClass('is-active').siblings('.js-tab').removeClass('is-active');
+      var index = $('.js-tab').index(this);
+      $('.js-tab-content').eq(index).addClass('is-active').siblings('.js-tab-content').removeClass('is-active');
+    }
   });
 });

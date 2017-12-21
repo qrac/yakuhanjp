@@ -2,12 +2,12 @@
 // Module: Tab
 //----------------------------------------------------
 
-.tabs {
+.simulator-tabs {
   display: flex;
   flex-wrap: wrap;
 }
 
-.tab {
+.simulator-tab {
   display: flex;
   flex: 1 0 auto;
   justify-content: center;
@@ -33,4 +33,44 @@
     color: $red-600;
     text-decoration: line-through;
   }
+}
+
+.howtouse-tabs {
+  display: flex;
+}
+
+.howtouse-tab {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em 1.5em;
+  background-color: $grey-600;
+  color: $light;
+  transition: ease 0.12s;
+  &:not(.is-active) {
+    cursor: pointer;
+  }
+  &:not(.is-active):hover,
+  &:not(.is-active):active {
+    background-color: $cyan-500;
+    color: $light;
+  }
+  &.is-active {
+    background-color: $light;
+    color: $cyan-500;
+    font-weight: 700;
+  }
+  > .fab.fa-npm {
+    transform: scale(1.5);
+  }
+  > .fas + .text,
+  > .fab + .text {
+    margin-left: 0;
+  }
+}
+
+.js-tab-content:not(.is-active) {
+  display: none;
 }

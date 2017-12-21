@@ -2,7 +2,8 @@
 // Module: Group
 //----------------------------------------------------
 
-.group.is-card {
+.group.is-card,
+.content.is-card {
   background-color: $light;
   > .inner {
     padding: 1.25em;

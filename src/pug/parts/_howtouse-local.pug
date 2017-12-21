@@ -1,0 +1,56 @@
+//----------------------------------------------------
+//- Parts: How to Use > Local
+//----------------------------------------------------
+
+.content.is-card.js-tab-content
+  .inner.is-bottom-up
+    h4.heading.is-strong.is-lg Local
+    ol.list.is-decimal
+      li.item.is-block
+        p.texts
+          | データを
+          a.text.is-link-reverse.is-primary(href=github.url+"/"+github.id+"/"+github.repo+"/archive/master.zip" download=github.repo+"-master.zip" ontouchstart="") ダウンロード
+      li.item.is-block
+        p.texts distフォルダ内の「css」「fonts」を制作サイトに配置
+      li.item.is-block
+        p.texts HTML内でCSSを読み込む
+        .wysiwyg
+          :markdown-it
+            ```html
+            // YakuHanJP
+            <link rel="stylesheet" href="dist/css/yakuhanjp.min.css">
+
+            // YakuHanJPs
+            <link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css">
+
+            // YakuHanMP
+            <link rel="stylesheet" href="dist/css/yakuhanmp.min.css">
+
+            // YakuHanMPs
+            <link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css">
+            ```
+      li.item.is-block
+        p.texts CSSでフォントを適応
+        .wysiwyg
+          :markdown-it
+            ```css
+            // YakuHanJP
+            .yakuhanjp {
+              font-family: YakuHanJP, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif;
+            }
+
+            // YakuHanJPs
+            .yakuhanjps {
+              font-family: YakuHanJPs, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif;
+            }
+
+            // YakuHanMP
+            .yakuhanmp {
+              font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+            }
+
+            // YakuHanMPs
+            .yakuhanmps {
+              font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+            }
+            ```
