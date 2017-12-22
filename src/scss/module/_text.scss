@@ -3,7 +3,7 @@
 //----------------------------------------------------
 
 .text.is-title {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 900;
   font-family: "Lato", sans-serif;
   line-height: 1.25;
@@ -16,12 +16,25 @@
   }
 }
 
+.texts.is-include-fonts {
+  font-size: 120%;
+  @include tablet {
+    font-size: 2.45vw;
+  }
+}
+
 .pre {
   background-color: $dark-2;
   border-radius: 0;
+  color: $light;
 }
 
 .pre,
 .code {
+  color: $light;
+}
+
+:not(.pre) > .code {
+  background-color: $dark-2;
   color: $light;
 }

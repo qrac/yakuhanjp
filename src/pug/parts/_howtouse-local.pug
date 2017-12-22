@@ -1,0 +1,20 @@
+//----------------------------------------------------
+//- Parts: How to Use > Local
+//----------------------------------------------------
+
+.content.is-card.js-tab-content
+  .inner.is-bottom-up
+    h4.heading.is-strong.is-lg Local
+    ol.list.is-decimal
+      li.item.is-block
+        p.texts
+          | データを
+          a.text.is-link-reverse.is-primary(href=github.url+"/"+github.id+"/"+github.repo+"/archive/master.zip" download=github.repo+"-master.zip" ontouchstart="") ダウンロード
+      li.item.is-block
+        p.texts distフォルダ内の「css」「fonts」を制作サイトに配置
+      li.item.is-block
+        p.texts HTML内でCSSを読み込む
+        include _markdown-dist.pug
+      li.item.is-block
+        p.texts CSSでフォントを適応
+        include _markdown-css.pug

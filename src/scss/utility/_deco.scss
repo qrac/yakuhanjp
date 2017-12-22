@@ -122,60 +122,32 @@
   font-family: $font-serif-meiryo-yakuhanmps;
 }
 
-.is-weight-100 {
-  font-weight: 100;
+.is-font-round,
+.is-font-round-hiragino,
+.is-font-round-yugo,
+.is-font-round-noto,
+.is-font-round-meiryo {
+  font-family: $font-round;
 }
 
-.is-weight-200 {
-  font-weight: 200;
+.is-font-round-yakuhanrp,
+.is-font-round-hiragino-yakuhanrp,
+.is-font-round-yugo-yakuhanrp,
+.is-font-round-noto-yakuhanrp,
+.is-font-round-meiryo-yakuhanrp {
+  font-family: $font-round-yakuhanrp;
 }
 
-.is-weight-300 {
-  font-weight: 300;
+.is-font-round-yakuhanrps,
+.is-font-round-hiragino-yakuhanrps,
+.is-font-round-yugo-yakuhanrps,
+.is-font-round-noto-yakuhanrps,
+.is-font-round-meiryo-yakuhanrps {
+  font-family: $font-round-yakuhanrps;
 }
 
-.is-weight-400 {
-  font-weight: 400;
-}
-
-.is-weight-500 {
-  font-weight: 500;
-}
-
-.is-weight-700 {
-  font-weight: 700;
-}
-
-.is-weight-900 {
-  font-weight: 900;
-}
-
-.is-size-xxl {
-  font-size: 200%;
-}
-
-.is-size-xl {
-  font-size: 150%;
-}
-
-.is-size-lg {
-  font-size: 125%;
-}
-
-.is-size-md {
-  font-size: 100%;
-}
-
-.is-size-sm {
-  font-size: 87.5%;
-}
-
-.is-size-xs {
-  font-size: 75%;
-}
-
-.is-size-xxs {
-  font-size: 62.5%;
+.is-weight-800 {
+  font-weight: 800;
 }
 
 .is-color-transparent {

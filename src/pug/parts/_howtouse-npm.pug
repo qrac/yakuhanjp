@@ -1,0 +1,23 @@
+//----------------------------------------------------
+//- Parts: How to Use > npm
+//----------------------------------------------------
+
+.content.is-card.js-tab-content
+  .inner.is-bottom-up
+    h4.heading.is-strong.is-lg
+      a.text.is-link-reverse.is-primary(href="https://www.npmjs.com/package/yakuhanjp") npm
+    ol.list.is-decimal
+      li.item.is-block
+        p.texts
+          | npmコマンドで任意のプロジェクトにインストール
+        .wysiwyg
+          :markdown-it
+            ```
+            npm install yakuhanjp
+            ```
+      li.item.is-block
+        p.texts
+          | モジュールとしてプロジェクトに組み込みフォントを呼び出せるようにする
+      li.item.is-block
+        p.texts CSSでフォントを適応
+        include _markdown-css.pug

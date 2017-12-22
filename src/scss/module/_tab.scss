@@ -1,0 +1,76 @@
+//----------------------------------------------------
+// Module: Tab
+//----------------------------------------------------
+
+.simulator-tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.simulator-tab {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0.375em 1.75em;
+  background-color: $grey-50;
+  transition: ease 0.12s;
+  &:not(.is-active) {
+    cursor: pointer;
+  }
+  &:not(.is-active):not(.is-disable):hover,
+  &:not(.is-active):not(.is-disable):active {
+    background-color: $cyan-500;
+    color: $light;
+  }
+  &.is-active {
+    font-weight: 700;
+  }
+  &.is-active:not(.is-disable) {
+    color: $cyan-500;
+  }
+  &.is-disable {
+    color: $red-600;
+    text-decoration: line-through;
+  }
+}
+
+.howtouse-tabs {
+  display: flex;
+}
+
+.howtouse-tab {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em 1.5em;
+  background-color: $grey-600;
+  color: $light;
+  transition: ease 0.12s;
+  &:not(.is-active) {
+    cursor: pointer;
+  }
+  &:not(.is-active):hover,
+  &:not(.is-active):active {
+    background-color: $cyan-500;
+    color: $light;
+  }
+  &.is-active {
+    background-color: $light;
+    color: $cyan-500;
+    font-weight: 700;
+  }
+  > .fab.fa-npm {
+    transform: scale(1.5);
+  }
+  > .fas + .text,
+  > .fab + .text {
+    margin-left: 0;
+  }
+}
+
+.js-tab-content:not(.is-active) {
+  display: none;
+}

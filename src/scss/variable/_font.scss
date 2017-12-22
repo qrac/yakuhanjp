@@ -3,192 +3,48 @@
 //----------------------------------------------------
 
 $font-sans:
-  -apple-system, BlinkMacSystemFont,
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-yakuhanjp:
-  YakuHanJP,
-  -apple-system, BlinkMacSystemFont,
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-yakuhanjps:
-  YakuHanJPs,
-  -apple-system, BlinkMacSystemFont,
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-hiragino:
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-hiragino-yakuhanjp:
-  YakuHanJP,
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-hiragino-yakuhanjps:
-  YakuHanJPs,
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-yugo:
-  "Yu Gothic", YuGothic,
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-yugo-yakuhanjp:
-  YakuHanJP,
-  "Yu Gothic", YuGothic,
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-yugo-yakuhanjps:
-  YakuHanJPs,
-  "Yu Gothic", YuGothic,
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-noto:
-  "Noto Sans Japanese",
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-noto-yakuhanjp:
-  YakuHanJP,
-  "Noto Sans Japanese",
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-noto-yakuhanjps:
-  YakuHanJPs,
-  "Noto Sans Japanese",
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif !default;
-
-$font-sans-meiryo:
-  Meiryo,
-  "Hiragino Sans",
-  sans-serif !default;
-
-$font-sans-meiryo-yakuhanjp:
-  YakuHanJP,
-  Meiryo,
-  "Hiragino Sans",
-  sans-serif !default;
-
-$font-sans-meiryo-yakuhanjps:
-  YakuHanJPs,
-  Meiryo,
-  "Hiragino Sans",
-  sans-serif !default;
+-apple-system, BlinkMacSystemFont,
+"Segoe UI",
+"Hiragino Sans", "Hiragino Kaku Gothic ProN",
+"Noto Sans Japanese",
+Meiryo,
+"Yu Gothic Medium",
+sans-serif !default;
 
 $font-serif:
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-yakuhanmp:
-  YakuHanMP,
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-yakuhanmps:
-  YakuHanMPs,
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-hiragino:
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-hiragino-yakuhanmp:
-  YakuHanMP,
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-hiragino-yakuhanmps:
-  YakuHanMPs,
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-yumi:
-  "Yu Mincho", YuMincho,
-  "Hiragino Mincho ProN",
-  serif !default;
-
-$font-serif-yumi-yakuhanmp:
-  YakuHanMP,
-  "Yu Mincho", YuMincho,
-  "Hiragino Mincho ProN",
-  serif !default;
-
-$font-serif-yumi-yakuhanmps:
-  YakuHanMPs,
-  "Yu Mincho", YuMincho,
-  "Hiragino Mincho ProN",
-  serif !default;
-
-$font-serif-noto:
-  "Noto Serif Japanese",
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-noto-yakuhanmp:
-  YakuHanMP,
-  "Noto Serif Japanese",
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-noto-yakuhanmps:
-  YakuHanMPs,
-  "Noto Serif Japanese",
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-meiryo:
-  meiryo,
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-meiryo-yakuhanmp:
-  YakuHanMP,
-  meiryo,
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
-
-$font-serif-meiryo-yakuhanmps:
-  YakuHanMPs,
-  meiryo,
-  "Hiragino Mincho ProN",
-  "Yu Mincho", YuMincho,
-  serif !default;
+"Hiragino Mincho ProN",
+"Noto Serif Japanese",
+"Yu Mincho", YuMincho,
+serif !default;
 
 $font-mono:
-  Menlo, Monaco, Consolas,
-  "Liberation Mono", "Courier New",
-  Meiryo,
-  monospace, serif !default;
+Menlo, Monaco, Consolas,
+"Liberation Mono", "Courier New",
+Meiryo,
+monospace, serif !default;
+
+//----------------------------------------------------
+// / Pattern
+//----------------------------------------------------
+
+$pattern-font-size:(
+  xxl: 200%,
+  xl: 150%,
+  lg: 125%,
+  md: 100%,
+  sm: 87.5%,
+  xs: 75%,
+  xxs: 62.5%
+);
+
+$pattern-font-weight:(
+  normal: 400,
+  strong: 700,
+  weight-100: 100,
+  weight-200: 200,
+  weight-300: 300,
+  weight-400: 400,
+  weight-500: 500,
+  weight-700: 700,
+  weight-900: 900
+);

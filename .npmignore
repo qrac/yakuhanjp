@@ -1,6 +1,5 @@
 edit/
 src/
+docs/
+gulpfile.js
 index.html
-prepros.cfg
-prepros-6.config
-README.md
