@@ -3,12 +3,25 @@
 //----------------------------------------------------
 
 footer.section.is-footer.is-wide-lg
-  .inner-soft
-    p.texts.is-light.is-center.is-sm
-      span.text &copy;
-      | &nbsp;
-      a.text.is-link-reverse(href=copylight.url)= copylight.name
-      | &nbsp;
-      span.text= copylight.year
+  .inner
+    .group
+      .grid.is-center
+        .col
+          p.text.is-sm.is-light
+            | License:&nbsp;&nbsp;
+            i.fas.fa-balance-scale(aria-hidden="true")
+            span.text #{github.license}
+        .col
+          p.text.is-sm.is-light
+            | Author:&nbsp;&nbsp;
+            i.fab.fa-twitter(aria-hidden="true")
+            a.text.is-link-reverse(href=twitter.url+"/"+twitter.id target="_blank") Qrac
+        .col
+          p.text.is-sm.is-light
+            span.text &copy;
+            | &nbsp;
+            a.text.is-link-reverse(href=copylight.url)= copylight.name
+            | &nbsp;
+            span.text= copylight.year
 
   include ../demo/_preload.pug
