@@ -47,155 +47,17 @@
   }
 
 -
+  var copylight = {
+    year : "2017",
+    name : "QRANOKO",
+    url : "https://qranoko.jp"
+  }
+
+-
   var example = {
     text01 : "「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。",
     text02 : "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
     text03 : "〈〉《》「」『』【】〔〕（）［］｛｝",
     text04 : "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
     text05 : "《》「」『』【】〔〕（）［］｛｝"
-  }
-
-//----------------------------------------------------
-//- / Common Publish
-//----------------------------------------------------
--
-  var contact = {
-    twitter : {
-      class : "twitter",
-      id : "Qrac_JP",
-      url : "https://twitter.com"
-    },
-    github : {
-      class : "github",
-      id : "qrac",
-      url : "https://github.com"
-    },
-    medium : {
-      class : "medium-m",
-      id : "@qrac",
-      url : "https://medium.com"
-    }
-  }
--
-  var produce = {
-    qranoko : {
-      title : "QRANOKO",
-      desc : [ "Creative Partners" ],
-      comment : [ "夫婦で独立しフリーランスのデザイナーユニットとして活動を始めましたので、屋号のwebサイトを制作。自由で可愛らしい印象を与えつつも、伝えたい内容は明確に。制作パートナーとして検討してもらうために必要な情報を掲載していきます。" ],
-      thumb : "produce-qranoko.png",
-      birthday : "2017/09/29",
-      url : "https://qranoko.jp"
-    },
-    qracjp : {
-      title : "Qrac.JP",
-      desc : [ "Qrac Official Web Site" ],
-      comment : [ "Qrac個人のポートフォリオサイト。初めはWordPressで作りましたが、Netlifyなどの技術的な検証も兼ねて、2017年の夏に静的サイトとして1から書き起こしました。簡単なプロフィールとライブラリへのリンクをシンプルにまとめています。" ],
-      thumb : "produce-qracjp.png",
-      birthday : "2015/10/13", // Qrac.JP Quick 1.0
-      birthday_2 : "2016/07/24", // Qrac.JP Twenty Sixteen
-      birthday_3 : "2017/07/19", // Qrac.JP Netlify
-      url : "https://qrac.jp"
-    },
-    qookie : {
-      title : "Qookie",
-      desc : [ "Qrac Official Blog" ],
-      comment : [ "クリエイターの中に記憶されているもの" ],
-      thumb : "produce-qookie.png",
-      birthday : "2017/11/27",
-      url : "https://qookie.jp"
-    }
-  }
--
-  var product = {
-    musubii : {
-      title : "MUSUBii",
-      desc : [ "Simple CSS Framework for JP" ],
-      comment : [ "日本語サイト制作を想定したCSSフレームワーク。コーディング1年目に、毎回同じようなコード書くのが辛くて開発しました。OOCSS・命名ルール・著名なフレームワークを研究した上で、実践用の最適解として構築しています。" ],
-      thumb : "product-musubii.png",
-      birthday : "2017/02/02",
-      url : "https://qrac.github.io/musubii/",
-      repo : "https://github.com/qrac/musubii",
-      release : "https://github.com/qrac/musubii/releases",
-      lisence : "MIT"
-    },
-    yakuhanjp : {
-      title : "Yaku Han JP",
-      desc : [ "Yakumono-Hankaku only web fonts" ],
-      comment : [ "約物半角専用のWebフォント。font-familyのフォールバック機能を利用して字詰めした約物を優先的に当てます。ベースのNoto Sans Japaneseと併用し、font-feature-settingsではできない「カッコだけを詰める」などを実現します。" ],
-      thumb : "product-yakuhanjp.png",
-      birthday : "2016/06/04",
-      url : "https://qrac.github.io/yakuhanjp/",
-      repo : "https://github.com/qrac/yakuhanjp",
-      release : "https://github.com/qrac/yakuhanjp/releases",
-      lisence : "SIL"
-    },
-    shitajicss : {
-      title : "Shitaji.CSS",
-      desc : [ "Optimized reset.css for web design" ],
-      comment : [ "Web制作用の下地リセットCSS。MUSUBiiを作ろうと思った時に、ベースとなるリセットCSSから見直すことになり開発しました。sanitize.cssなどを参考にしつつ必要最低限のリセットを検証しています。" ],
-      thumb : "product-shitajicss.png",
-      birthday : "2016/07/03",
-      url : "https://qrac.github.io/shitajicss/",
-      repo : "https://github.com/qrac/shitajicss",
-      release : "https://github.com/qrac/shitajicss/releases",
-      lisence : "CC0 1.0 Public Domain"
-    },
-    moftone : {
-      title : "MOFTONE",
-      desc : [ "SCSS variable of mofmof color" ],
-      comment : [ "もふもふな優しいカラーパレットをSCSSの変数で作りました。MUSUBiiを制作する際に、日本のサービスに似合いそうな色をMaterial Design Colorみたいに全色作りたいと思ったのが制作理由。追加でスウォッチを作成。" ],
-      thumb : "product-moftone.png",
-      birthday : "2016/08/19",
-      url : "https://qrac.github.io/moftone/",
-      repo : "https://github.com/qrac/moftone",
-      release : "https://github.com/qrac/moftone/releases",
-      lisence : "CC0 1.0 Public Domain"
-    },
-    mdtone : {
-      title : "MDTONE",
-      desc : [ "SCSS variable of material design color" ],
-      comment : [ "Material Design ColorをSCSSで使いやすいよう変数化しました。MOFTONEの色を判断するための比較対象。どの程度の淡い色を作成したのか、グラデーションに乱れはないかを確認。追加でスウォッチを作成。" ],
-      thumb : "product-mdtone.png",
-      birthday : "2016/08/22",
-      url : "https://qrac.github.io/mdtone/",
-      repo : "https://github.com/qrac/mdtone",
-      release : "https://github.com/qrac/mdtone/releases",
-      lisence : "CC0 1.0 Public Domain"
-    },
-    iostone : {
-      title : "iOSTONE",
-      desc : [ "SCSS variable of ios color" ],
-      comment : [ "iOSで使いそうな色をMaterial Designカラーパレット風に生成しました。Google版が作ったのだからApple版も作ってしまおうという考えで。地道にスクショなどからベースカラーを収集しました。追加でスウォッチを作成。" ],
-      thumb : "product-iostone.png",
-      birthday : "2016/08/27",
-      url : "https://qrac.github.io/iostone/",
-      repo : "https://github.com/qrac/iostone",
-      release : "https://github.com/qrac/iostone/releases",
-      lisence : "CC0 1.0 Public Domain"
-    }
-  }
--
-  var project = {
-    puppet_suda : {
-      title : "Suda Puppet",
-      desc : [ "Make Suda that responds to the voice and motion." ],
-      comment : [ "Adobe Character Animator CCを用いて制作した、スダさんになりきれる非公式ファングッズ（パペット）。Adobe CCを契約しているスダファンの方々に楽しんでいただければ幸いです。" ],
-      thumb : "product-puppet-suda.png",
-      birthday : "2017/12/05",
-      url : "https://qrac.github.io/adventar2017-suda-puppet/",
-      repo : "https://github.com/qrac/adventar2017-suda-puppet",
-      release : "https://github.com/qrac/adventar2017-suda-puppet/releases",
-      lisence : "MIT"
-    }
-  }
--
-  var more = {
-    linestamp_qta : {
-      title : "LINE STAMP QTA",
-      desc : [ "Line Stamp QTA Everyday edition" ],
-      comment : [ "「LINEスタンプ Q太 日常編」として作成しLINEに登録しました。42パターンのイラスト制作は思ったより大変で、休暇中に作り1ヶ月ほどかかりました。プレゼン資料との相性がいいので、イラレデータの方をよく使っています。" ],
-      thumb : "more-linestamp-qta.png",
-      birthday : "2015/05/13",
-      url : "https://store.line.me/stickershop/product/1121045/ja"
-    }
   }

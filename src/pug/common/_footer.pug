@@ -4,82 +4,11 @@
 
 footer.section.is-footer.is-wide-lg
   .inner-soft
-    .group
-      .grid.is-center
-        .col
-          p.text.is-sm.is-light
-            | License:&nbsp;&nbsp;
-            i.fas.fa-balance-scale(aria-hidden="true")
-            span.text #{github.license}
-        .col
-          p.text.is-sm.is-light
-            | Author:&nbsp;&nbsp;
-            i.fab.fa-twitter(aria-hidden="true")
-            a.text.is-link-reverse(href=twitter.url+"/"+twitter.id target="_blank") Qrac
-        .col
-          p.text.is-sm.is-light
-            | Author Group:&nbsp;&nbsp;
-            i.fas.fa-globe(aria-hidden="true")
-            a.text.is-link-reverse(href="https://qranoko.jp" target="_blank") QRANOKO
-    .groups
-      .btns.is-center.is-lg
-        each val in contact
-          a.btn.is-ghost.is-circle(href="" + val.url + "/" + val.id + "")
-            i.fab(aria-hidden="true" class="fa-" + val.class + "")
-    .groups
-      .grid.is-center.is-gap-6x
-        .col.is-mobile-6.is-tablet-3.is-desktop-auto
-          p.heading
-            a(href="https://qranoko.jp")
-              img.obj.is-footer-logo(src=path.img+"/logo-qranoko-white.svg" alt=site.title)
-          ul.list.is-light.is-sm
-            li.item
-              span.text Creative Partners
-            li.item
-              span.text Komae, Tokyo, Japan
-          ul.list.is-note.is-light.is-sm
-            li.item
-              i.icon.fa.fa-hand-point-right(aria-hidden="true")
-              a.text.is-link-reverse(href="https://qranoko.jp/about") About
-            li.item
-              i.icon.fa.fa-hand-point-right(aria-hidden="true")
-              a.text.is-link-reverse(href="https://qranoko.jp/works") Works
-            li.item
-              i.icon.fa.fa-hand-point-right(aria-hidden="true")
-              a.text.is-link-reverse(href="https://qranoko.jp/contact") Contact
-        .col.is-mobile-6.is-tablet-3.is-desktop-auto
-          p.heading.is-strong.is-light MEMBER
-          ul.list.is-light.is-sm
-            li.item
-              a.text.is-link-reverse(href="https://twitter.com/Qrac_JP") Qrac
-            li.item
-              span.text Mainoko
-        .col.is-mobile-6.is-tablet-3.is-desktop-auto
-          p.heading.is-strong.is-light PRODUCE
-          ul.list.is-light.is-sm
-            each val in produce
-              li.item
-                a.text.is-link-reverse(href=val.url)= val.title
-        .col.is-mobile-6.is-tablet-3.is-desktop-auto
-          p.heading.is-strong.is-light PRODUCT
-          ul.list.is-light.is-sm
-            each val in product
-              li.item
-                a.text.is-link-reverse(href=val.url)= val.title
-        .col.is-mobile-6.is-tablet-3.is-desktop-auto
-          p.heading.is-strong.is-light PROJECT
-          ul.list.is-light.is-sm
-            each val in project
-              li.item
-                a.text.is-link-reverse(href=val.url)= val.title
-        .col.is-mobile-6.is-tablet-3.is-desktop-auto
-          p.heading.is-strong.is-light MORE
-          ul.list.is-light.is-sm
-            each val in more
-              li.item
-                a.text.is-link-reverse(href=val.url)= val.title
-    .groups
-      p.texts.is-light.is-center.is-sm
-        span.text &copy; QRANOKO 2017
+    p.texts.is-light.is-center.is-sm
+      span.text &copy;
+      | &nbsp;
+      a.text.is-link-reverse(href=copylight.url)= copylight.name
+      | &nbsp;
+      span.text= copylight.year
 
   include ../demo/_preload.pug
