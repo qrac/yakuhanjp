@@ -2,7 +2,7 @@
 
 .yakuhanjp.yakuhanjp-demo {
   background: linear-gradient(90deg, #ddd 50%, #F2F2F2 50%);
-  font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+  font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
 }
 
 .grid.is-gap-one-quarter:not(.is-gap-none) {
@@ -317,15 +317,15 @@
 }
 
 .is-font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
 }
 
 .is-font-sans-yakuhanjp {
-  font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+  font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
 }
 
 .is-font-sans-yakuhanjps {
-  font-family: YakuHanJPs, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+  font-family: YakuHanJPs, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
 }
 
 .is-font-sans-hiragino {
@@ -441,7 +441,7 @@
 .is-font-round-yugo,
 .is-font-round-noto,
 .is-font-round-meiryo {
-  font-family: "Rounded Mplus 1c", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+  font-family: "Rounded Mplus 1c", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
 }
 
 .is-font-round-yakuhanrp,
@@ -449,7 +449,7 @@
 .is-font-round-yugo-yakuhanrp,
 .is-font-round-noto-yakuhanrp,
 .is-font-round-meiryo-yakuhanrp {
-  font-family: YakuHanRP, "Rounded Mplus 1c", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+  font-family: YakuHanRP, "Rounded Mplus 1c", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
 }
 
 .is-font-round-yakuhanrps,
@@ -457,11 +457,11 @@
 .is-font-round-yugo-yakuhanrps,
 .is-font-round-noto-yakuhanrps,
 .is-font-round-meiryo-yakuhanrps {
-  font-family: YakuHanRPs, "Rounded Mplus 1c", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+  font-family: YakuHanRPs, "Rounded Mplus 1c", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
 }
 
-.is-weight-800 {
-  font-weight: 800;
+.is-font-lato {
+  font-family: Lato, sans-serif;
 }
 
 .is-color-transparent {
