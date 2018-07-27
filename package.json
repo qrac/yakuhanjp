@@ -27,7 +27,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "browser-sync": "^2.19.0",
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-babel": "^7.0.0",
@@ -38,11 +38,11 @@
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^4.0.1",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob": "^1.0.8",
-    "gulp-uglify": "^3.0.0",
-    "imagemin-pngquant": "^5.0.1",
+    "gulp-uglify": "^3.0.1",
+    "imagemin-pngquant": "^6.0.0",
     "jstransformer-markdown-it": "^2.0.0"
   }
 }
