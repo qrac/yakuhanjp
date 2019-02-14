@@ -1,7 +1,7 @@
 {
   "name": "yakuhanjp",
   "description": "Yakumono-Hankaku Only Web Fonts",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "main": "dist/css/yakuhanjp.css",
   "license": "(OFL-1.1 AND MIT)",
   "homepage": "https://yakuhanjp.qranoko.jp",
