@@ -1,0 +1,9 @@
+{
+  "setting": {
+    "name": "Yaku Han JP",
+    "dist": "dist",
+    "public": "public",
+    "src": "src",
+    "banner": true
+  }
+}

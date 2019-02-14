@@ -1,149 +1,181 @@
 //----------------------------------------------------
-// Gulp > npx gulp
+// gulp: Setting
 //----------------------------------------------------
 
-const gulp = require('gulp');
-const notify = require('gulp-notify');
-const plumber = require('gulp-plumber');
-const rename = require('gulp-rename');
-const browserSync = require('browser-sync');
-const pug = require('gulp-pug');
-const sass = require('gulp-sass');
-const sassGlob = require('gulp-sass-glob');
-const autoprefixer = require('gulp-autoprefixer');
-const gcmq = require('gulp-group-css-media-queries');
-const cleanCSS = require('gulp-clean-css');
-const concat = require('gulp-concat');
-const babel = require('gulp-babel');
-const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin')
-const pngquant = require('imagemin-pngquant')
+const gulp = require("gulp")
+const fs = require("fs")
+const notify = require("gulp-notify")
+const plumber = require("gulp-plumber")
+const rename = require("gulp-rename")
+const header = require("gulp-header")
+const gulpif = require("gulp-if")
+const nunjucks = require("gulp-nunjucks-render")
+const data = require("gulp-data")
+const htmlBeautify = require("gulp-html-beautify")
+const sass = require("gulp-sass")
+const cleanCSS = require("gulp-clean-css")
+const browserSync = require("browser-sync")
 
-// Setting : Paths
+// Read File
+const files = {
+  pkg: "./package.json",
+  pjt: "./project.json"
+}
+const pkg = JSON.parse(fs.readFileSync(files.pkg))
+const pjt = JSON.parse(fs.readFileSync(files.pjt))
+
+// Banner
+const banner = {
+  basic: [
+    "/*! <%= pjt.setting.name %> v<%= pkg.version %> <%= pkg.license %> by <%= pkg.author.name %> */",
+    ""
+  ].join("\n"),
+  visible: pjt.setting.banner
+}
+
+// Paths
 const paths = {
-  'src_pug': './src/pug/',
-  'src_scss': './src/scss/',
-  'src_js': './src/js/',
-  'src_img': './src/img/',
-  'out_html': './',
-  'out_css': './docs/css/',
-  'out_js': './docs/js/',
-  'out_img': './docs/img/',
-  'yakuhanjp_css': './dist/css/'
+  dist: {
+    dir: pjt.setting.dist + "/",
+    css: pjt.setting.dist + "/css/",
+    font: pjt.setting.dist + "/fonts/"
+  },
+  public: {
+    dir: pjt.setting.public + "/",
+    html: pjt.setting.public + "/",
+    css: pjt.setting.public + "/",
+    font: pjt.setting.public + "/fonts/"
+  },
+  src: {
+    dir: pjt.setting.src + "/",
+    scss: pjt.setting.src + "/scss/"
+  }
 }
 
-// Setting : Pug Options
-const pugOptions = {
-  pretty: true
+const htmlBeautifyOptions = {
+  indent_size: 2,
+  max_preserve_newlines: 0,
+  indent_inner_html: true,
+  extra_liners: []
 }
 
-// Setting : Sass Options
+// Sass Options
 const sassOptions = {
-  outputStyle: 'expanded'
+  outputStyle: "expanded",
+  includePaths: "./node_modules/"
 }
 
-// Pug > HTML
-gulp.task('pug', () => {
-  return gulp.src([paths.src_pug + '**/*.pug', '!' + paths.src_pug + '**/_*.pug'])
-    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
-    .pipe(pug(pugOptions))
-    .pipe(gulp.dest(paths.out_html));
-});
+// BrowserSync Options
+const browserSyncOptions = {
+  server: {
+    baseDir: paths.public.html
+  },
+  startPath: "index.html",
+  open: false,
+  notify: false
+}
 
-// Sass > CSS
-gulp.task('scss', () => {
-  return gulp.src(paths.src_scss + '**/*.scss')
-    .pipe(sassGlob())
-    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+//----------------------------------------------------
+// gulp: Task
+//----------------------------------------------------
+
+// Nunjucks > HTML (public)
+gulp.task("nunjucks_public", () => {
+  return gulp
+    .src("index.njk")
+    .pipe(
+      data(function() {
+        return { pkg, pjt }
+      })
+    )
+    .pipe(nunjucks())
+    .pipe(htmlBeautify(htmlBeautifyOptions))
+    .pipe(gulp.dest(paths.public.html))
+})
+
+// SCSS > CSS (public)
+gulp.task("scss_public", () => {
+  return gulp
+    .src(paths.src.scss + "**/*.scss")
+    .pipe(
+      plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
+    )
     .pipe(sass(sassOptions))
-    .pipe(autoprefixer(['> 3% in JP', 'ie 11', 'android 4.4', 'last 1 versions']))
-    .pipe(gcmq())
-    .pipe(gulp.dest(paths.out_css))
-});
+    .pipe(gulpif(banner.visible, header(banner.basic, { pkg, pjt })))
+    .pipe(gulp.dest(paths.public.css))
+})
+
+// Copy Fonts (public)
+gulp.task("copy_fonts_public", () => {
+  return gulp.src(paths.dist.font + "**/*").pipe(gulp.dest(paths.public.font))
+})
+
+// SCSS > CSS
+gulp.task("scss", () => {
+  return gulp
+    .src(paths.src.scss + "**/*.scss")
+    .pipe(
+      plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
+    )
+    .pipe(sass(sassOptions))
+    .pipe(gulpif(banner.visible, header(banner.basic, { pkg, pjt })))
+    .pipe(gulp.dest(paths.dist.css))
+})
 
 // CSS Minify
-gulp.task('cssmin', () => {
-  return gulp.src([paths.out_css + '**/*.css', '!' + paths.out_css + '**/*.min.css'])
-    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+gulp.task("cssmin", () => {
+  return gulp
+    .src([paths.dist.css + "**/*.css", "!" + paths.dist.css + "**/*.min.css"])
+    .pipe(
+      plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
+    )
     .pipe(cleanCSS())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(paths.out_css))
-});
-
-// CSS Minify (Yaku Han JP)
-gulp.task('cssmin_yakuhanjp', () => {
-  return gulp.src([paths.yakuhanjp_css + '**/*.css', '!' + paths.yakuhanjp_css + '**/*.min.css'])
-    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
-    .pipe(cleanCSS())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(paths.yakuhanjp_css))
-});
-
-// JS Concat & Babel
-gulp.task('jsconcat', () => {
-  return gulp.src(paths.src_js + '**/*.js')
-    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
-    .pipe(concat('app.js'))
-    .pipe(babel({
-      'presets': [
-        ['env', {
-          'targets': {
-            'browsers': ['> 3% in JP', 'ie 11', 'android 4.4', 'last 1 versions']
-          }
-        }]
-      ]
-    }))
-    .pipe(gulp.dest(paths.out_js))
-});
-
-// JS Uglify
-gulp.task('jsuglify', () => {
-  return gulp.src([paths.out_js + '**/*.js', '!' + paths.out_js + '**/*.min.js'])
-    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
-    .pipe(uglify())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(paths.out_js))
-});
-
-// Image Optimize
-gulp.task('imagemin', () => {
-  return gulp.src(paths.src_img + '*')
-    .pipe(imagemin([
-      pngquant({ quality: 100, speed: 3 }),
-      imagemin.jpegtran({ quality: 85, progressive: true}),
-      imagemin.svgo(),
-      imagemin.gifsicle()
-    ]))
-    .pipe(imagemin())
-    .pipe(gulp.dest(paths.out_img))
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest(paths.dist.css))
 })
 
 // Browser Sync
-gulp.task('browser-sync', () => {
-  browserSync({
-    server: {
-      baseDir: paths.out_html
-    }
-  });
-  gulp.watch(paths.out_html + '**/*.html', ['reload']);
-  gulp.watch(paths.out_css + '**/*.min.css', ['reload']);
-  gulp.watch(paths.out_js + '**/*.min.js', ['reload']);
-  gulp.watch(paths.out_img + '*', ['reload']);
-});
+gulp.task("browser-sync", function(done) {
+  browserSync.init(browserSyncOptions)
+  done()
+})
 
-gulp.task('reload', () => {
-  browserSync.reload();
-});
+gulp.task("reload", function(done) {
+  browserSync.reload()
+  done()
+})
 
 // Watch
-gulp.task('watch', () => {
-  gulp.watch([paths.src_pug + '**/*.pug', '!' + paths.src_pug + '**/_*.pug'], ['pug']);
-  gulp.watch(paths.src_scss + '**/*.scss', ['scss']);
-  gulp.watch(paths.src_js + '**/*.js', ['jsconcat']);
-  gulp.watch(paths.src_img + '*', ['imagemin']);
-  gulp.watch([paths.out_css + '**/*.css', '!' + paths.out_css + '**/*.min.css'], ['cssmin']);
-  gulp.watch([paths.out_js + '**/*.js', '!' + paths.out_js + '**/*.min.js'], ['jsuglify']);
-  gulp.watch([paths.yakuhanjp_css + '**/*.css', '!' + paths.yakuhanjp_css + '**/*.min.css'], ['cssmin_yakuhanjp']);
-});
+gulp.task("watch", () => {
+  gulp.watch("index.njk", gulp.series("nunjucks_public", "reload"))
+  gulp.watch(paths.src.scss + "**/*.scss", gulp.series("scss_public", "reload"))
+})
 
-gulp.task('default', ['browser-sync', 'watch']);
+//----------------------------------------------------
+// gulp: Default
+//----------------------------------------------------
+
+gulp.task(
+  "default",
+  gulp.series(
+    gulp.parallel("nunjucks_public", "scss_public", "copy_fonts_public"),
+    gulp.parallel("browser-sync", "watch")
+  )
+)
+
+//----------------------------------------------------
+// gulp: Public
+//----------------------------------------------------
+
+gulp.task(
+  "public",
+  gulp.series(
+    gulp.parallel("nunjucks_public", "scss_public", "copy_fonts_public")
+  )
+)
+
+//----------------------------------------------------
+// gulp: Build
+//----------------------------------------------------
+
+gulp.task("build", gulp.parallel(gulp.series("scss", "cssmin")))

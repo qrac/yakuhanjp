@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ pjt.setting.name }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@5.0.0/docs/css/shitaji.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&amp;subset=japanese">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,600,700,900&amp;subset=japanese">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:100,300,400,500,700,800,900&amp;subset=japanese">
+    <link rel="stylesheet" href="./yakuhanjp.css">
+    <link rel="stylesheet" href="./yakuhanjp_s.css">
+    <link rel="stylesheet" href="./yakuhanmp.css">
+    <link rel="stylesheet" href="./yakuhanmp_s.css">
+    <link rel="stylesheet" href="./yakuhanrp.css">
+    <link rel="stylesheet" href="./yakuhanrp_s.css">
+    <style>
+      body > *:last-child {
+        margin-bottom: 160px;
+      }
+      .demo-h1 {
+        margin: 160px 16px 32px;
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .demo-version {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .demo-h2 {
+        margin: 160px 16px 32px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .demo-h3 {
+        margin: 20px 16px 8px;
+        color: #828282;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .demo-h4 {
+        color: #828282;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .demo-area {
+        margin: 16px;
+      }
+      .demo-table {
+        display: table;
+        width: 100%;
+        background-color: #fff;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .demo-table td {
+        padding: 0.75em 1em;
+        border: 1px solid #d1d7da;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="demo-h1">
+        <span>{{ pjt.setting.name }}</span>
+        <span class="demo-version">v{{ pkg.version }}</span>
+      </h1>
+    </header>
+    <main>
+
+      {% set demoText = "「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。" %}
+      {% set fonts = [
+        {
+          "id": 1,
+          "label": "YakuHanJP",
+          "type": [
+            {
+              "label": "Full",
+              "family": [
+                {
+                  "label": "YakuHanJP x Hiragino Sans",
+                  "override": "YakuHanJP",
+                  "fallback": "\"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", Meiryo, sans-serif"
+                },
+                {
+                  "label": "YakuHanJP x Yu Gothic",
+                  "override": "YakuHanJP",
+                  "fallback": "\"Yu Gothic\", YuGothic, \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", Meiryo, sans-serif"
+                },
+                {
+                  "label": "YakuHanJP x Noto Sans JP",
+                  "override": "YakuHanJP",
+                  "fallback": "\"Noto Sans JP\", \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif"
+                },
+                {
+                  "label": "YakuHanJP x Meiryo",
+                  "override": "YakuHanJP",
+                  "fallback": "Meiryo, \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", sans-serif"
+                }
+              ]
+            },
+            {
+              "label": "Small",
+              "family": [
+                {
+                  "label": "YakuHanJPs x Hiragino Sans",
+                  "override": "YakuHanJPs",
+                  "fallback": "\"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", Meiryo, sans-serif"
+                },
+                {
+                  "label": "YakuHanJPs x Yu Gothic",
+                  "override": "YakuHanJPs",
+                  "fallback": "\"Yu Gothic\", YuGothic, \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", Meiryo, sans-serif"
+                },
+                {
+                  "label": "YakuHanJPs x Noto Sans JP",
+                  "override": "YakuHanJPs",
+                  "fallback": "\"Noto Sans JP\", \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif"
+                },
+                {
+                  "label": "YakuHanJPs x Meiryo",
+                  "override": "YakuHanJPs",
+                  "fallback": "Meiryo, \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", sans-serif"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "YakuHanMP",
+          "type": [
+            {
+              "label": "Full",
+              "family": [
+                {
+                  "label": "YakuHanMP x Hiragino Mincho",
+                  "override": "YakuHanMP",
+                  "fallback": "\"Hiragino Mincho ProN\", \"Noto Serif JP\", \"Yu Mincho\", YuMincho, serif"
+                },
+                {
+                  "label": "YakuHanMP x Yu Mincho",
+                  "override": "YakuHanMP",
+                  "fallback": "\"Yu Mincho\", YuMincho, \"Hiragino Mincho ProN\", \"Noto Serif JP\", serif"
+                },
+                {
+                  "label": "YakuHanMP x Noto Serif JP",
+                  "override": "YakuHanMP",
+                  "fallback": "\"Noto Serif JP\", \"Hiragino Mincho ProN\", \"Yu Mincho\", YuMincho, serif"
+                }
+              ]
+            },
+            {
+              "label": "Small",
+              "family": [
+                {
+                  "label": "YakuHanMPs x Hiragino Mincho",
+                  "override": "YakuHanMPs",
+                  "fallback": "\"Hiragino Mincho ProN\", \"Noto Serif JP\", \"Yu Mincho\", YuMincho, serif"
+                },
+                {
+                  "label": "YakuHanMPs x Yu Mincho",
+                  "override": "YakuHanMPs",
+                  "fallback": "\"Yu Mincho\", YuMincho, \"Hiragino Mincho ProN\", \"Noto Serif JP\", serif"
+                },
+                {
+                  "label": "YakuHanMPs x Noto Serif JP",
+                  "override": "YakuHanMPs",
+                  "fallback": "\"Noto Serif JP\", \"Hiragino Mincho ProN\", \"Yu Mincho\", YuMincho, serif"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "YakuHanRP",
+          "type": [
+            {
+              "label": "Full",
+              "family": [
+                {
+                  "label": "YakuHanRP x M PLUS Rounded 1c",
+                  "override": "YakuHanRP",
+                  "fallback": "\"M PLUS Rounded 1c\", \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", Meiryo, sans-serif"
+                }
+              ]
+            },
+            {
+              "label": "Small",
+              "family": [
+                {
+                  "label": "YakuHanRPs x M PLUS Rounded 1c",
+                  "override": "YakuHanRPs",
+                  "fallback": "\"M PLUS Rounded 1c\", \"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", Meiryo, sans-serif"
+                }
+              ]
+            }
+          ]
+        }
+      ]%}
+      {% set weights = [100, 200, 300, 400, 500, 600, 700, 800, 900]%}
+      {% for font in fonts %}
+        <section>
+          <h2 class="demo-h2">{{ font.label }}</h2>
+          {% for type in font.type %}
+            {% for family in type.family %}
+              <section>
+                <h3 class="demo-h3">{{ family.label }}</h3>
+                <div class="demo-area">
+                  <table class="demo-table">
+                    <tbody>
+                      {% for weight in weights %}
+                        <tr>
+                          <td>
+                            <h4 class="demo-h4">W{{ weight }}</h4>
+                            <p class="demo-text" style="font-family: {{ family.fallback }}; font-weight: {{ weight }};">{{ demoText }}</p>
+                          </td>
+                          <td>
+                            <h4 class="demo-h4">W{{ weight }}</h4>
+                            <p class="demo-text" style="font-family: {{ family.override }}, {{ family.fallback }}; font-weight: {{ weight }};">{{ demoText }}</p>
+                          </td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            {% endfor %}
+          {% endfor %}
+        </section>
+      {% endfor %}
+
+    </main>
+  </body>
+</html>
