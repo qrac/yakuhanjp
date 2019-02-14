@@ -1,234 +1,110 @@
 # Yaku Han JP
 
-## Demo
+## Site
 
-- [Demo Page][link-demo]
+- https://yakuhanjp.qranoko.jp
 
 ## About
 
-"Yaku Han JP"は、Web上の日本語テキストに含まれる約物を半角にする「約物半角専用Webフォント」です。Googleの"Noto Sans CJK JP（源ノ角ゴシック）"と"Noto Serif CJK JP（源ノ明朝）"、丸ゴシックの"Rounded M+ 1c"をベースにしており、ゴシック体・明朝体・丸ゴシックでそれぞれ7ウェイト対応できます。
+Yaku Han JP（ヤクハンジェイピー）は、Web 上の日本語テキストに含まれる約物を半角にする「約物半角専用 Web フォント」です。
 
 ## Detail
 
-仕組みは、文字幅を調整した「約物だけのフォント」をデバイスフォントよりも前に優先的適応することです。font-family（CSS）のフォールバック機能を利用しています。旧ブラウザ対応に優れ、動的コンテンツへの利用に最適。1つのフォントが4〜5KBと軽量なので、表示速度やパフォーマンスを重視するサイトへの使用も安心です。
+font-family（CSS）のフォールバック機能を利用し、文字幅を調整した「約物だけのフォント」を優先的適応させます。レガシーブラウザ対応・動的コンテンツへの利用に向いている他、1 つのフォントが 4〜5KB と軽量なのが特長。
 
-## Valuation
+## How To Use
 
-### Include Fonts
-
-6種類のフォントを用意しています。ゴシック体・明朝体・丸ゴシックを使い分けられる他、カッコだけを半角にするSmall Amount（少量版）が使えます。
-
-- YakuHanJP : ゴシック体 All Include（全部入り版 : 約物すべて）
-- YakuHanJPs : ゴシック体 Small Amount（少量版 : カッコのみ）
-- YakuHanMP : 明朝体 All Include（全部入り版 : 約物すべて）
-- YakuHanMPs : 明朝体 Small Amount（少量版 : カッコのみ）
-- YakuHanRP : 丸ゴシック All Include（全部入り版 : 約物すべて）
-- YakuHanRPs : 丸ゴシック体 Small Amount（少量版 : カッコのみ）
-
-内包する文字はそれぞれ以下の通りです。
-
-```
-// YakuHanJP
-、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝
-
-// YakuHanJPs
-〈〉《》「」『』【】〔〕（）［］｛｝
-
-// YakuHanMP
-、。！？《》「」『』【】〔〕・（）：；［］｛｝
-
-// YakuHanMPs
-《》「」『』【】〔〕（）［］｛｝
-
-// YakuHanRP
-、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝
-
-// YakuHanRPs
-〈〉《》「」『』【】〔〕（）［］｛｝
-```
-
-※バグ回避のため、全てのフォントに `.notdef` `space` `ellipsis` が含まれています
-
-### Font Weight
-
-ウェイトは7段階。付属のCSSでは以下のfont-weightで指定できます。ベースフォント毎にウエイト・ファイル名が若干異なるため、当ライブラリ内のファイル名もそれぞれのベースフォントに準じています。
-
-#### YakuHanJP & YakuHanJPs
-
-- font-weight: 100; // Thin
-- font-weight: 200; // Light
-- font-weight: 300; // DemiLight
-- font-weight: 400; // Regular
-- font-weight: 500; // Medium
-- font-weight: 700; // Bold
-- font-weight: 900; // Black
-
-#### YakuHanMP & YakuHanMPs
-
-- font-weight: 100; // ExtraLight
-- font-weight: 200; // Light
-- font-weight: 300; // Regular
-- font-weight: 400; // Medium
-- font-weight: 500; // SemiBold
-- font-weight: 700; // Bold
-- font-weight: 900; // Black
-
-#### YakuHanRP & YakuHanRPs
-
-- font-weight: 100; // Thin
-- font-weight: 300; // Light
-- font-weight: 400; // Regular
-- font-weight: 500; // Medium
-- font-weight: 700; // Bold
-- font-weight: 800; // ExtraBold
-- font-weight: 900; // Black
-
-## Use
-
-### [CDN][link-jsdelivr]
-
-jsDelivrで配信しているCSSファイルへのリンクをHTML内に記述するだけで全ウェイトのフォントを利用できます。
+フォントを呼び出す CSS ファイルを読み込んで、font-family の先頭にフォント名を追記。※以下は `YakuHanJP`（ゴシック体・約物すべて）を使った場合の例
 
 ```html
-// YakuHanJP：ゴシック体（約物全部入り）
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp.min.css">
-
-// YakuHanJPs：ゴシック体（カッコのみ）
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp_s.min.css">
-
-// YakuHanMP：明朝体（約物全部入り）
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanmp.min.css">
-
-// YakuHanMPs：明朝体（カッコのみ）
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanmp_s.min.css">
-
-// YakuHanRP：丸ゴシック（約物全部入り）
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanrp.min.css">
-
-// YakuHanRPs：丸ゴシック（カッコのみ）
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanrp_s.min.css">
+<link rel="stylesheet" href="dist/css/yakuhanjp.min.css" />
 ```
 
-### [npm][link-npm]
+```scss
+.example {
+  font-family: YakuHanJP, "Hiragino Sans" sans-serif;
+}
+```
 
-npmコマンドで任意のプロジェクトにインストールできます。
+## Font Family
+
+ゴシック体（Noto Sans CJK JP）・明朝体（Noto Serif CJK JP）・丸ゴシック（Rounded M+ 1c）を使用可能。フォント名に s が付いているフォントはカッコだけを半角にします。
+
+|  フォント名  |  スタイル  |  半角対象  | 内包文字                                             |
+| :----------: | :--------: | :--------: | ---------------------------------------------------- |
+| `YakuHanJP`  | ゴシック体 | 約物すべて | `、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝` |
+| `YakuHanJPs` | ゴシック体 | カッコのみ | `〈〉《》「」『』【】〔〕（）［］｛｝`               |
+| `YakuHanMP`  |   明朝体   | 約物すべて | `、。！？《》「」『』【】〔〕・（）：；［］｛｝`     |
+| `YakuHanMPs` |   明朝体   | カッコのみ | `《》「」『』【】〔〕（）［］｛｝`                   |
+| `YakuHanRP`  | 丸ゴシック | 約物すべて | `、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝` |
+| `YakuHanRPs` | 丸ゴシック | カッコのみ | `〈〉《》「」『』【】〔〕（）［］｛｝`               |
+
+※バグ回避のため、すべてのフォントに `.notdef` `space` `ellipsis` が含まれています
+
+## Font Weight
+
+ウェイトは各 7 段階。ベースフォント毎にウェイト・ファイル名が若干異なるため、当ライブラリ内のファイル名も各ベースフォントに準じています。
+
+|  フォント名  |    W100    | W200  |   W300    |  W400   |   W500   | W600 | W700 |   W800    | W900  |
+| :----------: | :--------: | :---: | :-------: | :-----: | :------: | :--: | :--: | :-------: | :---: |
+| `YakuHanJP`  |    Thin    | Light | DemiLight | Regular |  Medium  |  -   | Bold |     -     | Black |
+| `YakuHanJPs` |    Thin    | Light | DemiLight | Regular |  Medium  |  -   | Bold |     -     | Black |
+| `YakuHanMP`  | ExtraLight | Light |  Regular  | Medium  | SemiBold |  -   | Bold |     -     | Black |
+| `YakuHanMPs` | ExtraLight | Light |  Regular  | Medium  | SemiBold |  -   | Bold |     -     | Black |
+| `YakuHanRP`  |    Thin    |   -   |   Light   | Regular |  Medium  |  -   | Bold | ExtraBold | Black |
+| `YakuHanRPs` |    Thin    |   -   |   Light   | Regular |  Medium  |  -   | Bold | ExtraBold | Black |
+
+## CDN
+
+- https://cdn.jsdelivr.net/npm/yakuhanjp/
+
+jsDelivr で配信している CSS ファイルへのリンクを HTML 内に記述するだけで全ウェイトのフォントを利用できます。
+
+|  フォント名  | HTML に貼る CDN リンクタグ                                                                                 |
+| :----------: | ---------------------------------------------------------------------------------------------------------- |
+| `YakuHanJP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanjp.min.css">`   |
+| `YakuHanJPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanjp_s.min.css">` |
+| `YakuHanMP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanmp.min.css">`   |
+| `YakuHanMPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanmp_s.min.css">` |
+| `YakuHanRP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanrp.min.css">`   |
+| `YakuHanRPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanrp_s.min.css">` |
+
+### npm
+
+- https://www.npmjs.com/package/yakuhanjp
+
+npm コマンドで任意のプロジェクトにインストールできます。
 
 ```
 npm install yakuhanjp
 ```
 
-### Download
+## Specific Edition
 
-1. データを[ダウンロード][link-download]
-2. distフォルダ内の「css」「fonts」を制作サイトに配置
-3. HTML内でCSSを読み込む
-  - ゴシック体
-    - 約物すべてを使う場合は「yakuhanjp.min.css」
-    - カッコだけを使う場合は「yakuhanjp_s.min.css」
-  - 明朝体
-    - 約物すべてを使う場合は「yakuhanmp.min.css」
-    - カッコだけを使う場合は「yakuhanmp_s.min.css」
-  - 丸ゴシック
-    - 約物すべてを使う場合は「yakuhanrp.min.css」
-    - カッコだけを使う場合は「yakuhanrp_s.min.css」
-4. CSSでフォントを適応
-  - ゴシック体
-    - 約物すべてを使う場合は「YakuHanJP」
-    - カッコだけを使う場合は「YakuHanJPs」
-  - 明朝体
-    - 約物すべてを使う場合は「YakuHanMP」
-    - カッコだけを使う場合は「YakuHanMPs」
-  - 丸ゴシック
-    - 約物すべてを使う場合は「YakuHanRP」
-    - カッコだけを使う場合は「YakuHanRPs」
+### For Noto
 
-```html
-// YakuHanJP：ゴシック体（約物全部入り）
-<link rel="stylesheet" href="dist/css/yakuhanjp.min.css">
+2018 年 9 月 7 日、Google Fonts 本家に Noto Sans JP・Noto Serif JP が加わりました。日本語のサブセット配信機能がとても優秀です。ただ、通常の YakuHanJP とはウェイトが多少異なります。
 
-// YakuHanJPs：ゴシック体（カッコのみ）
-<link rel="stylesheet" href="dist/css/yakuhanjp_s.min.css">
+そこで、専用のウェイト調整を行った CSS ファイルを用意しました。以下の CDN 配信ファイル（もしくはローカルの CSS ファイル）を読み込めば、Google Fonts 本家の Noto Sans JP・Noto Serif JP に YakuHanJP のウェイトが揃います。
 
-// YakuHanMP：明朝体（約物全部入り）
-<link rel="stylesheet" href="dist/css/yakuhanmp.min.css">
+|    フォント名     | HTML に貼る CDN リンクタグ                                                                                      |
+| :---------------: | --------------------------------------------------------------------------------------------------------------- |
+| `YakuHanJP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanjp-noto.min.css">`   |
+| `YakuHanJPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanjp_s-noto.min.css">` |
+| `YakuHanMP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanmp-noto.min.css">`   |
+| `YakuHanMPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanmp_s-noto.min.css">` |
 
-// YakuHanMPs：明朝体（カッコのみ）
-<link rel="stylesheet" href="dist/css/yakuhanmp_s.min.css">
-
-// YakuHanRP：丸ゴシック（約物全部入り）
-<link rel="stylesheet" href="dist/css/yakuhanrp.min.css">
-
-// YakuHanRPs：丸ゴシック（カッコのみ）
-<link rel="stylesheet" href="dist/css/yakuhanrp_s.min.css">
-```
-
-```css
-// YakuHanJP：ゴシック体（約物全部入り）
-.yakuhanjp {
-  font-family: YakuHanJP, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif;
-}
-
-// YakuHanJPs：ゴシック体（カッコのみ）
-.yakuhanjps {
-  font-family: YakuHanJPs, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif;
-}
-
-// YakuHanMP：明朝体（約物全部入り）
-.yakuhanmp {
-  font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
-}
-
-// YakuHanMPs：明朝体（カッコのみ）
-.yakuhanmps {
-  font-family: YakuHanMPs, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
-}
-
-// YakuHanRP：丸ゴシック（約物全部入り）
-.yakuhanrp {
-  font-family: YakuHanRP, "Rounded Mplus 1c", sans-serif;
-}
-
-// YakuHanRPs：丸ゴシック（カッコのみ）
-.yakuhanrps {
-  font-family: YakuHanRPs, "Rounded Mplus 1c", sans-serif;
-}
-```
-
-## Custom
-
-### Font face
-
-1. 利用するフォントファイルへのリンクを個別に取得（CDNの場合）
-  - [YakuHanJP](https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/)
-  - [YakuHanJPs](https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJPs/)
-  - [YakuHanMP](https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanMP/)
-  - [YakuHanMPs](https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanMPs/)
-  - [YakuHanRP](https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanRP/)
-  - [YakuHanRPs](https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanRPs/)
-2. CSS内にfont-faceを記述（以下はYakuHanJPで300のウェイトを細くしfont-displayを適応した例）
-
-```css
-// Demi Light > Light
-@font-face {
-  font-family: "YakuHanJP";
-  font-style: normal;
-  font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.eot");
-  src: url("https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
-  url("https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
-  font-display: swap;
-}
-```
+- [Noto Sans JP・Noto Serif JP 専用の CSS ファイルを追加 · Issue #23 · qrac/yakuhanjp](https://github.com/qrac/yakuhanjp/issues/23)
 
 ## Support
 
-| Chrome | Firefox | IE | Ege | Opera | Safari(Mac) |
-|:------:|:------:|:------:|:------:|:------:|:------:|
-| 55~ | 50~ | 9~ | 14~ | 36~ | 6~ |
+| Chrome | Firefox | IE  | Ege | Opera | Safari(Mac) |
+| :----: | :-----: | :-: | :-: | :---: | :---------: |
+|  55~   |   50~   | 9~  | 14~ |  36~  |     6~      |
 
 | Safari(iOS) | Chrome(Android) | Browser(Android) |
-|:------------:|:------------:|:------------:|
-| 7~ | 51~ | 4.4~ |
+| :---------: | :-------------: | :--------------: |
+|     7~      |       51~       |       4.4~       |
 
 ## Media
 
@@ -237,18 +113,11 @@ npm install yakuhanjp
 ## License
 
 - Yaku Han JP : SIL OFL 1.1
-- Author : [Qrac][link-twitter]
-- Author Group: [QRANOKO][link-qranoko]
-- Gothic fonts : Based on ["Noto Sans CJK JP"][link-notosans] licensed under the SIL OFL 1.1
-- Mincho fonts : Based on ["Noto Serif CJK JP"][link-notoserif] licensed under the SIL OFL 1.1
-- Round Gothic fonts : Based on ["Rounded M+ 1c"][link-notoserif] licensed under the M+ FONTS LICENSE
+- Gothic fonts : Based on [Noto Sans CJK JP](https://www.google.com/get/noto/#sans-jpan) licensed under the SIL OFL 1.1
+- Mincho fonts : Based on [Noto Serif CJK JP](https://www.google.com/get/noto/#serif-jpan) licensed under the SIL OFL 1.1
+- Round Gothic fonts : Based on [Rounded M+ 1c](http://jikasei.me/font/rounded-mplus/) licensed under the M+ FONTS LICENSE
 
-[link-demo]:https://qrac.github.io/yakuhanjp
-[link-download]:https://github.com/qrac/yakuhanjp/archive/master.zip
-[link-npm]:https://www.npmjs.com/package/yakuhanjp
-[link-jsdelivr]:https://cdn.jsdelivr.net/npm/yakuhanjp/
-[link-notosans]:https://www.google.com/get/noto/#sans-jpan
-[link-notoserif]:https://www.google.com/get/noto/#serif-jpan
-[link-roundedmplus1c]:http://jikasei.me/font/rounded-mplus/
-[link-twitter]:https://twitter.com/Qrac_JP
-[link-qranoko]:https://qranoko.jp
+## Credit
+
+- Author: [Qrac](https://qrac.jp)
+- Organization: [QRANOKO](https://qranoko.jp)
