@@ -96,6 +96,19 @@ npm install yakuhanjp
 
 - [Noto Sans JP・Noto Serif JP 専用の CSS ファイルを追加 · Issue #23 · qrac/yakuhanjp](https://github.com/qrac/yakuhanjp/issues/23)
 
+### For Narrow
+
+macOS 10.13・iOS11 以降の Safari では、`font-family` に `-apple-system` を指定すると Sanfrancisco に加えて小ぶりのヒラギノ角ゴシックが出力されます。通常の YakuHanJP を被せると約物だけ太く大きく見えてしまいます。これは全体的に細い游ゴシックでも同様の現象がおきます。
+
+そこで、細身のウェイト調整を行った CSS ファイルを用意しました。以下の CDN 配信ファイル（もしくはローカルの CSS ファイル）を読み込めばウェイトが自然になります。約物は細い分には気になりにくいため、対象のブラウザ以外で他のフォントと組み合わさっても影響が小さいです。
+
+|     フォント名      | HTML に貼る CDN リンクタグ                                                                                        |
+| :-----------------: | ----------------------------------------------------------------------------------------------------------------- |
+| `YakuHanJP_Narrow`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanjp-narrow.min.css">`   |
+| `YakuHanJPs_Narrow` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.1.0/dist/css/yakuhanjp_s-narrow.min.css">` |
+
+- [macOS・iOS Safari の細字を考慮した CSS ファイルを追加 · Issue #27 · qrac/yakuhanjp](https://github.com/qrac/yakuhanjp/issues/27)
+
 ## Support
 
 | Chrome | Firefox | IE  | Ege | Opera | Safari(Mac) |
