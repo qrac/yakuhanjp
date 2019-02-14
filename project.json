@@ -2,7 +2,7 @@
   "setting": {
     "name": "Yaku Han JP",
     "dist": "dist",
-    "public": "public",
+    "test": "public",
     "src": "src",
     "banner": true
   }

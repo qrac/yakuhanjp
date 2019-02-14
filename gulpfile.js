@@ -40,11 +40,11 @@ const paths = {
     css: pjt.setting.dist + "/css/",
     font: pjt.setting.dist + "/fonts/"
   },
-  public: {
-    dir: pjt.setting.public + "/",
-    html: pjt.setting.public + "/",
-    css: pjt.setting.public + "/",
-    font: pjt.setting.public + "/fonts/"
+  test: {
+    dir: pjt.setting.test + "/",
+    html: pjt.setting.test + "/",
+    css: pjt.setting.test + "/",
+    font: pjt.setting.test + "/fonts/"
   },
   src: {
     dir: pjt.setting.src + "/",
@@ -68,7 +68,7 @@ const sassOptions = {
 // BrowserSync Options
 const browserSyncOptions = {
   server: {
-    baseDir: paths.public.html
+    baseDir: paths.test.html
   },
   startPath: "index.html",
   open: false,
@@ -79,8 +79,8 @@ const browserSyncOptions = {
 // gulp: Task
 //----------------------------------------------------
 
-// Nunjucks > HTML (public)
-gulp.task("nunjucks_public", () => {
+// Nunjucks > HTML (test)
+gulp.task("nunjucks_test", () => {
   return gulp
     .src("index.njk")
     .pipe(
@@ -90,11 +90,11 @@ gulp.task("nunjucks_public", () => {
     )
     .pipe(nunjucks())
     .pipe(htmlBeautify(htmlBeautifyOptions))
-    .pipe(gulp.dest(paths.public.html))
+    .pipe(gulp.dest(paths.test.html))
 })
 
-// SCSS > CSS (public)
-gulp.task("scss_public", () => {
+// SCSS > CSS (test)
+gulp.task("scss_test", () => {
   return gulp
     .src(paths.src.scss + "**/*.scss")
     .pipe(
@@ -102,12 +102,12 @@ gulp.task("scss_public", () => {
     )
     .pipe(sass(sassOptions))
     .pipe(gulpif(banner.visible, header(banner.basic, { pkg, pjt })))
-    .pipe(gulp.dest(paths.public.css))
+    .pipe(gulp.dest(paths.test.css))
 })
 
-// Copy Fonts (public)
-gulp.task("copy_fonts_public", () => {
-  return gulp.src(paths.dist.font + "**/*").pipe(gulp.dest(paths.public.font))
+// Copy Fonts (test)
+gulp.task("copy_fonts_test", () => {
+  return gulp.src(paths.dist.font + "**/*").pipe(gulp.dest(paths.test.font))
 })
 
 // SCSS > CSS
@@ -147,8 +147,8 @@ gulp.task("reload", function(done) {
 
 // Watch
 gulp.task("watch", () => {
-  gulp.watch("index.njk", gulp.series("nunjucks_public", "reload"))
-  gulp.watch(paths.src.scss + "**/*.scss", gulp.series("scss_public", "reload"))
+  gulp.watch("index.njk", gulp.series("nunjucks_test", "reload"))
+  gulp.watch(paths.src.scss + "**/*.scss", gulp.series("scss_test", "reload"))
 })
 
 //----------------------------------------------------
@@ -158,20 +158,18 @@ gulp.task("watch", () => {
 gulp.task(
   "default",
   gulp.series(
-    gulp.parallel("nunjucks_public", "scss_public", "copy_fonts_public"),
+    gulp.parallel("nunjucks_test", "scss_test", "copy_fonts_test"),
     gulp.parallel("browser-sync", "watch")
   )
 )
 
 //----------------------------------------------------
-// gulp: Public
+// gulp: test
 //----------------------------------------------------
 
 gulp.task(
-  "public",
-  gulp.series(
-    gulp.parallel("nunjucks_public", "scss_public", "copy_fonts_public")
-  )
+  "test",
+  gulp.series(gulp.parallel("nunjucks_test", "scss_test", "copy_fonts_test"))
 )
 
 //----------------------------------------------------
