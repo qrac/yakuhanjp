@@ -2,65 +2,52 @@
 /*! Type: YakuHanMPs_Noto - Based on Noto Serif CJK JP */
 //----------------------------------------------------
 
-@font-face {
-  font-family: "YakuHanMPs_Noto";
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-ExtraLight.eot");
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-ExtraLight.woff2") format("woff2"),
-    url("../fonts/YakuHanMPs/YakuHanMPs-ExtraLight.woff") format("woff");
-}
+$yakuhanmps-noto-font-family: "YakuHanMPs_Noto" !default;
+$yakuhanmps-noto-font-file: "YakuHanMPs" !default;
+$yakuhanmps-noto-font-dir: "../fonts" !default;
+$yakuhanmps-noto-eot-use: true !default;
+$yakuhanmps-noto-cdn-use: false !default;
+$yakuhanmps-noto-cdn-version: "3.2.0" !default;
+$yakuhanmps-noto-weight: (
+  200: ExtraLight,
+  300: Light,
+  400: Regular,
+  500: Medium,
+  600: SemiBold,
+  700: Bold,
+  900: Black
+) !default;
 
-@font-face {
-  font-family: "YakuHanMPs_Noto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Light.eot");
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Light.woff2") format("woff2"),
-    url("../fonts/YakuHanMPs/YakuHanMPs-Light.woff") format("woff");
-}
+@each $key, $value in $yakuhanmps-noto-weight {
+  @font-face {
+    $family: $yakuhanmps-noto-font-family;
+    $file: $yakuhanmps-noto-font-file;
+    $dir: $yakuhanmps-noto-font-dir;
+    $eot: $yakuhanmps-noto-eot-use;
+    $cdn: $yakuhanmps-noto-cdn-use;
+    $version: $yakuhanmps-noto-cdn-version;
+    $jsdelivr: "https://cdn.jsdelivr.net/npm/yakuhanjp";
 
-@font-face {
-  font-family: "YakuHanMPs_Noto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Regular.eot");
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Regular.woff2") format("woff2"),
-    url("../fonts/YakuHanMPs/YakuHanMPs-Regular.woff") format("woff");
-}
+    font-family: $family;
+    font-style: normal;
+    font-weight: $key;
 
-@font-face {
-  font-family: "YakuHanMPs_Noto";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Medium.eot");
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Medium.woff2") format("woff2"),
-    url("../fonts/YakuHanMPs/YakuHanMPs-Medium.woff") format("woff");
-}
+    @if $eot == true and $cdn == true {
+      src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.eot");
+    }
 
-@font-face {
-  font-family: "YakuHanMPs_Noto";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-SemiBold.eot");
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-SemiBold.woff2") format("woff2"),
-    url("../fonts/YakuHanMPs/YakuHanMPs-SemiBold.woff") format("woff");
-}
+    @if $eot == true and $cdn == false {
+      src: url("#{$dir}/#{$file}/#{$file}-#{$value}.eot");
+    }
 
-@font-face {
-  font-family: "YakuHanMPs_Noto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Bold.eot");
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Bold.woff2") format("woff2"),
-    url("../fonts/YakuHanMPs/YakuHanMPs-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "YakuHanMPs_Noto";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Black.eot");
-  src: url("../fonts/YakuHanMPs/YakuHanMPs-Black.woff2") format("woff2"),
-    url("../fonts/YakuHanMPs/YakuHanMPs-Black.woff") format("woff");
+    @if $cdn == true {
+      src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.woff2")
+          format("woff2"),
+        url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.woff")
+          format("woff");
+    } @else {
+      src: url("#{$dir}/#{$file}/#{$file}-#{$value}.woff2") format("woff2"),
+        url("#{$dir}/#{$file}/#{$file}-#{$value}.woff") format("woff");
+    }
+  }
 }

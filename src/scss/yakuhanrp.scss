@@ -2,65 +2,52 @@
 /*! Type: YakuHanRP - Based on Rounded M+ 1c */
 //----------------------------------------------------
 
-@font-face {
-  font-family: "YakuHanRP";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../fonts/YakuHanRP/YakuHanRP-Thin.eot");
-  src: url("../fonts/YakuHanRP/YakuHanRP-Thin.woff2") format("woff2"),
-    url("../fonts/YakuHanRP/YakuHanRP-Thin.woff") format("woff");
-}
+$yakuhanrp-font-family: "YakuHanRP" !default;
+$yakuhanrp-font-file: "YakuHanRP" !default;
+$yakuhanrp-font-dir: "../fonts" !default;
+$yakuhanrp-eot-use: true !default;
+$yakuhanrp-cdn-use: false !default;
+$yakuhanrp-cdn-version: "3.2.0" !default;
+$yakuhanrp-weight: (
+  100: Thin,
+  300: Light,
+  400: Regular,
+  500: Medium,
+  700: Bold,
+  800: ExtraBold,
+  900: Black
+) !default;
 
-@font-face {
-  font-family: "YakuHanRP";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/YakuHanRP/YakuHanRP-Light.eot");
-  src: url("../fonts/YakuHanRP/YakuHanRP-Light.woff2") format("woff2"),
-    url("../fonts/YakuHanRP/YakuHanRP-Light.woff") format("woff");
-}
+@each $key, $value in $yakuhanrp-weight {
+  @font-face {
+    $family: $yakuhanrp-font-family;
+    $file: $yakuhanrp-font-file;
+    $dir: $yakuhanrp-font-dir;
+    $eot: $yakuhanrp-eot-use;
+    $cdn: $yakuhanrp-cdn-use;
+    $version: $yakuhanrp-cdn-version;
+    $jsdelivr: "https://cdn.jsdelivr.net/npm/yakuhanjp";
 
-@font-face {
-  font-family: "YakuHanRP";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/YakuHanRP/YakuHanRP-Regular.eot");
-  src: url("../fonts/YakuHanRP/YakuHanRP-Regular.woff2") format("woff2"),
-    url("../fonts/YakuHanRP/YakuHanRP-Regular.woff") format("woff");
-}
+    font-family: $family;
+    font-style: normal;
+    font-weight: $key;
 
-@font-face {
-  font-family: "YakuHanRP";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/YakuHanRP/YakuHanRP-Medium.eot");
-  src: url("../fonts/YakuHanRP/YakuHanRP-Medium.woff2") format("woff2"),
-    url("../fonts/YakuHanRP/YakuHanRP-Medium.woff") format("woff");
-}
+    @if $eot == true and $cdn == true {
+      src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.eot");
+    }
 
-@font-face {
-  font-family: "YakuHanRP";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/YakuHanRP/YakuHanRP-Bold.eot");
-  src: url("../fonts/YakuHanRP/YakuHanRP-Bold.woff2") format("woff2"),
-    url("../fonts/YakuHanRP/YakuHanRP-Bold.woff") format("woff");
-}
+    @if $eot == true and $cdn == false {
+      src: url("#{$dir}/#{$file}/#{$file}-#{$value}.eot");
+    }
 
-@font-face {
-  font-family: "YakuHanRP";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/YakuHanRP/YakuHanRP-ExtraBold.eot");
-  src: url("../fonts/YakuHanRP/YakuHanRP-ExtraBold.woff2") format("woff2"),
-    url("../fonts/YakuHanRP/YakuHanRP-ExtraBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "YakuHanRP";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/YakuHanRP/YakuHanRP-Black.eot");
-  src: url("../fonts/YakuHanRP/YakuHanRP-Black.woff2") format("woff2"),
-    url("../fonts/YakuHanRP/YakuHanRP-Black.woff") format("woff");
+    @if $cdn == true {
+      src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.woff2")
+          format("woff2"),
+        url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.woff")
+          format("woff");
+    } @else {
+      src: url("#{$dir}/#{$file}/#{$file}-#{$value}.woff2") format("woff2"),
+        url("#{$dir}/#{$file}/#{$file}-#{$value}.woff") format("woff");
+    }
+  }
 }

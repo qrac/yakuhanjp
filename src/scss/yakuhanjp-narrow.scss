@@ -2,83 +2,54 @@
 /*! Type: YakuHanJP_Narrow - Based on Noto Sans CJK JP */
 //----------------------------------------------------
 
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../fonts/YakuHanJP/YakuHanJP-Thin.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-Thin.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-Thin.woff") format("woff");
-}
+$yakuhanjp-narrow-font-family: "YakuHanJP_Narrow" !default;
+$yakuhanjp-narrow-font-file: "YakuHanJP" !default;
+$yakuhanjp-narrow-font-dir: "../fonts" !default;
+$yakuhanjp-narrow-eot-use: true !default;
+$yakuhanjp-narrow-cdn-use: false !default;
+$yakuhanjp-narrow-cdn-version: "3.2.0" !default;
+$yakuhanjp-narrow-weight: (
+  100: Thin,
+  200: Thin,
+  300: Light,
+  400: Light,
+  500: DemiLight,
+  600: Regular,
+  700: Medium,
+  800: Bold,
+  900: Bold
+) !default;
 
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/YakuHanJP/YakuHanJP-Thin.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-Thin.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-Thin.woff") format("woff");
-}
+@each $key, $value in $yakuhanjp-narrow-weight {
+  @font-face {
+    $family: $yakuhanjp-narrow-font-family;
+    $file: $yakuhanjp-narrow-font-file;
+    $dir: $yakuhanjp-narrow-font-dir;
+    $eot: $yakuhanjp-narrow-eot-use;
+    $cdn: $yakuhanjp-narrow-cdn-use;
+    $version: $yakuhanjp-narrow-cdn-version;
+    $jsdelivr: "https://cdn.jsdelivr.net/npm/yakuhanjp";
 
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/YakuHanJP/YakuHanJP-Light.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
-}
+    font-family: $family;
+    font-style: normal;
+    font-weight: $key;
 
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/YakuHanJP/YakuHanJP-Light.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-Light.woff") format("woff");
-}
+    @if $eot == true and $cdn == true {
+      src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.eot");
+    }
 
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/YakuHanJP/YakuHanJP-DemiLight.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-DemiLight.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-DemiLight.woff") format("woff");
-}
+    @if $eot == true and $cdn == false {
+      src: url("#{$dir}/#{$file}/#{$file}-#{$value}.eot");
+    }
 
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/YakuHanJP/YakuHanJP-Regular.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-Regular.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/YakuHanJP/YakuHanJP-Medium.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-Medium.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/YakuHanJP/YakuHanJP-Bold.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-Bold.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "YakuHanJP_Narrow";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/YakuHanJP/YakuHanJP-Bold.eot");
-  src: url("../fonts/YakuHanJP/YakuHanJP-Bold.woff2") format("woff2"),
-    url("../fonts/YakuHanJP/YakuHanJP-Bold.woff") format("woff");
+    @if $cdn == true {
+      src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.woff2")
+          format("woff2"),
+        url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.woff")
+          format("woff");
+    } @else {
+      src: url("#{$dir}/#{$file}/#{$file}-#{$value}.woff2") format("woff2"),
+        url("#{$dir}/#{$file}/#{$file}-#{$value}.woff") format("woff");
+    }
+  }
 }
