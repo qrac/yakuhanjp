@@ -80,7 +80,7 @@ const browserSyncOptions = {
 //----------------------------------------------------
 
 // Nunjucks > HTML (test)
-gulp.task("nunjucks_test", () => {
+function htmlTest() {
   return gulp
     .src("index.njk")
     .pipe(
@@ -91,10 +91,10 @@ gulp.task("nunjucks_test", () => {
     .pipe(nunjucks())
     .pipe(htmlBeautify(htmlBeautifyOptions))
     .pipe(gulp.dest(paths.test.html))
-})
+}
 
-// SCSS > CSS (test)
-gulp.task("scss_test", () => {
+// SCSS > CSS (Test)
+function scssTest() {
   return gulp
     .src(paths.src.scss + "**/*.scss")
     .pipe(
@@ -103,15 +103,15 @@ gulp.task("scss_test", () => {
     .pipe(sass(sassOptions))
     .pipe(gulpif(banner.visible, header(banner.basic, { pkg, pjt })))
     .pipe(gulp.dest(paths.test.css))
-})
+}
 
 // Copy Fonts (test)
-gulp.task("copy_fonts_test", () => {
+function copyFontsTest() {
   return gulp.src(paths.dist.font + "**/*").pipe(gulp.dest(paths.test.font))
-})
+}
 
-// SCSS > CSS
-gulp.task("scss", () => {
+// SCSS > CSS (Build)
+function scssBuild() {
   return gulp
     .src(paths.src.scss + "**/*.scss")
     .pipe(
@@ -120,10 +120,10 @@ gulp.task("scss", () => {
     .pipe(sass(sassOptions))
     .pipe(gulpif(banner.visible, header(banner.basic, { pkg, pjt })))
     .pipe(gulp.dest(paths.dist.css))
-})
+}
 
 // CSS Minify
-gulp.task("cssmin", () => {
+function cssMin() {
   return gulp
     .src([paths.dist.css + "**/*.css", "!" + paths.dist.css + "**/*.min.css"])
     .pipe(
@@ -132,24 +132,30 @@ gulp.task("cssmin", () => {
     .pipe(cleanCSS())
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest(paths.dist.css))
-})
+}
 
-// Browser Sync
-gulp.task("browser-sync", function(done) {
+// BrowserSync Init
+function browserSyncInit(done) {
   browserSync.init(browserSyncOptions)
   done()
-})
+}
 
-gulp.task("reload", function(done) {
+// BrowserSync Reload
+function browserSyncReload(done) {
   browserSync.reload()
   done()
-})
+}
 
 // Watch
-gulp.task("watch", () => {
-  gulp.watch("index.njk", gulp.series("nunjucks_test", "reload"))
-  gulp.watch(paths.src.scss + "**/*.scss", gulp.series("scss_test", "reload"))
-})
+function watchFiles() {
+  gulp.watch("index.njk",
+    gulp.series(htmlTest, browserSyncReload)
+  )
+  gulp.watch(
+    paths.src.scss + "**/*.scss",
+    gulp.series(scssTest, browserSyncReload)
+  )
+}
 
 //----------------------------------------------------
 // gulp: Default
@@ -158,8 +164,8 @@ gulp.task("watch", () => {
 gulp.task(
   "default",
   gulp.series(
-    gulp.parallel("nunjucks_test", "scss_test", "copy_fonts_test"),
-    gulp.parallel("browser-sync", "watch")
+    gulp.parallel(htmlTest, scssTest, copyFontsTest),
+    gulp.parallel(browserSyncInit, watchFiles)
   )
 )
 
@@ -169,11 +175,11 @@ gulp.task(
 
 gulp.task(
   "test",
-  gulp.series(gulp.parallel("nunjucks_test", "scss_test", "copy_fonts_test"))
+  gulp.series(gulp.parallel(htmlTest, scssTest, copyFontsTest))
 )
 
 //----------------------------------------------------
 // gulp: Build
 //----------------------------------------------------
 
-gulp.task("build", gulp.parallel(gulp.series("scss", "cssmin")))
+gulp.task("build", gulp.parallel(gulp.series(scssBuild, cssMin)))

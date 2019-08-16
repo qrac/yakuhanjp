@@ -30,18 +30,18 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-clean-css": "^4.0.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
     "gulp-data": "^1.3.1",
-    "gulp-header": "^2.0.7",
+    "gulp-header": "^2.0.9",
     "gulp-html-beautify": "^1.0.1",
-    "gulp-if": "^2.0.2",
+    "gulp-if": "^3.0.0",
     "gulp-notify": "^3.2.0",
-    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-nunjucks-render": "^2.2.3",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.12.0"
   }
 }
