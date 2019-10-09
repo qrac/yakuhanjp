@@ -1,49 +1,61 @@
-/*! Yaku Han JP v3.2.0 (OFL-1.1 AND MIT) by Qrac */
+/*! Yaku Han JP v3.3.0 (OFL-1.1 AND MIT) by Qrac */
 /*! Type: YakuHanJPs_Noto - Based on Noto Sans CJK JP */
 @font-face {
   font-family: "YakuHanJPs_Noto";
   font-style: normal;
   font-weight: 100;
+  font-display: swap;
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Thin.eot");
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Thin.woff2") format("woff2"), url("../fonts/YakuHanJPs/YakuHanJPs-Thin.woff") format("woff");
+  unicode-range: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanJPs_Noto";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Light.eot");
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Light.woff2") format("woff2"), url("../fonts/YakuHanJPs/YakuHanJPs-Light.woff") format("woff");
+  unicode-range: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanJPs_Noto";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Regular.eot");
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Regular.woff2") format("woff2"), url("../fonts/YakuHanJPs/YakuHanJPs-Regular.woff") format("woff");
+  unicode-range: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanJPs_Noto";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Medium.eot");
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Medium.woff2") format("woff2"), url("../fonts/YakuHanJPs/YakuHanJPs-Medium.woff") format("woff");
+  unicode-range: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanJPs_Noto";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Bold.eot");
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Bold.woff2") format("woff2"), url("../fonts/YakuHanJPs/YakuHanJPs-Bold.woff") format("woff");
+  unicode-range: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanJPs_Noto";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Black.eot");
   src: url("../fonts/YakuHanJPs/YakuHanJPs-Black.woff2") format("woff2"), url("../fonts/YakuHanJPs/YakuHanJPs-Black.woff") format("woff");
+  unicode-range: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }

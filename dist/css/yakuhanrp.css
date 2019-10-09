@@ -1,57 +1,71 @@
-/*! Yaku Han JP v3.2.0 (OFL-1.1 AND MIT) by Qrac */
+/*! Yaku Han JP v3.3.0 (OFL-1.1 AND MIT) by Qrac */
 /*! Type: YakuHanRP - Based on Rounded M+ 1c */
 @font-face {
   font-family: "YakuHanRP";
   font-style: normal;
   font-weight: 100;
+  font-display: swap;
   src: url("../fonts/YakuHanRP/YakuHanRP-Thin.eot");
   src: url("../fonts/YakuHanRP/YakuHanRP-Thin.woff2") format("woff2"), url("../fonts/YakuHanRP/YakuHanRP-Thin.woff") format("woff");
+  unicode-range: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanRP";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: url("../fonts/YakuHanRP/YakuHanRP-Light.eot");
   src: url("../fonts/YakuHanRP/YakuHanRP-Light.woff2") format("woff2"), url("../fonts/YakuHanRP/YakuHanRP-Light.woff") format("woff");
+  unicode-range: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanRP";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/YakuHanRP/YakuHanRP-Regular.eot");
   src: url("../fonts/YakuHanRP/YakuHanRP-Regular.woff2") format("woff2"), url("../fonts/YakuHanRP/YakuHanRP-Regular.woff") format("woff");
+  unicode-range: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanRP";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: url("../fonts/YakuHanRP/YakuHanRP-Medium.eot");
   src: url("../fonts/YakuHanRP/YakuHanRP-Medium.woff2") format("woff2"), url("../fonts/YakuHanRP/YakuHanRP-Medium.woff") format("woff");
+  unicode-range: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanRP";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("../fonts/YakuHanRP/YakuHanRP-Bold.eot");
   src: url("../fonts/YakuHanRP/YakuHanRP-Bold.woff2") format("woff2"), url("../fonts/YakuHanRP/YakuHanRP-Bold.woff") format("woff");
+  unicode-range: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanRP";
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
   src: url("../fonts/YakuHanRP/YakuHanRP-ExtraBold.eot");
   src: url("../fonts/YakuHanRP/YakuHanRP-ExtraBold.woff2") format("woff2"), url("../fonts/YakuHanRP/YakuHanRP-ExtraBold.woff") format("woff");
+  unicode-range: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
   font-family: "YakuHanRP";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: url("../fonts/YakuHanRP/YakuHanRP-Black.eot");
   src: url("../fonts/YakuHanRP/YakuHanRP-Black.woff2") format("woff2"), url("../fonts/YakuHanRP/YakuHanRP-Black.woff") format("woff");
+  unicode-range: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
