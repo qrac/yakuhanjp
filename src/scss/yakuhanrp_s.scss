@@ -5,6 +5,7 @@
 $yakuhanrps-font-family: "YakuHanRPs" !default;
 $yakuhanrps-font-file: "YakuHanRPs" !default;
 $yakuhanrps-font-dir: "../fonts" !default;
+$yakuhanrps-swap-use: true !default;
 $yakuhanrps-eot-use: true !default;
 $yakuhanrps-cdn-use: false !default;
 $yakuhanrps-cdn-version: "3.2.0" !default;
@@ -23,6 +24,7 @@ $yakuhanrps-weight: (
     $family: $yakuhanrps-font-family;
     $file: $yakuhanrps-font-file;
     $dir: $yakuhanrps-font-dir;
+    $swap: $yakuhanrps-swap-use;
     $eot: $yakuhanrps-eot-use;
     $cdn: $yakuhanrps-cdn-use;
     $version: $yakuhanrps-cdn-version;
@@ -31,6 +33,10 @@ $yakuhanrps-weight: (
     font-family: $family;
     font-style: normal;
     font-weight: $key;
+
+    @if $swap == true {
+      font-display: swap;
+    }
 
     @if $eot == true and $cdn == true {
       src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.eot");

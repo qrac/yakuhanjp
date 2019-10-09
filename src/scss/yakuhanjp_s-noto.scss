@@ -5,6 +5,7 @@
 $yakuhanjps-noto-font-family: "YakuHanJPs_Noto" !default;
 $yakuhanjps-noto-font-file: "YakuHanJPs" !default;
 $yakuhanjps-noto-font-dir: "../fonts" !default;
+$yakuhanjps-noto-swap-use: true !default;
 $yakuhanjps-noto-eot-use: true !default;
 $yakuhanjps-noto-cdn-use: false !default;
 $yakuhanjps-noto-cdn-version: "3.2.0" !default;
@@ -22,6 +23,7 @@ $yakuhanjps-noto-weight: (
     $family: $yakuhanjps-noto-font-family;
     $file: $yakuhanjps-noto-font-file;
     $dir: $yakuhanjps-noto-font-dir;
+    $swap: $yakuhanjps-noto-swap-use;
     $eot: $yakuhanjps-noto-eot-use;
     $cdn: $yakuhanjps-noto-cdn-use;
     $version: $yakuhanjps-noto-cdn-version;
@@ -30,6 +32,10 @@ $yakuhanjps-noto-weight: (
     font-family: $family;
     font-style: normal;
     font-weight: $key;
+
+    @if $swap == true {
+      font-display: swap;
+    }
 
     @if $eot == true and $cdn == true {
       src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.eot");

@@ -5,6 +5,7 @@
 $yakuhanjp-font-family: "YakuHanJP" !default;
 $yakuhanjp-font-file: "YakuHanJP" !default;
 $yakuhanjp-font-dir: "../fonts" !default;
+$yakuhanjp-swap-use: true !default;
 $yakuhanjp-eot-use: true !default;
 $yakuhanjp-cdn-use: false !default;
 $yakuhanjp-cdn-version: "3.2.0" !default;
@@ -23,6 +24,7 @@ $yakuhanjp-weight: (
     $family: $yakuhanjp-font-family;
     $file: $yakuhanjp-font-file;
     $dir: $yakuhanjp-font-dir;
+    $swap: $yakuhanjp-swap-use;
     $eot: $yakuhanjp-eot-use;
     $cdn: $yakuhanjp-cdn-use;
     $version: $yakuhanjp-cdn-version;
@@ -31,6 +33,10 @@ $yakuhanjp-weight: (
     font-family: $family;
     font-style: normal;
     font-weight: $key;
+
+    @if $swap == true {
+      font-display: swap;
+    }
 
     @if $eot == true and $cdn == true {
       src: url("#{$jsdelivr}@#{$version}/dist/fonts/#{$file}/#{$file}-#{$value}.eot");
