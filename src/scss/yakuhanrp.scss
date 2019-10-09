@@ -9,6 +9,9 @@ $yakuhanrp-swap-use: true !default;
 $yakuhanrp-eot-use: true !default;
 $yakuhanrp-cdn-use: false !default;
 $yakuhanrp-cdn-version: "3.2.0" !default;
+$yakuhanrp-unicode-range-use: true !default;
+$yakuhanrp-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01,
+  U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
 $yakuhanrp-weight: (
   100: Thin,
   300: Light,
@@ -29,6 +32,8 @@ $yakuhanrp-weight: (
     $cdn: $yakuhanrp-cdn-use;
     $version: $yakuhanrp-cdn-version;
     $jsdelivr: "https://cdn.jsdelivr.net/npm/yakuhanjp";
+    $unicode-range: $yakuhanrp-unicode-range-use;
+    $unicode: $yakuhanrp-unicode;
 
     font-family: $family;
     font-style: normal;
@@ -54,6 +59,10 @@ $yakuhanrp-weight: (
     } @else {
       src: url("#{$dir}/#{$file}/#{$file}-#{$value}.woff2") format("woff2"),
         url("#{$dir}/#{$file}/#{$file}-#{$value}.woff") format("woff");
+    }
+
+    @if $unicode-range == true {
+      unicode-range: $unicode;
     }
   }
 }

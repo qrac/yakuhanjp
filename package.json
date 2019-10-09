@@ -27,7 +27,8 @@
   "scripts": {
     "dev": "gulp",
     "test": "gulp test",
-    "build": "gulp build"
+    "build": "gulp build",
+    "uni": "node ./lib/unicode-range"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

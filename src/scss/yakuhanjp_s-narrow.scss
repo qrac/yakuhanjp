@@ -9,6 +9,9 @@ $yakuhanjps-narrow-swap-use: true !default;
 $yakuhanjps-narrow-eot-use: true !default;
 $yakuhanjps-narrow-cdn-use: false !default;
 $yakuhanjps-narrow-cdn-version: "3.2.0" !default;
+$yakuhanjps-narrow-unicode-range-use: true !default;
+$yakuhanjps-narrow-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b,
+  U+ff3d, U+ff5b, U+ff5d !default;
 $yakuhanjps-narrow-weight: (
   100: Thin,
   200: Thin,
@@ -31,6 +34,8 @@ $yakuhanjps-narrow-weight: (
     $cdn: $yakuhanjps-narrow-cdn-use;
     $version: $yakuhanjps-narrow-cdn-version;
     $jsdelivr: "https://cdn.jsdelivr.net/npm/yakuhanjp";
+    $unicode-range: $yakuhanjps-narrow-unicode-range-use;
+    $unicode: $yakuhanjps-narrow-unicode;
 
     font-family: $family;
     font-style: normal;
@@ -56,6 +61,10 @@ $yakuhanjps-narrow-weight: (
     } @else {
       src: url("#{$dir}/#{$file}/#{$file}-#{$value}.woff2") format("woff2"),
         url("#{$dir}/#{$file}/#{$file}-#{$value}.woff") format("woff");
+    }
+
+    @if $unicode-range == true {
+      unicode-range: $unicode;
     }
   }
 }

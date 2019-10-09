@@ -9,6 +9,9 @@ $yakuhanjp-noto-swap-use: true !default;
 $yakuhanjp-noto-eot-use: true !default;
 $yakuhanjp-noto-cdn-use: false !default;
 $yakuhanjp-noto-cdn-version: "3.2.0" !default;
+$yakuhanjp-noto-unicode-range-use: true !default;
+$yakuhanjp-noto-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01,
+  U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
 $yakuhanjp-noto-weight: (
   100: Thin,
   300: Light,
@@ -28,6 +31,8 @@ $yakuhanjp-noto-weight: (
     $cdn: $yakuhanjp-noto-cdn-use;
     $version: $yakuhanjp-noto-cdn-version;
     $jsdelivr: "https://cdn.jsdelivr.net/npm/yakuhanjp";
+    $unicode-range: $yakuhanjp-noto-unicode-range-use;
+    $unicode: $yakuhanjp-noto-unicode;
 
     font-family: $family;
     font-style: normal;
@@ -53,6 +58,10 @@ $yakuhanjp-noto-weight: (
     } @else {
       src: url("#{$dir}/#{$file}/#{$file}-#{$value}.woff2") format("woff2"),
         url("#{$dir}/#{$file}/#{$file}-#{$value}.woff") format("woff");
+    }
+
+    @if $unicode-range == true {
+      unicode-range: $unicode;
     }
   }
 }
