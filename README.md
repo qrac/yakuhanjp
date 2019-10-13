@@ -62,12 +62,12 @@ jsDelivr で配信している CSS ファイルへのリンクを HTML 内に記
 
 |  フォント名  | HTML に貼る CDN リンクタグ                                                                                 |
 | :----------: | ---------------------------------------------------------------------------------------------------------- |
-| `YakuHanJP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanjp.min.css">`   |
-| `YakuHanJPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanjp_s.min.css">` |
-| `YakuHanMP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanmp.min.css">`   |
-| `YakuHanMPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanmp_s.min.css">` |
-| `YakuHanRP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanrp.min.css">`   |
-| `YakuHanRPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanrp_s.min.css">` |
+| `YakuHanJP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css">`   |
+| `YakuHanJPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp_s.min.css">` |
+| `YakuHanMP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanmp.min.css">`   |
+| `YakuHanMPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanmp_s.min.css">` |
+| `YakuHanRP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanrp.min.css">`   |
+| `YakuHanRPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanrp_s.min.css">` |
 
 ## npm
 
@@ -100,10 +100,10 @@ $yakuhanjp-cdn-use: true;
 
 |    フォント名     | HTML に貼る CDN リンクタグ                                                                                      |
 | :---------------: | --------------------------------------------------------------------------------------------------------------- |
-| `YakuHanJP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanjp-noto.min.css">`   |
-| `YakuHanJPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanjp_s-noto.min.css">` |
-| `YakuHanMP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanmp-noto.min.css">`   |
-| `YakuHanMPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanmp_s-noto.min.css">` |
+| `YakuHanJP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp-noto.min.css">`   |
+| `YakuHanJPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp_s-noto.min.css">` |
+| `YakuHanMP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanmp-noto.min.css">`   |
+| `YakuHanMPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanmp_s-noto.min.css">` |
 
 - [Noto Sans JP・Noto Serif JP 専用の CSS ファイルを追加 · Issue #23 · qrac/yakuhanjp](https://github.com/qrac/yakuhanjp/issues/23)
 
@@ -115,8 +115,8 @@ macOS 10.13・iOS11 以降の Safari では、`font-family` に `-apple-system` 
 
 |     フォント名      | HTML に貼る CDN リンクタグ                                                                                        |
 | :-----------------: | ----------------------------------------------------------------------------------------------------------------- |
-| `YakuHanJP_Narrow`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanjp-narrow.min.css">`   |
-| `YakuHanJPs_Narrow` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.0/dist/css/yakuhanjp_s-narrow.min.css">` |
+| `YakuHanJP_Narrow`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp-narrow.min.css">`   |
+| `YakuHanJPs_Narrow` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp_s-narrow.min.css">` |
 
 - [macOS・iOS Safari の細字を考慮した CSS ファイルを追加 · Issue #27 · qrac/yakuhanjp](https://github.com/qrac/yakuhanjp/issues/27)
 
