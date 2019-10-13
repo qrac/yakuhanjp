@@ -13,13 +13,13 @@ $yakuhanmps-unicode-range-use: true !default;
 $yakuhanmps-unicode: U+300a-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d,
   U+ff5b, U+ff5d !default;
 $yakuhanmps-weight: (
-  100: ExtraLight,
-  200: Light,
-  300: Regular,
-  400: Medium,
-  500: SemiBold,
-  700: Bold,
-  900: Black
+  100: "ExtraLight",
+  200: "Light",
+  300: "Regular",
+  400: "Medium",
+  500: "SemiBold",
+  700: "Bold",
+  900: "Black"
 ) !default;
 
 @each $key, $value in $yakuhanmps-weight {

@@ -13,15 +13,15 @@ $yakuhanjps-narrow-unicode-range-use: true !default;
 $yakuhanjps-narrow-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b,
   U+ff3d, U+ff5b, U+ff5d !default;
 $yakuhanjps-narrow-weight: (
-  100: Thin,
-  200: Thin,
-  300: Light,
-  400: Light,
-  500: DemiLight,
-  600: Regular,
-  700: Medium,
-  800: Bold,
-  900: Bold
+  100: "Thin",
+  200: "Thin",
+  300: "Light",
+  400: "Light",
+  500: "DemiLight",
+  600: "Regular",
+  700: "Medium",
+  800: "Bold",
+  900: "Bold"
 ) !default;
 
 @each $key, $value in $yakuhanjps-narrow-weight {

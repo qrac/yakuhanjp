@@ -13,13 +13,13 @@ $yakuhanmps-noto-unicode-range-use: true !default;
 $yakuhanmps-noto-unicode: U+300a-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d,
   U+ff5b, U+ff5d !default;
 $yakuhanmps-noto-weight: (
-  200: ExtraLight,
-  300: Light,
-  400: Regular,
-  500: Medium,
-  600: SemiBold,
-  700: Bold,
-  900: Black
+  200: "ExtraLight",
+  300: "Light",
+  400: "Regular",
+  500: "Medium",
+  600: "SemiBold",
+  700: "Bold",
+  900: "Black"
 ) !default;
 
 @each $key, $value in $yakuhanmps-noto-weight {
