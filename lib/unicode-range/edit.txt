@@ -13,15 +13,15 @@ $yakuhanrps-unicode: U+3008,U+3009,U+300a,U+300b,U+300c,U+300d,U+300e,U+300f,U+3
 $yakuhanrp-unicode: U+3001,U+3002,U+3008,U+3009,U+300a,U+300b,U+300c,U+300d,U+300e,U+300f,U+3010,U+3011,U+3014,U+3015,U+30fb,U+ff01,U+ff08,U+ff09,U+ff1a,U+ff1b,U+ff1f,U+ff3b,U+ff3d,U+ff5b,U+ff5d !default;
 
 // After (Fix sequence number)
-$yakuhanjps-narrow-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanjps-noto-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanjps-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanjp-narrow-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanjp-noto-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanjp-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanmps-noto-unicode: U+300a-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanmps-unicode: U+300a-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanmp-noto-unicode: U+3001-3002, U+300a-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanmp-unicode: U+3001-3002, U+300a-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanrps-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
-$yakuhanrp-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanjps-narrow-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff0c, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanjps-noto-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff0c, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanjps-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff0c, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanjp-narrow-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff0c, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanjp-noto-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff0c, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanjp-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff0c, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanmps-noto-unicode: U+300a-3011, U+3014-3015, U+ff08-ff09, U+ff0c, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanmps-unicode: U+300a-3011, U+3014-3015, U+ff08-ff09, U+ff0c, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanmp-noto-unicode: U+3001-3002, U+300a-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff0c, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanmp-unicode: U+3001-3002, U+300a-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff0c, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanrps-unicode: U+3008-3011, U+3014-3015, U+ff08-ff09, U+ff0c, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;
+$yakuhanrp-unicode: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01, U+ff08-ff09, U+ff0c, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d !default;

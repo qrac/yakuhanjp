@@ -1,5 +1,8 @@
 {
-.appVersion = "983";
+.appVersion = "1271";
+DisplayStrings = (
+"/cid59003"
+);
 copyright = "Copyright © 2014, 2015 Adobe Systems Incorporated (http://www.adobe.com/).";
 customParameters = (
 {
@@ -594,6 +597,74 @@ width = 508;
 );
 note = cid58992;
 unicode = FF01;
+},
+{
+glyphname = cid59003;
+lastChange = "2019-11-05 15:25:01 +0000";
+layers = (
+{
+associatedMasterId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+layerId = "C03B45AD-E730-4161-9298-40097BD9B41D";
+paths = (
+{
+closed = 1;
+nodes = (
+"294 -113 OFFCURVE",
+"400 20 OFFCURVE",
+"400 108 QCURVE SMOOTH",
+"400 174 OFFCURVE",
+"344 248 OFFCURVE",
+"290 248 QCURVE SMOOTH",
+"248 248 OFFCURVE",
+"189 197 OFFCURVE",
+"189 156 QCURVE SMOOTH",
+"189 114 OFFCURVE",
+"247 65 OFFCURVE",
+"287 65 QCURVE SMOOTH",
+"295 65 OFFCURVE",
+"298 66 QCURVE",
+"289 -18 OFFCURVE",
+"166 -58 QCURVE",
+"199 -141 LINE",
+"199 -141 LINE"
+);
+}
+);
+vertWidth = 1024;
+width = 566;
+},
+{
+layerId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
+paths = (
+{
+closed = 1;
+nodes = (
+"294 -113 OFFCURVE",
+"400 20 OFFCURVE",
+"400 108 QCURVE SMOOTH",
+"400 174 OFFCURVE",
+"344 248 OFFCURVE",
+"290 248 QCURVE SMOOTH",
+"248 248 OFFCURVE",
+"189 197 OFFCURVE",
+"189 156 QCURVE SMOOTH",
+"189 114 OFFCURVE",
+"247 65 OFFCURVE",
+"287 65 QCURVE SMOOTH",
+"295 65 OFFCURVE",
+"298 66 QCURVE",
+"289 -18 OFFCURVE",
+"166 -58 QCURVE",
+"199 -141 LINE",
+"199 -141 LINE"
+);
+}
+);
+width = 600;
+}
+);
+note = cid59003;
+unicode = FF0C;
 },
 {
 glyphname = question.full;
