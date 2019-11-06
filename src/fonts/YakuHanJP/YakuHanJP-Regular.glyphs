@@ -1,5 +1,8 @@
 {
 .appVersion = "1271";
+DisplayStrings = (
+"/cid59003"
+);
 copyright = "Copyright © 2014, 2015 Adobe Systems Incorporated (http://www.adobe.com/).";
 customParameters = (
 {
@@ -398,7 +401,7 @@ unicode = 2026;
 },
 {
 glyphname = cid59003;
-lastChange = "2019-11-05 15:20:13 +0000";
+lastChange = "2019-11-06 15:31:25 +0000";
 layers = (
 {
 associatedMasterId = "89F69A78-1DC7-4EE2-AA22-FFB772252EBC";
@@ -456,7 +459,7 @@ nodes = (
 );
 }
 );
-width = 600;
+width = 611;
 }
 );
 note = cid59003;

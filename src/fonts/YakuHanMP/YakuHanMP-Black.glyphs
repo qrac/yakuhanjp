@@ -1,5 +1,8 @@
 {
-.appVersion = "983";
+.appVersion = "1271";
+DisplayStrings = (
+"/comma.full"
+);
 copyright = "Copyright © 2017 Adobe Systems Incorporated (http://www.adobe.com/).";
 customParameters = (
 {
@@ -345,43 +348,6 @@ note = space;
 unicode = 0020;
 },
 {
-glyphname = "comma-han";
-lastChange = "2017-04-16 02:54:06 +0000";
-layers = (
-{
-layerId = "74F1BA84-66A2-47A9-8A2A-F341E9B3CA59";
-paths = (
-{
-closed = 1;
-nodes = (
-"50 171 LINE",
-"140 95 OFFCURVE",
-"161 15 OFFCURVE",
-"186 -36 CURVE SMOOTH",
-"202 -69 OFFCURVE",
-"226 -82 OFFCURVE",
-"259 -82 CURVE SMOOTH",
-"306 -82 OFFCURVE",
-"336 -50 OFFCURVE",
-"336 -5 CURVE SMOOTH",
-"336 16 OFFCURVE",
-"333 38 OFFCURVE",
-"317 62 CURVE SMOOTH",
-"278 122 OFFCURVE",
-"199 166 OFFCURVE",
-"57 182 CURVE"
-);
-}
-);
-vertWidth = 1000;
-width = 536;
-}
-);
-leftKerningGroup = "comma-han";
-note = "comma-han";
-unicode = 3001;
-},
-{
 glyphname = ellipsis;
 lastChange = "2017-04-16 02:50:32 +0000";
 layers = (
@@ -448,56 +414,6 @@ note = ellipsis;
 unicode = 2026;
 },
 {
-glyphname = "period-han";
-lastChange = "2017-04-16 02:54:16 +0000";
-layers = (
-{
-layerId = "74F1BA84-66A2-47A9-8A2A-F341E9B3CA59";
-paths = (
-{
-closed = 1;
-nodes = (
-"272 -84 OFFCURVE",
-"335 -20 OFFCURVE",
-"335 59 CURVE SMOOTH",
-"335 138 OFFCURVE",
-"272 201 OFFCURVE",
-"193 201 CURVE SMOOTH",
-"114 201 OFFCURVE",
-"50 138 OFFCURVE",
-"50 59 CURVE SMOOTH",
-"50 -20 OFFCURVE",
-"114 -84 OFFCURVE",
-"193 -84 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"250 163 OFFCURVE",
-"297 116 OFFCURVE",
-"297 59 CURVE SMOOTH",
-"297 2 OFFCURVE",
-"250 -46 OFFCURVE",
-"193 -46 CURVE SMOOTH",
-"135 -46 OFFCURVE",
-"88 2 OFFCURVE",
-"88 59 CURVE SMOOTH",
-"88 116 OFFCURVE",
-"135 163 OFFCURVE",
-"193 163 CURVE SMOOTH"
-);
-}
-);
-vertWidth = 1000;
-width = 735;
-}
-);
-leftKerningGroup = "comma-han";
-note = "period-han";
-unicode = 3002;
-},
-{
 glyphname = colon.full;
 lastChange = "2017-04-16 02:54:42 +0000";
 layers = (
@@ -545,6 +461,40 @@ width = 492;
 );
 note = colon.full;
 unicode = FF1A;
+},
+{
+glyphname = comma.full;
+lastChange = "2019-11-06 15:11:51 +0000";
+layers = (
+{
+layerId = "74F1BA84-66A2-47A9-8A2A-F341E9B3CA59";
+paths = (
+{
+closed = 1;
+nodes = (
+"56 -236 LINE",
+"187 -180 OFFCURVE",
+"237 -60 OFFCURVE",
+"237 41 CURVE SMOOTH",
+"237 117 OFFCURVE",
+"190 157 OFFCURVE",
+"135 157 CURVE SMOOTH",
+"78 157 OFFCURVE",
+"39 113 OFFCURVE",
+"39 64 CURVE SMOOTH",
+"39 -11 OFFCURVE",
+"118 -38 OFFCURVE",
+"163 -54 CURVE",
+"155 -101 OFFCURVE",
+"122 -162 OFFCURVE",
+"39 -203 CURVE"
+);
+}
+);
+width = 536;
+}
+);
+unicode = FF0C;
 },
 {
 glyphname = exclam.full;
@@ -1413,6 +1363,93 @@ width = 540;
 );
 note = "dot-kata";
 unicode = 30FB;
+},
+{
+glyphname = "comma-han";
+lastChange = "2017-04-16 02:54:06 +0000";
+layers = (
+{
+layerId = "74F1BA84-66A2-47A9-8A2A-F341E9B3CA59";
+paths = (
+{
+closed = 1;
+nodes = (
+"50 171 LINE",
+"140 95 OFFCURVE",
+"161 15 OFFCURVE",
+"186 -36 CURVE SMOOTH",
+"202 -69 OFFCURVE",
+"226 -82 OFFCURVE",
+"259 -82 CURVE SMOOTH",
+"306 -82 OFFCURVE",
+"336 -50 OFFCURVE",
+"336 -5 CURVE SMOOTH",
+"336 16 OFFCURVE",
+"333 38 OFFCURVE",
+"317 62 CURVE SMOOTH",
+"278 122 OFFCURVE",
+"199 166 OFFCURVE",
+"57 182 CURVE"
+);
+}
+);
+vertWidth = 1000;
+width = 536;
+}
+);
+leftKerningGroup = "comma-han";
+note = "comma-han";
+unicode = 3001;
+},
+{
+glyphname = "period-han";
+lastChange = "2017-04-16 02:54:16 +0000";
+layers = (
+{
+layerId = "74F1BA84-66A2-47A9-8A2A-F341E9B3CA59";
+paths = (
+{
+closed = 1;
+nodes = (
+"272 -84 OFFCURVE",
+"335 -20 OFFCURVE",
+"335 59 CURVE SMOOTH",
+"335 138 OFFCURVE",
+"272 201 OFFCURVE",
+"193 201 CURVE SMOOTH",
+"114 201 OFFCURVE",
+"50 138 OFFCURVE",
+"50 59 CURVE SMOOTH",
+"50 -20 OFFCURVE",
+"114 -84 OFFCURVE",
+"193 -84 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"250 163 OFFCURVE",
+"297 116 OFFCURVE",
+"297 59 CURVE SMOOTH",
+"297 2 OFFCURVE",
+"250 -46 OFFCURVE",
+"193 -46 CURVE SMOOTH",
+"135 -46 OFFCURVE",
+"88 2 OFFCURVE",
+"88 59 CURVE SMOOTH",
+"88 116 OFFCURVE",
+"135 163 OFFCURVE",
+"193 163 CURVE SMOOTH"
+);
+}
+);
+vertWidth = 1000;
+width = 735;
+}
+);
+leftKerningGroup = "comma-han";
+note = "period-han";
+unicode = 3002;
 }
 );
 instances = (

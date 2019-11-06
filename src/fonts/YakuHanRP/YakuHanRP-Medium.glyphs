@@ -1,5 +1,8 @@
 {
-.appVersion = "1075";
+.appVersion = "1271";
+DisplayStrings = (
+"/comma.full"
+);
 copyright = "Copyright 2016 The Rounded M+ Project Authors.";
 customParameters = (
 {
@@ -307,6 +310,53 @@ width = 430;
 );
 note = uniFF1A;
 unicode = FF1A;
+},
+{
+glyphname = comma.full;
+lastChange = "2019-11-06 15:19:46 +0000";
+layers = (
+{
+layerId = "7377DBF7-6916-486D-9290-81CE20E97294";
+paths = (
+{
+closed = 1;
+nodes = (
+"258 -67 OFFCURVE",
+"338 48 OFFCURVE",
+"338 123 QCURVE SMOOTH",
+"338 177 OFFCURVE",
+"293 241 OFFCURVE",
+"251 241 QCURVE SMOOTH",
+"218 241 OFFCURVE",
+"173 202 OFFCURVE",
+"173 132 OFFCURVE",
+"217 94 OFFCURVE",
+"250 94 QCURVE SMOOTH",
+"258 94 OFFCURVE",
+"263 95 QCURVE SMOOTH",
+"265 95 OFFCURVE",
+"267 92 OFFCURVE",
+"267 91 QCURVE SMOOTH",
+"258 5 OFFCURVE",
+"165 -43 QCURVE SMOOTH",
+"154 -49 OFFCURVE",
+"149 -60 QCURVE SMOOTH",
+"147 -65 OFFCURVE",
+"147 -77 OFFCURVE",
+"150 -82 QCURVE",
+"154 -94 OFFCURVE",
+"166 -99 QCURVE SMOOTH",
+"171 -101 OFFCURVE",
+"182 -101 OFFCURVE",
+"188 -99 QCURVE",
+"188 -99 LINE"
+);
+}
+);
+width = 613;
+}
+);
+unicode = FF0C;
 },
 {
 glyphname = exclam.full;

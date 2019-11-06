@@ -396,7 +396,7 @@ unicode = FF1A;
 },
 {
 glyphname = comma.full;
-lastChange = "2019-11-05 15:24:24 +0000";
+lastChange = "2019-11-06 15:30:55 +0000";
 layers = (
 {
 layerId = "0651C370-C2E1-4295-9ACE-B281E7C91CB0";
@@ -425,7 +425,7 @@ nodes = (
 );
 }
 );
-width = 600;
+width = 543;
 }
 );
 unicode = FF0C;

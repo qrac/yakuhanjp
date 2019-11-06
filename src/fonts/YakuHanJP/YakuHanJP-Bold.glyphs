@@ -600,7 +600,7 @@ unicode = FF01;
 },
 {
 glyphname = cid59003;
-lastChange = "2019-11-05 15:25:01 +0000";
+lastChange = "2019-11-06 15:28:20 +0000";
 layers = (
 {
 associatedMasterId = "6EA7E964-4722-40CD-99E1-83E165A55AF5";
@@ -660,7 +660,7 @@ nodes = (
 );
 }
 );
-width = 600;
+width = 687;
 }
 );
 note = cid59003;

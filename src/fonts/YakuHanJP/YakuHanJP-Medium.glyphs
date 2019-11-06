@@ -1,5 +1,8 @@
 {
 .appVersion = "1271";
+DisplayStrings = (
+"/comma.full"
+);
 copyright = "Copyright © 2014, 2015 Adobe Systems Incorporated (http://www.adobe.com/).";
 customParameters = (
 {
@@ -465,7 +468,7 @@ unicode = FF1A;
 },
 {
 glyphname = comma.full;
-lastChange = "2019-11-05 15:21:41 +0000";
+lastChange = "2019-11-06 15:31:45 +0000";
 layers = (
 {
 layerId = "AC311C9E-5ED6-4E82-8076-DECA4413555B";
@@ -493,7 +496,7 @@ nodes = (
 );
 }
 );
-width = 600;
+width = 646;
 }
 );
 unicode = FF0C;
