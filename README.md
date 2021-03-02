@@ -1,6 +1,22 @@
+<p align="center">
+  <img width="230" src="https://i.gyazo.com/0f8c0feca913c44be8b07eec127a8946.png" alt="Yaku Han JP Logo">
+</p>
+
 # Yaku Han JP
 
-## Site
+<p>
+  <a aria-label="Made by QRANOKO" href="https://qranoko.jp">
+    <img src="https://img.shields.io/badge/MADE%20BY%20QRANOKO-212121.svg?style=for-the-badge&labelColor=212121">
+  </a>
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/yakuhanjp">
+    <img alt="" src="https://img.shields.io/npm/v/yakuhanjp.svg?style=for-the-badge&labelColor=212121">
+  </a>
+  <a aria-label="License" href="https://github.com/qrac/yakuhanjp/blob/master/LICENSE">
+    <img alt="" src="https://img.shields.io/npm/l/yakuhanjp.svg?style=for-the-badge&labelColor=212121">
+  </a>
+</p>
+
+## Site & Documentation
 
 - https://yakuhanjp.qranoko.jp
 

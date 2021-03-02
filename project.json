@@ -1,9 +1,235 @@
 {
-  "setting": {
-    "name": "Yaku Han JP",
-    "dist": "dist",
-    "test": "public",
-    "src": "src",
-    "banner": true
-  }
+  "name": "Yaku Han JP",
+  "fonts": [
+    {
+      "name": "YakuHanJP",
+      "file": "YakuHanJP",
+      "base": "Noto Sans CJK JP",
+      "dist": {
+        "name": "yakuhanjp",
+        "variable": "yakuhanjp"
+      },
+      "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
+      "weight": {
+        "100": "Thin",
+        "200": "Light",
+        "300": "DemiLight",
+        "400": "Regular",
+        "500": "Medium",
+        "700": "Bold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanJPs",
+      "file": "YakuHanJPs",
+      "base": "Noto Sans CJK JP",
+      "dist": {
+        "name": "yakuhanjp_s",
+        "variable": "yakuhanjps"
+      },
+      "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
+      "weight": {
+        "100": "Thin",
+        "200": "Light",
+        "300": "DemiLight",
+        "400": "Regular",
+        "500": "Medium",
+        "700": "Bold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanMP",
+      "file": "YakuHanMP",
+      "base": "Noto Serif CJK JP",
+      "dist": {
+        "name": "yakuhanmp",
+        "variable": "yakuhanmp"
+      },
+      "glyphs": "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
+      "weight": {
+        "100": "ExtraLight",
+        "200": "Light",
+        "300": "Regular",
+        "400": "Medium",
+        "500": "SemiBold",
+        "700": "Bold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanMPs",
+      "file": "YakuHanMPs",
+      "base": "Noto Serif CJK JP",
+      "dist": {
+        "name": "yakuhanmp_s",
+        "variable": "yakuhanmps"
+      },
+      "glyphs": "《》「」『』【】〔〕（）［］｛｝",
+      "weight": {
+        "100": "ExtraLight",
+        "200": "Light",
+        "300": "Regular",
+        "400": "Medium",
+        "500": "SemiBold",
+        "700": "Bold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanRP",
+      "file": "YakuHanRP",
+      "base": "Rounded M+ 1c",
+      "dist": {
+        "name": "yakuhanrp",
+        "variable": "yakuhanrp"
+      },
+      "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
+      "weight": {
+        "100": "Thin",
+        "300": "Light",
+        "400": "Regular",
+        "500": "Medium",
+        "700": "Bold",
+        "800": "ExtraBold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanRPs",
+      "file": "YakuHanRPs",
+      "base": "Rounded M+ 1c",
+      "dist": {
+        "name": "yakuhanrp_s",
+        "variable": "yakuhanrps"
+      },
+      "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
+      "weight": {
+        "100": "Thin",
+        "300": "Light",
+        "400": "Regular",
+        "500": "Medium",
+        "700": "Bold",
+        "800": "ExtraBold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanJP_Noto",
+      "file": "YakuHanJP",
+      "base": "Noto Sans CJK JP",
+      "dist": {
+        "name": "yakuhanjp-noto",
+        "variable": "yakuhanjp-noto"
+      },
+      "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
+      "weight": {
+        "100": "Thin",
+        "300": "Light",
+        "400": "Regular",
+        "500": "Medium",
+        "700": "Bold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanJPs_Noto",
+      "file": "YakuHanJPs",
+      "base": "Noto Sans CJK JP",
+      "dist": {
+        "name": "yakuhanjp_s-noto",
+        "variable": "yakuhanjps-noto"
+      },
+      "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
+      "weight": {
+        "100": "Thin",
+        "300": "Light",
+        "400": "Regular",
+        "500": "Medium",
+        "700": "Bold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanMP_Noto",
+      "file": "YakuHanMP",
+      "base": "Noto Serif CJK JP",
+      "dist": {
+        "name": "yakuhanmp-noto",
+        "variable": "yakuhanmp-noto"
+      },
+      "glyphs": "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
+      "weight": {
+        "200": "ExtraLight",
+        "300": "Light",
+        "400": "Regular",
+        "500": "Medium",
+        "600": "SemiBold",
+        "700": "Bold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanMPs_Noto",
+      "file": "YakuHanMPs",
+      "base": "Noto Serif CJK JP",
+      "dist": {
+        "name": "yakuhanmp_s-noto",
+        "variable": "yakuhanmps-noto"
+      },
+      "glyphs": "《》「」『』【】〔〕（）［］｛｝",
+      "weight": {
+        "200": "ExtraLight",
+        "300": "Light",
+        "400": "Regular",
+        "500": "Medium",
+        "600": "SemiBold",
+        "700": "Bold",
+        "900": "Black"
+      }
+    },
+    {
+      "name": "YakuHanJP_Narrow",
+      "file": "YakuHanJP",
+      "base": "Noto Sans CJK JP",
+      "dist": {
+        "name": "yakuhanjp-narrow",
+        "variable": "yakuhanjp-narrow"
+      },
+      "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
+      "weight": {
+        "100": "Thin",
+        "200": "Thin",
+        "300": "Light",
+        "400": "Light",
+        "500": "DemiLight",
+        "600": "Regular",
+        "700": "Medium",
+        "800": "Bold",
+        "900": "Bold"
+      }
+    },
+    {
+      "name": "YakuHanJPs_Narrow",
+      "file": "YakuHanJPs",
+      "base": "Noto Sans CJK JP",
+      "dist": {
+        "name": "yakuhanjp_s-narrow",
+        "variable": "yakuhanjps-narrow"
+      },
+      "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
+      "weight": {
+        "100": "Thin",
+        "200": "Thin",
+        "300": "Light",
+        "400": "Light",
+        "500": "DemiLight",
+        "600": "Regular",
+        "700": "Medium",
+        "800": "Bold",
+        "900": "Bold"
+      }
+    }
+  ]
 }

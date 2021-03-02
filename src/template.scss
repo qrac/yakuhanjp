@@ -1,39 +1,30 @@
 //----------------------------------------------------
-/*! Type: YakuHanMPs - Based on Noto Serif CJK JP */
+/*! Type: ___name___ - Based on ___base___ */
 //----------------------------------------------------
 
-$yakuhanmps-font-family: "YakuHanMPs" !default;
-$yakuhanmps-font-file: "YakuHanMPs" !default;
-$yakuhanmps-font-dir: "../fonts" !default;
-$yakuhanmps-swap-use: true !default;
-$yakuhanmps-eot-use: true !default;
-$yakuhanmps-cdn-use: false !default;
-$yakuhanmps-cdn-version: "3.3.1" !default;
-$yakuhanmps-unicode-range-use: true !default;
-$yakuhanmps-unicode: U+300a-3011, U+3014-3015, U+ff08-ff09, U+ff3b, U+ff3d,
-  U+ff5b, U+ff5d !default;
-$yakuhanmps-weight: (
-  100: "ExtraLight",
-  200: "Light",
-  300: "Regular",
-  400: "Medium",
-  500: "SemiBold",
-  700: "Bold",
-  900: "Black"
-) !default;
+$___distVariable___-font-family: "___name___" !default;
+$___distVariable___-font-file: "___file___" !default;
+$___distVariable___-font-dir: "../fonts" !default;
+$___distVariable___-swap-use: true !default;
+$___distVariable___-eot-use: true !default;
+$___distVariable___-cdn-use: false !default;
+$___distVariable___-cdn-version: "___version___" !default;
+$___distVariable___-unicode-range-use: true !default;
+$___distVariable___-unicode: ___unicode___ !default;
+$___distVariable___-weight: (___weights___) !default;
 
-@each $key, $value in $yakuhanmps-weight {
+@each $key, $value in $___distVariable___-weight {
   @font-face {
-    $family: $yakuhanmps-font-family;
-    $file: $yakuhanmps-font-file;
-    $dir: $yakuhanmps-font-dir;
-    $swap: $yakuhanmps-swap-use;
-    $eot: $yakuhanmps-eot-use;
-    $cdn: $yakuhanmps-cdn-use;
-    $version: $yakuhanmps-cdn-version;
+    $family: $___distVariable___-font-family;
+    $file: $___distVariable___-font-file;
+    $dir: $___distVariable___-font-dir;
+    $swap: $___distVariable___-swap-use;
+    $eot: $___distVariable___-eot-use;
+    $cdn: $___distVariable___-cdn-use;
+    $version: $___distVariable___-cdn-version;
     $jsdelivr: "https://cdn.jsdelivr.net/npm/yakuhanjp";
-    $unicode-range: $yakuhanmps-unicode-range-use;
-    $unicode: $yakuhanmps-unicode;
+    $unicode-range: $___distVariable___-unicode-range-use;
+    $unicode: $___distVariable___-unicode;
 
     font-family: $family;
     font-style: normal;
