@@ -1,41 +1,7 @@
 {
-  "name": "yakuhanjp",
-  "description": "Yakumono-Hankaku Only Web Fonts",
-  "version": "3.3.1",
-  "main": "dist/css/yakuhanjp.css",
-  "files": [
-    "dist"
-  ],
-  "license": "(OFL-1.1 AND MIT)",
-  "homepage": "https://yakuhanjp.qranoko.jp",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qrac/yakuhanjp"
-  },
-  "bugs": {
-    "url": "https://github.com/qrac/yakuhanjp/issues"
-  },
-  "keywords": [
-    "font",
-    "webfont",
-    "yakuhan",
-    "yakumono",
-    "hankaku",
-    "japanese",
-    "yakuhanjp"
-  ],
-  "author": {
-    "name": "Qrac",
-    "url": "https://qrac.jp"
-  },
-  "organization": {
-    "name": "QRANOKO",
-    "url": "https://qranoko.jp"
-  },
-  "scripts": {
-    "build": "node ./src",
-    "prepublishOnly": "npm run build",
-    "clean": "trash ./dist"
-  },
-  "devDependencies": {}
+  "name": "yakuhanjp-project",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
