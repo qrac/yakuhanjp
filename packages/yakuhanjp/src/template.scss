@@ -11,8 +11,8 @@ $___fontDistVariable___-eot-use: true !default;
 $___fontDistVariable___-cdn-use: false !default;
 $___fontDistVariable___-cdn-version: "___pkgVersion___" !default;
 $___fontDistVariable___-unicode-range-use: true !default;
-$___fontDistVariable___-unicode: ___fontUnicode___ !default;
-$___fontDistVariable___-weight: (___fontWeights___) !default;
+$___fontDistVariable___-unicode: ___unicode___ !default;
+$___fontDistVariable___-weight: (___weights___) !default;
 
 @each $key, $value in $___fontDistVariable___-weight {
   @font-face {

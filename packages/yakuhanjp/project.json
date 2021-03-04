@@ -10,7 +10,7 @@
         "variable": "yakuhanjp"
       },
       "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
-      "weight": {
+      "weights": {
         "100": "Thin",
         "200": "Light",
         "300": "DemiLight",
@@ -29,7 +29,7 @@
         "variable": "yakuhanjps"
       },
       "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
-      "weight": {
+      "weights": {
         "100": "Thin",
         "200": "Light",
         "300": "DemiLight",
@@ -48,7 +48,7 @@
         "variable": "yakuhanmp"
       },
       "glyphs": "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
-      "weight": {
+      "weights": {
         "100": "ExtraLight",
         "200": "Light",
         "300": "Regular",
@@ -67,7 +67,7 @@
         "variable": "yakuhanmps"
       },
       "glyphs": "《》「」『』【】〔〕（）［］｛｝",
-      "weight": {
+      "weights": {
         "100": "ExtraLight",
         "200": "Light",
         "300": "Regular",
@@ -86,7 +86,7 @@
         "variable": "yakuhanrp"
       },
       "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
-      "weight": {
+      "weights": {
         "100": "Thin",
         "300": "Light",
         "400": "Regular",
@@ -105,7 +105,7 @@
         "variable": "yakuhanrps"
       },
       "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
-      "weight": {
+      "weights": {
         "100": "Thin",
         "300": "Light",
         "400": "Regular",
@@ -124,7 +124,7 @@
         "variable": "yakuhanjp-noto"
       },
       "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
-      "weight": {
+      "weights": {
         "100": "Thin",
         "300": "Light",
         "400": "Regular",
@@ -142,7 +142,7 @@
         "variable": "yakuhanjps-noto"
       },
       "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
-      "weight": {
+      "weights": {
         "100": "Thin",
         "300": "Light",
         "400": "Regular",
@@ -160,7 +160,7 @@
         "variable": "yakuhanmp-noto"
       },
       "glyphs": "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
-      "weight": {
+      "weights": {
         "200": "ExtraLight",
         "300": "Light",
         "400": "Regular",
@@ -179,7 +179,7 @@
         "variable": "yakuhanmps-noto"
       },
       "glyphs": "《》「」『』【】〔〕（）［］｛｝",
-      "weight": {
+      "weights": {
         "200": "ExtraLight",
         "300": "Light",
         "400": "Regular",
@@ -198,7 +198,7 @@
         "variable": "yakuhanjp-narrow"
       },
       "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
-      "weight": {
+      "weights": {
         "100": "Thin",
         "200": "Thin",
         "300": "Light",
@@ -219,7 +219,7 @@
         "variable": "yakuhanjps-narrow"
       },
       "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
-      "weight": {
+      "weights": {
         "100": "Thin",
         "200": "Thin",
         "300": "Light",
