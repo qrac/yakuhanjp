@@ -1,9 +1,27 @@
+//----------------------------------------------------
+// Variables
+//----------------------------------------------------
+
 const fs = require("fs")
+const sass = require("sass")
 
 const pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"))
 const pjt = JSON.parse(fs.readFileSync("./project.json", "utf8"))
 const tmp = fs.readFileSync("./src/template.scss", "utf8")
+
 const distScssDir = "./dist/scss"
+const distCssDir = "./dist/css"
+const distFontDir = "./dist/fonts"
+
+//----------------------------------------------------
+// Functions
+//----------------------------------------------------
+
+const createDir = (dir) => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true })
+  }
+}
 
 const glyphs2unicode = (glyphs) => {
   const splitGlyphs = glyphs.split("")
@@ -29,13 +47,22 @@ const weights2scssWeights = (weights) => {
   return joinWeights
 }
 
-if (!fs.existsSync(distScssDir)) {
-  fs.mkdirSync(distScssDir)
-}
+//----------------------------------------------------
+// Actions
+//----------------------------------------------------
+
+createDir(distScssDir)
+createDir(distCssDir)
+createDir(distFontDir)
 
 pjt.fonts.forEach((font) => {
+  const distScss = `${distScssDir}/${font.dist.name}.scss`
+  const distCss = `${distCssDir}/${font.dist.name}.css`
+  const distCssMin = `${distCssDir}/${font.dist.name}.min.css`
+
   const unicode = glyphs2unicode(font.glyphs)
   const scssWeights = weights2scssWeights(font.weights)
+
   data = tmp.replace(/___pjtName___/g, pjt.name)
   data = data.replace(/___pkgVersion___/g, pkg.version)
   data = data.replace(/___pkgLicense___/g, pkg.license)
@@ -46,5 +73,17 @@ pjt.fonts.forEach((font) => {
   data = data.replace(/___fontFile___/g, font.file)
   data = data.replace(/___unicode___/g, unicode)
   data = data.replace(/___weights___/g, scssWeights)
-  fs.writeFileSync(`${distScssDir}/${font.dist.name}.scss`, data)
+
+  const resultCss = sass.renderSync({
+    data: data,
+    outputStyle: "expanded",
+  })
+  const resultCssMin = sass.renderSync({
+    data: data,
+    outputStyle: "compressed",
+  })
+
+  fs.writeFileSync(distScss, data)
+  fs.writeFileSync(distCss, resultCss.css)
+  fs.writeFileSync(distCssMin, resultCssMin.css)
 })
