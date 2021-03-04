@@ -2,7 +2,7 @@
 // Variables
 //----------------------------------------------------
 
-const fs = require("fs")
+const fs = require("fs-extra")
 const sass = require("sass")
 
 const pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"))
@@ -12,6 +12,7 @@ const tmp = fs.readFileSync("./src/template.scss", "utf8")
 const distScssDir = "./dist/scss"
 const distCssDir = "./dist/css"
 const distFontDir = "./dist/fonts"
+const srcFontDir = "./src/fonts"
 
 //----------------------------------------------------
 // Functions
@@ -53,7 +54,7 @@ const weights2scssWeights = (weights) => {
 
 createDir(distScssDir)
 createDir(distCssDir)
-createDir(distFontDir)
+fs.copySync(srcFontDir, distFontDir)
 
 pjt.fonts.forEach((font) => {
   const distScss = `${distScssDir}/${font.dist.name}.scss`

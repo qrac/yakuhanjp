@@ -38,6 +38,7 @@
     "clean": "trash ./dist"
   },
   "devDependencies": {
+    "fs-extra": "^9.1.0",
     "sass": "^1.32.8"
   }
 }
