@@ -98,14 +98,14 @@ $ npm i yakuhanjp
 
 ### SCSS
 
-|  フォント名  | SCSS に書く `@use` 文（または `@import`）     |
-| :----------: | --------------------------------------------- |
-| `YakuHanJP`  | `@use "yakuhanjp/dist/scss/yakuhanjp.scss"`   |
-| `YakuHanJPs` | `@use "yakuhanjp/dist/scss/yakuhanjp_s.scss"` |
-| `YakuHanMP`  | `@use "yakuhanjp/dist/scss/yakuhanmp.scss"`   |
-| `YakuHanMPs` | `@use "yakuhanjp/dist/scss/yakuhanmp_s.scss"` |
-| `YakuHanRP`  | `@use "yakuhanjp/dist/scss/yakuhanrp.scss"`   |
-| `YakuHanRPs` | `@use "yakuhanjp/dist/scss/yakuhanrp_s.scss"` |
+|  フォント名  | SCSS に書く `@use` 文（または `@import`） |
+| :----------: | ----------------------------------------- |
+| `YakuHanJP`  | `@use "yakuhanjp/dist/scss/yakuhanjp"`    |
+| `YakuHanJPs` | `@use "yakuhanjp/dist/scss/yakuhanjp_s"`  |
+| `YakuHanMP`  | `@use "yakuhanjp/dist/scss/yakuhanmp"`    |
+| `YakuHanMPs` | `@use "yakuhanjp/dist/scss/yakuhanmp_s"`  |
+| `YakuHanRP`  | `@use "yakuhanjp/dist/scss/yakuhanrp"`    |
+| `YakuHanRPs` | `@use "yakuhanjp/dist/scss/yakuhanrp_s"`  |
 
 | オプション（変数名はフォントによる） | タイプ    | デフォルト                         |
 | ------------------------------------ | --------- | ---------------------------------- |
@@ -122,9 +122,9 @@ $ npm i yakuhanjp
 
 ```scss
 // Dart Sass Example: YakuHanRPs Use CDN
-@use "yakuhanjp/dist/css/yakuhanrp.css" with (
-  $yakuhanjp-eot-use: false,
-  $yakuhanjp-cdn-use: true
+@use "yakuhanjp/dist/scss/yakuhanrp" with (
+  $yakuhanrp-eot-use: false,
+  $yakuhanrp-cdn-use: true
 );
 ```
 
@@ -150,12 +150,12 @@ $ npm i yakuhanjp
 | `YakuHanMP_Noto`  | `import "yakuhanjp/dist/css/yakuhanmp-noto.css"`   |
 | `YakuHanMPs_Noto` | `import "yakuhanjp/dist/css/yakuhanmp_s-noto.css"` |
 
-|    フォント名     | SCSS に書く `@use` 文（または `@import`）          |
-| :---------------: | -------------------------------------------------- |
-| `YakuHanJP_Noto`  | `@use "yakuhanjp/dist/scss/yakuhanjp-noto.scss"`   |
-| `YakuHanJPs_Noto` | `@use "yakuhanjp/dist/scss/yakuhanjp_s-noto.scss"` |
-| `YakuHanMP_Noto`  | `@use "yakuhanjp/dist/scss/yakuhanmp-noto.scss"`   |
-| `YakuHanMPs_Noto` | `@use "yakuhanjp/dist/scss/yakuhanmp_s-noto.scss"` |
+|    フォント名     | SCSS に書く `@use` 文（または `@import`）     |
+| :---------------: | --------------------------------------------- |
+| `YakuHanJP_Noto`  | `@use "yakuhanjp/dist/scss/yakuhanjp-noto"`   |
+| `YakuHanJPs_Noto` | `@use "yakuhanjp/dist/scss/yakuhanjp_s-noto"` |
+| `YakuHanMP_Noto`  | `@use "yakuhanjp/dist/scss/yakuhanmp-noto"`   |
+| `YakuHanMPs_Noto` | `@use "yakuhanjp/dist/scss/yakuhanmp_s-noto"` |
 
 ### For Narrow
 
@@ -173,10 +173,10 @@ macOS 10.13・iOS11 以降の Safari では、`font-family` に `-apple-system` 
 | `YakuHanJP_Narrow`  | `import "yakuhanjp-narrow"`                          |
 | `YakuHanJPs_Narrow` | `import "yakuhanjp/dist/css/yakuhanjp_s-narrow.css"` |
 
-|     フォント名      | SCSS に書く `@use` 文（または `@import`）            |
-| :-----------------: | ---------------------------------------------------- |
-| `YakuHanJP_Narrow`  | `@use "yakuhanjp/dist/scss/yakuhanjp-narrow.scss"`   |
-| `YakuHanJPs_Narrow` | `@use "yakuhanjp/dist/scss/yakuhanjp_s-narrow.scss"` |
+|     フォント名      | SCSS に書く `@use` 文（または `@import`）       |
+| :-----------------: | ----------------------------------------------- |
+| `YakuHanJP_Narrow`  | `@use "yakuhanjp/dist/scss/yakuhanjp-narrow"`   |
+| `YakuHanJPs_Narrow` | `@use "yakuhanjp/dist/scss/yakuhanjp_s-narrow"` |
 
 ## Support
 

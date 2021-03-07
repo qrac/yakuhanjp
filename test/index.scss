@@ -1,0 +1,8 @@
+//----------------------------------------------------
+// Test: @use ... with
+//----------------------------------------------------
+
+@use "../dist/scss/yakuhanrp" with (
+  $yakuhanrp-eot-use: false,
+  $yakuhanrp-cdn-use: true
+);

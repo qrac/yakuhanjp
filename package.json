@@ -34,8 +34,12 @@
   },
   "scripts": {
     "build": "node ./src",
+    "test": "node ./test",
     "prepublishOnly": "npm run build",
     "clean": "trash ./dist"
+  },
+  "prettier": {
+    "semi": false
   },
   "devDependencies": {
     "fs-extra": "^9.1.0",
