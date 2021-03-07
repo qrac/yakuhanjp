@@ -1,0 +1,38 @@
+{
+  "name": "yakuhanjp-site-gatsby",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "clean": "trash ./.cache ./public"
+  },
+  "browserslist": [
+    "last 1 Chrome versions",
+    "last 1 Edge versions",
+    "last 1 Firefox versions",
+    "last 1 Safari versions",
+    "last 1 iOS versions",
+    "last 1 ChromeAndroid versions"
+  ],
+  "dependencies": {
+    "@fontsource/lato": "^4.2.2",
+    "@fontsource/m-plus-rounded-1c": "^4.2.2",
+    "@fontsource/noto-sans-jp": "^4.2.2",
+    "@fontsource/noto-serif-jp": "^4.2.2",
+    "gatsby": "^3.0.2",
+    "gatsby-plugin-google-analytics": "^3.0.0",
+    "gatsby-plugin-preact": "^5.0.0",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-remark-remove-comments": "^0.1.0",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-remark": "^3.0.0",
+    "ie-buster": "^2.0.1",
+    "preact": "^10.5.12",
+    "preact-render-to-string": "^5.1.12",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "yakuhanjp": "latest"
+  }
+}

@@ -1,0 +1,247 @@
+/*----------------------------------------------------
+// Reset
+----------------------------------------------------*/
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/*----------------------------------------------------
+// HTML
+----------------------------------------------------*/
+
+html {
+  font-family: var(--theme-font-sans);
+  word-break: break-word;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--theme-bg-1);
+  color: var(--theme-tx-2);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+a {
+  color: var(--theme-lk-1);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+:not(pre) > code {
+  padding: 0.2rem 0.5rem;
+  background-color: var(--theme-ac-1);
+  border-radius: 3px;
+  color: var(--theme-lk-tx);
+  font-size: 0.875em;
+  word-break: keep-all;
+}
+
+table {
+  width: 100%;
+  border: 2px solid var(--theme-tx-3);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th,
+table td {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--theme-tx-3);
+  vertical-align: top;
+}
+
+/*----------------------------------------------------
+// App
+----------------------------------------------------*/
+
+.app {
+  background: linear-gradient(
+    90deg,
+    var(--theme-bg-3) 50%,
+    var(--theme-bg-2) 50%
+  );
+}
+
+/*----------------------------------------------------
+// Hero
+----------------------------------------------------*/
+
+.hero {
+  padding: 10vh 20px;
+}
+
+.logo {
+  display: block;
+  width: min(30vw, 200px);
+  margin: 0 auto;
+}
+
+.logo-title {
+  margin: 1.75rem auto 0;
+  font-size: min(11vw, 4rem);
+  font-family: var(--theme-font-lato);
+  font-weight: 900;
+  text-align: center;
+}
+
+.sub-title {
+  display: block;
+  margin: 0 auto;
+  font-size: clamp(1.125rem, 4vw, 1.625rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.repo-note {
+  max-width: 60vw;
+  margin: 0.5rem auto 0;
+  font-size: 0.825rem;
+  text-align: center;
+}
+
+/*----------------------------------------------------
+// Section
+----------------------------------------------------*/
+
+.section {
+  padding: 4vmax 0 6vmax;
+}
+
+.section:nth-child(odd) .card {
+  background: var(--theme-bg-1);
+}
+
+.section:nth-child(odd):last-child {
+  padding-bottom: 0;
+}
+
+.section:nth-child(even) {
+  background: linear-gradient(
+    90deg,
+    var(--theme-bg-4) 50%,
+    var(--theme-bg-3) 50%
+  );
+}
+
+.section:nth-child(even) .card {
+  background: var(--theme-bg-2);
+}
+
+.section > .inner {
+  max-width: var(--theme-site-width);
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.section .heading {
+  margin-bottom: 1.25rem;
+  color: var(--theme-tx-3);
+  font-size: min(7vw, 2rem);
+  font-weight: 900;
+  font-family: var(--theme-font-lato);
+  text-align: center;
+}
+
+/*----------------------------------------------------
+// Card
+----------------------------------------------------*/
+
+.card {
+  max-width: var(--theme-card-width);
+  margin: 0 auto;
+  padding: min(5vw, 32px);
+  overflow: hidden;
+}
+
+.card + .card {
+  margin-top: 1rem;
+}
+
+.card > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.card h3 {
+  margin-top: -0.25rem;
+  font-size: min(5vw, 1.5rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.card p {
+  line-height: 1.75;
+}
+
+.card .grave-wrap {
+  display: block;
+  margin-right: max(-5vw, -32px);
+  margin-bottom: max(-5vw, -32px);
+  margin-left: max(-5vw, -32px);
+}
+
+.card .grave {
+  display: block;
+}
+
+.card .license-notes {
+  text-align: center;
+}
+
+.card .license-notes span,
+.card .license-notes a {
+  display: inline-block;
+}
+
+/*----------------------------------------------------
+// Markdown
+----------------------------------------------------*/
+
+.markdown > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.markdown ul {
+  padding-left: 1.5em;
+}
+
+/*----------------------------------------------------
+// Other Iluustration
+----------------------------------------------------*/
+
+.working {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  width: 100%;
+}
+
+/*----------------------------------------------------
+// Footer
+----------------------------------------------------*/
+
+.footer {
+  padding: 7.5vh 20px;
+}
+
+.copylight {
+  font-family: var(--theme-font-sans-en);
+  text-align: center;
+}

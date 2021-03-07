@@ -1,0 +1,16 @@
+/*----------------------------------------------------
+// Theme Variable
+----------------------------------------------------*/
+
+:root {
+  --theme-font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --theme-font-sans-en: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --theme-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    Meiryo, monospace, serif;
+  --theme-font-lato: Lato, sans-serif;
+  --theme-site-width: 1140px;
+  --theme-card-width: 820px;
+}

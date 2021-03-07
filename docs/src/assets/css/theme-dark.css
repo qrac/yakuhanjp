@@ -1,0 +1,19 @@
+/*----------------------------------------------------
+// Theme Dark
+----------------------------------------------------*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-tx-1: #fafafa;
+    --theme-tx-2: #dcdcdc;
+    --theme-tx-3: #9e9e9e;
+    --theme-bg-1: #1a1a1a;
+    --theme-bg-2: #1d1d1d;
+    --theme-bg-3: #252525;
+    --theme-bg-4: #303030;
+    --theme-lk-1: #d19600;
+    --theme-lk-2: #b88400;
+    --theme-lk-tx: #ffffff;
+    --theme-ac-1: #334750;
+  }
+}

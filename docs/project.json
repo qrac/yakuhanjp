@@ -1,0 +1,20 @@
+{
+  "name": "Yaku Han JP Site - Gatsby",
+  "site": {
+    "title": "Yaku Han JP",
+    "subTitle": "約物半角専用のWebフォント",
+    "description": "Yaku Han JP（ヤクハンジェイピー）は、Web上の日本語テキストに含まれる約物を半角にする「約物半角専用Webフォント」です。",
+    "shortDescription": "約物半角専用のWebフォント",
+    "url": "https://yakuhanjp.qranoko.jp",
+    "twitter": {
+      "id": "Qrac_JP"
+    },
+    "github": {
+      "url": "https://github.com/qrac/yakuhanjp"
+    },
+    "copylight": {
+      "name": "QRANOKO",
+      "startYear": "2016"
+    }
+  }
+}
