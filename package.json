@@ -1,7 +1,7 @@
 {
   "name": "yakuhanjp",
   "description": "Yakumono-Hankaku Only Web Fonts",
-  "version": "3.3.1",
+  "version": "3.4.0",
   "main": "dist/css/yakuhanjp.css",
   "files": [
     "dist"
