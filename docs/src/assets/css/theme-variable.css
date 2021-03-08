@@ -10,6 +10,18 @@
     "Helvetica Neue", Arial, sans-serif;
   --theme-font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     Meiryo, monospace, serif;
+  --theme-font-yakuhanjp: YakuHanJP, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+  --theme-font-yakuhanjps: YakuHanJPs, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+  --theme-font-yakuhanmp: YakuHanMP, "Hiragino Mincho ProN", "Noto Serif JP",
+    "Yu Mincho", YuMincho, serif;
+  --theme-font-yakuhanmps: YakuHanMPs, "Hiragino Mincho ProN", "Noto Serif JP",
+    "Yu Mincho", YuMincho, serif;
+  --theme-font-yakuhanrp: YakuHanRP, "M PLUS Rounded 1c", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+  --theme-font-yakuhanrps: YakuHanRPs, "M PLUS Rounded 1c", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
   --theme-site-width: 1140px;
   --theme-card-width: 820px;
 }

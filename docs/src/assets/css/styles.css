@@ -175,6 +175,34 @@ table td {
 }
 
 /*----------------------------------------------------
+// YakuHanJP
+----------------------------------------------------*/
+
+.is-yakuhanjp {
+  font-family: var(--theme-font-yakuhanjp);
+}
+
+.is-yakuhanjps {
+  font-family: var(--theme-font-yakuhanjps);
+}
+
+.is-yakuhanmp {
+  font-family: var(--theme-font-yakuhanmp);
+}
+
+.is-yakuhanmps {
+  font-family: var(--theme-font-yakuhanmps);
+}
+
+.is-yakuhanrp {
+  font-family: var(--theme-font-yakuhanrp);
+}
+
+.is-yakuhanrps {
+  font-family: var(--theme-font-yakuhanrps);
+}
+
+/*----------------------------------------------------
 // Card
 ----------------------------------------------------*/
 
@@ -238,14 +266,37 @@ table td {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px 0;
+  max-width: var(--theme-card-width);
+  margin: 0 auto;
   list-style: none;
 }
 
 .fonts-grid .col {
   padding: min(5vw, 32px);
+  overflow: hidden;
 }
 
-.fonts-grid .col:nth-child(odd) {
+.fonts-grid .title {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.125rem, 3.25vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.fonts-grid .descriptopn {
+  margin-bottom: 0.75rem;
+  font-size: clamp(0.75rem, 2.5vw, 1.125rem);
+  font-weight: 400;
+}
+
+.fonts-grid .descriptopn span {
+  display: inline-block;
+}
+
+.fonts-grid .glyphs {
+  padding-top: 1rem;
+  border-top: 1px solid var(--theme-tx-3);
+  font-size: 1.25rem;
 }
 
 /*----------------------------------------------------

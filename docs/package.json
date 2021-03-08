@@ -15,6 +15,7 @@
     "last 1 ChromeAndroid versions"
   ],
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^3.0.3",
     "gatsby-plugin-google-analytics": "^3.0.0",
     "gatsby-plugin-preact": "^5.0.0",

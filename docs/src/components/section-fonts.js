@@ -1,4 +1,5 @@
 import React from "react"
+import classNames from "classnames"
 
 import yakuhanjpPjt from "yakuhanjp/project.json"
 
@@ -14,10 +15,13 @@ export default function SectionFonts() {
           {generalFonts.map((font, index) => (
             <li className="col" key={index}>
               <h3 className="title">{font.name}</h3>
-              <h4 className="descriptopn">
-                {`${font.style.name} （${font.target.name}）`}
+              <h4 className="descriptopn is-yakuhanjp">
+                <span>{font.style.name}</span>
+                <span>{`（${font.target.name}）`}</span>
               </h4>
-              <p className="glyphs">{font.glyphs}</p>
+              <p className={classNames("glyphs", `is-${font.dist.variable}`)}>
+                {font.glyphs}
+              </p>
             </li>
           ))}
         </ul>
