@@ -125,10 +125,6 @@ table td {
   padding: 4vmax 0 6vmax;
 }
 
-.section:nth-child(odd) .card {
-  background: var(--theme-bg-1);
-}
-
 .section:nth-child(odd):last-child {
   padding-bottom: 0;
 }
@@ -139,10 +135,6 @@ table td {
     var(--theme-bg-4) 50%,
     var(--theme-bg-3) 50%
   );
-}
-
-.section:nth-child(even) .card {
-  background: var(--theme-bg-2);
 }
 
 .section > .inner {
@@ -168,6 +160,7 @@ table td {
   max-width: var(--theme-card-width);
   margin: 0 auto;
   padding: min(5vw, 32px);
+  background: var(--theme-bg-1);
   overflow: hidden;
 }
 
