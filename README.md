@@ -22,7 +22,7 @@ https://yakuhanjp.qranoko.jp
 
 ## About
 
-![Image from Gyazo](https://i.gyazo.com/18d64e719cabd4e32396f8f853bd6048.png)
+![Image from Gyazo](https://i.gyazo.com/3b544650334bf561161cf61ad3dfbef8.png)
 
 Yaku Han JP（ヤクハンジェイピー）は、Web 上の日本語テキストに含まれる約物を半角にする「約物半角専用 Web フォント」です。
 
