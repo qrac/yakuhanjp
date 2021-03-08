@@ -135,12 +135,28 @@ table td {
   padding-bottom: 0;
 }
 
+.section:nth-child(odd) .fonts-grid .col:nth-child(odd) {
+  background: var(--theme-bg-2);
+}
+
+.section:nth-child(odd) .fonts-grid .col:nth-child(even) {
+  background: var(--theme-bg-1);
+}
+
 .section:nth-child(even) {
   background: linear-gradient(
     90deg,
     var(--theme-bg-4) 50%,
     var(--theme-bg-3) 50%
   );
+}
+
+.section:nth-child(even) .fonts-grid .col:nth-child(odd) {
+  background: var(--theme-bg-3);
+}
+
+.section:nth-child(even) .fonts-grid .col:nth-child(even) {
+  background: var(--theme-bg-2);
 }
 
 .section > .inner {
@@ -212,6 +228,24 @@ table td {
   .card .yakuhan-kun {
     display: none;
   }
+}
+
+/*----------------------------------------------------
+// Fonts Grid
+----------------------------------------------------*/
+
+.fonts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 0;
+  list-style: none;
+}
+
+.fonts-grid .col {
+  padding: min(5vw, 32px);
+}
+
+.fonts-grid .col:nth-child(odd) {
 }
 
 /*----------------------------------------------------

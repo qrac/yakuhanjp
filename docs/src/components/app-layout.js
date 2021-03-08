@@ -4,26 +4,26 @@ import ieBuster from "ie-buster"
 
 import AppFooter from "./app-footer"
 
-import "@fontsource/noto-sans-jp/100.css"
-import "@fontsource/noto-sans-jp/300.css"
-import "@fontsource/noto-sans-jp/400.css"
-import "@fontsource/noto-sans-jp/500.css"
-import "@fontsource/noto-sans-jp/700.css"
-import "@fontsource/noto-sans-jp/900.css"
-import "@fontsource/noto-serif-jp/200.css"
-import "@fontsource/noto-serif-jp/300.css"
-import "@fontsource/noto-serif-jp/400.css"
-import "@fontsource/noto-serif-jp/500.css"
-import "@fontsource/noto-serif-jp/600.css"
-import "@fontsource/noto-serif-jp/700.css"
-import "@fontsource/noto-serif-jp/900.css"
-import "@fontsource/m-plus-rounded-1c/100.css"
-import "@fontsource/m-plus-rounded-1c/300.css"
-import "@fontsource/m-plus-rounded-1c/400.css"
-import "@fontsource/m-plus-rounded-1c/500.css"
-import "@fontsource/m-plus-rounded-1c/700.css"
-import "@fontsource/m-plus-rounded-1c/800.css"
-import "@fontsource/m-plus-rounded-1c/900.css"
+//import "@fontsource/noto-sans-jp/100.css"
+//import "@fontsource/noto-sans-jp/300.css"
+//import "@fontsource/noto-sans-jp/400.css"
+//import "@fontsource/noto-sans-jp/500.css"
+//import "@fontsource/noto-sans-jp/700.css"
+//import "@fontsource/noto-sans-jp/900.css"
+//import "@fontsource/noto-serif-jp/200.css"
+//import "@fontsource/noto-serif-jp/300.css"
+//import "@fontsource/noto-serif-jp/400.css"
+//import "@fontsource/noto-serif-jp/500.css"
+//import "@fontsource/noto-serif-jp/600.css"
+//import "@fontsource/noto-serif-jp/700.css"
+//import "@fontsource/noto-serif-jp/900.css"
+//import "@fontsource/m-plus-rounded-1c/100.css"
+//import "@fontsource/m-plus-rounded-1c/300.css"
+//import "@fontsource/m-plus-rounded-1c/400.css"
+//import "@fontsource/m-plus-rounded-1c/500.css"
+//import "@fontsource/m-plus-rounded-1c/700.css"
+//import "@fontsource/m-plus-rounded-1c/800.css"
+//import "@fontsource/m-plus-rounded-1c/900.css"
 
 import "yakuhanjp/dist/css/yakuhanjp.css"
 import "yakuhanjp/dist/css/yakuhanjp_s.css"
@@ -66,6 +66,13 @@ export default function AppLayout({ children }) {
         <meta name="twitter:creator" content={"@" + site.twitter.id} />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          rel="stylesheet"
+          href={
+            "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+          }
+        />
       </Helmet>
       <main className="main" id="main">
         {children}
