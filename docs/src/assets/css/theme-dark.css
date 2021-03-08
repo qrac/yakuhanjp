@@ -4,16 +4,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --theme-tx-1: #fafafa;
-    --theme-tx-2: #dcdcdc;
-    --theme-tx-3: #9e9e9e;
+    --theme-tx-1: #e8e8e8;
+    --theme-tx-2: #aaaaaa;
+    --theme-tx-3: #515151;
     --theme-bg-1: #1a1a1a;
     --theme-bg-2: #171717;
     --theme-bg-3: #141414;
     --theme-bg-4: #121212;
     --theme-lk-1: #d19600;
-    --theme-lk-2: #b88400;
-    --theme-lk-tx: #ffffff;
-    --theme-ac-1: #334750;
+    --theme-ac-1: #2f2f2f;
   }
 }

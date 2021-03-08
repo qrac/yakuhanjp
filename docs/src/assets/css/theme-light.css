@@ -3,15 +3,13 @@
 ----------------------------------------------------*/
 
 :root {
-  --theme-tx-1: #1a1a1a;
-  --theme-tx-2: #3f3f3f;
-  --theme-tx-3: #6f6f6f;
+  --theme-tx-1: #333333;
+  --theme-tx-2: #4b4b4b;
+  --theme-tx-3: #7b7b7b;
   --theme-bg-1: #fcfcfc;
   --theme-bg-2: #f2f2f2;
   --theme-bg-3: #e8e8e8;
   --theme-bg-4: #dedede;
   --theme-lk-1: #b07e00;
-  --theme-lk-2: #866000;
-  --theme-lk-tx: #ffffff;
-  --theme-ac-1: #334750;
+  --theme-ac-1: #cfcfcf;
 }
