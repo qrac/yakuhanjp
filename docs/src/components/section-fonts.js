@@ -3,7 +3,7 @@ import classNames from "classnames"
 
 import yakuhanjpPjt from "yakuhanjp/project.json"
 
-export default function SectionFonts() {
+const SectionFonts = () => {
   const generalFonts = yakuhanjpPjt.fonts.filter(
     (font) => !font.specific.edition
   )
@@ -29,3 +29,5 @@ export default function SectionFonts() {
     </section>
   )
 }
+
+export default SectionFonts

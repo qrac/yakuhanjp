@@ -6,7 +6,7 @@ import pjt from "../../project.json"
 const copylight = pjt.site.copylight
 const nowYear = new Date().getFullYear()
 
-export default function AppFooter() {
+const AppFooter = () => {
   return (
     <footer className="footer">
       <p className="copylight">
@@ -19,3 +19,5 @@ export default function AppFooter() {
     </footer>
   )
 }
+
+export default AppFooter

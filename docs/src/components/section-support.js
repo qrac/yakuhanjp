@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import YakuhanKun from "../assets/svgs/yakuhan-kun.svg"
 
-export default function SectionSupport() {
+const SectionSupport = () => {
   const data = useStaticQuery(graphql`
     query SectionSupportQuery {
       support: file(absolutePath: { regex: "/support.md/" }) {
@@ -30,3 +30,5 @@ export default function SectionSupport() {
     </section>
   )
 }
+
+export default SectionSupport

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-export default function SectionLicense() {
+const SectionLicense = () => {
   const data = useStaticQuery(graphql`
     query SectionLicenseQuery {
       license: file(absolutePath: { regex: "/license.md/" }) {
@@ -27,3 +27,5 @@ export default function SectionLicense() {
     </section>
   )
 }
+
+export default SectionLicense

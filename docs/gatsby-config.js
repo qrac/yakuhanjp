@@ -4,7 +4,6 @@ require("dotenv").config({
 
 module.exports = {
   plugins: [
-    "gatsby-plugin-preact",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {

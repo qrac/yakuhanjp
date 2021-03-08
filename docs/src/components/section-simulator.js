@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function SectionSimulator() {
+const SectionSimulator = () => {
   return (
     <section className="section" id="simulator">
       <div className="inner">
@@ -10,3 +10,5 @@ export default function SectionSimulator() {
     </section>
   )
 }
+
+export default SectionSimulator

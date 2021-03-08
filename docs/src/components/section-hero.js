@@ -6,7 +6,7 @@ import LogoText from "../assets/svgs/logo-text.svg"
 import yakuhanjpPkg from "yakuhanjp/package.json"
 import pjt from "../../project.json"
 
-export default function SectionHero() {
+const SectionHero = () => {
   return (
     <section className="hero" id="hero">
       <Logo className="logo" />
@@ -24,3 +24,5 @@ export default function SectionHero() {
     </section>
   )
 }
+
+export default SectionHero

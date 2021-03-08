@@ -7,7 +7,7 @@ import SectionFonts from "../components/section-fonts"
 import SectionSupport from "../components/section-support"
 import SectionLicense from "../components/section-license"
 
-export default function Home() {
+const Home = () => {
   return (
     <AppLayout>
       <SectionHero />
@@ -18,3 +18,5 @@ export default function Home() {
     </AppLayout>
   )
 }
+
+export default Home

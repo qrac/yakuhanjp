@@ -41,7 +41,7 @@ import pjt from "../../project.json"
 
 const site = pjt.site
 
-export default function AppLayout({ children }) {
+const AppLayout = ({ children }) => {
   useEffect(() => {
     ieBuster.init()
   })
@@ -81,3 +81,5 @@ export default function AppLayout({ children }) {
     </div>
   )
 }
+
+export default AppLayout
