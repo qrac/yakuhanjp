@@ -196,12 +196,12 @@ table td {
 
 .card .yakuhan-kun {
   position: absolute;
-  top: -3%;
-  right: -2%;
-  width: 36%;
-  height: 100%;
+  top: 45%;
+  right: 5%;
+  width: 28%;
+  height: 82%;
   margin: 0;
-  transform: rotate(20deg);
+  transform: rotate(20deg) translateY(-50%);
 }
 
 .card .yakuhan-kun path {
