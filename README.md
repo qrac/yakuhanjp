@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="230" src="https://i.gyazo.com/0f8c0feca913c44be8b07eec127a8946.png" alt="Yaku Han JP Logo">
+  <img width="180" src="https://i.gyazo.com/0f8c0feca913c44be8b07eec127a8946.png" alt="Yaku Han JP Logo">
 </p>
 
 # Yaku Han JP
