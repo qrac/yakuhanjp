@@ -9,6 +9,20 @@
         "name": "yakuhanjp",
         "variable": "yakuhanjp"
       },
+      "style": {
+        "name": "ゴシック体",
+        "variable": "sans-serif"
+      },
+      "target": {
+        "name": "約物すべて",
+        "variable": "all",
+        "small": false
+      },
+      "specific": {
+        "name": "",
+        "variable": "",
+        "edition": false
+      },
       "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
       "weights": {
         "100": "Thin",
@@ -27,6 +41,20 @@
       "dist": {
         "name": "yakuhanjp_s",
         "variable": "yakuhanjps"
+      },
+      "style": {
+        "name": "ゴシック体",
+        "variable": "sans-serif"
+      },
+      "target": {
+        "name": "カッコのみ",
+        "variable": "small",
+        "small": true
+      },
+      "specific": {
+        "name": "",
+        "variable": "",
+        "edition": false
       },
       "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
       "weights": {
@@ -47,6 +75,20 @@
         "name": "yakuhanmp",
         "variable": "yakuhanmp"
       },
+      "style": {
+        "name": "明朝体",
+        "variable": "serif"
+      },
+      "target": {
+        "name": "約物すべて",
+        "variable": "all",
+        "small": false
+      },
+      "specific": {
+        "name": "",
+        "variable": "",
+        "edition": false
+      },
       "glyphs": "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
       "weights": {
         "100": "ExtraLight",
@@ -65,6 +107,20 @@
       "dist": {
         "name": "yakuhanmp_s",
         "variable": "yakuhanmps"
+      },
+      "style": {
+        "name": "明朝体",
+        "variable": "serif"
+      },
+      "target": {
+        "name": "カッコのみ",
+        "variable": "small",
+        "small": true
+      },
+      "specific": {
+        "name": "",
+        "variable": "",
+        "edition": false
       },
       "glyphs": "《》「」『』【】〔〕（）［］｛｝",
       "weights": {
@@ -85,6 +141,20 @@
         "name": "yakuhanrp",
         "variable": "yakuhanrp"
       },
+      "style": {
+        "name": "丸ゴシック",
+        "variable": "rounded-sans-serif"
+      },
+      "target": {
+        "name": "約物すべて",
+        "variable": "all",
+        "small": false
+      },
+      "specific": {
+        "name": "",
+        "variable": "",
+        "edition": false
+      },
       "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
       "weights": {
         "100": "Thin",
@@ -103,6 +173,20 @@
       "dist": {
         "name": "yakuhanrp_s",
         "variable": "yakuhanrps"
+      },
+      "style": {
+        "name": "丸ゴシック",
+        "variable": "rounded-sans-serif"
+      },
+      "target": {
+        "name": "カッコのみ",
+        "variable": "small",
+        "small": true
+      },
+      "specific": {
+        "name": "",
+        "variable": "",
+        "edition": false
       },
       "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
       "weights": {
@@ -123,6 +207,20 @@
         "name": "yakuhanjp-noto",
         "variable": "yakuhanjp-noto"
       },
+      "style": {
+        "name": "ゴシック体",
+        "variable": "sans-serif"
+      },
+      "target": {
+        "name": "約物すべて",
+        "variable": "all",
+        "small": false
+      },
+      "specific": {
+        "name": "for Noto",
+        "variable": "noto",
+        "edition": true
+      },
       "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
       "weights": {
         "100": "Thin",
@@ -141,6 +239,20 @@
         "name": "yakuhanjp_s-noto",
         "variable": "yakuhanjps-noto"
       },
+      "style": {
+        "name": "ゴシック体",
+        "variable": "sans-serif"
+      },
+      "target": {
+        "name": "カッコのみ",
+        "variable": "small",
+        "small": true
+      },
+      "specific": {
+        "name": "for Noto",
+        "variable": "noto",
+        "edition": true
+      },
       "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
       "weights": {
         "100": "Thin",
@@ -158,6 +270,20 @@
       "dist": {
         "name": "yakuhanmp-noto",
         "variable": "yakuhanmp-noto"
+      },
+      "style": {
+        "name": "明朝体",
+        "variable": "serif"
+      },
+      "target": {
+        "name": "約物すべて",
+        "variable": "all",
+        "small": false
+      },
+      "specific": {
+        "name": "for Noto",
+        "variable": "noto",
+        "edition": true
       },
       "glyphs": "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
       "weights": {
@@ -178,6 +304,20 @@
         "name": "yakuhanmp_s-noto",
         "variable": "yakuhanmps-noto"
       },
+      "style": {
+        "name": "明朝体",
+        "variable": "serif"
+      },
+      "target": {
+        "name": "カッコのみ",
+        "variable": "small",
+        "small": true
+      },
+      "specific": {
+        "name": "for Noto",
+        "variable": "noto",
+        "edition": true
+      },
       "glyphs": "《》「」『』【】〔〕（）［］｛｝",
       "weights": {
         "200": "ExtraLight",
@@ -196,6 +336,20 @@
       "dist": {
         "name": "yakuhanjp-narrow",
         "variable": "yakuhanjp-narrow"
+      },
+      "style": {
+        "name": "ゴシック体",
+        "variable": "sans-serif"
+      },
+      "target": {
+        "name": "約物すべて",
+        "variable": "all",
+        "small": false
+      },
+      "specific": {
+        "name": "for Narrow",
+        "variable": "narrow",
+        "edition": true
       },
       "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
       "weights": {
@@ -217,6 +371,20 @@
       "dist": {
         "name": "yakuhanjp_s-narrow",
         "variable": "yakuhanjps-narrow"
+      },
+      "style": {
+        "name": "ゴシック体",
+        "variable": "sans-serif"
+      },
+      "target": {
+        "name": "カッコのみ",
+        "variable": "small",
+        "small": true
+      },
+      "specific": {
+        "name": "for Narrow",
+        "variable": "narrow",
+        "edition": true
       },
       "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
       "weights": {

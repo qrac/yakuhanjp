@@ -72,12 +72,12 @@ font-family（CSS）のフォールバック機能を利用し、文字幅を調
 
 |  フォント名  | HTML に貼る CDN リンクタグ                                                                                 |
 | :----------: | ---------------------------------------------------------------------------------------------------------- |
-| `YakuHanJP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanjp.min.css">`   |
-| `YakuHanJPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanjp_s.min.css">` |
-| `YakuHanMP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanmp.min.css">`   |
-| `YakuHanMPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanmp_s.min.css">` |
-| `YakuHanRP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanrp.min.css">`   |
-| `YakuHanRPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanrp_s.min.css">` |
+| `YakuHanJP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">`   |
+| `YakuHanJPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp_s.min.css">` |
+| `YakuHanMP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanmp.min.css">`   |
+| `YakuHanMPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanmp_s.min.css">` |
+| `YakuHanRP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanrp.min.css">`   |
+| `YakuHanRPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanrp_s.min.css">` |
 
 ## [npm](https://www.npmjs.com/package/yakuhanjp)
 
@@ -115,7 +115,7 @@ $ npm i yakuhanjp
 | `$yakuhanjp-swap-use`                | `boolean` | `true`                             |
 | `$yakuhanjp-eot-use`                 | `boolean` | `true`                             |
 | `$yakuhanjp-cdn-use`                 | `boolean` | `false`                            |
-| `$yakuhanjp-cdn-version`             | `string`  | `3.4.0`                            |
+| `$yakuhanjp-cdn-version`             | `string`  | `3.4.1`                            |
 | `$yakuhanjp-unicode-range-use`       | `boolean` | `true`                             |
 | `$yakuhanjp-unicode`                 | `array`   | `U+3001, U+3002...` etc.           |
 | `$yakuhanjp-weight`                  | `object`  | `100:"Thin", 200:"Light" ...` etc. |
@@ -138,10 +138,10 @@ $ npm i yakuhanjp
 
 |    フォント名     | HTML に貼る CDN リンクタグ                                                                                      |
 | :---------------: | --------------------------------------------------------------------------------------------------------------- |
-| `YakuHanJP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanjp-noto.min.css">`   |
-| `YakuHanJPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanjp_s-noto.min.css">` |
-| `YakuHanMP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanmp-noto.min.css">`   |
-| `YakuHanMPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanmp_s-noto.min.css">` |
+| `YakuHanJP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-noto.min.css">`   |
+| `YakuHanJPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp_s-noto.min.css">` |
+| `YakuHanMP_Noto`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanmp-noto.min.css">`   |
+| `YakuHanMPs_Noto` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanmp_s-noto.min.css">` |
 
 |    フォント名     | JavaScript に書く `import` 文                      |
 | :---------------: | -------------------------------------------------- |
@@ -165,8 +165,8 @@ macOS 10.13・iOS11 以降の Safari では、`font-family` に `-apple-system` 
 
 |     フォント名      | HTML に貼る CDN リンクタグ                                                                                        |
 | :-----------------: | ----------------------------------------------------------------------------------------------------------------- |
-| `YakuHanJP_Narrow`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanjp-narrow.min.css">`   |
-| `YakuHanJPs_Narrow` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.0/dist/css/yakuhanjp_s-narrow.min.css">` |
+| `YakuHanJP_Narrow`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css">`   |
+| `YakuHanJPs_Narrow` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp_s-narrow.min.css">` |
 
 |     フォント名      | JavaScript に書く `import` 文                        |
 | :-----------------: | ---------------------------------------------------- |
