@@ -4,8 +4,6 @@ import ieBuster from "ie-buster"
 
 import AppFooter from "./app-footer"
 
-import "@fontsource/lato/900.css"
-
 import "@fontsource/noto-sans-jp/100.css"
 import "@fontsource/noto-sans-jp/300.css"
 import "@fontsource/noto-sans-jp/400.css"

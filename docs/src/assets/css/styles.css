@@ -55,15 +55,19 @@ svg:not([fill]) {
 }
 
 table {
+  display: block;
   width: 100%;
-  border: 2px solid var(--theme-tx-3);
   border-collapse: collapse;
   border-spacing: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 table th,
 table td {
   padding: 0.75rem 1rem;
+  background: var(--theme-bg-1);
   border: 2px solid var(--theme-tx-3);
   vertical-align: top;
 }
@@ -85,7 +89,7 @@ table td {
 ----------------------------------------------------*/
 
 .hero {
-  padding: 10vh 20px;
+  padding: min(10vmax, 100px) 20px;
 }
 
 .logo {
@@ -94,12 +98,14 @@ table td {
   margin: 0 auto;
 }
 
-.logo-title {
-  margin: 1.75rem auto 0;
-  font-size: min(11vw, 4rem);
-  font-family: var(--theme-font-lato);
-  font-weight: 900;
-  text-align: center;
+.logo-text {
+  display: block;
+  width: min(66vw, 360px);
+  margin: min(5vmax, 56px) auto min(1.5vmax, 12px);
+}
+
+.logo-text path {
+  fill: var(--theme-tx-2);
 }
 
 .sub-title {
@@ -122,7 +128,7 @@ table td {
 ----------------------------------------------------*/
 
 .section {
-  padding: 4vmax 0 6vmax;
+  padding: min(4vmax, 48px) 0 min(6vmax, 72px);
 }
 
 .section:nth-child(odd):last-child {
@@ -144,11 +150,11 @@ table td {
 }
 
 .section .heading {
-  margin-bottom: 1.25rem;
+  margin-bottom: min(2vmax, 2rem);
   color: var(--theme-tx-3);
   font-size: min(7vw, 2rem);
-  font-weight: 900;
-  font-family: var(--theme-font-lato);
+  font-weight: 700;
+  font-family: var(--theme-font-sans-en);
   text-align: center;
 }
 
@@ -157,6 +163,7 @@ table td {
 ----------------------------------------------------*/
 
 .card {
+  position: relative;
   max-width: var(--theme-card-width);
   margin: 0 auto;
   padding: min(5vw, 32px);
@@ -183,29 +190,37 @@ table td {
   line-height: 1.75;
 }
 
-.card .grave-wrap {
-  display: block;
-  margin-right: max(-5vw, -32px);
-  margin-bottom: max(-5vw, -32px);
-  margin-left: max(-5vw, -32px);
+.card .markdown {
+  z-index: 1;
 }
 
-.card .grave {
-  display: block;
+.card .yakuhan-kun {
+  position: absolute;
+  top: -3%;
+  right: -2%;
+  width: 36%;
+  height: 100%;
+  margin: 0;
+  transform: rotate(20deg);
 }
 
-.card .license-notes {
-  text-align: center;
+.card .yakuhan-kun path {
+  fill: var(--theme-bg-4);
 }
 
-.card .license-notes span,
-.card .license-notes a {
-  display: inline-block;
+@media (max-width: 800px) {
+  .card .yakuhan-kun {
+    display: none;
+  }
 }
 
 /*----------------------------------------------------
 // Markdown
 ----------------------------------------------------*/
+
+.markdown {
+  position: relative;
+}
 
 .markdown > *:not(:first-child) {
   margin-top: 1rem;
@@ -213,17 +228,6 @@ table td {
 
 .markdown ul {
   padding-left: 1.5em;
-}
-
-/*----------------------------------------------------
-// Other Iluustration
-----------------------------------------------------*/
-
-.working {
-  display: block;
-  margin-top: 2rem;
-  margin-bottom: -2rem;
-  width: 100%;
 }
 
 /*----------------------------------------------------

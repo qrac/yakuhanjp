@@ -1,6 +1,7 @@
 import React from "react"
 
 import Logo from "../assets/svgs/logo.svg"
+import LogoText from "../assets/svgs/logo-text.svg"
 
 import yakuhanjpPkg from "yakuhanjp/package.json"
 import pjt from "../../project.json"
@@ -9,8 +10,8 @@ export default function SectionHero() {
   return (
     <section className="hero" id="hero">
       <Logo className="logo" />
-      <h1 className="logo-title">{pjt.site.title}</h1>
-      <h2 className="sub-title">{pjt.site.shortDescription}</h2>
+      <LogoText className="logo-text" />
+      <h1 className="sub-title">{pjt.site.shortDescription}</h1>
       <p className="repo-note">
         <span>v{yakuhanjpPkg.version}</span>
         <span>{" / "}</span>

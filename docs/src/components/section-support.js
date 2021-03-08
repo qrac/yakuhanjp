@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+import YakuhanKun from "../assets/svgs/yakuhan-kun.svg"
+
 export default function SectionSupport() {
   const data = useStaticQuery(graphql`
     query SectionSupportQuery {
@@ -22,6 +24,7 @@ export default function SectionSupport() {
               __html: data.support.childrenMarkdownRemark[0].html,
             }}
           />
+          <YakuhanKun className="yakuhan-kun" />
         </div>
       </div>
     </section>

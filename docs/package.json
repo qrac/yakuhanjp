@@ -15,7 +15,6 @@
     "last 1 ChromeAndroid versions"
   ],
   "dependencies": {
-    "@fontsource/lato": "^4.2.2",
     "@fontsource/m-plus-rounded-1c": "^4.2.2",
     "@fontsource/noto-sans-jp": "^4.2.2",
     "@fontsource/noto-serif-jp": "^4.2.2",
