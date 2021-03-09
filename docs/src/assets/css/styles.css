@@ -175,31 +175,15 @@ table td {
 }
 
 /*----------------------------------------------------
-// YakuHanJP
+// Simulator
 ----------------------------------------------------*/
 
-.is-yakuhanjp {
-  font-family: var(--theme-font-yakuhanjp);
+.simulator-grid {
+  list-style: none;
 }
 
-.is-yakuhanjps {
-  font-family: var(--theme-font-yakuhanjps);
-}
-
-.is-yakuhanmp {
-  font-family: var(--theme-font-yakuhanmp);
-}
-
-.is-yakuhanmps {
-  font-family: var(--theme-font-yakuhanmps);
-}
-
-.is-yakuhanrp {
-  font-family: var(--theme-font-yakuhanrp);
-}
-
-.is-yakuhanrps {
-  font-family: var(--theme-font-yakuhanrps);
+.simulator-button.is-active {
+  color: var(--theme-lk-1);
 }
 
 /*----------------------------------------------------
@@ -208,7 +192,6 @@ table td {
 
 .card {
   position: relative;
-  max-width: var(--theme-card-width);
   margin: 0 auto;
   padding: min(5vw, 32px);
   background: var(--theme-bg-1);
@@ -266,7 +249,6 @@ table td {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px 0;
-  max-width: var(--theme-card-width);
   margin: 0 auto;
   list-style: none;
 }
@@ -298,6 +280,30 @@ table td {
   padding-top: 1rem;
   border-top: 1px dashed var(--theme-tx-3);
   font-size: clamp(1.125rem, 3.5vw, 1.5rem);
+}
+
+.is-yakuhanjp {
+  font-family: var(--theme-font-yakuhanjp);
+}
+
+.is-yakuhanjps {
+  font-family: var(--theme-font-yakuhanjps);
+}
+
+.is-yakuhanmp {
+  font-family: var(--theme-font-yakuhanmp);
+}
+
+.is-yakuhanmps {
+  font-family: var(--theme-font-yakuhanmps);
+}
+
+.is-yakuhanrp {
+  font-family: var(--theme-font-yakuhanrp);
+}
+
+.is-yakuhanrps {
+  font-family: var(--theme-font-yakuhanrps);
 }
 
 /*----------------------------------------------------
