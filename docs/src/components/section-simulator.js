@@ -1,5 +1,7 @@
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 import classNames from "classnames"
+
+import TextareaAutosize from "react-textarea-autosize"
 
 //import yakuhanjpPkg from "yakuhanjp/package.json"
 import pjt from "../../project.json"
@@ -23,7 +25,55 @@ const SectionSimulator = () => {
     "1.5rem",
     "2rem",
   ]
-  const changeOptions = (value) => setOptions(value)
+  const onChangeOptions = (value) => setOptions(value)
+  const onChangeText = (event) => {
+    setText(event.target.value)
+  }
+  const switchHiragino = () => {
+    switch (options.style) {
+      case "serif":
+        return `"Hiragino Mincho ProN", "Noto Serif JP", "Yu Mincho", YuMincho, serif`
+      default:
+        return `"Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif`
+    }
+  }
+  const switchYu = () => {
+    switch (options.style) {
+      case "serif":
+        return `"Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif JP", serif`
+      default:
+        return `"Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif`
+    }
+  }
+  const switchNoto = () => {
+    switch (options.style) {
+      case "serif":
+        return `"Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif`
+      default:
+        return `"Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif`
+    }
+  }
+  const switchFontFallback = () => {
+    switch (options.font) {
+      case "yu":
+        return switchYu()
+      case "noto":
+        return switchNoto()
+      default:
+        return switchHiragino()
+    }
+  }
+  const switchFonts = switchFontFallback()
+  const textBeforeStyles = {
+    fontSize: options.size,
+    fontWeight: Number(options.weight),
+    fontFamily: switchFonts,
+  }
+  const textAfterStyles = {
+    fontSize: options.size,
+    fontWeight: Number(options.weight),
+    fontFamily: switchFonts,
+  }
   return (
     <section className="section" id="simulator">
       <div className="inner">
@@ -33,7 +83,7 @@ const SectionSimulator = () => {
             <li className="col">
               <SimulatorButton
                 label="Gothic"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{
                   ...options,
                   style: "sans-serif",
@@ -44,7 +94,7 @@ const SectionSimulator = () => {
               />
               <SimulatorButton
                 label="Mincho"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{
                   ...options,
                   style: "serif",
@@ -55,7 +105,7 @@ const SectionSimulator = () => {
               />
               <SimulatorButton
                 label="Round"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{
                   ...options,
                   style: "rounded-sans-serif",
@@ -68,14 +118,14 @@ const SectionSimulator = () => {
             <li className="col">
               <SimulatorButton
                 label="All"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{ ...options, target: "all" }}
                 active={options.target === "all"}
                 show={true}
               />
               <SimulatorButton
                 label="Small"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{ ...options, target: "small" }}
                 active={options.target === "small"}
                 show={true}
@@ -84,7 +134,7 @@ const SectionSimulator = () => {
             <li className="col">
               <SimulatorButton
                 label="Hiragino"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{ ...options, font: "hiragino" }}
                 active={options.font === "hiragino"}
                 show={
@@ -93,14 +143,14 @@ const SectionSimulator = () => {
               />
               <SimulatorButton
                 label="Apple"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{ ...options, font: "apple" }}
                 active={options.font === "apple"}
                 show={options.style === "sans-serif"}
               />
               <SimulatorButton
                 label="Yu"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{ ...options, font: "yu" }}
                 active={options.font === "yu"}
                 show={
@@ -109,7 +159,7 @@ const SectionSimulator = () => {
               />
               <SimulatorButton
                 label="Noto"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{ ...options, font: "noto" }}
                 active={options.font === "noto"}
                 show={
@@ -118,7 +168,7 @@ const SectionSimulator = () => {
               />
               <SimulatorButton
                 label="M PLUS Rounded 1c"
-                onChange={changeOptions}
+                onChange={onChangeOptions}
                 setValueObject={{ ...options, font: "mplusr1c" }}
                 active={options.font === "mplusr1c"}
                 show={options.style === "rounded-sans-serif"}
@@ -128,7 +178,7 @@ const SectionSimulator = () => {
               {weights.map((weight, index) => (
                 <SimulatorButton
                   label={`w${String(weight)}`}
-                  onChange={changeOptions}
+                  onChange={onChangeOptions}
                   setValueObject={{ ...options, weight: Number(weight) }}
                   active={options.weight === Number(weight)}
                   show={true}
@@ -140,7 +190,7 @@ const SectionSimulator = () => {
               {sizes.map((size, index) => (
                 <SimulatorButton
                   label={size}
-                  onChange={changeOptions}
+                  onChange={onChangeOptions}
                   setValueObject={{ ...options, size: size }}
                   active={options.size === size}
                   show={true}
@@ -151,10 +201,22 @@ const SectionSimulator = () => {
           </ul>
           <ul className="simulator-grid is-previews">
             <li className="col">
-              <SimulatorPreviewEdit text={text} onChange={setText} />
+              <TextareaAutosize
+                className="simulator-preview"
+                style={textBeforeStyles}
+                value={text}
+                onChange={onChangeText}
+                minRows={1}
+              />
             </li>
             <li className="col">
-              <SimulatorPreview text={text} />
+              <TextareaAutosize
+                className="simulator-preview"
+                style={textAfterStyles}
+                value={text}
+                onChange={onChangeText}
+                minRows={1}
+              />
             </li>
           </ul>
         </div>
@@ -175,25 +237,6 @@ const SimulatorButton = ({ label, onChange, setValueObject, active, show }) => {
       </button>
     )
   )
-}
-
-const SimulatorPreviewEdit = ({ text, onChange }) => {
-  const defalutText = useRef(text)
-  const handleInput = (event) => {
-    onChange(event.target.innerHTML)
-  }
-  return (
-    <div
-      className={"simulator-preview"}
-      contentEditable={true}
-      onInput={handleInput}
-      dangerouslySetInnerHTML={{ __html: defalutText.current }}
-    />
-  )
-}
-
-const SimulatorPreview = ({ text }) => {
-  return <div className={"simulator-preview"}>{text}</div>
 }
 
 export default SectionSimulator

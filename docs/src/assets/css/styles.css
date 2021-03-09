@@ -182,8 +182,22 @@ table td {
   list-style: none;
 }
 
+.simulator-grid.is-previews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .simulator-button.is-active {
   color: var(--theme-lk-1);
+}
+
+.simulator-preview {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--theme-tx-1);
+  font-size: 1rem;
+  resize: none;
 }
 
 /*----------------------------------------------------
