@@ -305,6 +305,7 @@ table td {
   border: none;
   color: var(--theme-tx-1);
   font-size: 1rem;
+  line-height: 1.5;
   resize: none;
 }
 

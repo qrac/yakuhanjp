@@ -25,32 +25,48 @@ import AppFooter from "./app-footer"
 //import "@fontsource/m-plus-rounded-1c/800.css"
 //import "@fontsource/m-plus-rounded-1c/900.css"
 
-import "yakuhanjp/dist/css/yakuhanjp.css"
-import "yakuhanjp/dist/css/yakuhanjp_s.css"
-import "yakuhanjp/dist/css/yakuhanmp.css"
-import "yakuhanjp/dist/css/yakuhanmp_s.css"
-import "yakuhanjp/dist/css/yakuhanrp.css"
-import "yakuhanjp/dist/css/yakuhanrp_s.css"
-import "yakuhanjp/dist/css/yakuhanjp-noto.css"
-import "yakuhanjp/dist/css/yakuhanjp_s-noto.css"
-import "yakuhanjp/dist/css/yakuhanmp-noto.css"
-import "yakuhanjp/dist/css/yakuhanmp_s-noto.css"
-import "yakuhanjp/dist/css/yakuhanjp-narrow.css"
-import "yakuhanjp/dist/css/yakuhanjp_s-narrow.css"
+//import "yakuhanjp/dist/css/yakuhanjp.css"
+//import "yakuhanjp/dist/css/yakuhanjp_s.css"
+//import "yakuhanjp/dist/css/yakuhanmp.css"
+//import "yakuhanjp/dist/css/yakuhanmp_s.css"
+//import "yakuhanjp/dist/css/yakuhanrp.css"
+//import "yakuhanjp/dist/css/yakuhanrp_s.css"
+//import "yakuhanjp/dist/css/yakuhanjp-noto.css"
+//import "yakuhanjp/dist/css/yakuhanjp_s-noto.css"
+//import "yakuhanjp/dist/css/yakuhanmp-noto.css"
+//import "yakuhanjp/dist/css/yakuhanmp_s-noto.css"
+//import "yakuhanjp/dist/css/yakuhanjp-narrow.css"
+//import "yakuhanjp/dist/css/yakuhanjp_s-narrow.css"
 
 import "../assets/css/theme-light.css"
 import "../assets/css/theme-dark.css"
 import "../assets/css/theme-variable.css"
 import "../assets/css/styles.css"
 
+import yakuhanjpPkg from "yakuhanjp/package.json"
 import pjt from "../../project.json"
 
 const site = pjt.site
 
+const yakuhanjpList = [
+  "yakuhanjp",
+  "yakuhanjp_s",
+  "yakuhanmp",
+  "yakuhanmp_s",
+  "yakuhanrp",
+  "yakuhanrp_s",
+  "yakuhanjp-noto",
+  "yakuhanjp_s-noto",
+  "yakuhanmp-noto",
+  "yakuhanmp_s-noto",
+  "yakuhanjp-narrow",
+  "yakuhanjp_s-narrow",
+]
+
 const AppLayout = ({ children }) => {
   useEffect(() => {
     ieBuster.init()
-  })
+  }, [])
   return (
     <div className="app" id="app">
       <Helmet htmlAttributes={{ lang: "ja" }}>
@@ -73,13 +89,21 @@ const AppLayout = ({ children }) => {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        {yakuhanjpList.map((item) => (
+          <link
+            rel="preload"
+            href={`https://cdn.jsdelivr.net/npm/yakuhanjp@${yakuhanjpPkg.version}/dist/css/${item}.min.css`}
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+          />
+        ))}
         <link
-          rel="stylesheet"
+          rel="preload"
           href={
             "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
           }
-          media="print"
-          onload="this.media='all'"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'"
         />
       </Helmet>
       <main className="main" id="main">
