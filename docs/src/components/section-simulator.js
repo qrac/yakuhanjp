@@ -3,7 +3,7 @@ import classNames from "classnames"
 
 import TextareaAutosize from "react-textarea-autosize"
 
-//import yakuhanjpPkg from "yakuhanjp/package.json"
+import yakuhanjpPkg from "yakuhanjp/package.json"
 import pjt from "../../project.json"
 
 const SectionSimulator = () => {
@@ -264,6 +264,11 @@ const SectionSimulator = () => {
               />
             </li>
           </ul>
+          <SimulatorCode
+            fileName={switchFontYakuHan({ callFileName: true })}
+            override={switchFontYakuHan({ callFileName: false })}
+            fallback={switchFontFallback()}
+          />
         </div>
       </div>
     </section>
@@ -281,6 +286,21 @@ const SimulatorButton = ({ label, onChange, setValueObject, active, show }) => {
         {label}
       </button>
     )
+  )
+}
+
+const SimulatorCode = ({ fileName, override, fallback }) => {
+  return (
+    <div className="simulator-code">
+      {/* prettier-ignore */}
+      <pre><code>{`<!-- HTML：CDNリンクを貼り付け -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@${yakuhanjpPkg.version}/dist/css/${fileName}.min.css">
+
+// CSS：font-familyを設定
+.example {
+  font-family: ${override}, ${fallback};
+}`}</code></pre>
+    </div>
   )
 }
 

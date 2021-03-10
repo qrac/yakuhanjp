@@ -8,8 +8,11 @@
   --theme-tx-3: #7b7b7b;
   --theme-bg-1: #fcfcfc;
   --theme-bg-2: #f2f2f2;
-  --theme-bg-3: #e8e8e8;
-  --theme-bg-4: #dedede;
+  --theme-bg-3: #e6e6e6;
+  --theme-bg-4: #d9d9d9;
   --theme-lk-1: #b07e00;
+  --theme-lk-tx: #fcfcfc;
   --theme-ac-1: #cfcfcf;
+  --theme-code-bg: #2e3440;
+  --theme-code-tx: #d8dee9;
 }

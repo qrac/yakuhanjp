@@ -135,11 +135,13 @@ table td {
   padding-bottom: 0;
 }
 
-.section:nth-child(odd) .fonts-grid .col:nth-child(odd) {
+.section:nth-child(odd) .fonts-grid .col:nth-child(odd),
+.section:nth-child(odd) .simulator-grid.is-previews .col:nth-child(odd) {
   background: var(--theme-bg-2);
 }
 
-.section:nth-child(odd) .fonts-grid .col:nth-child(even) {
+.section:nth-child(odd) .fonts-grid .col:nth-child(even),
+.section:nth-child(odd) .simulator-grid.is-previews .col:nth-child(even) {
   background: var(--theme-bg-1);
 }
 
@@ -151,11 +153,13 @@ table td {
   );
 }
 
-.section:nth-child(even) .fonts-grid .col:nth-child(odd) {
+.section:nth-child(even) .fonts-grid .col:nth-child(odd),
+.section:nth-child(even) .simulator-grid.is-previews .col:nth-child(odd) {
   background: var(--theme-bg-3);
 }
 
-.section:nth-child(even) .fonts-grid .col:nth-child(even) {
+.section:nth-child(even) .fonts-grid .col:nth-child(even),
+.section:nth-child(even) .simulator-grid.is-previews .col:nth-child(even) {
   background: var(--theme-bg-2);
 }
 
@@ -178,8 +182,28 @@ table td {
 // Simulator
 ----------------------------------------------------*/
 
+.simulator > *:not(:first-child) {
+  margin-top: 2px;
+}
+
 .simulator-grid {
   list-style: none;
+}
+
+.simulator-grid.is-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2px;
+  margin-bottom: -2px;
+}
+
+.simulator-grid.is-buttons .col {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 2px;
+  padding-bottom: 2px;
 }
 
 .simulator-grid.is-previews {
@@ -187,8 +211,26 @@ table td {
   grid-template-columns: 1fr 1fr;
 }
 
+.simulator-grid.is-previews .col {
+  padding: min(5vw, 32px);
+}
+
+.simulator-button {
+  flex: 1 0 auto;
+  display: block;
+  padding: 4px 8px;
+  background: var(--theme-bg-1);
+  border: none;
+  color: inherit;
+}
+
 .simulator-button:not(.is-active) {
   cursor: pointer;
+}
+
+.simulator-button:not(.is-active):hover {
+  background: var(--theme-lk-1);
+  color: var(--theme-lk-tx);
 }
 
 .simulator-button.is-active {
@@ -202,6 +244,22 @@ table td {
   color: var(--theme-tx-1);
   font-size: 1rem;
   resize: none;
+}
+
+.simulator-preview:hover {
+  box-shadow: 0 0 0 1px var(--theme-tx-3);
+  border-radius: 3px;
+}
+
+.simulator-code pre {
+  background: var(--theme-code-bg);
+  padding: 1.25rem 1.5rem;
+  color: var(--theme-code-tx);
+  font-size: 0.875rem;
+  font-family: var(--theme-font-mono);
+  word-break: normal;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /*----------------------------------------------------
