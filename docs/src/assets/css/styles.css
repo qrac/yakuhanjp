@@ -135,13 +135,13 @@ table td {
   padding-bottom: 0;
 }
 
-.section:nth-child(odd) .fonts-grid .col:nth-child(odd),
-.section:nth-child(odd) .simulator-grid.is-previews .col:nth-child(odd) {
+.section:nth-child(odd) .simulator-grid.is-previews .col:nth-child(odd),
+.section:nth-child(odd) .fonts-grid .col:nth-child(odd) {
   background: var(--theme-bg-2);
 }
 
-.section:nth-child(odd) .fonts-grid .col:nth-child(even),
-.section:nth-child(odd) .simulator-grid.is-previews .col:nth-child(even) {
+.section:nth-child(odd) .simulator-grid.is-previews .col:nth-child(even),
+.section:nth-child(odd) .fonts-grid .col:nth-child(even) {
   background: var(--theme-bg-1);
 }
 
@@ -153,13 +153,13 @@ table td {
   );
 }
 
-.section:nth-child(even) .fonts-grid .col:nth-child(odd),
-.section:nth-child(even) .simulator-grid.is-previews .col:nth-child(odd) {
+.section:nth-child(even) .simulator-grid.is-previews .col:nth-child(odd),
+.section:nth-child(even) .fonts-grid .col:nth-child(odd) {
   background: var(--theme-bg-3);
 }
 
-.section:nth-child(even) .fonts-grid .col:nth-child(even),
-.section:nth-child(even) .simulator-grid.is-previews .col:nth-child(even) {
+.section:nth-child(even) .simulator-grid.is-previews .col:nth-child(even),
+.section:nth-child(even) .fonts-grid .col:nth-child(even) {
   background: var(--theme-bg-2);
 }
 
@@ -181,6 +181,46 @@ table td {
 /*----------------------------------------------------
 // Simulator
 ----------------------------------------------------*/
+
+.simulator {
+  position: relative;
+}
+
+.simulator-mode {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: flex;
+  padding: 0.675rem 0;
+  color: var(--theme-tx-3);
+  font-size: 0.75rem;
+}
+
+.simulator-mode > * {
+  margin-left: 0.25rem;
+}
+
+.simulator-mode-button {
+  padding: 0 0.25rem;
+  background: none;
+  border: none;
+  border-radius: 0.125rem;
+  font-size: 0.75rem;
+  color: inherit;
+}
+
+.simulator-mode-button:not(.is-active) {
+  cursor: pointer;
+}
+
+.simulator-mode-button:not(.is-active):hover {
+  background: var(--theme-lk-1);
+  color: var(--theme-lk-tx);
+}
+
+.simulator-mode-button.is-active {
+  color: var(--theme-lk-1);
+}
 
 .simulator > *:not(:first-child) {
   margin-top: 2px;
@@ -212,7 +252,28 @@ table td {
 }
 
 .simulator-grid.is-previews .col {
+  position: relative;
   padding: min(5vw, 32px);
+}
+
+.simulator-grid.is-previews .col:before {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  padding: 0.375rem;
+  color: var(--theme-tx-3);
+  font-size: 0.675rem;
+  line-height: 1;
+}
+
+.simulator-grid.is-previews .col:nth-child(1)::before {
+  content: "Before";
+  left: 0;
+}
+
+.simulator-grid.is-previews .col:nth-child(2)::before {
+  content: "After";
+  right: 0;
 }
 
 .simulator-button {
@@ -260,6 +321,42 @@ table td {
   word-break: normal;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+/*----------------------------------------------------
+// Simulator (Reverse Color)
+----------------------------------------------------*/
+
+.section:nth-child(odd)
+  .simulator-grid.is-previews.is-reverse
+  .col:nth-child(odd) {
+  background: var(--theme-reverse-bg-2);
+}
+
+.section:nth-child(odd)
+  .simulator-grid.is-previews.is-reverse
+  .col:nth-child(even) {
+  background: var(--theme-reverse-bg-1);
+}
+
+.section:nth-child(even)
+  .simulator-grid.is-previews.is-reverse
+  .col:nth-child(odd) {
+  background: var(--theme-reverse-bg-3);
+}
+
+.section:nth-child(even)
+  .simulator-grid.is-previews.is-reverse
+  .col:nth-child(even) {
+  background: var(--theme-reverse-bg-2);
+}
+
+.simulator-grid.is-previews.is-reverse .col:before {
+  color: var(--theme-reverse-tx-3);
+}
+
+.simulator-grid.is-previews.is-reverse .simulator-preview {
+  color: var(--theme-reverse-tx-1);
 }
 
 /*----------------------------------------------------

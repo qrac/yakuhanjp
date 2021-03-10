@@ -16,5 +16,10 @@
     --theme-ac-1: #2f2f2f;
     --theme-code-bg: #242424;
     --theme-code-tx: #aaaaaa;
+    --theme-reverse-tx-1: #333333;
+    --theme-reverse-tx-3: #7b7b7b;
+    --theme-reverse-bg-1: #fcfcfc;
+    --theme-reverse-bg-2: #f2f2f2;
+    --theme-reverse-bg-3: #e6e6e6;
   }
 }

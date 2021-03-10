@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import classNames from "classnames"
 
 import TextareaAutosize from "react-textarea-autosize"
@@ -7,6 +7,8 @@ import yakuhanjpPkg from "yakuhanjp/package.json"
 import pjt from "../../project.json"
 
 const SectionSimulator = () => {
+  const [isDark, setIsDark] = useState(false)
+  const [isReverse, setIsReverse] = useState(false)
   const [options, setOptions] = useState({
     style: "sans-serif",
     target: "all",
@@ -25,10 +27,14 @@ const SectionSimulator = () => {
     "1.5rem",
     "2rem",
   ]
+  const onChangeIsReverse = (value) => setIsReverse(value)
   const onChangeOptions = (value) => setOptions(value)
   const onChangeText = (event) => {
     setText(event.target.value)
   }
+  useEffect(() => {
+    window.matchMedia("(prefers-color-scheme: dark)").matches && setIsDark(true)
+  }, [])
   const switchFontYakuHan = ({ callFileName }) => {
     switch (true) {
       case options.style === "sans-serif" &&
@@ -124,6 +130,11 @@ const SectionSimulator = () => {
       <div className="inner">
         <h2 className="heading">{"Simulator"}</h2>
         <div className="simulator">
+          <SimulatorMode
+            isDark={isDark}
+            isReverse={isReverse}
+            onChange={onChangeIsReverse}
+          />
           <ul className="simulator-grid is-buttons">
             <li className="col">
               <SimulatorButton
@@ -244,7 +255,12 @@ const SectionSimulator = () => {
               ))}
             </li>
           </ul>
-          <ul className="simulator-grid is-previews">
+          <ul
+            className={classNames(
+              "simulator-grid is-previews",
+              isReverse && "is-reverse"
+            )}
+          >
             <li className="col">
               <TextareaAutosize
                 className="simulator-preview"
@@ -272,6 +288,58 @@ const SectionSimulator = () => {
         </div>
       </div>
     </section>
+  )
+}
+
+const SimulatorMode = ({ isDark, isReverse, onChange }) => {
+  return !isDark ? (
+    <div className="simulator-mode">
+      <button
+        onClick={() => onChange(false)}
+        className={classNames(
+          "simulator-mode-button",
+          !isReverse && "is-active"
+        )}
+        type="button"
+      >
+        {"Light"}
+      </button>
+      <span>{"|"}</span>
+      <button
+        onClick={() => onChange(true)}
+        className={classNames(
+          "simulator-mode-button",
+          isReverse && "is-active"
+        )}
+        type="button"
+      >
+        {"Dark"}
+      </button>
+    </div>
+  ) : (
+    <div className="simulator-mode">
+      <button
+        onClick={() => onChange(true)}
+        className={classNames(
+          "simulator-mode-button",
+          isReverse && "is-active"
+        )}
+        type="button"
+      >
+        {"Light"}
+      </button>
+      <span>{"|"}</span>
+      <button
+        onClick={() => onChange(false)}
+        className={classNames(
+          "simulator-mode-button",
+          !isReverse && "is-active"
+        )}
+        type="button"
+      >
+        {"Dark"}
+      </button>
+    </div>
   )
 }
 
