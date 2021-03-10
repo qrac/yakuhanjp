@@ -29,41 +29,86 @@ const SectionSimulator = () => {
   const onChangeText = (event) => {
     setText(event.target.value)
   }
-  const switchHiragino = () => {
-    switch (options.style) {
-      case "serif":
+  const switchFontYakuHan = ({ callFileName }) => {
+    switch (true) {
+      case options.style === "sans-serif" &&
+        options.target === "small" &&
+        options.font !== "yu" &&
+        options.font !== "noto" &&
+        options.font !== "apple":
+        return callFileName ? "yakuhanjp_s" : "YakuHanJPs"
+      case options.style === "serif" &&
+        options.target === "all" &&
+        options.font !== "noto":
+        return callFileName ? "yakuhanmp" : "YakuHanMP"
+      case options.style === "serif" &&
+        options.target === "small" &&
+        options.font !== "noto":
+        return callFileName ? "yakuhanmp_s" : "YakuHanMPs"
+      case options.style === "rounded-sans-serif" && options.target === "all":
+        return callFileName ? "yakuhanrp" : "YakuHanRP"
+      case options.style === "rounded-sans-serif" && options.target === "small":
+        return callFileName ? "yakuhanrp_s" : "YakuHanRPs"
+      case options.style === "sans-serif" &&
+        options.target === "all" &&
+        options.font === "noto":
+        return callFileName ? "yakuhanjp-noto" : "YakuHanJP_Noto"
+      case options.style === "sans-serif" &&
+        options.target === "small" &&
+        options.font === "noto":
+        return callFileName ? "yakuhanjp_s-noto" : "YakuHanJPs_Noto"
+      case options.style === "serif" &&
+        options.target === "all" &&
+        options.font === "noto":
+        return callFileName ? "yakuhanmp-noto" : "YakuHanMP_Noto"
+      case options.style === "serif" &&
+        options.target === "small" &&
+        options.font === "noto":
+        return callFileName ? "yakuhanmp_s-noto" : "YakuHanMPs_Noto"
+      case options.style === "sans-serif" &&
+        options.target === "all" &&
+        options.font === "yu":
+      case options.style === "sans-serif" &&
+        options.target === "all" &&
+        options.font === "apple":
+        return callFileName ? "yakuhanjp-narrow" : "YakuHanJP_Narrow"
+      case options.style === "sans-serif" &&
+        options.target === "small" &&
+        options.font === "yu":
+      case options.style === "sans-serif" &&
+        options.target === "small" &&
+        options.font === "apple":
+        return callFileName ? "yakuhanjp_s-narrow" : "YakuHanJPs_Narrow"
+      default:
+        return callFileName ? "yakuhanjp" : "YakuHanJP"
+    }
+  }
+  const switchFontFallback = () => {
+    switch (true) {
+      case options.style === "sans-serif" && options.font === "apple":
+        return `-apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif`
+      case options.style === "sans-serif" && options.font === "yu":
+        return `"Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif`
+      case options.style === "sans-serif" && options.font === "noto":
+        return `"Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif`
+      case options.style === "serif" && options.font === "hiragino":
         return `"Hiragino Mincho ProN", "Noto Serif JP", "Yu Mincho", YuMincho, serif`
+      case options.style === "serif" && options.font === "yu":
+        return `"Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif JP", serif`
+      case options.style === "serif" && options.font === "noto":
+        return `"Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif`
+      case options.style === "rounded-sans-serif" &&
+        options.font === "mplusr1c":
+        return `"M PLUS Rounded 1c", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif`
       default:
         return `"Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif`
     }
   }
-  const switchYu = () => {
-    switch (options.style) {
-      case "serif":
-        return `"Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif JP", serif`
-      default:
-        return `"Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif`
-    }
-  }
-  const switchNoto = () => {
-    switch (options.style) {
-      case "serif":
-        return `"Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif`
-      default:
-        return `"Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif`
-    }
-  }
-  const switchFontFallback = () => {
-    switch (options.font) {
-      case "yu":
-        return switchYu()
-      case "noto":
-        return switchNoto()
-      default:
-        return switchHiragino()
-    }
-  }
   const switchFonts = switchFontFallback()
+  const switchFontsWithYakuHan = [
+    switchFontYakuHan({ callFileName: false }),
+    switchFontFallback(),
+  ].join(", ")
   const textBeforeStyles = {
     fontSize: options.size,
     fontWeight: Number(options.weight),
@@ -72,7 +117,7 @@ const SectionSimulator = () => {
   const textAfterStyles = {
     fontSize: options.size,
     fontWeight: Number(options.weight),
-    fontFamily: switchFonts,
+    fontFamily: switchFontsWithYakuHan,
   }
   return (
     <section className="section" id="simulator">

@@ -187,6 +187,10 @@ table td {
   grid-template-columns: 1fr 1fr;
 }
 
+.simulator-button:not(.is-active) {
+  cursor: pointer;
+}
+
 .simulator-button.is-active {
   color: var(--theme-lk-1);
 }
