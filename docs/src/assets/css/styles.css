@@ -283,6 +283,7 @@ table td {
   background: var(--theme-bg-1);
   border: none;
   color: inherit;
+  font-size: 0.875rem;
 }
 
 .simulator-button:not(.is-active) {
