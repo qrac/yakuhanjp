@@ -262,8 +262,15 @@ const SectionSimulator = () => {
             )}
           >
             <li className="col">
+              <label
+                className="simulator-preview-label"
+                htmlFor="simulator-preview-before"
+              >
+                {"Before"}
+              </label>
               <TextareaAutosize
                 className="simulator-preview"
+                id="simulator-preview-before"
                 style={textBeforeStyles}
                 value={text}
                 onChange={onChangeText}
@@ -271,8 +278,15 @@ const SectionSimulator = () => {
               />
             </li>
             <li className="col">
+              <label
+                className="simulator-preview-label"
+                htmlFor="simulator-preview-after"
+              >
+                {"After"}
+              </label>
               <TextareaAutosize
                 className="simulator-preview"
+                id="simulator-preview-after"
                 style={textAfterStyles}
                 value={text}
                 onChange={onChangeText}
@@ -363,7 +377,7 @@ const SimulatorCode = ({ fileName, override, fallback }) => {
 
 <span class="token comment">// CSS：font-familyを設定</span>
 <span class="token attr-name">.example</span> {
-  <span class="token keyword">font-family</span>: ${override}, <span class="token attr-name">${fallback}</span>;
+  font-family: <span class="token keyword">${override}</span>, <span class="token attr-value">${fallback}</span>;
 }</code>`
   return (
     <div className="simulator-code">

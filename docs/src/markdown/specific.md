@@ -1,0 +1,2 @@
+- [For Noto](https://github.com/qrac/yakuhanjp#for-noto)：Noto Sans JP または Noto Serif JP へ各種 YakuHanJP を適応する場合に使用する、ウェイト構成を最適化した CSS。
+- [For Narrow](https://github.com/qrac/yakuhanjp#for-narrow)：`-apple-system` や游ゴシックなどの細身フォントへ各種 YakuHanJP を適応する場合に使用する、ウェイト構成を調整した CSS。
