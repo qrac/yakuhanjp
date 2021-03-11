@@ -73,6 +73,41 @@ table td {
 }
 
 /*----------------------------------------------------
+// Code
+----------------------------------------------------*/
+
+pre {
+  background: var(--theme-code-bg);
+  padding: 1.25rem 1.5rem;
+  color: var(--theme-code-tx);
+  font-size: 1rem;
+  font-family: var(--theme-font-mono);
+  word-break: normal;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.token.comment {
+  color: var(--theme-token-comment);
+}
+
+.token.tag {
+  color: var(--theme-token-tag);
+}
+
+.token.attr-name {
+  color: var(--theme-token-attr-name);
+}
+
+.token.attr-value {
+  color: var(--theme-token-attr-value);
+}
+
+.token.keyword {
+  color: var(--theme-token-keyword);
+}
+
+/*----------------------------------------------------
 // App
 ----------------------------------------------------*/
 
@@ -214,7 +249,7 @@ table td {
 }
 
 .simulator-mode-button:not(.is-active):hover {
-  background: var(--theme-lk-1);
+  background: var(--theme-lk-2);
   color: var(--theme-lk-tx);
 }
 
@@ -291,7 +326,7 @@ table td {
 }
 
 .simulator-button:not(.is-active):hover {
-  background: var(--theme-lk-1);
+  background: var(--theme-lk-2);
   color: var(--theme-lk-tx);
 }
 
@@ -312,17 +347,6 @@ table td {
 .simulator-preview:hover {
   box-shadow: 0 0 0 1px var(--theme-tx-3);
   border-radius: 3px;
-}
-
-.simulator-code pre {
-  background: var(--theme-code-bg);
-  padding: 1.25rem 1.5rem;
-  color: var(--theme-code-tx);
-  font-size: 0.875rem;
-  font-family: var(--theme-font-mono);
-  word-break: normal;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 /*----------------------------------------------------

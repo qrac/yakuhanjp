@@ -358,16 +358,17 @@ const SimulatorButton = ({ label, onChange, setValueObject, active, show }) => {
 }
 
 const SimulatorCode = ({ fileName, override, fallback }) => {
+  const codeTemplate = `<code><span class="token comment">&lt;!-- HTML：CDNリンクを貼り付け --&gt;</span>
+&lt;<span class="token tag">link</span> <span class="token attr-name">rel</span>="<span class="token attr-value">stylesheet</span>" <span class="token attr-name">href</span>="<span class="token attr-value">https://cdn.jsdelivr.net/npm/yakuhanjp@${yakuhanjpPkg.version}/dist/css/${fileName}.min.css</span>"&gt;
+
+<span class="token comment">// CSS：font-familyを設定</span>
+<span class="token attr-name">.example</span> {
+  <span class="token keyword">font-family</span>: ${override}, <span class="token attr-name">${fallback}</span>;
+}</code>`
   return (
     <div className="simulator-code">
       {/* prettier-ignore */}
-      <pre><code>{`<!-- HTML：CDNリンクを貼り付け -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@${yakuhanjpPkg.version}/dist/css/${fileName}.min.css">
-
-// CSS：font-familyを設定
-.example {
-  font-family: ${override}, ${fallback};
-}`}</code></pre>
+      <pre dangerouslySetInnerHTML={{ __html: codeTemplate }} />
     </div>
   )
 }
