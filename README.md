@@ -82,7 +82,7 @@ font-family（CSS）のフォールバック機能を利用し、文字幅を調
 ## [npm](https://www.npmjs.com/package/yakuhanjp)
 
 ```bash
-$ npm i yakuhanjp
+$ npm install yakuhanjp
 ```
 
 ### CSS
