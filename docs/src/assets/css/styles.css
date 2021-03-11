@@ -47,9 +47,9 @@ svg:not([fill]) {
 
 :not(pre) > code {
   padding: 0.2rem 0.5rem;
-  background-color: var(--theme-ac-1);
+  background-color: var(--theme-code-bg);
   border-radius: 3px;
-  color: var(--theme-lk-tx);
+  color: var(--theme-code-tx);
   font-size: 0.875em;
   word-break: keep-all;
 }
@@ -517,7 +517,8 @@ pre {
   margin-top: 1rem;
 }
 
-.markdown ul {
+.markdown ul,
+.markdown ol {
   padding-left: 1.5em;
 }
 

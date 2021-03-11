@@ -88,12 +88,13 @@ const AppLayout = ({ children }) => {
         <meta name="twitter:creator" content={"@" + site.twitter.id} />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.png" />
-        {yakuhanjpList.map((item) => (
+        {yakuhanjpList.map((item, index) => (
           <link
             rel="preload"
             href={`https://cdn.jsdelivr.net/npm/yakuhanjp@${yakuhanjpPkg.version}/dist/css/${item}.min.css`}
             as="style"
             onload="this.onload=null;this.rel='stylesheet'"
+            key={index}
           />
         ))}
         <link rel="preconnect" href="https://fonts.gstatic.com" />
