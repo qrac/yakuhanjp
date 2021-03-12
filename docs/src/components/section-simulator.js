@@ -34,6 +34,19 @@ const SectionSimulator = () => {
   }
   useEffect(() => {
     window.matchMedia("(prefers-color-scheme: dark)").matches && setIsDark(true)
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (event) => {
+        if (event.matches) {
+          //console.log("change dark")
+          setIsDark(true)
+          setIsReverse(false)
+        } else {
+          //console.log("change light")
+          setIsDark(false)
+          setIsReverse(false)
+        }
+      })
   }, [])
   const switchFontYakuHan = ({ callFileName }) => {
     switch (true) {
