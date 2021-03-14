@@ -12,7 +12,8 @@
     "last 1 Firefox versions",
     "last 1 Safari versions",
     "last 1 iOS versions",
-    "last 1 ChromeAndroid versions"
+    "last 1 ChromeAndroid versions",
+    "ie 11"
   ],
   "dependencies": {
     "classnames": "^2.2.6",
