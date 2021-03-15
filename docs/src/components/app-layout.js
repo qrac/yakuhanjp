@@ -1,6 +1,5 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Helmet } from "react-helmet"
-import ieBuster from "ie-buster"
 
 import AppFooter from "./app-footer"
 
@@ -64,9 +63,6 @@ const yakuhanjpList = [
 ]
 
 const AppLayout = ({ children }) => {
-  useEffect(() => {
-    ieBuster.init()
-  }, [])
   return (
     <div className="app" id="app">
       <Helmet htmlAttributes={{ lang: "ja" }}>

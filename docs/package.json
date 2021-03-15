@@ -12,8 +12,7 @@
     "last 1 Firefox versions",
     "last 1 Safari versions",
     "last 1 iOS versions",
-    "last 1 ChromeAndroid versions",
-    "ie 11"
+    "last 1 ChromeAndroid versions"
   ],
   "dependencies": {
     "classnames": "^2.2.6",
@@ -24,7 +23,6 @@
     "gatsby-remark-remove-comments": "^0.1.0",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^3.0.0",
-    "ie-buster": "^2.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
