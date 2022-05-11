@@ -1,9 +1,5 @@
-//----------------------------------------------------
-// Variables
-//----------------------------------------------------
-
-const fs = require("fs-extra")
-const sass = require("sass")
+import fs from "fs-extra"
+import sass from "sass"
 
 const pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"))
 const pjt = JSON.parse(fs.readFileSync("./project.json", "utf8"))
@@ -13,10 +9,6 @@ const distScssDir = "./dist/scss"
 const distCssDir = "./dist/css"
 const distFontDir = "./dist/fonts"
 const srcFontDir = "./src/fonts"
-
-//----------------------------------------------------
-// Functions
-//----------------------------------------------------
 
 const createDir = (dir) => {
   if (!fs.existsSync(dir)) {
@@ -48,10 +40,6 @@ const weights2scssWeights = (weights) => {
   return joinWeights
 }
 
-//----------------------------------------------------
-// Actions
-//----------------------------------------------------
-
 createDir(distScssDir)
 createDir(distCssDir)
 fs.copySync(srcFontDir, distFontDir)
@@ -64,23 +52,22 @@ pjt.fonts.forEach((font) => {
   const unicode = glyphs2unicode(font.glyphs)
   const scssWeights = weights2scssWeights(font.weights)
 
-  data = tmp.replace(/___pjtName___/g, pjt.name)
-  data = data.replace(/___pkgVersion___/g, pkg.version)
-  data = data.replace(/___pkgLicense___/g, pkg.license)
-  data = data.replace(/___pkgAuthorName___/g, pkg.author.name)
-  data = data.replace(/___fontName___/g, font.name)
-  data = data.replace(/___fontBase___/g, font.base)
-  data = data.replace(/___fontDistVariable___/g, font.dist.variable)
-  data = data.replace(/___fontFile___/g, font.file)
-  data = data.replace(/___unicode___/g, unicode)
-  data = data.replace(/___weights___/g, scssWeights)
+  const data = tmp
+    .replace(/___pjtName___/g, pjt.name)
+    .replace(/___pkgVersion___/g, pkg.version)
+    .replace(/___pkgLicense___/g, pkg.license)
+    .replace(/___pkgAuthorName___/g, pkg.author.name)
+    .replace(/___fontName___/g, font.name)
+    .replace(/___fontBase___/g, font.base)
+    .replace(/___fontDistVariable___/g, font.dist.variable)
+    .replace(/___fontFile___/g, font.file)
+    .replace(/___unicode___/g, unicode)
+    .replace(/___weights___/g, scssWeights)
 
-  const resultCss = sass.renderSync({
-    data: data,
+  const resultCss = sass.compileString(data, {
     outputStyle: "expanded",
   })
-  const resultCssMin = sass.renderSync({
-    data: data,
+  const resultCssMin = sass.compileString(data, {
     outputStyle: "compressed",
   })
 
