@@ -121,7 +121,7 @@ $ npm install yakuhanjp
 | `$yakuhanjp-weight`                  | `object`  | `100:"Thin", 200:"Light" ...` etc. |
 
 ```scss
-// Dart Sass Example: YakuHanRPs Use CDN
+// Dart Sass Example: YakuHanRP Use CDN
 @use "yakuhanjp/dist/scss/yakuhanrp" with (
   $yakuhanrp-eot-use: false,
   $yakuhanrp-cdn-use: true
