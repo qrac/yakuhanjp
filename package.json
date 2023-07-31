@@ -1,28 +1,14 @@
 {
-  "name": "yakuhanjp",
-  "description": "Yakumono-Hankaku Only Web Fonts",
+  "name": "yakuhanjp-monorepo",
   "version": "3.4.1",
-  "main": "dist/css/yakuhanjp.css",
-  "type": "module",
-  "files": [
-    "dist",
-    "project.json"
-  ],
-  "license": "(OFL-1.1 AND MIT)",
+  "private": true,
   "homepage": "https://yakuhanjp.qranoko.jp",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qrac/yakuhanjp"
-  },
-  "bugs": {
-    "url": "https://github.com/qrac/yakuhanjp/issues"
-  },
   "keywords": [
     "font",
     "webfont",
-    "yakuhan",
-    "yakumono",
-    "hankaku",
+    "subset",
+    "css",
+    "sass",
     "japanese",
     "yakuhanjp"
   ],
@@ -34,17 +20,9 @@
     "name": "QRANOKO",
     "url": "https://qranoko.jp"
   },
-  "scripts": {
-    "build": "node ./src",
-    "test": "node ./test",
-    "prepublishOnly": "npm run build",
-    "clean": "trash ./dist"
-  },
-  "prettier": {
-    "semi": false
-  },
-  "devDependencies": {
-    "fs-extra": "^10.1.0",
-    "sass": "^1.51.0"
-  }
+  "scripts": {},
+  "workspaces": [
+    "packages/*",
+    "playground/*"
+  ]
 }

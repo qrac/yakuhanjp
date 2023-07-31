@@ -1,0 +1,38 @@
+{
+  "name": "yakuhanjp",
+  "description": "Yakumono-Hankaku Fonts",
+  "version": "3.4.1",
+  "main": "dist/css/yakuhanjp.css",
+  "files": [
+    "dist",
+    "project.json"
+  ],
+  "license": "(OFL-1.1 AND MIT)",
+  "homepage": "https://yakuhanjp.qranoko.jp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrac/yakuhanjp",
+    "directory": "packages/yakuhanjp"
+  },
+  "bugs": {
+    "url": "https://github.com/qrac/yakuhanjp/issues"
+  },
+  "keywords": [
+    "font",
+    "webfont",
+    "subset",
+    "css",
+    "sass",
+    "japanese",
+    "yakuhanjp"
+  ],
+  "author": {
+    "name": "Qrac",
+    "url": "https://qrac.jp"
+  },
+  "organization": {
+    "name": "QRANOKO",
+    "url": "https://qranoko.jp"
+  },
+  "scripts": {}
+}
