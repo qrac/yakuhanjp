@@ -1,11 +1,7 @@
 {
-.appVersion = "1075";
+.appVersion = "3151";
 copyright = "Copyright 2016 The Rounded M+ Project Authors.";
 customParameters = (
-{
-name = vendorID;
-value = "M+  ";
-},
 {
 name = panose;
 value = (
@@ -100,6 +96,23 @@ value = (
 .notdef,
 space
 );
+},
+{
+name = vendorID;
+value = "M+  ";
+},
+{
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+},
+{
+Name = Width;
+Tag = wdth;
+}
+);
 }
 );
 date = "2015-05-28 17:12:02 +0000";
@@ -160,7 +173,7 @@ vertWidth = 1000;
 width = 364;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = space;

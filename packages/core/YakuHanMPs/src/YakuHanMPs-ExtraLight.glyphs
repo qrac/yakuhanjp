@@ -1,23 +1,7 @@
 {
-.appVersion = "983";
+.appVersion = "3151";
 copyright = "Copyright © 2017 Adobe Systems Incorporated (http://www.adobe.com/).";
 customParameters = (
-{
-name = description;
-value = "Dr. Ken Lunde (project architect, glyph set definition & overall production); Masataka HATTORI 服部正貴 (production & ideograph elements)";
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
-},
-{
-name = licenseURL;
-value = "http://scripts.sil.org/OFL";
-},
-{
-name = vendorID;
-value = GOOG;
-},
 {
 name = panose;
 value = (
@@ -85,6 +69,35 @@ value = (
 .notdef,
 space
 );
+},
+{
+name = description;
+value = "Dr. Ken Lunde (project architect, glyph set definition & overall production); Masataka HATTORI 服部正貴 (production & ideograph elements)";
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+},
+{
+name = licenseURL;
+value = "http://scripts.sil.org/OFL";
+},
+{
+name = vendorID;
+value = GOOG;
+},
+{
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+},
+{
+Name = Width;
+Tag = wdth;
+}
+);
 }
 );
 date = "2017-03-21 12:16:30 +0000";
@@ -119,12 +132,6 @@ alignmentZones = (
 "{521, 17}",
 "{521, 0}",
 "{507, 14}",
-"{0, 0}",
-"{0, -14}",
-"{0, -15}",
-"{0, -18}",
-"{0, -18}",
-"{0, -18}",
 "{0, -18}",
 "{-171, 0}",
 "{-176, 0}",
@@ -338,7 +345,7 @@ vertWidth = 1000;
 width = 1000;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = space;
