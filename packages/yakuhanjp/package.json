@@ -2,6 +2,7 @@
   "name": "yakuhanjp",
   "description": "Yakumono-Hankaku Fonts",
   "version": "3.4.1",
+  "type": "module",
   "main": "dist/css/yakuhanjp.css",
   "files": [
     "dist",
@@ -34,5 +35,10 @@
     "name": "QRANOKO",
     "url": "https://qranoko.jp"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "npm run clean && npm run build:src",
+    "build:src": "tsx ./src/build.ts",
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "npm run build"
+  }
 }

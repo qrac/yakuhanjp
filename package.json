@@ -20,9 +20,30 @@
     "name": "QRANOKO",
     "url": "https://qranoko.jp"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "npm run build:main",
+    "build:src": "npm run build:main-src",
+    "build:main": "cd ./packages/yakuhanjp && npm run build",
+    "build:main-src": "cd ./packages/yakuhanjp && npm run build:src",
+    "play": "",
+    "up": "npx npm-check-updates --deep",
+    "up:u": "npx npm-check-updates --deep -u",
+    "rev": "npx npm-replace-versions",
+    "release": "npm run release:main",
+    "release:main": "cd ./packages/yakuhanjp && npm publish",
+    "clean": "npm run clean:main",
+    "clean:main": "cd ./packages/yakuhanjp && npm run clean"
+  },
   "workspaces": [
     "packages/*",
     "playground/*"
-  ]
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "fs-extra": "^11.1.1",
+    "rimraf": "^5.0.1",
+    "sass": "^1.64.2",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  }
 }
