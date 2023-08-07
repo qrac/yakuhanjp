@@ -313,71 +313,6 @@ note = cid01390;
 unicode = 3001;
 },
 {
-glyphname = ellipsis;
-lastChange = "2017-04-15 13:11:54 +0000";
-layers = (
-{
-layerId = "0651C370-C2E1-4295-9ACE-B281E7C91CB0";
-paths = (
-{
-closed = 1;
-nodes = (
-"117 352 OFFCURVE",
-"139 330 OFFCURVE",
-"167 330 CURVE SMOOTH",
-"195 330 OFFCURVE",
-"217 352 OFFCURVE",
-"217 380 CURVE SMOOTH",
-"217 408 OFFCURVE",
-"195 430 OFFCURVE",
-"167 430 CURVE SMOOTH",
-"139 430 OFFCURVE",
-"117 408 OFFCURVE",
-"117 380 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"450 352 OFFCURVE",
-"472 330 OFFCURVE",
-"500 330 CURVE SMOOTH",
-"528 330 OFFCURVE",
-"550 352 OFFCURVE",
-"550 380 CURVE SMOOTH",
-"550 408 OFFCURVE",
-"528 430 OFFCURVE",
-"500 430 CURVE SMOOTH",
-"472 430 OFFCURVE",
-"450 408 OFFCURVE",
-"450 380 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"783 352 OFFCURVE",
-"805 330 OFFCURVE",
-"833 330 CURVE SMOOTH",
-"861 330 OFFCURVE",
-"883 352 OFFCURVE",
-"883 380 CURVE SMOOTH",
-"883 408 OFFCURVE",
-"861 430 OFFCURVE",
-"833 430 CURVE SMOOTH",
-"805 430 OFFCURVE",
-"783 408 OFFCURVE",
-"783 380 CURVE SMOOTH"
-);
-}
-);
-width = 1000;
-}
-);
-note = cid00728;
-unicode = 2026;
-},
-{
 glyphname = "period-han";
 lastChange = "2017-04-16 02:25:30 +0000";
 layers = (
@@ -425,6 +360,38 @@ width = 736;
 );
 note = cid01391;
 unicode = 3002;
+},
+{
+glyphname = "dot-kata";
+lastChange = "2017-04-16 02:25:44 +0000";
+layers = (
+{
+layerId = "0651C370-C2E1-4295-9ACE-B281E7C91CB0";
+paths = (
+{
+closed = 1;
+nodes = (
+"150 333 OFFCURVE",
+"188 295 OFFCURVE",
+"235 295 CURVE SMOOTH",
+"282 295 OFFCURVE",
+"320 333 OFFCURVE",
+"320 380 CURVE SMOOTH",
+"320 427 OFFCURVE",
+"282 465 OFFCURVE",
+"235 465 CURVE SMOOTH",
+"188 465 OFFCURVE",
+"150 427 OFFCURVE",
+"150 380 CURVE SMOOTH"
+);
+}
+);
+vertWidth = 1000;
+width = 470;
+}
+);
+note = cid01637;
+unicode = 30FB;
 },
 {
 glyphname = colon.full;
@@ -1340,38 +1307,6 @@ width = 456;
 );
 note = cid59000;
 unicode = FF09;
-},
-{
-glyphname = "dot-kata";
-lastChange = "2017-04-16 02:25:44 +0000";
-layers = (
-{
-layerId = "0651C370-C2E1-4295-9ACE-B281E7C91CB0";
-paths = (
-{
-closed = 1;
-nodes = (
-"150 333 OFFCURVE",
-"188 295 OFFCURVE",
-"235 295 CURVE SMOOTH",
-"282 295 OFFCURVE",
-"320 333 OFFCURVE",
-"320 380 CURVE SMOOTH",
-"320 427 OFFCURVE",
-"282 465 OFFCURVE",
-"235 465 CURVE SMOOTH",
-"188 465 OFFCURVE",
-"150 427 OFFCURVE",
-"150 380 CURVE SMOOTH"
-);
-}
-);
-vertWidth = 1000;
-width = 470;
-}
-);
-note = cid01637;
-unicode = 30FB;
 }
 );
 instances = (
