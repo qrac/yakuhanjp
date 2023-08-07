@@ -430,6 +430,56 @@ note = ellipsis;
 unicode = 2026;
 },
 {
+glyphname = anglebracketleft;
+lastChange = "2023-08-07 02:52:54 +0000";
+layers = (
+{
+layerId = "1D099554-13C2-460C-BACA-316648239F70";
+paths = (
+{
+closed = 1;
+nodes = (
+"628 823 LINE",
+"598 849 LINE",
+"200 380 LINE",
+"598 -89 LINE",
+"628 -63 LINE",
+"253 380 LINE"
+);
+}
+);
+width = 658;
+}
+);
+note = cid00390;
+unicode = 3008;
+},
+{
+glyphname = anglebracketright;
+lastChange = "2023-08-07 02:52:54 +0000";
+layers = (
+{
+layerId = "1D099554-13C2-460C-BACA-316648239F70";
+paths = (
+{
+closed = 1;
+nodes = (
+"30 -63 LINE",
+"60 -89 LINE",
+"458 380 LINE",
+"60 849 LINE",
+"30 823 LINE",
+"405 380 LINE"
+);
+}
+);
+width = 658;
+}
+);
+note = cid00391;
+unicode = 3009;
+},
+{
 glyphname = blacklenticularbracketleft;
 lastChange = "2017-04-16 03:18:26 +0000";
 layers = (
