@@ -178,16 +178,6 @@ macOS 10.13・iOS11 以降の Safari では、`font-family` に `-apple-system` 
 | `YakuHanJP_Narrow`  | `@use "yakuhanjp/dist/scss/yakuhanjp-narrow"`   |
 | `YakuHanJPs_Narrow` | `@use "yakuhanjp/dist/scss/yakuhanjp_s-narrow"` |
 
-## Support
-
-| Chrome | Firefox | IE  | Ege | Opera | Safari(Mac) |
-| :----: | :-----: | :-: | :-: | :---: | :---------: |
-|  55~   |   50~   | 9~  | 14~ |  36~  |     6~      |
-
-| Safari(iOS) | Chrome(Android) | Browser(Android) |
-| :---------: | :-------------: | :--------------: |
-|     7~      |       51~       |       4.4~       |
-
 ## Media
 
 - [HTML5 Conference 2016 LT "Yaku Han JP" by Qrac // Speaker Deck](https://speakerdeck.com/qrac/html5-conference-2016-lt-yaku-han-jp-by-qrac)
