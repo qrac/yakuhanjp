@@ -89,7 +89,7 @@
         "variable": "",
         "edition": false
       },
-      "glyphs": "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
+      "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
       "weights": {
         "100": "ExtraLight",
         "200": "Light",
@@ -122,7 +122,7 @@
         "variable": "",
         "edition": false
       },
-      "glyphs": "《》「」『』【】〔〕（）［］｛｝",
+      "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
       "weights": {
         "100": "ExtraLight",
         "200": "Light",
@@ -285,7 +285,7 @@
         "variable": "noto",
         "edition": true
       },
-      "glyphs": "、。！？《》「」『』【】〔〕・（）：；［］｛｝",
+      "glyphs": "、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝",
       "weights": {
         "200": "ExtraLight",
         "300": "Light",
@@ -318,7 +318,7 @@
         "variable": "noto",
         "edition": true
       },
-      "glyphs": "《》「」『』【】〔〕（）［］｛｝",
+      "glyphs": "〈〉《》「」『』【】〔〕（）［］｛｝",
       "weights": {
         "200": "ExtraLight",
         "300": "Light",
