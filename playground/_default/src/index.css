@@ -41,10 +41,14 @@ table {
 
 table th,
 table td {
+  max-width: 400px;
+  max-height: 400px;
   width: 50%;
   padding: 8px;
   border: 1px solid var(--theme-bd-1);
   vertical-align: top;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 table td p {

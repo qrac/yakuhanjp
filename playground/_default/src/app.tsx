@@ -54,15 +54,16 @@ const sizes = [
   "1.5rem",
   "2rem",
 ]
+const features = ["feature", "palt", "halt", "pkna"]
 
 export default function () {
-  const [demoText, setDemoText] = useState<string>(defaultDemoText)
-  const [selectedOverrideFont, setSelectedOverrideFont] =
-    useState<string>("YakuHanJP")
-  const [selectedBaseFont, setSelectedBaseFont] =
-    useState<string>("Hiragino Sans")
+  const [demoText, setDemoText] = useState(defaultDemoText)
+  const [selectedOverrideFont, setSelectedOverrideFont] = useState("YakuHanJP")
+  const [selectedBaseFont, setSelectedBaseFont] = useState("Hiragino Sans")
   const [selectedWeight, setSelectedWeight] = useState<number | string>(400)
-  const [selectedSize, setSelectedSize] = useState<string>("1rem")
+  const [selectedSize, setSelectedSize] = useState("1rem")
+  const [selectedFeature, setSelectedFeature] = useState("feature")
+  const [activeVertial, setActiveVertial] = useState(false)
   const demoTextRef = useRef<HTMLParagraphElement>(null)
 
   useEffect(() => {
@@ -115,18 +116,46 @@ export default function () {
               </option>
             ))}
           </select>
+          <select
+            value={selectedFeature}
+            onChange={(e) => setSelectedFeature(e.target.value)}
+          >
+            {features.map((item) => (
+              <option value={item} key={item}>
+                {item}
+              </option>
+            ))}
+          </select>
+          <label>
+            <input
+              type="checkbox"
+              checked={activeVertial}
+              onChange={(e) => setActiveVertial(e.target.checked)}
+            />
+            Vertial
+          </label>
         </div>
       </header>
 
       <main>
         <table>
           <thead>
-            <th>Before</th>
-            <th>After</th>
+            <tr>
+              <th>Before</th>
+              <th>After</th>
+            </tr>
           </thead>
           <tbody>
             <tr>
-              <td>
+              <td
+                style={{
+                  writingMode: activeVertial ? "vertical-rl" : undefined,
+                  fontFeatureSettings:
+                    selectedFeature !== "feature"
+                      ? `"${selectedFeature}"`
+                      : undefined,
+                }}
+              >
                 <p
                   contentEditable="true"
                   ref={demoTextRef}
@@ -141,7 +170,15 @@ export default function () {
                   }}
                 />
               </td>
-              <td>
+              <td
+                style={{
+                  writingMode: activeVertial ? "vertical-rl" : undefined,
+                  fontFeatureSettings:
+                    selectedFeature !== "feature"
+                      ? `"${selectedFeature}"`
+                      : undefined,
+                }}
+              >
                 <p
                   style={{
                     fontFamily: `${selectedOverrideFont}, ${selectedBaseFont}`,
