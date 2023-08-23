@@ -1,0 +1,54 @@
+:root {
+  --theme-tx-1: #292929;
+  --theme-bg-1: #ffffff;
+  --theme-bd-1: #3f3f3f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-tx-1: #f0f0f0;
+    --theme-bg-1: #282a37;
+    --theme-bd-1: #7c7c7c;
+  }
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: var(--theme-bg-1);
+  color: var(--theme-tx-1);
+}
+
+main {
+  padding: 1rem 0;
+}
+
+select {
+  padding: 0.125rem;
+  background: none;
+  border-color: var(--theme-bd-1);
+  color: inherit;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border: 1px solid var(--theme-bd-1);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th,
+table td {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid var(--theme-bd-1);
+  vertical-align: top;
+}
+
+table td p {
+  margin: 0;
+  padding: 8px;
+  line-height: 1.5;
+}

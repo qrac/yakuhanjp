@@ -25,7 +25,7 @@
     "build:src": "npm run build:main-src",
     "build:main": "cd ./packages/yakuhanjp && npm run build",
     "build:main-src": "cd ./packages/yakuhanjp && npm run build:src",
-    "play": "",
+    "play": "vite ./playground/_default",
     "up": "npx npm-check-updates --deep",
     "up:u": "npx npm-check-updates --deep -u",
     "rev": "npx npm-replace-versions",
@@ -40,10 +40,17 @@
   ],
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.5.3",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
     "fs-extra": "^11.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rimraf": "^5.0.1",
     "sass": "^1.64.2",
     "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
   }
 }
