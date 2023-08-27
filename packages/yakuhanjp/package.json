@@ -37,7 +37,7 @@
   },
   "scripts": {
     "build": "npm run clean && npm run build:src",
-    "build:src": "tsx ./src/build.ts",
+    "build:src": "vite build",
     "clean": "rimraf ./dist",
     "prepublishOnly": "npm run build"
   }
