@@ -1,33 +1,22 @@
 import { useState, useEffect, useRef } from "react"
+import queryString from "query-string"
 
-import "yakuhanjp/dist/css/yakuhanjp.css"
-import "yakuhanjp/dist/css/yakuhanjp_s.css"
-import "yakuhanjp/dist/css/yakuhanmp.css"
-import "yakuhanjp/dist/css/yakuhanmp_s.css"
-import "yakuhanjp/dist/css/yakuhanrp.css"
-import "yakuhanjp/dist/css/yakuhanrp_s.css"
-import "yakuhanjp/dist/css/yakuhanjp-noto.css"
-import "yakuhanjp/dist/css/yakuhanjp_s-noto.css"
-import "yakuhanjp/dist/css/yakuhanmp-noto.css"
-import "yakuhanjp/dist/css/yakuhanmp_s-noto.css"
-import "yakuhanjp/dist/css/yakuhanjp-narrow.css"
-import "yakuhanjp/dist/css/yakuhanjp_s-narrow.css"
+import "yakuhanjp/src/yakuhanjp.css"
+//import "yakuhanjp/src/yakuhanjp_s.css"
+//import "yakuhanjp/src/yakuhanmp.css"
+//import "yakuhanjp/src/yakuhanmp_s.css"
+//import "yakuhanjp/src/yakuhanrp.css"
+//import "yakuhanjp/src/yakuhanrp_s.css"
 
-const defaultDemoText =
+const defaultText =
   "「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。"
-const overrideFonts = [
+const overFonts = [
   "YakuHanJP",
   "YakuHanJPs",
   "YakuHanMP",
   "YakuHanMPs",
   "YakuHanRP",
   "YakuHanRPs",
-  "YakuHanJP_Noto",
-  "YakuHanJPs_Noto",
-  "YakuHanMP_Noto",
-  "YakuHanMPs_Noto",
-  "YakuHanJP_Narrow",
-  "YakuHanJPs_Narrow",
 ]
 const baseFonts = [
   "Hiragino Sans",
@@ -57,38 +46,77 @@ const sizes = [
 const features = ["feature", "palt", "halt", "pkna"]
 
 export default function () {
-  const [demoText, setDemoText] = useState(defaultDemoText)
-  const [selectedOverrideFont, setSelectedOverrideFont] = useState("YakuHanJP")
-  const [selectedBaseFont, setSelectedBaseFont] = useState("Hiragino Sans")
-  const [selectedWeight, setSelectedWeight] = useState<number | string>(400)
-  const [selectedSize, setSelectedSize] = useState("1rem")
-  const [selectedFeature, setSelectedFeature] = useState("feature")
-  const [activeVertial, setActiveVertial] = useState(false)
-  const demoTextRef = useRef<HTMLParagraphElement>(null)
+  const [mounted, setMounted] = useState(false)
+  const [text, setText] = useState(defaultText)
+  const [overFont, setOverFont] = useState(overFonts[0])
+  const [baseFont, setBaseFont] = useState(baseFonts[0])
+  const [weight, setWeight] = useState<number | string>(weights[3])
+  const [size, setSize] = useState(sizes[3])
+  const [feature, setFeature] = useState(features[0])
+  const [vertial, setVertial] = useState(false)
+  const textRef = useRef<HTMLParagraphElement>(null)
 
   useEffect(() => {
-    if (demoTextRef.current) {
-      demoTextRef.current.textContent = demoText
+    if (textRef.current) {
+      textRef.current.textContent = text
     }
-  }, [demoText])
+  }, [text])
+
+  useEffect(() => {
+    if (mounted) {
+      let paramString = window.location.search
+      let params = queryString.parse(paramString)
+
+      params = {
+        ...params,
+        text,
+        overFont,
+        baseFont,
+        weight: String(weight),
+        size,
+        feature,
+        vertial: String(vertial),
+      }
+      paramString = queryString.stringify(params)
+
+      const newUrl = window.location.pathname + "?" + paramString
+      window.history.pushState({}, "", newUrl)
+    }
+  }, [text, overFont, baseFont, weight, size, feature, vertial])
+
+  useEffect(() => {
+    const paramString = window.location.search
+
+    if (paramString) {
+      const params = queryString.parse(paramString)
+      params?.text && setText(params.text as string)
+      params?.overFont && setOverFont(params.overFont as string)
+      params?.baseFont && setBaseFont(params.baseFont as string)
+      params?.weight && setWeight(Number(params.weight))
+      params?.size && setSize(params.size as string)
+      params?.feature && setFeature(params.feature as string)
+      params?.vertial && setVertial(params.vertial === "true" ? true : false)
+    }
+    setMounted(true)
+  }, [])
   return (
     <>
       <header>
         <h1>YakuHanJP</h1>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
           <select
-            value={selectedOverrideFont}
-            onChange={(e) => setSelectedOverrideFont(e.target.value)}
+            value={overFont}
+            onChange={(e) => setOverFont(e.target.value)}
           >
-            {overrideFonts.map((item) => (
+            {overFonts.map((item) => (
               <option value={item} key={item}>
                 {item}
               </option>
             ))}
           </select>
           <select
-            value={selectedBaseFont}
-            onChange={(e) => setSelectedBaseFont(e.target.value)}
+            value={baseFont}
+            onChange={(e) => setBaseFont(e.target.value)}
           >
             {baseFonts.map((item) => (
               <option value={item} key={item}>
@@ -96,30 +124,21 @@ export default function () {
               </option>
             ))}
           </select>
-          <select
-            value={selectedWeight}
-            onChange={(e) => setSelectedWeight(e.target.value)}
-          >
+          <select value={weight} onChange={(e) => setWeight(e.target.value)}>
             {weights.map((item) => (
               <option value={item} key={item}>
                 {item}
               </option>
             ))}
           </select>
-          <select
-            value={selectedSize}
-            onChange={(e) => setSelectedSize(e.target.value)}
-          >
+          <select value={size} onChange={(e) => setSize(e.target.value)}>
             {sizes.map((item) => (
               <option value={item} key={item}>
                 {item}
               </option>
             ))}
           </select>
-          <select
-            value={selectedFeature}
-            onChange={(e) => setSelectedFeature(e.target.value)}
-          >
+          <select value={feature} onChange={(e) => setFeature(e.target.value)}>
             {features.map((item) => (
               <option value={item} key={item}>
                 {item}
@@ -129,8 +148,8 @@ export default function () {
           <label>
             <input
               type="checkbox"
-              checked={activeVertial}
-              onChange={(e) => setActiveVertial(e.target.checked)}
+              checked={vertial}
+              onChange={(e) => setVertial(e.target.checked)}
             />
             Vertial
           </label>
@@ -149,44 +168,40 @@ export default function () {
             <tr>
               <td
                 style={{
-                  writingMode: activeVertial ? "vertical-rl" : undefined,
+                  writingMode: vertial ? "vertical-rl" : undefined,
                   fontFeatureSettings:
-                    selectedFeature !== "feature"
-                      ? `"${selectedFeature}"`
-                      : undefined,
+                    feature !== "feature" ? `"${feature}"` : undefined,
                 }}
               >
                 <p
                   contentEditable="true"
-                  ref={demoTextRef}
+                  ref={textRef}
                   onInput={(e: React.FormEvent<HTMLParagraphElement>) => {
                     const target = e.currentTarget
-                    setDemoText(target.textContent || "")
+                    setText(target.textContent || "")
                   }}
                   style={{
-                    fontFamily: selectedBaseFont,
-                    fontWeight: selectedWeight,
-                    fontSize: selectedSize,
+                    fontFamily: baseFont,
+                    fontWeight: weight,
+                    fontSize: size,
                   }}
                 />
               </td>
               <td
                 style={{
-                  writingMode: activeVertial ? "vertical-rl" : undefined,
+                  writingMode: vertial ? "vertical-rl" : undefined,
                   fontFeatureSettings:
-                    selectedFeature !== "feature"
-                      ? `"${selectedFeature}"`
-                      : undefined,
+                    feature !== "feature" ? `"${feature}"` : undefined,
                 }}
               >
                 <p
                   style={{
-                    fontFamily: `${selectedOverrideFont}, ${selectedBaseFont}`,
-                    fontWeight: selectedWeight,
-                    fontSize: selectedSize,
+                    fontFamily: `${overFont}, ${baseFont}`,
+                    fontWeight: weight,
+                    fontSize: size,
                   }}
                 >
-                  {demoText}
+                  {text}
                 </p>
               </td>
             </tr>

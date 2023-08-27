@@ -25,6 +25,10 @@
     "build:src": "npm run build:main-src",
     "build:main": "cd ./packages/yakuhanjp && npm run build",
     "build:main-src": "cd ./packages/yakuhanjp && npm run build:src",
+    "build:unicode": "cd ./packages/unicode && npm run build",
+    "build:unicode-src": "cd ./packages/unicode && npm run build:src",
+    "test": "vitest run",
+    "test:w": "vitest watch",
     "play": "vite ./playground/_default",
     "up": "npx npm-check-updates --deep",
     "up:u": "npx npm-check-updates --deep -u",
@@ -45,12 +49,15 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.4",
     "fs-extra": "^11.1.1",
+    "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.1",
     "sass": "^1.64.2",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vite-plugin-banner": "^0.7.0",
+    "vitest": "^0.34.3"
   }
 }
