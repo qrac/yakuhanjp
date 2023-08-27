@@ -9,7 +9,7 @@ import "yakuhanjp/src/yakuhanjp.css"
 //import "yakuhanjp/src/yakuhanrp_s.css"
 
 const defaultText =
-  "「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは7種類。Noto Sans Japaneseに沿っています。"
+  "「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは9種類。Noto Sans JPに沿っています。内包文字→、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝"
 const overFonts = [
   "YakuHanJP",
   "YakuHanJPs",
