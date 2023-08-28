@@ -22,7 +22,14 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 0,
     rollupOptions: {
-      input: ["./src/yakuhanjp.css"],
+      input: [
+        "./src/yakuhanjp.css",
+        "./src/yakuhanjp_s.css",
+        "./src/yakuhanmp.css",
+        "./src/yakuhanmp_s.css",
+        "./src/yakuhanrp.css",
+        "./src/yakuhanrp_s.css",
+      ],
       output: {
         assetFileNames: (chunkInfo) => resolveOutput(chunkInfo),
       },

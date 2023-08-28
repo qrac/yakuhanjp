@@ -1,20 +1,9 @@
 @font-face {
-  font-family: "YakuHanJP";
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-Thin.woff2") format("woff2");
-  unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
-    U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
-    U+ff09, U+ff1a, U+ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
-}
-
-@font-face {
-  font-family: "YakuHanJP";
+  font-family: "YakuHanMP";
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-ExtraLight.woff2")
+  src: url("core/YakuHanMP/export/woff2/YakuHanMP-ExtraLight.woff2")
     format("woff2");
   unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
     U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
@@ -22,22 +11,22 @@
 }
 
 @font-face {
-  font-family: "YakuHanJP";
+  font-family: "YakuHanMP";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-Light.woff2") format("woff2");
+  src: url("core/YakuHanMP/export/woff2/YakuHanMP-Light.woff2") format("woff2");
   unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
     U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
     U+ff09, U+ff1a, U+ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
-  font-family: "YakuHanJP";
+  font-family: "YakuHanMP";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-Regular.woff2")
+  src: url("core/YakuHanMP/export/woff2/YakuHanMP-Regular.woff2")
     format("woff2");
   unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
     U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
@@ -45,22 +34,22 @@
 }
 
 @font-face {
-  font-family: "YakuHanJP";
+  font-family: "YakuHanMP";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-Medium.woff2") format("woff2");
+  src: url("core/YakuHanMP/export/woff2/YakuHanMP-Medium.woff2") format("woff2");
   unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
     U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
     U+ff09, U+ff1a, U+ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
-  font-family: "YakuHanJP";
+  font-family: "YakuHanMP";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-SemiBold.woff2")
+  src: url("core/YakuHanMP/export/woff2/YakuHanMP-SemiBold.woff2")
     format("woff2");
   unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
     U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
@@ -68,34 +57,22 @@
 }
 
 @font-face {
-  font-family: "YakuHanJP";
+  font-family: "YakuHanMP";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-Bold.woff2") format("woff2");
+  src: url("core/YakuHanMP/export/woff2/YakuHanMP-Bold.woff2") format("woff2");
   unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
     U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
     U+ff09, U+ff1a, U+ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
 }
 
 @font-face {
-  font-family: "YakuHanJP";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-ExtraBold.woff2")
-    format("woff2");
-  unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
-    U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
-    U+ff09, U+ff1a, U+ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
-}
-
-@font-face {
-  font-family: "YakuHanJP";
+  font-family: "YakuHanMP";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("core/YakuHanJP/export/woff2/YakuHanJP-Black.woff2") format("woff2");
+  src: url("core/YakuHanMP/export/woff2/YakuHanMP-Black.woff2") format("woff2");
   unicode-range: U+3001, U+3002, U+3008, U+3009, U+300a, U+300b, U+300c, U+300d,
     U+300e, U+300f, U+3010, U+3011, U+3014, U+3015, U+30fb, U+ff01, U+ff08,
     U+ff09, U+ff1a, U+ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
