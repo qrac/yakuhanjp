@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url("core/YakuHanRPs/export/woff2/YakuHanRPs-Thin.woff2") format("woff2");
+  src: url("core/YakuHanRPs/woff2/YakuHanRPs-Thin.woff2") format("woff2");
   unicode-range: U+3008, U+3009, U+300a, U+300b, U+300c, U+300d, U+300e, U+300f,
     U+3010, U+3011, U+3014, U+3015, U+ff08, U+ff09, U+ff3b, U+ff3d, U+ff5b,
     U+ff5d;
@@ -14,8 +14,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("core/YakuHanRPs/export/woff2/YakuHanRPs-Light.woff2")
-    format("woff2");
+  src: url("core/YakuHanRPs/woff2/YakuHanRPs-Light.woff2") format("woff2");
   unicode-range: U+3008, U+3009, U+300a, U+300b, U+300c, U+300d, U+300e, U+300f,
     U+3010, U+3011, U+3014, U+3015, U+ff08, U+ff09, U+ff3b, U+ff3d, U+ff5b,
     U+ff5d;
@@ -26,8 +25,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("core/YakuHanRPs/export/woff2/YakuHanRPs-Regular.woff2")
-    format("woff2");
+  src: url("core/YakuHanRPs/woff2/YakuHanRPs-Regular.woff2") format("woff2");
   unicode-range: U+3008, U+3009, U+300a, U+300b, U+300c, U+300d, U+300e, U+300f,
     U+3010, U+3011, U+3014, U+3015, U+ff08, U+ff09, U+ff3b, U+ff3d, U+ff5b,
     U+ff5d;
@@ -38,8 +36,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("core/YakuHanRPs/export/woff2/YakuHanRPs-Medium.woff2")
-    format("woff2");
+  src: url("core/YakuHanRPs/woff2/YakuHanRPs-Medium.woff2") format("woff2");
   unicode-range: U+3008, U+3009, U+300a, U+300b, U+300c, U+300d, U+300e, U+300f,
     U+3010, U+3011, U+3014, U+3015, U+ff08, U+ff09, U+ff3b, U+ff3d, U+ff5b,
     U+ff5d;
@@ -50,7 +47,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("core/YakuHanRPs/export/woff2/YakuHanRPs-Bold.woff2") format("woff2");
+  src: url("core/YakuHanRPs/woff2/YakuHanRPs-Bold.woff2") format("woff2");
   unicode-range: U+3008, U+3009, U+300a, U+300b, U+300c, U+300d, U+300e, U+300f,
     U+3010, U+3011, U+3014, U+3015, U+ff08, U+ff09, U+ff3b, U+ff3d, U+ff5b,
     U+ff5d;
@@ -61,8 +58,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("core/YakuHanRPs/export/woff2/YakuHanRPs-ExtraBold.woff2")
-    format("woff2");
+  src: url("core/YakuHanRPs/woff2/YakuHanRPs-ExtraBold.woff2") format("woff2");
   unicode-range: U+3008, U+3009, U+300a, U+300b, U+300c, U+300d, U+300e, U+300f,
     U+3010, U+3011, U+3014, U+3015, U+ff08, U+ff09, U+ff3b, U+ff3d, U+ff5b,
     U+ff5d;
@@ -73,8 +69,7 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("core/YakuHanRPs/export/woff2/YakuHanRPs-Black.woff2")
-    format("woff2");
+  src: url("core/YakuHanRPs/woff2/YakuHanRPs-Black.woff2") format("woff2");
   unicode-range: U+3008, U+3009, U+300a, U+300b, U+300c, U+300d, U+300e, U+300f,
     U+3010, U+3011, U+3014, U+3015, U+ff08, U+ff09, U+ff3b, U+ff3d, U+ff5b,
     U+ff5d;
