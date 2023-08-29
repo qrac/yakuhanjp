@@ -4,9 +4,11 @@ import { Resvg } from "@resvg/resvg-js"
 export async function generateOgp({
   text,
   font,
-}: {
+}: //vertical,
+{
   text: string
   font: Buffer
+  //vertical: boolean
 }) {
   const svg = await satori(
     {
@@ -32,6 +34,7 @@ export async function generateOgp({
               height: 390,
               fontSize: "60px",
               color: "#333333",
+              //writingMode: vertical ? "vertical-rl" : "inherit",
             },
             children: text,
           },

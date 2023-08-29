@@ -20,6 +20,7 @@ export function pluginOgp(): Plugin {
           const text = params.text as string
           const fontName = params.fontName as string
           const weightName = params.weightName as string
+          //const vertical = (params.vertical as string) === "true" ? true : false
           const fontPath = path.join(
             process.cwd(),
             "packages",
@@ -33,7 +34,7 @@ export function pluginOgp(): Plugin {
           if (!exists) return
 
           const font = await fs.readFile(fontPath)
-          const ogp = await generateOgp({ text, font })
+          const ogp = await generateOgp({ text, font /*vertical*/ })
 
           res.end(ogp)
           return

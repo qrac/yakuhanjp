@@ -29,7 +29,7 @@ export default function () {
   const [text, setText] = useState(defaultText)
   const [font, setFont] = useState(fonts[0])
   const [weight, setWeight] = useState(weights[6])
-  const [vertial, setVertial] = useState(false)
+  //const [vertical, setVertical] = useState(false)
   const [imgSrc, setImgSrc] = useState<string | null>(null)
 
   async function handleClick() {
@@ -40,6 +40,7 @@ export default function () {
         fontName: font,
         weight,
         weightName,
+        //vertical,
       }
       const paramString = queryString.stringify(params)
       const response = await fetch(`/api/generate-ogp?${paramString}`)
@@ -71,14 +72,14 @@ export default function () {
         text,
         font,
         weight: String(weight),
-        vertial: String(vertial),
+        //vertical: String(vertical),
       }
       paramString = queryString.stringify(params)
 
       const newUrl = window.location.pathname + "?" + paramString
       window.history.pushState({}, "", newUrl)
     }
-  }, [text, font, weight, vertial])
+  }, [text, font, weight /*vertical*/])
 
   useEffect(() => {
     const paramString = window.location.search
@@ -88,7 +89,7 @@ export default function () {
       params?.text && setText(params.text as string)
       params?.font && setFont(params.font as string)
       params?.weight && setWeight(Number(params.weight))
-      params?.vertial && setVertial(params.vertial === "true" ? true : false)
+      //params?.vertical && setVertical(params.vertical === "true" ? true : false)
     }
     setMounted(true)
   }, [])
@@ -114,14 +115,14 @@ export default function () {
               </option>
             ))}
           </select>
-          <label>
+          {/*<label>
             <input
               type="checkbox"
-              checked={vertial}
-              onChange={(e) => setVertial(e.target.checked)}
+              checked={vertical}
+              onChange={(e) => setVertical(e.target.checked)}
             />
-            Vertial
-          </label>
+            vertical
+          </label>*/}
         </div>
         <div
           style={{
