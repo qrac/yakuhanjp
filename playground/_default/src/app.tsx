@@ -53,7 +53,7 @@ export default function () {
   const [weight, setWeight] = useState<number | string>(weights[3])
   const [size, setSize] = useState(sizes[3])
   const [feature, setFeature] = useState(features[0])
-  const [vertial, setVertial] = useState(false)
+  const [vertical, setVertical] = useState(false)
   const textRef = useRef<HTMLParagraphElement>(null)
 
   useEffect(() => {
@@ -75,14 +75,14 @@ export default function () {
         weight: String(weight),
         size,
         feature,
-        vertial: String(vertial),
+        vertical: String(vertical),
       }
       paramString = queryString.stringify(params)
 
       const newUrl = window.location.pathname + "?" + paramString
       window.history.pushState({}, "", newUrl)
     }
-  }, [text, overFont, baseFont, weight, size, feature, vertial])
+  }, [text, overFont, baseFont, weight, size, feature, vertical])
 
   useEffect(() => {
     const paramString = window.location.search
@@ -95,7 +95,7 @@ export default function () {
       params?.weight && setWeight(Number(params.weight))
       params?.size && setSize(params.size as string)
       params?.feature && setFeature(params.feature as string)
-      params?.vertial && setVertial(params.vertial === "true" ? true : false)
+      params?.vertical && setVertical(params.vertical === "true" ? true : false)
     }
     setMounted(true)
   }, [])
@@ -148,10 +148,10 @@ export default function () {
           <label>
             <input
               type="checkbox"
-              checked={vertial}
-              onChange={(e) => setVertial(e.target.checked)}
+              checked={vertical}
+              onChange={(e) => setVertical(e.target.checked)}
             />
-            Vertial
+            vertical
           </label>
         </div>
       </header>
@@ -168,7 +168,7 @@ export default function () {
             <tr>
               <td
                 style={{
-                  writingMode: vertial ? "vertical-rl" : undefined,
+                  writingMode: vertical ? "vertical-rl" : undefined,
                   fontFeatureSettings:
                     feature !== "feature" ? `"${feature}"` : undefined,
                 }}
@@ -189,7 +189,7 @@ export default function () {
               </td>
               <td
                 style={{
-                  writingMode: vertial ? "vertical-rl" : undefined,
+                  writingMode: vertical ? "vertical-rl" : undefined,
                   fontFeatureSettings:
                     feature !== "feature" ? `"${feature}"` : undefined,
                 }}
