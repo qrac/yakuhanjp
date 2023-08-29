@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import queryString from "query-string"
 
 const defaultText =
-  "「OGP生成に使える！！？」これは、YakuHanJPを『元フォント』にマージしているから【単一ファイル呼び出し】で約物を半角にできる"
+  "「OGP生成に使える！！？」そう、これはYakuHanJPを『元フォント』にマージしている。だから【1ファイル】のみで《約物》を〈半角〉にできるのだ。"
 const fonts = [
   "YakuHanJP",
   "YakuHanJPs",
