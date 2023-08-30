@@ -7,7 +7,7 @@
   <a aria-label="NPM version" href="https://www.npmjs.com/package/yakuhanjp">
     <img alt="" src="https://img.shields.io/npm/v/yakuhanjp.svg?style=for-the-badge&labelColor=212121">
   </a>
-  <a aria-label="License" href="https://github.com/qrac/yakuhanjp/blob/master/LICENSE">
+  <a aria-label="License" href="https://github.com/qrac/yakuhanjp/blob/main/LICENSE">
     <img alt="" src="https://img.shields.io/npm/l/yakuhanjp.svg?style=for-the-badge&labelColor=212121">
   </a>
 </p>
@@ -18,7 +18,7 @@ https://yakuhanjp.qranoko.jp
 
 ## About
 
-Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含まれる約物を半角にする「約物半角専用フォント」です。
+Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含まれる約物を半角にするフォントです。
 
 ## Packages
 
