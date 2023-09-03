@@ -1,0 +1,7 @@
+{
+  "name": "docs",
+  "private": true,
+  "dependencies": {
+    "preact": "^10.17.1"
+  }
+}

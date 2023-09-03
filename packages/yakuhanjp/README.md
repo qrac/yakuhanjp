@@ -64,24 +64,21 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 
 - https://cdn.jsdelivr.net/npm/yakuhanjp/
 
-|  フォント名  | HTML に貼る CDN リンクタグ                                                                             |
-| :----------: | ------------------------------------------------------------------------------------------------------ |
-| `YakuHanJP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.css">`   |
-| `YakuHanJPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp_s.css">` |
-| `YakuHanMP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanmp.css">`   |
-| `YakuHanMPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanmp_s.css">` |
-| `YakuHanRP`  | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanrp.css">`   |
-| `YakuHanRPs` | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanrp_s.css">` |
+1. [シミュレーター](https://yakuhanjp.qranoko.jp/#simulator)で使用するフォントの種類を選択
+2. 表示された `<link>` タグをサイトの `<head>` タグ内に配置
+3. CSS を記述：`font-family` の日本語フォントより前に `YakuHanJP` などを優先指定
 
 ## npm
 
 - https://www.npmjs.com/package/yakuhanjp
 
-```bash
+1. npm でパッケージをインストール
+
+```sh
 $ npm install yakuhanjp
 ```
 
-### CSS
+2. 使用する CSS ファイルへのパスを記述
 
 |  フォント名  | JavaScript に書く `import` 文                 |
 | :----------: | --------------------------------------------- |
@@ -97,7 +94,7 @@ $ npm install yakuhanjp
 - Yaku Han JP : SIL OFL 1.1 AND MIT
 - Gothic fonts : Based on [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP) licensed under the SIL OFL 1.1
 - Mincho fonts : Based on [Noto Serif JP](https://fonts.google.com/noto/specimen/Noto+Serif+JP) licensed under the SIL OFL 1.1
-- Round Gothic fonts : Based on [M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c) licensed under the M+ FONTS LICENSE
+- Round Gothic fonts : Based on [M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c) licensed under the SIL OFL 1.1
 
 ## Credit
 

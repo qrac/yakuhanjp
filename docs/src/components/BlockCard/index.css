@@ -1,0 +1,44 @@
+.block-card {
+  position: relative;
+  margin: 0 auto;
+  padding: min(5vw, 32px);
+  background: var(--theme-bg-1);
+  overflow: hidden;
+}
+
+.block-card + .block-card {
+  margin-top: 1rem;
+}
+
+.block-card > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.block-card .block-markdown {
+  z-index: 2;
+}
+
+.block-card .block-card-end-cover {
+  margin: 0;
+}
+
+.block-card .svg-yakuhan-kun {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  width: 28%;
+  height: 82%;
+  margin: 0;
+  transform: rotate(20deg) translateY(-50%);
+  z-index: 1;
+}
+
+.block-card .svg-yakuhan-kun path {
+  fill: var(--theme-ac-1);
+}
+
+@media (max-width: 800px) {
+  .block-card .svg-yakuhan-kun {
+    display: none;
+  }
+}

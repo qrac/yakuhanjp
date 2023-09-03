@@ -1,0 +1,60 @@
+.block-fonts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.block-fonts-grid-col {
+  padding: min(5vw, 32px);
+  overflow: hidden;
+}
+
+.block-fonts-grid-title {
+  margin-bottom: 0.5rem;
+  color: var(--theme-tx-1);
+  font-size: clamp(1.125rem, 3.25vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.block-fonts-grid-descriptopn {
+  margin-bottom: 0.75rem;
+  font-size: clamp(0.75rem, 2.5vw, 1.125rem);
+  font-weight: 600;
+}
+
+.block-fonts-grid-descriptopn span {
+  display: inline-block;
+}
+
+.block-fonts-grid-glyphs {
+  padding-top: 1rem;
+  border-top: 1px dashed var(--theme-tx-3);
+  font-size: clamp(1.125rem, 3.5vw, 1.25rem);
+}
+
+.block-fonts-grid-glyphs.is-yakuhanjp {
+  font-family: var(--theme-font-yakuhanjp);
+}
+
+.block-fonts-grid-glyphs.is-yakuhanjps {
+  font-family: var(--theme-font-yakuhanjps);
+}
+
+.block-fonts-grid-glyphs.is-yakuhanmp {
+  font-family: var(--theme-font-yakuhanmp);
+}
+
+.block-fonts-grid-glyphs.is-yakuhanmps {
+  font-family: var(--theme-font-yakuhanmps);
+}
+
+.block-fonts-grid-glyphs.is-yakuhanrp {
+  font-family: var(--theme-font-yakuhanrp);
+}
+
+.block-fonts-grid-glyphs.is-yakuhanrps {
+  font-family: var(--theme-font-yakuhanrps);
+}

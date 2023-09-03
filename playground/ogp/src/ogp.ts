@@ -46,7 +46,7 @@ export async function generateOgp({
       height: 630,
       fonts: [
         {
-          name: "NotoSansJP",
+          name: "MergedYakuhanJP",
           data: font,
           weight: 900,
           style: "normal",

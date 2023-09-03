@@ -1,0 +1,6 @@
+- Yaku Han JP : SIL OFL 1.1 AND MIT
+- Gothic fonts : Based on [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP) licensed under the SIL OFL 1.1
+- Mincho fonts : Based on [Noto Serif JP](https://fonts.google.com/noto/specimen/Noto+Serif+JP) licensed under the SIL OFL 1.1
+- Round Gothic fonts : Based on [M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c) licensed under the SIL OFL 1.1
+- Author : [Qrac](https://qrac.jp/)
+- Organization : [QRANOKO](https://qranoko.jp/)

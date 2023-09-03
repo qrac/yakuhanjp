@@ -1,0 +1,119 @@
+.block-simulator {
+  position: relative;
+}
+
+.block-simulator > *:not(:first-child) {
+  margin-top: 2px;
+}
+
+.block-simulator-grid {
+  list-style: none;
+}
+
+.block-simulator-grid.is-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2px;
+  margin-bottom: -2px;
+}
+
+.block-simulator-grid.is-buttons .block-simulator-grid-col {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+
+.block-simulator-grid.is-previews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.block-simulator-grid.is-previews .block-simulator-grid-col {
+  position: relative;
+  padding: min(5vw, 32px);
+}
+
+.block-simulator-preview-label {
+  display: inline-block;
+  padding: 0.375rem;
+  color: var(--theme-tx-3);
+  font-size: 0.675rem;
+  line-height: 1;
+}
+
+.block-simulator-grid.is-previews
+  .block-simulator-grid-col
+  .block-simulator-preview-label {
+  position: absolute;
+  top: 0;
+}
+
+.block-simulator-grid.is-previews
+  .block-simulator-grid-col:nth-child(1)
+  .block-simulator-preview-label {
+  left: 0;
+}
+
+.block-simulator-grid.is-previews
+  .block-simulator-grid-col:nth-child(2)
+  .block-simulator-preview-label {
+  right: 0;
+}
+
+.block-simulator-button {
+  flex: 1 0 auto;
+  display: block;
+  padding: 4px 8px;
+  background: var(--theme-bg-1);
+  border: none;
+  color: inherit;
+  font-size: 0.875rem;
+}
+
+.block-simulator-button:focus {
+  position: relative;
+}
+
+.block-simulator-button:not(.is-active) {
+  cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .block-simulator-button:not(.is-active):hover {
+    background: var(--theme-lk-2);
+    color: var(--theme-lk-tx);
+  }
+}
+
+.block-simulator-button.is-active {
+  color: var(--theme-lk-1);
+}
+
+.block-simulator-preview-wrap {
+  width: 100%;
+  max-width: calc(
+    (min(var(--theme-site-width), 100vw) - 32px) / 2 - (min(5vw, 32px) * 2)
+  );
+  max-height: 50vh;
+  overflow: hidden;
+}
+
+.block-simulator-preview {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--theme-tx-1);
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .block-simulator-preview.is-edit:hover {
+    box-shadow: inset 0 0 0 1px var(--theme-tx-3);
+    border-radius: 3px;
+  }
+}

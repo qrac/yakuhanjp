@@ -1,0 +1,34 @@
+.section-hero {
+  padding: min(10vmax, 100px) 20px;
+}
+
+.section-hero .svg-logo-icon {
+  display: block;
+  width: min(30vw, 200px);
+  margin: 0 auto;
+}
+
+.section-hero .svg-logo-text {
+  display: block;
+  width: min(66vw, 360px);
+  margin: min(5vmax, 56px) auto min(1.5vmax, 12px);
+}
+
+.section-hero .svg-logo-text path {
+  fill: var(--theme-tx-1);
+}
+
+.section-hero-description {
+  display: block;
+  margin: 0 auto;
+  font-size: clamp(1.125rem, 4vw, 1.625rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-hero-note {
+  max-width: 60vw;
+  margin: 0.5rem auto 0;
+  font-size: 0.825rem;
+  text-align: center;
+}

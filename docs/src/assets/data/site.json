@@ -1,0 +1,18 @@
+{
+  "title": "Yaku Han JP",
+  "subTitle": "約物半角専用のフォント",
+  "description": "Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含まれる約物を半角にするフォントです。",
+  "shortDescription": "約物半角専用のフォント",
+  "url": "https://yakuhanjp.qranoko.jp",
+  "twitter": {
+    "id": "Qrac_JP"
+  },
+  "github": {
+    "url": "https://github.com/qrac/yakuhanjp"
+  },
+  "copyright": {
+    "name": "QRANOKO",
+    "url": "https://qranoko.jp",
+    "startYear": 2016
+  }
+}

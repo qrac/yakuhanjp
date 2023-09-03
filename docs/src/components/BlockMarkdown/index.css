@@ -1,0 +1,25 @@
+.block-markdown {
+  position: relative;
+}
+
+.block-markdown > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.block-markdown h3 {
+  margin-top: max(-2.5vw, -1rem);
+  padding-bottom: min(1.25vw, 0.5rem);
+  border-bottom: 1px dashed var(--theme-tx-3);
+  font-size: min(5vw, 1.5rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.block-markdown p {
+  line-height: 1.75;
+}
+
+.block-markdown ul,
+.block-markdown ol {
+  padding-left: 1.5em;
+}

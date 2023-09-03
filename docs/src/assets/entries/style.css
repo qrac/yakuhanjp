@@ -1,0 +1,18 @@
+@import "yakuhanjp/dist/css/yakuhanjp.css";
+@import "yakuhanjp/dist/css/yakuhanjp_s.css";
+@import "yakuhanjp/dist/css/yakuhanmp.css";
+@import "yakuhanjp/dist/css/yakuhanmp_s.css";
+@import "yakuhanjp/dist/css/yakuhanrp.css";
+@import "yakuhanjp/dist/css/yakuhanrp_s.css";
+
+@import "./css/variable.css";
+@import "./css/color.css";
+@import "./css/reset.css";
+@import "./css/base.css";
+@import "../../components/AppFooter/index.css";
+@import "../../components/SectionHero/index.css";
+@import "../../components/SectionBasic/index.css";
+@import "../../components/BlockFontsGrid/index.css";
+@import "../../components/BlockCard/index.css";
+@import "../../components/BlockMarkdown/index.css";
+@import "../../components/BlockSimulator/index.css";
