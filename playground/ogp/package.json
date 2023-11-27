@@ -1,4 +1,5 @@
 {
   "name": "play-ogp",
-  "private": true
+  "private": true,
+  "type": "module"
 }
