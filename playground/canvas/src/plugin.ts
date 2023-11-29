@@ -21,67 +21,78 @@ export function pluginCanvas(): Plugin {
           const fontName = params.fontName as string
           const weightName = params.weightName as string
 
-          const fontExt = () => {
-            switch (fontName) {
-              case "YakuHanJP" || "YakuHanJPs":
-                return "ttf"
-              case "YakuHanMP" || "YakuHanMPs":
-                return "otf"
-              default:
-                return "otf"
-            }
-          }
-          const fontPath = path.join(
-            process.cwd(),
-            "packages",
-            "merged",
-            fontName,
-            fontExt(),
-            `Merged${fontName}-${weightName}.${fontExt()}`
-          )
-          const family = `Merged${fontName}-${weightName}`
+          const useNoto = false // true or false
 
-          // Debug base font
-          /*const notoDir = () => {
-            switch (fontName) {
-              case "YakuHanJP" || "YakuHanJPs":
-                return path.join("resource", "Noto_Sans_JP", "static")
-              case "YakuHanMP" || "YakuHanMPs":
-                return path.join("resource", "Noto_Serif_JP")
-              default:
-                return path.join("resource", "M_PLUS_Rounded_1c")
+          let fontPath = ""
+          let family = ""
+
+          if (useNoto) {
+            console.log("useNoto:", true)
+
+            const notoDir = () => {
+              switch (fontName) {
+                case "YakuHanJP" || "YakuHanJPs":
+                  return path.join("resource", "Noto_Sans_JP", "static")
+                case "YakuHanMP" || "YakuHanMPs":
+                  return path.join("resource", "Noto_Serif_JP")
+                default:
+                  return path.join("resource", "M_PLUS_Rounded_1c")
+              }
             }
-          }
-          const notoName = () => {
-            switch (fontName) {
-              case "YakuHanJP" || "YakuHanJPs":
-                return "NotoSansJP"
-              case "YakuHanMP" || "YakuHanMPs":
-                return "NotoSerifJP"
-              default:
-                return "MPLUSRounded1c"
+            const notoName = () => {
+              switch (fontName) {
+                case "YakuHanJP" || "YakuHanJPs":
+                  return "NotoSansJP"
+                case "YakuHanMP" || "YakuHanMPs":
+                  return "NotoSerifJP"
+                default:
+                  return "MPLUSRounded1c"
+              }
             }
-          }
-          const notoExt = () => {
-            switch (fontName) {
-              case "YakuHanJP" || "YakuHanJPs":
-                return "ttf"
-              case "YakuHanMP" || "YakuHanMPs":
-                return "otf"
-              default:
-                return "ttf"
+            const notoExt = () => {
+              switch (fontName) {
+                case "YakuHanJP" || "YakuHanJPs":
+                  return "ttf"
+                case "YakuHanMP" || "YakuHanMPs":
+                  return "otf"
+                default:
+                  return "ttf"
+              }
             }
+            fontPath = path.join(
+              process.cwd(),
+              notoDir(),
+              `${notoName()}-${weightName}.${notoExt()}`
+            )
+            family = `${notoName()}-${weightName}`
+          } else {
+            console.log("useNoto:", false)
+
+            const fontExt = () => {
+              switch (fontName) {
+                case "YakuHanJP" || "YakuHanJPs":
+                  return "ttf"
+                case "YakuHanMP" || "YakuHanMPs":
+                  return "otf"
+                default:
+                  return "otf"
+              }
+            }
+            fontPath = path.join(
+              process.cwd(),
+              "packages",
+              "merged",
+              fontName,
+              fontExt(),
+              `Merged${fontName}-${weightName}.${fontExt()}`
+            )
+            family = `Merged${fontName}-${weightName}`
           }
-          const fontPath = path.join(
-            process.cwd(),
-            notoDir(),
-            `${notoName()}-${weightName}.${notoExt()}`
-          )
-          const family = `${notoName()}-${weightName}`*/
 
           const exists = await fs.pathExists(fontPath)
 
           if (!exists) return
+
           console.log(fontPath)
 
           const canvas = await generateCanvas({
