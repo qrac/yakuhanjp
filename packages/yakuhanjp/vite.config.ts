@@ -1,4 +1,5 @@
-import type { PreRenderedAsset } from "rollup"
+import type { PreRenderedAsset, OutputAsset } from "rollup"
+import type { Plugin } from "vite"
 import path from "node:path"
 import { defineConfig } from "vite"
 import banner from "vite-plugin-banner"
@@ -15,6 +16,43 @@ function resolveOutput(chunkInfo: PreRenderedAsset) {
     return path.join("fonts", fontName, "[name]" + ".[ext]")
   }
   return path.join("css", "[name]" + ".[ext]")
+}
+
+function cdnPlugin(): Plugin {
+  return {
+    name: "vite-plugin-cdn",
+    apply: "build",
+    enforce: "post",
+    async generateBundle(_, bundle) {
+      const cdnBasePath = `https://cdn.jsdelivr.net/npm/${pkg.name}@${pkg.version}/dist/fonts/`
+      const cssFiles = Object.keys(bundle).filter((fileName) =>
+        fileName.endsWith(".css")
+      )
+
+      for (const fileName of cssFiles) {
+        const chunk = bundle[fileName]
+        if (chunk.type === "asset" && typeof chunk.source === "string") {
+          let cssContent = chunk.source
+          cssContent = cssContent.replace(
+            /(\.\.\/fonts\/[^\/]+\/[^\/]+\.woff2)/g,
+            (match) => {
+              const fontName = match.split("/").pop()
+              return `${cdnBasePath}${fontName}`
+            }
+          )
+          const newFileName = path.join("cdn", path.basename(fileName))
+          const newAsset: OutputAsset = {
+            type: "asset",
+            fileName: newFileName,
+            source: cssContent,
+            name: fileName,
+            needsCodeReference: false,
+          }
+          bundle[newFileName] = newAsset
+        }
+      }
+    },
+  }
 }
 
 export default defineConfig({
@@ -43,5 +81,6 @@ export default defineConfig({
       const typeStr = `Type: ${font?.name} - Based on ${font?.base}`
       return `${pkgStr} | ${typeStr}`
     }),
+    cdnPlugin(),
   ],
 })
