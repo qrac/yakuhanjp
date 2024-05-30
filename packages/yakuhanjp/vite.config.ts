@@ -34,10 +34,9 @@ function cdnPlugin(): Plugin {
         if (chunk.type === "asset" && typeof chunk.source === "string") {
           let cssContent = chunk.source
           cssContent = cssContent.replace(
-            /(\.\.\/fonts\/[^\/]+\/[^\/]+\.woff2)/g,
-            (match) => {
-              const fontName = match.split("/").pop()
-              return `${cdnBasePath}${fontName}`
+            /(\.\.\/fonts\/([^\/]+)\/([^\/]+\.woff2))/g,
+            (match, p1, p2, p3) => {
+              return `${cdnBasePath}${p2}/${p3}`
             }
           )
           const newFileName = path.join("cdn", path.basename(fileName))
