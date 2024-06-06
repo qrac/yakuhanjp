@@ -2,7 +2,7 @@
 
 ## Site & Documentation
 
-https://yakuhanjp.qranoko.jp
+- https://yakuhanjp.qranoko.jp
 
 ## About
 
@@ -10,15 +10,14 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 
 ## Packages
 
-| Directory                                                                   | Detail                                   |
-| --------------------------------------------------------------------------- | ---------------------------------------- |
-| [yakuhanjp](https://github.com/qrac/yakuhanjp/tree/main/packages/yakuhanjp) | ブラウザで使用する YakuHanJP             |
-| [core](https://github.com/qrac/yakuhanjp/tree/main/packages/core)           | YakuHanJP のフォントデータ               |
-| [merged](https://github.com/qrac/yakuhanjp/tree/main/packages/merged)       | YakuHanJP を元フォントにマージしたデータ |
-| [unicode](https://github.com/qrac/yakuhanjp/tree/main/packages/unicode)     | 内包文字の unicode を生成するスクリプト  |
+- [yakuhanjp](https://github.com/qrac/yakuhanjp/tree/main/packages/yakuhanjp) — ブラウザで使用する YakuHanJP
+- [core](https://github.com/qrac/yakuhanjp/tree/main/packages/core) — YakuHanJP のフォントデータ
+- [merged](https://github.com/qrac/yakuhanjp/tree/main/packages/merged) — YakuHanJP を元フォントにマージしたデータ
+- [unicode](https://github.com/qrac/yakuhanjp/tree/main/packages/unicode) — 内包文字の unicode を生成するスクリプト
 
 ## Media
 
+- [OG 画像の約物を詰める - YakuHanJP v4](https://zenn.dev/qrac/articles/791fd61483a989)
 - [HTML5 Conference 2016 LT "Yaku Han JP" by Qrac // Speaker Deck](https://speakerdeck.com/qrac/html5-conference-2016-lt-yaku-han-jp-by-qrac)
 
 ## License

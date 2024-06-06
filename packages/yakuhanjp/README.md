@@ -2,7 +2,7 @@
 
 ## Site & Documentation
 
-https://yakuhanjp.qranoko.jp
+- https://yakuhanjp.qranoko.jp
 
 ## About
 
