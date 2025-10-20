@@ -65,7 +65,7 @@
     "satori": "^0.10.11",
     "tsx": "^4.5.0",
     "typescript": "^5.3.2",
-    "vite": "^5.4.20",
+    "vite": "^5.4.21",
     "vite-plugin-banner": "^0.7.1",
     "vitest": "^0.34.6"
   }
