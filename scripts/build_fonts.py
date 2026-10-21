@@ -9,8 +9,11 @@ from pathlib import Path
 from shutil import copyfile
 from time import perf_counter
 
+import cffsubr
 from fontTools.fontBuilder import FontBuilder
 from fontTools.pens.cu2quPen import Cu2QuPen
+from fontTools.pens.qu2cuPen import Qu2CuPen
+from fontTools.pens.recordingPen import DecomposingRecordingPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib import TTFont
@@ -147,9 +150,24 @@ def convert(font, extension):
     glyphs = font.getGlyphSet()
     if extension == "otf" and "glyf" in font:
         strings = {}
+        vertical_origins = {}
         for name in font.getGlyphOrder():
+            if "vmtx" in font:
+                vertical_origins[name] = getattr(font["glyf"][name], "yMax", 0) + font["vmtx"][name][1]
             pen = T2CharStringPen(font["hmtx"][name][0], glyphs)
-            glyphs[name].draw(pen)
+            recording = DecomposingRecordingPen(glyphs)
+            glyphs[name].draw(recording)
+            cubic = Qu2CuPen(pen, max_err=font["head"].unitsPerEm / 1000, all_cubic=True)
+            for operation, points in recording.value:
+                # TrueType permits contours made entirely of off-curve points.
+                # Give the fitter their implied starting on-curve point.
+                if operation == "qCurveTo" and points[-1] is None:
+                    first, last = points[0], points[-2]
+                    start = ((first[0] + last[0]) / 2, (first[1] + last[1]) / 2)
+                    cubic.moveTo(start)
+                    cubic.qCurveTo(*points[:-1], start)
+                else:
+                    getattr(cubic, operation)(*points)
             strings[name] = pen.getCharString()
         for tag in ("glyf", "loca", "fpgm", "prep", "cvt ", "gasp"):
             if tag in font:
@@ -157,7 +175,12 @@ def convert(font, extension):
         builder = FontBuilder(font=font, isTTF=False)
         builder.setupCFF(font["name"].getDebugName(6), {}, strings, {})
         builder.setupMaxp()
+        if vertical_origins:
+            builder.setupVerticalOrigins(vertical_origins)
         font["post"].formatType = 3.0
+        cffsubr.subroutinize(font, inplace=True)
+        # The optimizer serialized the font and computed its bounding boxes.
+        font.recalcBBoxes = False
     elif extension == "ttf" and "CFF " in font:
         outlines = {}
         for name in font.getGlyphOrder():

@@ -6,4 +6,5 @@ dependencies = [
   "fonttools==4.67.0",
   "brotli==1.2.0",
   "uharfbuzz==0.56.3",
+  "cffsubr==0.4.0",
 ]

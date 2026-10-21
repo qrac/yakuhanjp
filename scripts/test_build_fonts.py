@@ -12,6 +12,8 @@ from contextlib import redirect_stdout
 from io import StringIO
 
 from fontTools.pens.boundsPen import BoundsPen
+from fontTools.pens.recordingPen import RecordingPen
+from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib import TTFont
 import uharfbuzz as hb
 
@@ -126,6 +128,57 @@ class FontBuildTests(unittest.TestCase):
                 loaded = TTFont(first)
                 self.assertEqual(set(loaded.getBestCmap()), set(core.getBestCmap()))
                 self.assertEqual("CFF " in loaded, extension == "otf")
+
+    def test_cff_subroutinization_preserves_outlines_and_reduces_size(self):
+        core = core_font(ROOT / "packages/core/YakuHanRP/sources/Regular.json")
+        with patch("build_fonts.cffsubr.subroutinize"):
+            plain = convert(core, "otf")
+        compressed = convert(core, "otf")
+        plain_glyphs, compressed_glyphs = plain.getGlyphSet(), compressed.getGlyphSet()
+        for name in plain.getGlyphOrder():
+            before, after = RecordingPen(), RecordingPen()
+            plain_glyphs[name].draw(before)
+            compressed_glyphs[name].draw(after)
+            self.assertEqual(before.value, after.value, name)
+        self.assertEqual(plain["hmtx"].metrics, compressed["hmtx"].metrics)
+        self.assertEqual(plain["vmtx"].metrics, compressed["vmtx"].metrics)
+        with tempfile.TemporaryDirectory() as temp:
+            a, b, repeated = [Path(temp) / name for name in ("plain.otf", "compressed.otf", "repeated.otf")]
+            save(plain, a)
+            save(compressed, b)
+            save(convert(core, "otf"), repeated)
+            self.assertLess(b.stat().st_size, a.stat().st_size)
+            self.assertEqual(b.read_bytes(), repeated.read_bytes())
+
+    def test_otf_fitting_handles_contours_without_oncurve_points(self):
+        core = core_font(ROOT / "packages/core/YakuHanJP/sources/Regular.json")
+        pen = TTGlyphPen(None)
+        pen.qCurveTo((0, 0), (100, 0), (100, 100), (0, 100), None)
+        pen.closePath()
+        glyph = pen.glyph()
+        glyph.recalcBounds(None)
+        core["glyf"]["space"] = glyph
+        converted = convert(core, "otf")
+        self.assertEqual(converted["hmtx"]["space"], core["hmtx"]["space"])
+        for actual, expected in zip(bounds(converted, "space"), bounds(core, "space")):
+            self.assertLessEqual(abs(actual - expected), 2)
+
+    def test_native_cff_is_preserved_and_fitting_keeps_metrics(self):
+        native = TTFont(ROOT / "resource/Noto_Serif_JP/NotoSerifJP-Regular.otf")
+        self.assertIs(convert(native, "otf"), native)
+        project = json.loads((ROOT / "packages/yakuhanjp/project.json").read_text())
+        for item in project["fonts"]:
+            with self.subTest(family=item["file"]):
+                core = core_font(ROOT / f"packages/core/{item['file']}/sources/Regular.json")
+                converted = convert(core, "otf")
+                self.assertEqual(core["hmtx"].metrics, converted["hmtx"].metrics)
+                self.assertEqual(core["vmtx"].metrics, converted["vmtx"].metrics)
+                for direction in ("ltr", "ttb"):
+                    self.assertEqual(shape(core, item["glyphs"], direction), shape(converted, item["glyphs"], direction))
+                for name in core.getGlyphOrder():
+                    a, b = bounds(core, name), bounds(converted, name)
+                    if a is not None:
+                        self.assertTrue(all(abs(x - y) <= 2 for x, y in zip(a, b)), name)
 
     def test_merged_style_linking(self):
         core = core_font(ROOT / "packages/core/YakuHanJP/sources/SemiBold.json")
