@@ -2,7 +2,8 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
+    "moduleResolution": "bundler",
     "types": ["minista/client"]
   },
-  "include": ["src", "minista.config.ts"]
+  "include": ["src", "vite.config.ts"]
 }

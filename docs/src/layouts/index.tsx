@@ -1,5 +1,5 @@
-import type { GlobalProps } from "minista"
-import { Head } from "minista"
+import type { LayoutProps } from "minista/types"
+import { Head } from "minista/head"
 //import "highlight.js/styles/nord.css"
 //import pkg from "yakuhanjp/package.json"
 
@@ -19,7 +19,7 @@ export default function ({
   url,
   noindex,
   children,
-}: GlobalProps & { noindex?: boolean }) {
+}: LayoutProps & { noindex?: boolean }) {
   const siteTitle = site.title
   const siteSubTitle = site.subTitle
   const siteDescription = site.description

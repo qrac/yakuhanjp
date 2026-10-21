@@ -1,8 +1,8 @@
-import type { Metadata } from "minista"
+import type { Metadata } from "minista/types"
 
 import AppLayout from "../components/AppLayout"
 
-export const metadata: Metadata = {
+export const metadata: Metadata & { noindex: boolean } = {
   title: "404",
   noindex: true,
 }

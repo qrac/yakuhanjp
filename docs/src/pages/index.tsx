@@ -1,7 +1,7 @@
 import AppLayout from "../components/AppLayout"
 import SectionHero from "../components/SectionHero"
 import SectionBasic from "../components/SectionBasic"
-import BlockSimulator from "../components/BlockSimulator?ph"
+import BlockSimulator from "../components/BlockSimulator"
 import BlockFontsGrid from "../components/BlockFontsGrid"
 import BlockCard from "../components/BlockCard"
 import BlockMarkdown from "../components/BlockMarkdown"
@@ -15,7 +15,7 @@ export default function () {
     <AppLayout>
       <SectionHero id="hero" />
       <SectionBasic id="simulator" heading={"Simulator"}>
-        <BlockSimulator />
+        <BlockSimulator client:load />
       </SectionBasic>
       <SectionBasic id="fonts" heading={"Fonts"}>
         <BlockFontsGrid />

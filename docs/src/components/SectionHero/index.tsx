@@ -1,15 +1,18 @@
 import pkg from "yakuhanjp/package.json"
 
 import site from "../../assets/data/site.json"
-import { ReactComponent as SvgLogoIcon } from "../../assets/svgs/logo-icon.svg"
-import { ReactComponent as SvgLogoText } from "../../assets/svgs/logo-text.svg"
+import { Svg } from "minista/assets"
 
 export default function ({ id }: { id?: string }) {
   return (
     <section className="section-hero" id={id}>
-      <SvgLogoIcon className="svg-logo-icon" />
+      <Svg src="/src/assets/svgs/logo-icon.svg" className="svg-logo-icon" />
       <h1>
-        <SvgLogoText className="svg-logo-text" aria-label={site.title} />
+        <Svg
+          src="/src/assets/svgs/logo-text.svg"
+          className="svg-logo-text"
+          aria-label={site.title}
+        />
       </h1>
       <h2 className="section-hero-description">{site.shortDescription}</h2>
       <p className="section-hero-note">

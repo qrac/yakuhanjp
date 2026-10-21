@@ -1,7 +1,8 @@
 {
   "name": "docs",
   "private": true,
+  "type": "module",
   "dependencies": {
-    "preact": "^10.19.2"
+    "@tanstack/redact": "^0.1.4"
   }
 }
