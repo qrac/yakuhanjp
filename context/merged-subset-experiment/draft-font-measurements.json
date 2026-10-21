@@ -1,0 +1,68 @@
+[
+  {
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-Regular.ttf",
+    "source_sha256": "845a93a5f8fc171be836a1b7a2cf38737063e005e8c987f4ea24aeea1624cae9",
+    "full_bytes": 5732988,
+    "subset_bytes": 1545608,
+    "reduction_percent": 73.04,
+    "codepoints": 3673,
+    "glyphs": 5288,
+    "uvs_sequences": 3911,
+    "shaping_checks": 15648
+  },
+  {
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-Regular.otf",
+    "source_sha256": "4e7e20ce0e31d2f5bad11a2fdad46ddc974be1e5e73d845f93d7ad28666aef53",
+    "full_bytes": 4020296,
+    "subset_bytes": 1119880,
+    "reduction_percent": 72.14,
+    "codepoints": 3673,
+    "glyphs": 5288,
+    "uvs_sequences": 3911,
+    "shaping_checks": 15648
+  },
+  {
+    "source": "packages/merged/YakuHanMP/ttf/MergedYakuHanMP-Regular.ttf",
+    "source_sha256": "069477a3e9683e767609e041300d2325a03912c7d8a316d7cce065f481bf00e3",
+    "full_bytes": 7460240,
+    "subset_bytes": 2012268,
+    "reduction_percent": 73.03,
+    "codepoints": 3672,
+    "glyphs": 5275,
+    "uvs_sequences": 3895,
+    "shaping_checks": 15584
+  },
+  {
+    "source": "packages/merged/YakuHanMP/otf/MergedYakuHanMP-Regular.otf",
+    "source_sha256": "1258ce21d6114fd1c698b0c432822fd17a3f73bbc37bdd6dff76fb5971dd7607",
+    "full_bytes": 6170844,
+    "subset_bytes": 1719496,
+    "reduction_percent": 72.14,
+    "codepoints": 3672,
+    "glyphs": 5275,
+    "uvs_sequences": 3895,
+    "shaping_checks": 15584
+  },
+  {
+    "source": "packages/merged/YakuHanRP/ttf/MergedYakuHanRP-Regular.ttf",
+    "source_sha256": "efbe6f41505525640667d34177a4e6557d4191a6846411adb5eff73271e2df6b",
+    "full_bytes": 3397824,
+    "subset_bytes": 1762920,
+    "reduction_percent": 48.12,
+    "codepoints": 3630,
+    "glyphs": 3835,
+    "uvs_sequences": 199,
+    "shaping_checks": 800
+  },
+  {
+    "source": "packages/merged/YakuHanRP/otf/MergedYakuHanRP-Regular.otf",
+    "source_sha256": "8b4d0d0c1782d7523986d2b50dd50765e970a3f7eb475ee33e3227ff6f7019f7",
+    "full_bytes": 2081456,
+    "subset_bytes": 1215380,
+    "reduction_percent": 41.61,
+    "codepoints": 3630,
+    "glyphs": 3835,
+    "uvs_sequences": 199,
+    "shaping_checks": 800
+  }
+]

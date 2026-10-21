@@ -1,0 +1,55 @@
+{
+  "retrieved_on": "2026-10-21",
+  "purpose": "Evaluation only; not used to select the frozen six candidates. Original text is not redistributed.",
+  "sources": [
+    {
+      "local_path": "godot/editor/translations/editor/ja.po",
+      "url": "https://raw.githubusercontent.com/godotengine/godot/679066724352c12673001d692d41dc2dab9314c0/editor/translations/editor/ja.po",
+      "sha256": "2d6303791bf8cc533a1c747d12ca7624e8b0e2341c48d96cc3767a3ffa516b75",
+      "bytes": 642544,
+      "dataset": "godot-editor",
+      "kind": "po"
+    },
+    {
+      "local_path": "godot/editor/translations/properties/ja.po",
+      "url": "https://raw.githubusercontent.com/godotengine/godot/679066724352c12673001d692d41dc2dab9314c0/editor/translations/properties/ja.po",
+      "sha256": "7d70f666e76775571b0ad0e81a4065f4ad4de9b970ab187162de43a33f444d45",
+      "bytes": 111879,
+      "dataset": "godot-properties",
+      "kind": "po"
+    },
+    {
+      "local_path": "godot/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/godotengine/godot/679066724352c12673001d692d41dc2dab9314c0/LICENSE.txt",
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "bytes": 1149,
+      "dataset": null,
+      "kind": "license"
+    },
+    {
+      "local_path": "renpy/the_question/game/tl/japanese/script.rpy",
+      "url": "https://raw.githubusercontent.com/renpy/renpy/fbf45aa0bcd6b9369da0916d520faf859da4877f/the_question/game/tl/japanese/script.rpy",
+      "sha256": "d5f78325a1d108571b10cd725a023e62c34ec3ad94e4beb3a96a00829c430893",
+      "bytes": 14648,
+      "dataset": "the-question",
+      "kind": "rpy"
+    },
+    {
+      "local_path": "renpy/sphinx/source/license.rst",
+      "url": "https://raw.githubusercontent.com/renpy/renpy/fbf45aa0bcd6b9369da0916d520faf859da4877f/sphinx/source/license.rst",
+      "sha256": "d07159309c557b30ff59ee16a97da2ac9fd5fcbe3fceb26deeda0911eb397566",
+      "bytes": 102253,
+      "dataset": null,
+      "kind": "license"
+    }
+  ],
+  "license_basis": {
+    "godot": "MIT; translation header explicitly states same license as Godot source code; LICENSE.txt retrieved at same revision.",
+    "renpy": "Official sphinx/source/license.rst states most RenPy is MIT; no separate license declaration found in the selected Japanese script. Evaluation only; no script text redistributed. Engine dependencies and art not included."
+  },
+  "limitations": [
+    "Godot is technical editor UI, not general Japanese prose.",
+    "The Question is one short translated example visual novel, not representative of all games.",
+    "No runtime evaluation or dynamic interpolation values."
+  ]
+}

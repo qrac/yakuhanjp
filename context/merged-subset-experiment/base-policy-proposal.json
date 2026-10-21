@@ -1,0 +1,68 @@
+{
+  "status": "proposal_not_approved",
+  "scope": "Original 602 base characters retained; no pruning for font availability.",
+  "groups": {
+    "ascii": {
+      "role": "foundation",
+      "reason": "英数字と基本記号",
+      "characters": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+      "count": 95
+    },
+    "kana": {
+      "role": "foundation",
+      "reason": "かな・小書き・結合濁点等の日本語表記",
+      "characters": "ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんゔゕゖ゙゚゛゜ゝゞゟ゠ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶヷヸヹヺ・ーヽヾヿ",
+      "count": 189
+    },
+    "width_forms": {
+      "role": "input_compatibility",
+      "reason": "全角英数字と半角カナの入力互換",
+      "characters": "！＂＃＄％＆＇（）＊＋，－．／０１２３４５６７８９：；＜＝＞？＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ［＼］＾＿｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝～｟｠｡｢｣､･ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝﾞﾟ",
+      "count": 159
+    },
+    "japanese_marks": {
+      "role": "foundation",
+      "reason": "日本語の約物と繰り返し記号",
+      "characters": "　、。々〆〇〈〉《》「」『』【】〔〕〜〝〞〟〻〓",
+      "count": 24
+    },
+    "spacing_currency": {
+      "role": "ui_text",
+      "reason": "空白・通貨・引用符・数値表記",
+      "characters": " ¥¢£€©®°±×÷−‐‑–—―‘’“”…‥‰′″℃℉№™",
+      "count": 30
+    },
+    "ui_symbols": {
+      "role": "ui_symbols",
+      "reason": "方向・状態等のUI表示",
+      "characters": "←↑→↓↔↕⇒⇔⇐⇑⇓○●◎◇◆□■△▲▽▼☆★♡♥♠♣♦♪♫✓✔✕✖",
+      "count": 35
+    },
+    "numbers_units": {
+      "role": "compatibility_symbols",
+      "reason": "囲み数字・単位・元号の互換表記",
+      "characters": "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ㎡㎥㎜㎝㎞㎎㎏㏄㌔㍍㍑㍻㋿",
+      "count": 43
+    },
+    "core_punctuation": {
+      "role": "core_preservation",
+      "reason": "coreの符号化文字を保持。縦書き字形の閉包とは別",
+      "characters": "  ‧〈〉、。〈〉《》「」『』【】〔〕〖〗・︑︒︗︘︵︶︷︸︹︺︻︼︽︾︿﹀﹁﹂﹃﹄﹇﹈！（）：；？［］｛｝",
+      "count": 54
+    },
+    "greek_letters": {
+      "role": "ui_math_proposal",
+      "reason": "UIで不足したπ ε τ φだけを列挙せず、大小文字の組で検討",
+      "characters": "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψω",
+      "count": 49
+    },
+    "math_symbols": {
+      "role": "ui_math_proposal",
+      "reason": "数値・範囲・集合等のUI表示を補助。用途からの提案で頻度順ではない",
+      "characters": "∞≠≒≈≤≥≦≧√∑∏∫∂∆∇∈∉∩∪⊂⊃⊆⊇∀∃∧∨¬",
+      "count": 28
+    }
+  },
+  "original_count": 602,
+  "proposed_count": 679
+}

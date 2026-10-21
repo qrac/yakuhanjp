@@ -61,6 +61,26 @@ npm run test:fonts
 また、既存のマージ版には約物ソースと幅が異なる文字があります（例：YakuHanJP Regularの`！`）。
 新しいマージ版は約物ソースの幅を採用するため、既存のマージ版から文字送りが変わる場合があります。
 
+### mergedサブセットの調査（配布仕様は未確定）
+
+調査方針・結果・固定した資料の取得先は[サブセット計画](context/merged-subset-plan.md)を参照してください。
+`scripts/research_merged_subset.py`は取得済みのTUBELEX未正規化頻度データをハッシュ検証して集計します。
+通常のフォント生成・ZIPには組み込んでいません。
+
+```sh
+.venv/bin/python scripts/research_merged_subset.py \
+  --input build/subset-research/source/tubelex-ja_no-normalization.tsv.xz \
+  --output build/subset-research/data \
+  --font-output build/subset-research/fonts
+```
+
+`--font-output`を省くと文字リストと対応範囲の集計だけを行います。試作フォントは`build/`内に限定し、
+内部名も全文字版と同じままなので配布・インストール用ではありません。既存の`packages`内のフォントは変更しません。
+共通の候補文字リストを維持し、元フォントにない文字はそのフォントの試作から省きます。
+省略したコードポイントと対象スタイルは、出力先の`report.json`へ記録します。
+別資料での評価は`scripts/evaluate_merged_subset.py`で行います。固定した入力資料の取得先・実行手順と、
+基礎文字の補助枠案は[サブセット計画](context/merged-subset-plan.md#別資料評価と基礎文字の補助枠案)を参照してください。
+
 ### 配布物の一括ビルド
 
 ルートの`npm run build`は次の順番で実行します。途中で失敗した場合は、後続の処理を実行しません。

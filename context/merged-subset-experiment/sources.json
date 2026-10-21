@@ -1,0 +1,83 @@
+{
+  "retrieved_on": "2026-10-21",
+  "tubelex": {
+    "revision": "7cb5fb36add76b83a266d1967536e1a1d3faa513",
+    "license": "BSD-3-Clause",
+    "license_scope_basis": "Pinned repository includes the frequency data and only one LICENSE; README explicitly distributes frequency lists. No per-directory override was found in the recursive Git tree.",
+    "files": {
+      "tubelex-ja_no-normalization.tsv.xz": {
+        "url": "https://raw.githubusercontent.com/naist-nlp/tubelex/7cb5fb36add76b83a266d1967536e1a1d3faa513/frequencies/alternative-normalizations/tubelex-ja_no-normalization.tsv.xz",
+        "bytes": 3995080,
+        "sha256": "83982f99f9320ecb7dbfb3e1e796c24623aacb3c447f1b4ab0f01a1bad59300f"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/naist-nlp/tubelex/7cb5fb36add76b83a266d1967536e1a1d3faa513/LICENSE",
+        "bytes": 1521,
+        "sha256": "51b9e39825bbf19e4bb777bf11a7520a3935ff859c4d0ee724dfe9ddb26a961f"
+      },
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/naist-nlp/tubelex/7cb5fb36add76b83a266d1967536e1a1d3faa513/README.md",
+        "bytes": 14036,
+        "sha256": "054125ec03d90593f2296bec6f1d0096f08eb0ea3d113b5452871949e21ff326"
+      },
+      "videos-ja.csv": {
+        "url": "https://raw.githubusercontent.com/naist-nlp/tubelex/7cb5fb36add76b83a266d1967536e1a1d3faa513/corpus/videos-ja.csv",
+        "bytes": 9817820,
+        "sha256": "eb0e2442a4872bda280ec96e99b6d0b9f620eaf3f2f8da13511bfeca284002ba"
+      }
+    },
+    "metadata_audit": {
+      "rows": 100660,
+      "min_upload_date": "20060915",
+      "max_upload_date": "20231115",
+      "year_counts": {
+        "2006": 1,
+        "2007": 2,
+        "2008": 6,
+        "2009": 96,
+        "2010": 207,
+        "2011": 192,
+        "2012": 293,
+        "2013": 815,
+        "2014": 1005,
+        "2015": 1100,
+        "2016": 1415,
+        "2017": 2901,
+        "2018": 4655,
+        "2019": 6206,
+        "2020": 10586,
+        "2021": 17223,
+        "2022": 24478,
+        "2023": 29479
+      },
+      "limitation": "Metadata rows (100660) differ from the frequency file video total (100754). These dates do not establish exact coverage dates of the frequency file."
+    }
+  },
+  "bccwj_character_table": {
+    "status": "not_used",
+    "reason": "CC BY-NC-SA 4.0; no separate commercial permission obtained.",
+    "readme_url": "https://clrd.ninjal.ac.jp/bccwj/readme.txt",
+    "readme_encoding": "cp932",
+    "readme_sha256": "26d0323d6f171cfa373a0652371e289341100b99f4690022e8f50c62427e41dc"
+  },
+  "experiment": {
+    "status": "exploratory_not_for_distribution",
+    "source_head": "932344750dc8ee3e5f317ebf45081ef395ab28d3",
+    "selection": "TUBELEX unnormalized surface token count times character multiplicity; no BCCWJ data used",
+    "holdout": "none; category results are in-sample",
+    "font_files": "build/subset-research/fonts (not tracked; original internal names retained)",
+    "script_sha256": "cfae2f4640edfa44de99a1c2d10f998dd67fe577858c960d4bd9bb2605a11923",
+    "derived_files_sha256": {
+      "LICENSE-TUBELEX.txt": "51b9e39825bbf19e4bb777bf11a7520a3935ff859c4d0ee724dfe9ddb26a961f",
+      "base-groups.json": "353cf1cdc2b2d44d611b06b6ec53c94b182a7e60b1c07bcde18ae29e731d584b",
+      "general-2000.txt": "247a02afe199897bb7dc1e57e20ab37e7870ccf95f9045eff7ded7dbafe0a41d",
+      "general-3000.txt": "6600ffe0e4d8d2a812394c2cfa80a2fd4f0999f2de6b5e9e98e6d89bb5d87eb2",
+      "general-4500.txt": "167443e6c4b330f6b2b272eacd305d2b534bd715217808e8168515d276b289a4",
+      "general-gaming-2000.txt": "4da878e615938a16bcf7c3a47e6ab366c5f3e6b200664e29ecd1e7dcff6cbd19",
+      "general-gaming-3000.txt": "d46ff22ad63b961a6a46740dad37fce361b882935e1abe0362c2a50e02ae8518",
+      "general-gaming-4500.txt": "ad70fdf260570bbecd9e65f42b1ac76ce08be8e67b6354d021955934c88329ce",
+      "kanji-ranking.tsv": "12e8e069558d0f47fbc3410bc4c032c6ca80183ef7aa42c8744a7e5f896c1488",
+      "report.json": "d0465970983cdd2ebe088f5527b584ec5d5e97a3a2f652b1e8fc3ea685e9498c"
+    }
+  }
+}

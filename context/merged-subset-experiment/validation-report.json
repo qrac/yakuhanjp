@@ -1,0 +1,2339 @@
+{
+  "sources_manifest_sha256": "33eaada9a4623e0f3d06498890ff7a2e5c5462556b87ff8f8525eba4bda09cb6",
+  "evaluation_script_sha256": "95fb72da5a30edebb488c1a9781cebf3b6ab9ab4cf6288b0e118ec527631c064",
+  "datasets": {
+    "godot-editor": {
+      "strings": 5689,
+      "characters": 116612,
+      "character_types": 879,
+      "full_fonts": {
+        "YakuHanJP": {
+          "character_coverage_percent": 99.999142,
+          "character_type_coverage_percent": 99.886234,
+          "kanji_coverage_percent": 100.0,
+          "complete_strings": 5688,
+          "complete_string_percent": 99.982422,
+          "missing": [
+            {
+              "character": "✕",
+              "codepoint": "U+2715",
+              "count": 1,
+              "name": "MULTIPLICATION X"
+            }
+          ]
+        },
+        "YakuHanMP": {
+          "character_coverage_percent": 99.999142,
+          "character_type_coverage_percent": 99.886234,
+          "kanji_coverage_percent": 100.0,
+          "complete_strings": 5688,
+          "complete_string_percent": 99.982422,
+          "missing": [
+            {
+              "character": "✕",
+              "codepoint": "U+2715",
+              "count": 1,
+              "name": "MULTIPLICATION X"
+            }
+          ]
+        },
+        "YakuHanRP": {
+          "character_coverage_percent": 99.999142,
+          "character_type_coverage_percent": 99.886234,
+          "kanji_coverage_percent": 99.995186,
+          "complete_strings": 5688,
+          "complete_string_percent": 99.982422,
+          "missing": [
+            {
+              "character": "响",
+              "codepoint": "U+54CD",
+              "count": 1,
+              "name": "CJK UNIFIED IDEOGRAPH-54CD"
+            }
+          ]
+        }
+      },
+      "candidates": {
+        "general-2000": {
+          "candidate_sha256": "247a02afe199897bb7dc1e57e20ab37e7870ccf95f9045eff7ded7dbafe0a41d",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.981134,
+            "character_type_coverage_percent": 99.089875,
+            "kanji_coverage_percent": 99.922981,
+            "complete_strings": 5668,
+            "complete_string_percent": 99.630867,
+            "missing": [
+              {
+                "character": "矩",
+                "codepoint": "U+77E9",
+                "count": 7,
+                "name": "CJK UNIFIED IDEOGRAPH-77E9"
+              },
+              {
+                "character": "遷",
+                "codepoint": "U+9077",
+                "count": 6,
+                "name": "CJK UNIFIED IDEOGRAPH-9077"
+              },
+              {
+                "character": "π",
+                "codepoint": "U+03C0",
+                "count": 3,
+                "name": "GREEK SMALL LETTER PI"
+              },
+              {
+                "character": "蔽",
+                "codepoint": "U+853D",
+                "count": 2,
+                "name": "CJK UNIFIED IDEOGRAPH-853D"
+              },
+              {
+                "character": "ε",
+                "codepoint": "U+03B5",
+                "count": 1,
+                "name": "GREEK SMALL LETTER EPSILON"
+              },
+              {
+                "character": "τ",
+                "codepoint": "U+03C4",
+                "count": 1,
+                "name": "GREEK SMALL LETTER TAU"
+              },
+              {
+                "character": "φ",
+                "codepoint": "U+03C6",
+                "count": 1,
+                "name": "GREEK SMALL LETTER PHI"
+              },
+              {
+                "character": "响",
+                "codepoint": "U+54CD",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-54CD"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.980276,
+              "character_type_coverage_percent": 98.976109,
+              "kanji_coverage_percent": 99.922981,
+              "complete_strings": 5667,
+              "complete_string_percent": 99.613289,
+              "missing": [
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 7,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 6,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "蔽",
+                  "codepoint": "U+853D",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-853D"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.981134
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.980276,
+              "character_type_coverage_percent": 98.976109,
+              "kanji_coverage_percent": 99.922981,
+              "complete_strings": 5667,
+              "complete_string_percent": 99.613289,
+              "missing": [
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 7,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 6,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "蔽",
+                  "codepoint": "U+853D",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-853D"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.981134
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.981134,
+              "character_type_coverage_percent": 99.089875,
+              "kanji_coverage_percent": 99.922981,
+              "complete_strings": 5668,
+              "complete_string_percent": 99.630867,
+              "missing": [
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 7,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 6,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "蔽",
+                  "codepoint": "U+853D",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-853D"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.981991
+            }
+          }
+        },
+        "general-3000": {
+          "candidate_sha256": "6600ffe0e4d8d2a812394c2cfa80a2fd4f0999f2de6b5e9e98e6d89bb5d87eb2",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.993997,
+            "character_type_coverage_percent": 99.431172,
+            "kanji_coverage_percent": 99.995186,
+            "complete_strings": 5682,
+            "complete_string_percent": 99.876956,
+            "missing": [
+              {
+                "character": "π",
+                "codepoint": "U+03C0",
+                "count": 3,
+                "name": "GREEK SMALL LETTER PI"
+              },
+              {
+                "character": "ε",
+                "codepoint": "U+03B5",
+                "count": 1,
+                "name": "GREEK SMALL LETTER EPSILON"
+              },
+              {
+                "character": "τ",
+                "codepoint": "U+03C4",
+                "count": 1,
+                "name": "GREEK SMALL LETTER TAU"
+              },
+              {
+                "character": "φ",
+                "codepoint": "U+03C6",
+                "count": 1,
+                "name": "GREEK SMALL LETTER PHI"
+              },
+              {
+                "character": "响",
+                "codepoint": "U+54CD",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-54CD"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.99314,
+              "character_type_coverage_percent": 99.317406,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5681,
+              "complete_string_percent": 99.859378,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.993997
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.99314,
+              "character_type_coverage_percent": 99.317406,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5681,
+              "complete_string_percent": 99.859378,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.993997
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.993997,
+              "character_type_coverage_percent": 99.431172,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5682,
+              "complete_string_percent": 99.876956,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.994855
+            }
+          }
+        },
+        "general-4500": {
+          "candidate_sha256": "167443e6c4b330f6b2b272eacd305d2b534bd715217808e8168515d276b289a4",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.993997,
+            "character_type_coverage_percent": 99.431172,
+            "kanji_coverage_percent": 99.995186,
+            "complete_strings": 5682,
+            "complete_string_percent": 99.876956,
+            "missing": [
+              {
+                "character": "π",
+                "codepoint": "U+03C0",
+                "count": 3,
+                "name": "GREEK SMALL LETTER PI"
+              },
+              {
+                "character": "ε",
+                "codepoint": "U+03B5",
+                "count": 1,
+                "name": "GREEK SMALL LETTER EPSILON"
+              },
+              {
+                "character": "τ",
+                "codepoint": "U+03C4",
+                "count": 1,
+                "name": "GREEK SMALL LETTER TAU"
+              },
+              {
+                "character": "φ",
+                "codepoint": "U+03C6",
+                "count": 1,
+                "name": "GREEK SMALL LETTER PHI"
+              },
+              {
+                "character": "响",
+                "codepoint": "U+54CD",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-54CD"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.99314,
+              "character_type_coverage_percent": 99.317406,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5681,
+              "complete_string_percent": 99.859378,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.993997
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.99314,
+              "character_type_coverage_percent": 99.317406,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5681,
+              "complete_string_percent": 99.859378,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.993997
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.993997,
+              "character_type_coverage_percent": 99.431172,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5682,
+              "complete_string_percent": 99.876956,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.994855
+            }
+          }
+        },
+        "general-gaming-2000": {
+          "candidate_sha256": "4da878e615938a16bcf7c3a47e6ab366c5f3e6b200664e29ecd1e7dcff6cbd19",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.980276,
+            "character_type_coverage_percent": 98.976109,
+            "kanji_coverage_percent": 99.918167,
+            "complete_strings": 5667,
+            "complete_string_percent": 99.613289,
+            "missing": [
+              {
+                "character": "矩",
+                "codepoint": "U+77E9",
+                "count": 7,
+                "name": "CJK UNIFIED IDEOGRAPH-77E9"
+              },
+              {
+                "character": "遷",
+                "codepoint": "U+9077",
+                "count": 6,
+                "name": "CJK UNIFIED IDEOGRAPH-9077"
+              },
+              {
+                "character": "π",
+                "codepoint": "U+03C0",
+                "count": 3,
+                "name": "GREEK SMALL LETTER PI"
+              },
+              {
+                "character": "蔽",
+                "codepoint": "U+853D",
+                "count": 2,
+                "name": "CJK UNIFIED IDEOGRAPH-853D"
+              },
+              {
+                "character": "ε",
+                "codepoint": "U+03B5",
+                "count": 1,
+                "name": "GREEK SMALL LETTER EPSILON"
+              },
+              {
+                "character": "τ",
+                "codepoint": "U+03C4",
+                "count": 1,
+                "name": "GREEK SMALL LETTER TAU"
+              },
+              {
+                "character": "φ",
+                "codepoint": "U+03C6",
+                "count": 1,
+                "name": "GREEK SMALL LETTER PHI"
+              },
+              {
+                "character": "响",
+                "codepoint": "U+54CD",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-54CD"
+              },
+              {
+                "character": "閲",
+                "codepoint": "U+95B2",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-95B2"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.979419,
+              "character_type_coverage_percent": 98.862344,
+              "kanji_coverage_percent": 99.918167,
+              "complete_strings": 5666,
+              "complete_string_percent": 99.595711,
+              "missing": [
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 7,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 6,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "蔽",
+                  "codepoint": "U+853D",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-853D"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                },
+                {
+                  "character": "閲",
+                  "codepoint": "U+95B2",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-95B2"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.980276
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.979419,
+              "character_type_coverage_percent": 98.862344,
+              "kanji_coverage_percent": 99.918167,
+              "complete_strings": 5666,
+              "complete_string_percent": 99.595711,
+              "missing": [
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 7,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 6,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "蔽",
+                  "codepoint": "U+853D",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-853D"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                },
+                {
+                  "character": "閲",
+                  "codepoint": "U+95B2",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-95B2"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.980276
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.980276,
+              "character_type_coverage_percent": 98.976109,
+              "kanji_coverage_percent": 99.918167,
+              "complete_strings": 5667,
+              "complete_string_percent": 99.613289,
+              "missing": [
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 7,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 6,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "蔽",
+                  "codepoint": "U+853D",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-853D"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                },
+                {
+                  "character": "閲",
+                  "codepoint": "U+95B2",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-95B2"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.981134
+            }
+          }
+        },
+        "general-gaming-3000": {
+          "candidate_sha256": "d46ff22ad63b961a6a46740dad37fce361b882935e1abe0362c2a50e02ae8518",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.993997,
+            "character_type_coverage_percent": 99.431172,
+            "kanji_coverage_percent": 99.995186,
+            "complete_strings": 5682,
+            "complete_string_percent": 99.876956,
+            "missing": [
+              {
+                "character": "π",
+                "codepoint": "U+03C0",
+                "count": 3,
+                "name": "GREEK SMALL LETTER PI"
+              },
+              {
+                "character": "ε",
+                "codepoint": "U+03B5",
+                "count": 1,
+                "name": "GREEK SMALL LETTER EPSILON"
+              },
+              {
+                "character": "τ",
+                "codepoint": "U+03C4",
+                "count": 1,
+                "name": "GREEK SMALL LETTER TAU"
+              },
+              {
+                "character": "φ",
+                "codepoint": "U+03C6",
+                "count": 1,
+                "name": "GREEK SMALL LETTER PHI"
+              },
+              {
+                "character": "响",
+                "codepoint": "U+54CD",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-54CD"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.99314,
+              "character_type_coverage_percent": 99.317406,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5681,
+              "complete_string_percent": 99.859378,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.993997
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.99314,
+              "character_type_coverage_percent": 99.317406,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5681,
+              "complete_string_percent": 99.859378,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.993997
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.993997,
+              "character_type_coverage_percent": 99.431172,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5682,
+              "complete_string_percent": 99.876956,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.994855
+            }
+          }
+        },
+        "general-gaming-4500": {
+          "candidate_sha256": "ad70fdf260570bbecd9e65f42b1ac76ce08be8e67b6354d021955934c88329ce",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.993997,
+            "character_type_coverage_percent": 99.431172,
+            "kanji_coverage_percent": 99.995186,
+            "complete_strings": 5682,
+            "complete_string_percent": 99.876956,
+            "missing": [
+              {
+                "character": "π",
+                "codepoint": "U+03C0",
+                "count": 3,
+                "name": "GREEK SMALL LETTER PI"
+              },
+              {
+                "character": "ε",
+                "codepoint": "U+03B5",
+                "count": 1,
+                "name": "GREEK SMALL LETTER EPSILON"
+              },
+              {
+                "character": "τ",
+                "codepoint": "U+03C4",
+                "count": 1,
+                "name": "GREEK SMALL LETTER TAU"
+              },
+              {
+                "character": "φ",
+                "codepoint": "U+03C6",
+                "count": 1,
+                "name": "GREEK SMALL LETTER PHI"
+              },
+              {
+                "character": "响",
+                "codepoint": "U+54CD",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-54CD"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.99314,
+              "character_type_coverage_percent": 99.317406,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5681,
+              "complete_string_percent": 99.859378,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.993997
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.99314,
+              "character_type_coverage_percent": 99.317406,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5681,
+              "complete_string_percent": 99.859378,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.993997
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.993997,
+              "character_type_coverage_percent": 99.431172,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5682,
+              "complete_string_percent": 99.876956,
+              "missing": [
+                {
+                  "character": "π",
+                  "codepoint": "U+03C0",
+                  "count": 3,
+                  "name": "GREEK SMALL LETTER PI"
+                },
+                {
+                  "character": "ε",
+                  "codepoint": "U+03B5",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER EPSILON"
+                },
+                {
+                  "character": "τ",
+                  "codepoint": "U+03C4",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER TAU"
+                },
+                {
+                  "character": "φ",
+                  "codepoint": "U+03C6",
+                  "count": 1,
+                  "name": "GREEK SMALL LETTER PHI"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.994855
+            }
+          }
+        },
+        "general-3000-ui-math-draft": {
+          "candidate_sha256": "1f315104ac54d84d9ee8e20154e3aa8df9e36d4d38bbee01a9e4c9d97f73cd41",
+          "evaluation_role": "diagnostic_after_inspection",
+          "requested": {
+            "character_coverage_percent": 99.999142,
+            "character_type_coverage_percent": 99.886234,
+            "kanji_coverage_percent": 99.995186,
+            "complete_strings": 5688,
+            "complete_string_percent": 99.982422,
+            "missing": [
+              {
+                "character": "响",
+                "codepoint": "U+54CD",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-54CD"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.998285,
+              "character_type_coverage_percent": 99.772469,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5687,
+              "complete_string_percent": 99.964844,
+              "missing": [
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.999142
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.998285,
+              "character_type_coverage_percent": 99.772469,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5687,
+              "complete_string_percent": 99.964844,
+              "missing": [
+                {
+                  "character": "✕",
+                  "codepoint": "U+2715",
+                  "count": 1,
+                  "name": "MULTIPLICATION X"
+                },
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.999142
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.999142,
+              "character_type_coverage_percent": 99.886234,
+              "kanji_coverage_percent": 99.995186,
+              "complete_strings": 5688,
+              "complete_string_percent": 99.982422,
+              "missing": [
+                {
+                  "character": "响",
+                  "codepoint": "U+54CD",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-54CD"
+                }
+              ],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        }
+      }
+    },
+    "godot-properties": {
+      "strings": 1955,
+      "characters": 15246,
+      "character_types": 673,
+      "full_fonts": {
+        "YakuHanJP": {
+          "character_coverage_percent": 100.0,
+          "character_type_coverage_percent": 100.0,
+          "kanji_coverage_percent": 100.0,
+          "complete_strings": 1955,
+          "complete_string_percent": 100.0,
+          "missing": []
+        },
+        "YakuHanMP": {
+          "character_coverage_percent": 100.0,
+          "character_type_coverage_percent": 100.0,
+          "kanji_coverage_percent": 100.0,
+          "complete_strings": 1955,
+          "complete_string_percent": 100.0,
+          "missing": []
+        },
+        "YakuHanRP": {
+          "character_coverage_percent": 100.0,
+          "character_type_coverage_percent": 100.0,
+          "kanji_coverage_percent": 100.0,
+          "complete_strings": 1955,
+          "complete_string_percent": 100.0,
+          "missing": []
+        }
+      },
+      "candidates": {
+        "general-2000": {
+          "candidate_sha256": "247a02afe199897bb7dc1e57e20ab37e7870ccf95f9045eff7ded7dbafe0a41d",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.908173,
+            "character_type_coverage_percent": 99.10847,
+            "kanji_coverage_percent": 99.614431,
+            "complete_strings": 1941,
+            "complete_string_percent": 99.283887,
+            "missing": [
+              {
+                "character": "錐",
+                "codepoint": "U+9310",
+                "count": 5,
+                "name": "CJK UNIFIED IDEOGRAPH-9310"
+              },
+              {
+                "character": "遷",
+                "codepoint": "U+9077",
+                "count": 3,
+                "name": "CJK UNIFIED IDEOGRAPH-9077"
+              },
+              {
+                "character": "弧",
+                "codepoint": "U+5F27",
+                "count": 2,
+                "name": "CJK UNIFIED IDEOGRAPH-5F27"
+              },
+              {
+                "character": "矩",
+                "codepoint": "U+77E9",
+                "count": 2,
+                "name": "CJK UNIFIED IDEOGRAPH-77E9"
+              },
+              {
+                "character": "填",
+                "codepoint": "U+586B",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-586B"
+              },
+              {
+                "character": "累",
+                "codepoint": "U+7D2F",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-7D2F"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.908173,
+              "character_type_coverage_percent": 99.10847,
+              "kanji_coverage_percent": 99.614431,
+              "complete_strings": 1941,
+              "complete_string_percent": 99.283887,
+              "missing": [
+                {
+                  "character": "錐",
+                  "codepoint": "U+9310",
+                  "count": 5,
+                  "name": "CJK UNIFIED IDEOGRAPH-9310"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 3,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "弧",
+                  "codepoint": "U+5F27",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-5F27"
+                },
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "填",
+                  "codepoint": "U+586B",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-586B"
+                },
+                {
+                  "character": "累",
+                  "codepoint": "U+7D2F",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-7D2F"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.908173
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.908173,
+              "character_type_coverage_percent": 99.10847,
+              "kanji_coverage_percent": 99.614431,
+              "complete_strings": 1941,
+              "complete_string_percent": 99.283887,
+              "missing": [
+                {
+                  "character": "錐",
+                  "codepoint": "U+9310",
+                  "count": 5,
+                  "name": "CJK UNIFIED IDEOGRAPH-9310"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 3,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "弧",
+                  "codepoint": "U+5F27",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-5F27"
+                },
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "填",
+                  "codepoint": "U+586B",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-586B"
+                },
+                {
+                  "character": "累",
+                  "codepoint": "U+7D2F",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-7D2F"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.908173
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.908173,
+              "character_type_coverage_percent": 99.10847,
+              "kanji_coverage_percent": 99.614431,
+              "complete_strings": 1941,
+              "complete_string_percent": 99.283887,
+              "missing": [
+                {
+                  "character": "錐",
+                  "codepoint": "U+9310",
+                  "count": 5,
+                  "name": "CJK UNIFIED IDEOGRAPH-9310"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 3,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "弧",
+                  "codepoint": "U+5F27",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-5F27"
+                },
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "填",
+                  "codepoint": "U+586B",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-586B"
+                },
+                {
+                  "character": "累",
+                  "codepoint": "U+7D2F",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-7D2F"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.908173
+            }
+          }
+        },
+        "general-3000": {
+          "candidate_sha256": "6600ffe0e4d8d2a812394c2cfa80a2fd4f0999f2de6b5e9e98e6d89bb5d87eb2",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 1955,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        },
+        "general-4500": {
+          "candidate_sha256": "167443e6c4b330f6b2b272eacd305d2b534bd715217808e8168515d276b289a4",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 1955,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        },
+        "general-gaming-2000": {
+          "candidate_sha256": "4da878e615938a16bcf7c3a47e6ab366c5f3e6b200664e29ecd1e7dcff6cbd19",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.914732,
+            "character_type_coverage_percent": 99.257058,
+            "kanji_coverage_percent": 99.641972,
+            "complete_strings": 1942,
+            "complete_string_percent": 99.335038,
+            "missing": [
+              {
+                "character": "錐",
+                "codepoint": "U+9310",
+                "count": 5,
+                "name": "CJK UNIFIED IDEOGRAPH-9310"
+              },
+              {
+                "character": "遷",
+                "codepoint": "U+9077",
+                "count": 3,
+                "name": "CJK UNIFIED IDEOGRAPH-9077"
+              },
+              {
+                "character": "弧",
+                "codepoint": "U+5F27",
+                "count": 2,
+                "name": "CJK UNIFIED IDEOGRAPH-5F27"
+              },
+              {
+                "character": "矩",
+                "codepoint": "U+77E9",
+                "count": 2,
+                "name": "CJK UNIFIED IDEOGRAPH-77E9"
+              },
+              {
+                "character": "累",
+                "codepoint": "U+7D2F",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-7D2F"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.914732,
+              "character_type_coverage_percent": 99.257058,
+              "kanji_coverage_percent": 99.641972,
+              "complete_strings": 1942,
+              "complete_string_percent": 99.335038,
+              "missing": [
+                {
+                  "character": "錐",
+                  "codepoint": "U+9310",
+                  "count": 5,
+                  "name": "CJK UNIFIED IDEOGRAPH-9310"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 3,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "弧",
+                  "codepoint": "U+5F27",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-5F27"
+                },
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "累",
+                  "codepoint": "U+7D2F",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-7D2F"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.914732
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.914732,
+              "character_type_coverage_percent": 99.257058,
+              "kanji_coverage_percent": 99.641972,
+              "complete_strings": 1942,
+              "complete_string_percent": 99.335038,
+              "missing": [
+                {
+                  "character": "錐",
+                  "codepoint": "U+9310",
+                  "count": 5,
+                  "name": "CJK UNIFIED IDEOGRAPH-9310"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 3,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "弧",
+                  "codepoint": "U+5F27",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-5F27"
+                },
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "累",
+                  "codepoint": "U+7D2F",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-7D2F"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.914732
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.914732,
+              "character_type_coverage_percent": 99.257058,
+              "kanji_coverage_percent": 99.641972,
+              "complete_strings": 1942,
+              "complete_string_percent": 99.335038,
+              "missing": [
+                {
+                  "character": "錐",
+                  "codepoint": "U+9310",
+                  "count": 5,
+                  "name": "CJK UNIFIED IDEOGRAPH-9310"
+                },
+                {
+                  "character": "遷",
+                  "codepoint": "U+9077",
+                  "count": 3,
+                  "name": "CJK UNIFIED IDEOGRAPH-9077"
+                },
+                {
+                  "character": "弧",
+                  "codepoint": "U+5F27",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-5F27"
+                },
+                {
+                  "character": "矩",
+                  "codepoint": "U+77E9",
+                  "count": 2,
+                  "name": "CJK UNIFIED IDEOGRAPH-77E9"
+                },
+                {
+                  "character": "累",
+                  "codepoint": "U+7D2F",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-7D2F"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.914732
+            }
+          }
+        },
+        "general-gaming-3000": {
+          "candidate_sha256": "d46ff22ad63b961a6a46740dad37fce361b882935e1abe0362c2a50e02ae8518",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 1955,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        },
+        "general-gaming-4500": {
+          "candidate_sha256": "ad70fdf260570bbecd9e65f42b1ac76ce08be8e67b6354d021955934c88329ce",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 1955,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        },
+        "general-3000-ui-math-draft": {
+          "candidate_sha256": "1f315104ac54d84d9ee8e20154e3aa8df9e36d4d38bbee01a9e4c9d97f73cd41",
+          "evaluation_role": "diagnostic_after_inspection",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 1955,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 1955,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        }
+      }
+    },
+    "the-question": {
+      "strings": 76,
+      "characters": 1602,
+      "character_types": 293,
+      "full_fonts": {
+        "YakuHanJP": {
+          "character_coverage_percent": 100.0,
+          "character_type_coverage_percent": 100.0,
+          "kanji_coverage_percent": 100.0,
+          "complete_strings": 76,
+          "complete_string_percent": 100.0,
+          "missing": []
+        },
+        "YakuHanMP": {
+          "character_coverage_percent": 100.0,
+          "character_type_coverage_percent": 100.0,
+          "kanji_coverage_percent": 100.0,
+          "complete_strings": 76,
+          "complete_string_percent": 100.0,
+          "missing": []
+        },
+        "YakuHanRP": {
+          "character_coverage_percent": 100.0,
+          "character_type_coverage_percent": 100.0,
+          "kanji_coverage_percent": 100.0,
+          "complete_strings": 76,
+          "complete_string_percent": 100.0,
+          "missing": []
+        }
+      },
+      "candidates": {
+        "general-2000": {
+          "candidate_sha256": "247a02afe199897bb7dc1e57e20ab37e7870ccf95f9045eff7ded7dbafe0a41d",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.937578,
+            "character_type_coverage_percent": 99.658703,
+            "kanji_coverage_percent": 99.707602,
+            "complete_strings": 75,
+            "complete_string_percent": 98.684211,
+            "missing": [
+              {
+                "character": "摺",
+                "codepoint": "U+647A",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-647A"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.937578,
+              "character_type_coverage_percent": 99.658703,
+              "kanji_coverage_percent": 99.707602,
+              "complete_strings": 75,
+              "complete_string_percent": 98.684211,
+              "missing": [
+                {
+                  "character": "摺",
+                  "codepoint": "U+647A",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-647A"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.937578
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.937578,
+              "character_type_coverage_percent": 99.658703,
+              "kanji_coverage_percent": 99.707602,
+              "complete_strings": 75,
+              "complete_string_percent": 98.684211,
+              "missing": [
+                {
+                  "character": "摺",
+                  "codepoint": "U+647A",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-647A"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.937578
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.937578,
+              "character_type_coverage_percent": 99.658703,
+              "kanji_coverage_percent": 99.707602,
+              "complete_strings": 75,
+              "complete_string_percent": 98.684211,
+              "missing": [
+                {
+                  "character": "摺",
+                  "codepoint": "U+647A",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-647A"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.937578
+            }
+          }
+        },
+        "general-3000": {
+          "candidate_sha256": "6600ffe0e4d8d2a812394c2cfa80a2fd4f0999f2de6b5e9e98e6d89bb5d87eb2",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 76,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        },
+        "general-4500": {
+          "candidate_sha256": "167443e6c4b330f6b2b272eacd305d2b534bd715217808e8168515d276b289a4",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 76,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        },
+        "general-gaming-2000": {
+          "candidate_sha256": "4da878e615938a16bcf7c3a47e6ab366c5f3e6b200664e29ecd1e7dcff6cbd19",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 99.937578,
+            "character_type_coverage_percent": 99.658703,
+            "kanji_coverage_percent": 99.707602,
+            "complete_strings": 75,
+            "complete_string_percent": 98.684211,
+            "missing": [
+              {
+                "character": "摺",
+                "codepoint": "U+647A",
+                "count": 1,
+                "name": "CJK UNIFIED IDEOGRAPH-647A"
+              }
+            ]
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 99.937578,
+              "character_type_coverage_percent": 99.658703,
+              "kanji_coverage_percent": 99.707602,
+              "complete_strings": 75,
+              "complete_string_percent": 98.684211,
+              "missing": [
+                {
+                  "character": "摺",
+                  "codepoint": "U+647A",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-647A"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.937578
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 99.937578,
+              "character_type_coverage_percent": 99.658703,
+              "kanji_coverage_percent": 99.707602,
+              "complete_strings": 75,
+              "complete_string_percent": 98.684211,
+              "missing": [
+                {
+                  "character": "摺",
+                  "codepoint": "U+647A",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-647A"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.937578
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 99.937578,
+              "character_type_coverage_percent": 99.658703,
+              "kanji_coverage_percent": 99.707602,
+              "complete_strings": 75,
+              "complete_string_percent": 98.684211,
+              "missing": [
+                {
+                  "character": "摺",
+                  "codepoint": "U+647A",
+                  "count": 1,
+                  "name": "CJK UNIFIED IDEOGRAPH-647A"
+                }
+              ],
+              "source_supported_character_coverage_percent": 99.937578
+            }
+          }
+        },
+        "general-gaming-3000": {
+          "candidate_sha256": "d46ff22ad63b961a6a46740dad37fce361b882935e1abe0362c2a50e02ae8518",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 76,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        },
+        "general-gaming-4500": {
+          "candidate_sha256": "ad70fdf260570bbecd9e65f42b1ac76ce08be8e67b6354d021955934c88329ce",
+          "evaluation_role": "frozen_candidate_evaluation",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 76,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        },
+        "general-3000-ui-math-draft": {
+          "candidate_sha256": "1f315104ac54d84d9ee8e20154e3aa8df9e36d4d38bbee01a9e4c9d97f73cd41",
+          "evaluation_role": "diagnostic_after_inspection",
+          "requested": {
+            "character_coverage_percent": 100.0,
+            "character_type_coverage_percent": 100.0,
+            "kanji_coverage_percent": 100.0,
+            "complete_strings": 76,
+            "complete_string_percent": 100.0,
+            "missing": []
+          },
+          "fonts": {
+            "YakuHanJP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanMP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            },
+            "YakuHanRP": {
+              "character_coverage_percent": 100.0,
+              "character_type_coverage_percent": 100.0,
+              "kanji_coverage_percent": 100.0,
+              "complete_strings": 76,
+              "complete_string_percent": 100.0,
+              "missing": [],
+              "source_supported_character_coverage_percent": 100.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

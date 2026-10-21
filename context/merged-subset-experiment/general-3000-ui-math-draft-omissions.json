@@ -1,0 +1,8426 @@
+[
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Thin",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-Thin.ttf",
+    "source_sha256": "bb21fff79754b4400942d6b3abfc16a9401d190b57a10e6db47b76ccc57c2b16",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Thin",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-Thin.otf",
+    "source_sha256": "1b7f0bd84981bad97760c72cf1a454396f66048dc5729f2445ce9b5cf50ee3a6",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "ExtraLight",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-ExtraLight.ttf",
+    "source_sha256": "3ec9e467298ba14e247b341c17aebc0b8a7e7b788b0aa94435db05ff4f61966b",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "ExtraLight",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-ExtraLight.otf",
+    "source_sha256": "14a884d89aa9f8c918e0958b46157876f2ace5074d3c3306f3e8b1b54e2082b3",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Light",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-Light.ttf",
+    "source_sha256": "89ac11e046fa252e40f0b8633cd62f81bc0f94d45846178fcac42c49b3514f6d",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Light",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-Light.otf",
+    "source_sha256": "b9715cd6abec7fdbbf6a60465d6bacc484e8ff325852157c6e01367155ddad59",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Regular",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-Regular.ttf",
+    "source_sha256": "845a93a5f8fc171be836a1b7a2cf38737063e005e8c987f4ea24aeea1624cae9",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Regular",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-Regular.otf",
+    "source_sha256": "4e7e20ce0e31d2f5bad11a2fdad46ddc974be1e5e73d845f93d7ad28666aef53",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Medium",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-Medium.ttf",
+    "source_sha256": "fa6703d07b7a95732a71e7273977a1da3b962f40744e22369149b44813785138",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Medium",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-Medium.otf",
+    "source_sha256": "5204cbcee36bd64a7857c67d2ad7f8b16374b8a42116b33f27bd07bbf3c5c0c8",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "SemiBold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-SemiBold.ttf",
+    "source_sha256": "c082c69d34e9375552ee1389e149850bc31bed49df6774f2ab49aeb373f2c639",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "SemiBold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-SemiBold.otf",
+    "source_sha256": "db2293697062451ea514a05b246a4c0e49997a3a53b254ecf68d68c00418e5e4",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Bold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-Bold.ttf",
+    "source_sha256": "f3ea81252432b863f658434fe14254457d8d8399343aba3ce17988c756e6c9be",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Bold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-Bold.otf",
+    "source_sha256": "4f449d0d92e8754f7f33a933f1423cd4a902efb3fa87641db463a8ed435f2f4b",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "ExtraBold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-ExtraBold.ttf",
+    "source_sha256": "f97248f574eb2abe9dff43ed2b9da0fb7467dbb1aceb3d388b555e83ab10efd9",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "ExtraBold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-ExtraBold.otf",
+    "source_sha256": "71b8737f4f58e70913724774b6e0544f6fcf56fd13a17d86f3bf02097e78d17c",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Black",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJP/ttf/MergedYakuHanJP-Black.ttf",
+    "source_sha256": "302f6116d5653e10d622140de604c72ab2e3f20ad57d56b3a019ffa81ae5a733",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJP",
+    "style": "Black",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJP/otf/MergedYakuHanJP-Black.otf",
+    "source_sha256": "3e767e7985b8750fec216e32e51a2a6a007acdb1469563803d3727c4e70ce439",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Thin",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-Thin.ttf",
+    "source_sha256": "13ff61661e7f4efa47ccff0f7a2e47e8caf55e081332964814d3607f2a1c32a1",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Thin",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-Thin.otf",
+    "source_sha256": "a8e45b6e2b07785828971e7f4165a6e587edc986db64b2075f6dcc8a9191bfc1",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "ExtraLight",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-ExtraLight.ttf",
+    "source_sha256": "b3c07d0bd87f2316c09eaea4322438b4aebf3540621e77760f40074ea7adc3e2",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "ExtraLight",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-ExtraLight.otf",
+    "source_sha256": "ac90da240995029a4ffb5570cc9d5f39c9366c7e24f2b2539a0b60958180d842",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Light",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-Light.ttf",
+    "source_sha256": "42ae284367e75e871ecec1d16b6c51cc122c435ee164748d2928938968c501dc",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Light",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-Light.otf",
+    "source_sha256": "6b12774c56c54161ed022978ab459e87537229cf126f92a0c33c01061d569d8f",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Regular",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-Regular.ttf",
+    "source_sha256": "960ee2bd66fab61540d4ff1d786543f91ffe853b6e910572e270496a4f4fdd25",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Regular",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-Regular.otf",
+    "source_sha256": "817c420ed88a9e7b2790c9746351cd635572a3527b3e05c04e554ba954a8cdd5",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Medium",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-Medium.ttf",
+    "source_sha256": "701184b6eef0e9bae3e40288b9c28bff7435665a77b402c94f6f65b0ffd50640",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Medium",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-Medium.otf",
+    "source_sha256": "bfcf107d98d19b37c84f5e5e36b2bb29bac2faddf028fd3848dd94ab170a430e",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "SemiBold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-SemiBold.ttf",
+    "source_sha256": "bb6ef7dd963fea1e26c81c205a7137d5bdacf766df5ef440e77a805e215e9144",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "SemiBold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-SemiBold.otf",
+    "source_sha256": "83dcff32f8d9ed7a5526282757348a19d26d44d8983585b0359c63e55e95db87",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Bold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-Bold.ttf",
+    "source_sha256": "8e9155ba2f54f0787fb6d0706545779df1423cb35bf726c01e57344ec2ecb49b",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Bold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-Bold.otf",
+    "source_sha256": "008ca2128b3c5b5b94947b874d1eb8c32524b43a216982bf762faceec29123a9",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "ExtraBold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-ExtraBold.ttf",
+    "source_sha256": "9cf102c422f6073cb7b12189273c32b0f7d264eb59bb6d8b4423acb971341e18",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "ExtraBold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-ExtraBold.otf",
+    "source_sha256": "16458334b338547deae40f121443f8f60ac20ec1b090e210049b703e21cc145a",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Black",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanJPs/ttf/MergedYakuHanJPs-Black.ttf",
+    "source_sha256": "e1c407bd3a8fb39aa2d643c9e544cad75bb7391ec349b8e363c6ed15b06e3dc8",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanJPs",
+    "style": "Black",
+    "format": "otf",
+    "source": "packages/merged/YakuHanJPs/otf/MergedYakuHanJPs-Black.otf",
+    "source_sha256": "2c46dd046903b0369fda220b92376abd13b85567ed0e7dd6b6e1506ef70d7e56",
+    "requested_count": 3679,
+    "included_count": 3673,
+    "omitted_count": 6,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "ExtraLight",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMP/ttf/MergedYakuHanMP-ExtraLight.ttf",
+    "source_sha256": "e3a1c915b6f00ac4af2149afdc70fd0cb1cd39940b571c404df0461772a244c5",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "ExtraLight",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMP/otf/MergedYakuHanMP-ExtraLight.otf",
+    "source_sha256": "439d42d4f2f05793066112c564be4c1621d91e2ae62717c8d77b4ba856220ee6",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Light",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMP/ttf/MergedYakuHanMP-Light.ttf",
+    "source_sha256": "aa5506c43310e9f78a9a8a2e4b729e0d78a055724c140380d2b48a6d495e7a58",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Light",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMP/otf/MergedYakuHanMP-Light.otf",
+    "source_sha256": "a9e133b8eb5ae7ce35693793c735e99967472854498ddaa210aefc21751a5215",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Regular",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMP/ttf/MergedYakuHanMP-Regular.ttf",
+    "source_sha256": "069477a3e9683e767609e041300d2325a03912c7d8a316d7cce065f481bf00e3",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Regular",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMP/otf/MergedYakuHanMP-Regular.otf",
+    "source_sha256": "1258ce21d6114fd1c698b0c432822fd17a3f73bbc37bdd6dff76fb5971dd7607",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Medium",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMP/ttf/MergedYakuHanMP-Medium.ttf",
+    "source_sha256": "ed28cd4339a66d7279ba9422f43fbc6d7c4193ee1ef6f96d7ac5fc6214f75947",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Medium",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMP/otf/MergedYakuHanMP-Medium.otf",
+    "source_sha256": "1935801c1bca43222202983f077dc035e98b4bbbde8a1cb4e2fd9bdabceea232",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "SemiBold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMP/ttf/MergedYakuHanMP-SemiBold.ttf",
+    "source_sha256": "bca19b2b9991cd7bb9becbe5ed160bd1fb4d83122c2359e93e4c60f8ea3b989f",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "SemiBold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMP/otf/MergedYakuHanMP-SemiBold.otf",
+    "source_sha256": "5d30efd265e35d9bed2fa11fde7f8bc9d6caf3935800b410498db323a391f0b2",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Bold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMP/ttf/MergedYakuHanMP-Bold.ttf",
+    "source_sha256": "4db211d3bda94f361984270a5b5e774f7ae28323f03471d7723c0860ece43c42",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Bold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMP/otf/MergedYakuHanMP-Bold.otf",
+    "source_sha256": "ac6da1a869f71ddd18be19948137a39f7a0c60be7f0aaee605d9a44e92af9b1b",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Black",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMP/ttf/MergedYakuHanMP-Black.ttf",
+    "source_sha256": "f959da0b4fbe36fabbcb8a5e727d9839d184d3a7b5676b3629d9908a1b375d1d",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMP",
+    "style": "Black",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMP/otf/MergedYakuHanMP-Black.otf",
+    "source_sha256": "eabea9ec3a5e977fb771376841d5404535a00297ab07a247d37aa55822497c95",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "ExtraLight",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMPs/ttf/MergedYakuHanMPs-ExtraLight.ttf",
+    "source_sha256": "ccb5518088bd3e5f89eae501bdb3f95795c5e565627deb01d2d35077c0ced769",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "ExtraLight",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMPs/otf/MergedYakuHanMPs-ExtraLight.otf",
+    "source_sha256": "5bb8b3d80da43a46c07abe4ce56e7f32699d8cf2ea7a80e62ac64fe7aa4766df",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Light",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMPs/ttf/MergedYakuHanMPs-Light.ttf",
+    "source_sha256": "20bb31afefe3961c783dd7d39153fdc8beba31bc2bb34beda18df34c1f2ca6c3",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Light",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMPs/otf/MergedYakuHanMPs-Light.otf",
+    "source_sha256": "130902ba105daafe7967e5baa8b956b39104c0face7d07f4fac91ea02d51627b",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Regular",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMPs/ttf/MergedYakuHanMPs-Regular.ttf",
+    "source_sha256": "47623fa81959632b7b5213019bf87f5a9e34709acc7fe6de915f373fafec3e2c",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Regular",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMPs/otf/MergedYakuHanMPs-Regular.otf",
+    "source_sha256": "d5fb82d5b4cc56a859837e21ccf7ce5d84ed7dd7b66ad5cf8787426235dbea97",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Medium",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMPs/ttf/MergedYakuHanMPs-Medium.ttf",
+    "source_sha256": "5de252dc9bd5dc92112843600ffb24b00ecee3e71de700ac3b31b0c5ffa7e235",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Medium",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMPs/otf/MergedYakuHanMPs-Medium.otf",
+    "source_sha256": "e9ca5fd0d4fc0bff421ee57f21712b01a8b0725b0647887961ff225e7c18fb8e",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "SemiBold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMPs/ttf/MergedYakuHanMPs-SemiBold.ttf",
+    "source_sha256": "e1a72c45dd460507d485663b0f2299a516391d8840b130af0a97700c81e92ce8",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "SemiBold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMPs/otf/MergedYakuHanMPs-SemiBold.otf",
+    "source_sha256": "0320cac54a61d9a3a0904ca3b1fb0ff97d16d984b78f9794228db683b6fc9637",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Bold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMPs/ttf/MergedYakuHanMPs-Bold.ttf",
+    "source_sha256": "3714775b872ddb4ab28826916616b79a14a6a84b650cff70b65fafa63939dbd0",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Bold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMPs/otf/MergedYakuHanMPs-Bold.otf",
+    "source_sha256": "ed8de575ab7e280dc4d2d4a526fa1a2ceaa14135b45453b99ca9f1b87e789451",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Black",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanMPs/ttf/MergedYakuHanMPs-Black.ttf",
+    "source_sha256": "fb9310ed07a0611ff99fb123bc57fe101f10bf9ef12cf2d86f27b83623df024e",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanMPs",
+    "style": "Black",
+    "format": "otf",
+    "source": "packages/merged/YakuHanMPs/otf/MergedYakuHanMPs-Black.otf",
+    "source_sha256": "7b6b892453fb5343b11fda0075aad95c1e333c9aad2f83f84a76bf86de6793c5",
+    "requested_count": 3679,
+    "included_count": 3672,
+    "omitted_count": 7,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "⇑",
+        "codepoint": "U+21D1"
+      },
+      {
+        "character": "⇓",
+        "codepoint": "U+21D3"
+      },
+      {
+        "character": "≒",
+        "codepoint": "U+2252"
+      },
+      {
+        "character": "✔",
+        "codepoint": "U+2714"
+      },
+      {
+        "character": "✕",
+        "codepoint": "U+2715"
+      },
+      {
+        "character": "✖",
+        "codepoint": "U+2716"
+      },
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Thin",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRP/ttf/MergedYakuHanRP-Thin.ttf",
+    "source_sha256": "7c14ed35a76f9fcd4017b392ff075c7622d1780367141df1682709836868b228",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Thin",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRP/otf/MergedYakuHanRP-Thin.otf",
+    "source_sha256": "a2d568638ffcbe412cc5b3f6d714ef9c341ecc60e785f2c9d8a166f7865cc738",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Light",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRP/ttf/MergedYakuHanRP-Light.ttf",
+    "source_sha256": "378faa7987060ed6f982f1363717e30a1289b886a393e35bd81c6863bc11267b",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Light",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRP/otf/MergedYakuHanRP-Light.otf",
+    "source_sha256": "ad0554b8c61aa6d0f93faad0f69d38e9fa4eb6670b063d50fc3b14d296eb8596",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Regular",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRP/ttf/MergedYakuHanRP-Regular.ttf",
+    "source_sha256": "efbe6f41505525640667d34177a4e6557d4191a6846411adb5eff73271e2df6b",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Regular",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRP/otf/MergedYakuHanRP-Regular.otf",
+    "source_sha256": "8b4d0d0c1782d7523986d2b50dd50765e970a3f7eb475ee33e3227ff6f7019f7",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Medium",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRP/ttf/MergedYakuHanRP-Medium.ttf",
+    "source_sha256": "de7544652fa658cd145bfd2531a5ba04d2e58215a7523882bf8c8b58f9e30de7",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Medium",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRP/otf/MergedYakuHanRP-Medium.otf",
+    "source_sha256": "d93e17143a318326c8e470b012e1826a6bf5cb8b8c46c4cb2a350a31b6beca46",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Bold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRP/ttf/MergedYakuHanRP-Bold.ttf",
+    "source_sha256": "2bf617299ed7f1c5365da264bf5bc56c27a33ad285380b367837b9a02c29d1fc",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Bold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRP/otf/MergedYakuHanRP-Bold.otf",
+    "source_sha256": "88d2c900603250ece373063ba9a50011ba4d3f99962c4ea81cae895b65fb488c",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "ExtraBold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRP/ttf/MergedYakuHanRP-ExtraBold.ttf",
+    "source_sha256": "69f9b618809f36e6383d680ac4f73de081004b7e2d2134dbbbec8b1fb6d50119",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "ExtraBold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRP/otf/MergedYakuHanRP-ExtraBold.otf",
+    "source_sha256": "4fcfedbc66d751ed5629d033f8411b62754e2a15db97d6c2ffe44fcfe0231ce5",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Black",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRP/ttf/MergedYakuHanRP-Black.ttf",
+    "source_sha256": "7bd9b2cb6b87fa1558b09519b7fa03d06a3a591f32387f1439595d4ccd1de649",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRP",
+    "style": "Black",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRP/otf/MergedYakuHanRP-Black.otf",
+    "source_sha256": "716329a1c106646c8c7f9bfe2f2e56c5a34e3356bf8f0927a116001b61d2d87a",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Thin",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRPs/ttf/MergedYakuHanRPs-Thin.ttf",
+    "source_sha256": "3476fdb1216594544f9fc0ee732c2ff932a5363a60b057560c5783a85eb9d0f5",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Thin",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRPs/otf/MergedYakuHanRPs-Thin.otf",
+    "source_sha256": "e8392c9f6d4ada31be65ee9507e86ed17f64a72a0dee311e0ec7d946d83d4735",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Light",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRPs/ttf/MergedYakuHanRPs-Light.ttf",
+    "source_sha256": "7a27771935e75e7f0031481d91be8cf371f41ac8a621025dd57a328e5c5949ff",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Light",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRPs/otf/MergedYakuHanRPs-Light.otf",
+    "source_sha256": "01334b6de870dc19ae66f58b89d58609e522cd3cd8869f5aae77ce53a8b2a346",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Regular",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRPs/ttf/MergedYakuHanRPs-Regular.ttf",
+    "source_sha256": "f8afff24319227fc1c84ea2ca749f797736e62b399d8ef42024aac081e21821c",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Regular",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRPs/otf/MergedYakuHanRPs-Regular.otf",
+    "source_sha256": "50891b7aa65cc8dcd3af9d0f8401d315791ed4f70c5020cdb652437be8b617a1",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Medium",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRPs/ttf/MergedYakuHanRPs-Medium.ttf",
+    "source_sha256": "b3f0b215cd47d041b431f844dce5e78bb65b478472383b91043ad9443710d68d",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Medium",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRPs/otf/MergedYakuHanRPs-Medium.otf",
+    "source_sha256": "9318fef845d70e4e0344b212b1253489d73406dc9fe114f3778e911a3ddef55a",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Bold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRPs/ttf/MergedYakuHanRPs-Bold.ttf",
+    "source_sha256": "e9258c4ca89c6d3b61d5365696e5ad139e9fc5ff39e3d95e5a5d4b6b0ce0d7f1",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Bold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRPs/otf/MergedYakuHanRPs-Bold.otf",
+    "source_sha256": "73b5db700746dfc4be57f4517672a0794068ef6b206be16707799c212d019ef5",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "ExtraBold",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRPs/ttf/MergedYakuHanRPs-ExtraBold.ttf",
+    "source_sha256": "3733e40c48dbfa0763543fc5da91ee48d20a3d86ba207d01ec2a4b8d81f5e11d",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "ExtraBold",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRPs/otf/MergedYakuHanRPs-ExtraBold.otf",
+    "source_sha256": "709f38696147ea9b7efb8dcbaf0d47933fa446c0902f413710d030293149230a",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Black",
+    "format": "ttf",
+    "source": "packages/merged/YakuHanRPs/ttf/MergedYakuHanRPs-Black.ttf",
+    "source_sha256": "e3ed8def2113bfd5a5507e24f3a411c64fa437d49570a1f3c91adbfcb04c6035",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  },
+  {
+    "candidate": "general-3000-ui-math-draft",
+    "family": "YakuHanRPs",
+    "style": "Black",
+    "format": "otf",
+    "source": "packages/merged/YakuHanRPs/otf/MergedYakuHanRPs-Black.otf",
+    "source_sha256": "8708ed97f42d0a671cc7d93943849489ae69767fb8dc101e7c4cd7ee1bbbf7ca",
+    "requested_count": 3679,
+    "included_count": 3630,
+    "omitted_count": 49,
+    "reason": "元フォント未収録",
+    "omitted": [
+      {
+        "character": "㋿",
+        "codepoint": "U+32FF"
+      },
+      {
+        "character": "㌔",
+        "codepoint": "U+3314"
+      },
+      {
+        "character": "㍍",
+        "codepoint": "U+334D"
+      },
+      {
+        "character": "㍑",
+        "codepoint": "U+3351"
+      },
+      {
+        "character": "㍻",
+        "codepoint": "U+337B"
+      },
+      {
+        "character": "㎎",
+        "codepoint": "U+338E"
+      },
+      {
+        "character": "㎏",
+        "codepoint": "U+338F"
+      },
+      {
+        "character": "㎜",
+        "codepoint": "U+339C"
+      },
+      {
+        "character": "㎝",
+        "codepoint": "U+339D"
+      },
+      {
+        "character": "㎞",
+        "codepoint": "U+339E"
+      },
+      {
+        "character": "㎡",
+        "codepoint": "U+33A1"
+      },
+      {
+        "character": "㎥",
+        "codepoint": "U+33A5"
+      },
+      {
+        "character": "㏄",
+        "codepoint": "U+33C4"
+      },
+      {
+        "character": "宦",
+        "codepoint": "U+5BA6"
+      },
+      {
+        "character": "寨",
+        "codepoint": "U+5BE8"
+      },
+      {
+        "character": "慥",
+        "codepoint": "U+6165"
+      },
+      {
+        "character": "攪",
+        "codepoint": "U+652A"
+      },
+      {
+        "character": "攫",
+        "codepoint": "U+652B"
+      },
+      {
+        "character": "笘",
+        "codepoint": "U+7B18"
+      },
+      {
+        "character": "箴",
+        "codepoint": "U+7BB4"
+      },
+      {
+        "character": "繩",
+        "codepoint": "U+7E69"
+      },
+      {
+        "character": "聟",
+        "codepoint": "U+805F"
+      },
+      {
+        "character": "蔡",
+        "codepoint": "U+8521"
+      },
+      {
+        "character": "蜷",
+        "codepoint": "U+8737"
+      },
+      {
+        "character": "鍮",
+        "codepoint": "U+936E"
+      },
+      {
+        "character": "顏",
+        "codepoint": "U+984F"
+      },
+      {
+        "character": "髯",
+        "codepoint": "U+9AEF"
+      },
+      {
+        "character": "︑",
+        "codepoint": "U+FE11"
+      },
+      {
+        "character": "︒",
+        "codepoint": "U+FE12"
+      },
+      {
+        "character": "︗",
+        "codepoint": "U+FE17"
+      },
+      {
+        "character": "︘",
+        "codepoint": "U+FE18"
+      },
+      {
+        "character": "︵",
+        "codepoint": "U+FE35"
+      },
+      {
+        "character": "︶",
+        "codepoint": "U+FE36"
+      },
+      {
+        "character": "︷",
+        "codepoint": "U+FE37"
+      },
+      {
+        "character": "︸",
+        "codepoint": "U+FE38"
+      },
+      {
+        "character": "︹",
+        "codepoint": "U+FE39"
+      },
+      {
+        "character": "︺",
+        "codepoint": "U+FE3A"
+      },
+      {
+        "character": "︻",
+        "codepoint": "U+FE3B"
+      },
+      {
+        "character": "︼",
+        "codepoint": "U+FE3C"
+      },
+      {
+        "character": "︽",
+        "codepoint": "U+FE3D"
+      },
+      {
+        "character": "︾",
+        "codepoint": "U+FE3E"
+      },
+      {
+        "character": "︿",
+        "codepoint": "U+FE3F"
+      },
+      {
+        "character": "﹀",
+        "codepoint": "U+FE40"
+      },
+      {
+        "character": "﹁",
+        "codepoint": "U+FE41"
+      },
+      {
+        "character": "﹂",
+        "codepoint": "U+FE42"
+      },
+      {
+        "character": "﹃",
+        "codepoint": "U+FE43"
+      },
+      {
+        "character": "﹄",
+        "codepoint": "U+FE44"
+      },
+      {
+        "character": "﹇",
+        "codepoint": "U+FE47"
+      },
+      {
+        "character": "﹈",
+        "codepoint": "U+FE48"
+      }
+    ]
+  }
+]

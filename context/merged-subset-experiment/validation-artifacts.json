@@ -1,0 +1,21 @@
+{
+  "generated_on": "2026-10-21",
+  "status": "proposal_not_for_distribution",
+  "scripts": {
+    "scripts/research_merged_subset.py": "cfae2f4640edfa44de99a1c2d10f998dd67fe577858c960d4bd9bb2605a11923",
+    "scripts/evaluate_merged_subset.py": "95fb72da5a30edebb488c1a9781cebf3b6ab9ab4cf6288b0e118ec527631c064"
+  },
+  "derived_files_sha256": {
+    "base-policy-proposal.json": "5637e83dc60a057c4daefa1ab703af29c4e9634d35123a97427ad326e3d78da0",
+    "validation-report.json": "7d57f85f3388a3cf0e7ebb89aa47b06bfbef539f7242bbfb1963781fd5461514",
+    "general-3000-omissions.json": "f7ffb96e8db1be0bdb4c7236a96c79f85ea5cffce1d301972342a3c7f6eb1a66",
+    "general-3000-ui-math-draft-omissions.json": "2da914ab76b047ba60e5b50665244cc47882a1b3b2488f764c87b1e3885ec7dc",
+    "general-3000-ui-math-draft.txt": "1f315104ac54d84d9ee8e20154e3aa8df9e36d4d38bbee01a9e4c9d97f73cd41",
+    "draft-font-measurements.json": "28cf16146abead38978f50ff1f995a89afc4feb44b868238b69ae523c93e7844"
+  },
+  "validation_sources_sha256": "33eaada9a4623e0f3d06498890ff7a2e5c5462556b87ff8f8525eba4bda09cb6",
+  "frozen_candidate_role": "Original six candidates evaluated without changes.",
+  "draft_candidate_role": "Greek/math additions inspected using the same data; this is diagnostic, not a fresh holdout test.",
+  "measured_fonts": "build/subset-research/ui-math-draft-fonts; current full fonts directly subset; internal names not changed",
+  "tests": "8 corpus/parser tests passed; 6 draft fonts verified in 64064 shaping conditions."
+}
