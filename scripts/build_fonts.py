@@ -6,6 +6,7 @@ import hashlib
 import json
 import logging
 from pathlib import Path
+from shutil import copyfile
 from time import perf_counter
 
 from fontTools.fontBuilder import FontBuilder
@@ -186,13 +187,15 @@ def file_hash(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def build(output, families=None, weights=None, target="all", merged_format="native", force=False):
+def build(output, families=None, weights=None, target="all", merged_format="native", force=False, *, cache_root=None):
     project = json.loads((ROOT / "packages/yakuhanjp/project.json").read_text())
-    output.mkdir(parents=True, exist_ok=True)
-    cache_path = output / ".font-build-cache.json"
+    output = output.resolve()
+    cache_root = (cache_root or ROOT / "build/fonts").resolve()
+    cache_root.mkdir(parents=True, exist_ok=True)
+    cache_path = cache_root / ".font-build-cache.json"
     cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
     tool_hashes = [file_hash(Path(__file__)), file_hash(ROOT / "scripts/font_sources.py"), file_hash(ROOT / "uv.lock")]
-    built, skipped = 0, 0
+    built, skipped, copied = 0, 0, 0
     started = perf_counter()
     for item in project["fonts"]:
         family = item["file"]
@@ -211,43 +214,52 @@ def build(output, families=None, weights=None, target="all", merged_format="nati
             for name in tasks:
                 formats = ("ttf", "otf", "woff2") if name == "core" else extensions
                 prefix = "" if name == "core" else "Merged"
-                paths = [output / f"{name}/{family}/{ext}/{prefix}{family}-{style}.{ext}" for ext in formats]
-                key = f"{name}/{family}/{style}/{'-'.join(formats)}"
                 inputs = tool_hashes + [file_hash(source), file_hash(source.parent / recipe["outlines"])]
                 if name == "merged" or any("source" in entry for entry in recipe["glyphs"].values()):
                     inputs.append(file_hash(base_path))
                 fingerprint = hashlib.sha256(json.dumps(inputs).encode()).hexdigest()
-                previous = cache.get(key, {})
-                if not force and previous.get("input") == fingerprint and all(
-                    path.exists() and previous.get("outputs", {}).get(str(path.relative_to(output))) == file_hash(path) for path in paths
-                ):
-                    print(f"Skipped {name} {family} {style} (unchanged)", flush=True)
-                    skipped += 1
-                    continue
-                stage_started = perf_counter()
-                if core is None:
-                    core = core_font(source)
-                if name == "core":
-                    for extension, path in zip(formats, paths):
-                        font = convert(core, "ttf" if extension == "woff2" else extension)
-                        font.flavor = "woff2" if extension == "woff2" else None
+                merged = None
+                for extension in formats:
+                    relative = Path(f"{name}/{family}/{extension}/{prefix}{family}-{style}.{extension}")
+                    path = cache_root / relative
+                    key = relative.as_posix()
+                    previous = cache.get(key, {})
+                    valid = (not force and previous.get("input") == fingerprint and path.exists()
+                             and previous.get("output") == file_hash(path))
+                    if valid:
+                        print(f"Skipped {name} {family} {style} {extension} (unchanged)", flush=True)
+                        skipped += 1
+                    else:
+                        stage_started = perf_counter()
+                        if core is None:
+                            core = core_font(source)
+                        if name == "core":
+                            font = convert(core, "ttf" if extension == "woff2" else extension)
+                            font.flavor = "woff2" if extension == "woff2" else None
+                        else:
+                            if merged is None:
+                                merged = merged_font(base_path, core, family, style)
+                            font = convert(merged, extension)
                         save(font, path)
                         font.flavor = None
-                else:
-                    merged = merged_font(base_path, core, family, style)
-                    for extension, path in zip(formats, paths):
-                        save(convert(merged, extension), path)
+                        cache[key] = {"input": fingerprint, "output": file_hash(path)}
+                        built += 1
+                        print(f"Built {name} {family} {style} {extension} ({perf_counter() - stage_started:.2f}s)", flush=True)
+                    destination = output / relative
+                    if output != cache_root and (not destination.exists() or file_hash(destination) != cache[key]["output"]):
+                        destination.parent.mkdir(parents=True, exist_ok=True)
+                        copyfile(path, destination)
+                        copied += 1
+                        print(f"Copied {relative.as_posix()}", flush=True)
+                if merged is not None:
                     merged.close()
-                cache[key] = {"input": fingerprint, "outputs": {str(path.relative_to(output)): file_hash(path) for path in paths}}
-                built += 1
-                print(f"Built {name} {family} {style} ({perf_counter() - stage_started:.2f}s)", flush=True)
     cache_path.write_text(json.dumps(cache, indent=2) + "\n")
-    print(f"Done: {built} built, {skipped} skipped ({perf_counter() - started:.2f}s)")
+    print(f"Done: {built} built, {skipped} skipped, {copied} copied ({perf_counter() - started:.2f}s)")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "build/fonts")
+    parser.add_argument("--output", type=Path, default=ROOT / "build/fonts", help="Copy verified artifacts here; build/cache stays in build/fonts")
     parser.add_argument("--family", action="append", choices=["YakuHanJP", "YakuHanJPs", "YakuHanMP", "YakuHanMPs", "YakuHanRP", "YakuHanRPs"])
     parser.add_argument("--weight", action="append", choices=[str(n) for n in range(100, 1000, 100)])
     parser.add_argument("--target", choices=["all", "core", "merged"], default="all")

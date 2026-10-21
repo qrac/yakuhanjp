@@ -7,6 +7,7 @@ import logging
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 from contextlib import redirect_stdout
 from io import StringIO
 
@@ -159,16 +160,56 @@ class FontBuildTests(unittest.TestCase):
 
     def test_cache_skips_unchanged_and_repairs_modified_output(self):
         with tempfile.TemporaryDirectory() as temp, redirect_stdout(StringIO()) as log:
-            output = Path(temp)
-            build(output, ["YakuHanJP"], ["400"], "core")
+            output, cache = Path(temp) / "output", Path(temp) / "cache"
+            build(output, ["YakuHanJP"], ["400"], "core", cache_root=cache)
             path = output / "core/YakuHanJP/ttf/YakuHanJP-Regular.ttf"
             expected, modified = path.read_bytes(), path.stat().st_mtime_ns
-            build(output, ["YakuHanJP"], ["400"], "core")
+            build(output, ["YakuHanJP"], ["400"], "core", cache_root=cache)
             self.assertEqual(path.stat().st_mtime_ns, modified)
             self.assertIn("Skipped core YakuHanJP Regular", log.getvalue())
             path.write_bytes(b"invalid font")
-            build(output, ["YakuHanJP"], ["400"], "core")
+            with patch("build_fonts.core_font", side_effect=AssertionError("Unexpected rebuild")):
+                build(output, ["YakuHanJP"], ["400"], "core", cache_root=cache)
             self.assertEqual(path.read_bytes(), expected)
+            cached = cache / path.relative_to(output)
+            cached.write_bytes(b"invalid cached font")
+            build(output, ["YakuHanJP"], ["400"], "core", cache_root=cache)
+            self.assertEqual(cached.read_bytes(), expected)
+
+    def test_changing_output_copies_cached_fonts_without_rebuilding(self):
+        with tempfile.TemporaryDirectory() as temp, redirect_stdout(StringIO()) as log:
+            cache, output = Path(temp) / "cache", Path(temp) / "packages"
+            build(cache, ["YakuHanJP"], ["400"], "core", cache_root=cache)
+            source_json = output / "core/YakuHanJP/sources/Regular.json"
+            source_json.parent.mkdir(parents=True)
+            source_json.write_text("keep edited source")
+            log.seek(0)
+            log.truncate()
+            with patch("build_fonts.core_font", side_effect=AssertionError("Unexpected rebuild")):
+                build(output, ["YakuHanJP"], ["400"], "core", cache_root=cache)
+            self.assertIn("0 built, 3 skipped, 3 copied", log.getvalue())
+            for extension in ("ttf", "otf", "woff2"):
+                relative = Path(f"core/YakuHanJP/{extension}/YakuHanJP-Regular.{extension}")
+                self.assertEqual((cache / relative).read_bytes(), (output / relative).read_bytes())
+            self.assertEqual(source_json.read_text(), "keep edited source")
+
+    def test_adding_merged_format_only_builds_the_missing_format(self):
+        source = ROOT / "packages/core/YakuHanJP/sources/Regular.json"
+        # A real subset font keeps this cache test independent of full CJK conversion cost.
+        with tempfile.TemporaryDirectory() as temp, redirect_stdout(StringIO()) as log, patch(
+            "build_fonts.merged_font", side_effect=lambda *args: core_font(source)
+        ):
+            cache = Path(temp)
+            build(cache, ["YakuHanJP"], ["400"], "merged", cache_root=cache)
+            native = cache / "merged/YakuHanJP/ttf/MergedYakuHanJP-Regular.ttf"
+            modified = native.stat().st_mtime_ns
+            log.seek(0)
+            log.truncate()
+            with patch("build_fonts.convert", wraps=convert) as conversions:
+                build(cache, ["YakuHanJP"], ["400"], "merged", "both", cache_root=cache)
+            self.assertEqual([call.args[1] for call in conversions.call_args_list], ["otf"])
+            self.assertEqual(native.stat().st_mtime_ns, modified)
+            self.assertIn("1 built, 1 skipped, 0 copied", log.getvalue())
 
     def test_changed_bounds_and_vertical_origin_survive_native_merge(self):
         for family, extension in (("YakuHanJP", "ttf"), ("YakuHanMP", "otf")):
