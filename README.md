@@ -18,6 +18,7 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 ## Development
 
 `npm run build` で配布用のCSSとWOFF2を `packages/yakuhanjp/dist` に生成します。
+ビルド時には出力先の `dist` を削除してから生成するため、古い成果物は残りません。
 `packages/yakuhanjp/project.json` のフォント情報と `packages/core` のWOFF2を元に、
 `src/build.ts` が通常版CSS・jsDelivr向けCSS・ライセンスバナーを生成します。
 フォントやウェイト、収録文字を変更するときは `project.json` を編集してください。

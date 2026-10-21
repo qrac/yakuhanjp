@@ -35,9 +35,7 @@
     "url": "https://qranoko.jp"
   },
   "scripts": {
-    "build": "npm run clean && npm run build:src",
-    "build:src": "node --import tsx ./src/build.ts",
-    "clean": "rimraf ./dist",
+    "build": "node --import tsx ./src/build.ts",
     "prepublishOnly": "npm run build"
   }
 }

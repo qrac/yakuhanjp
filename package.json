@@ -21,17 +21,14 @@
   },
   "scripts": {
     "build": "npm run build:main",
-    "build:src": "npm run build:main-src",
     "build:main": "cd ./packages/yakuhanjp && npm run build",
-    "build:main-src": "cd ./packages/yakuhanjp && npm run build:src",
     "build:unicode": "cd ./packages/unicode && npm run build",
-    "build:unicode-src": "cd ./packages/unicode && npm run build:src",
     "test": "vitest run",
     "test:w": "vitest watch",
     "docs": "minista ./docs",
     "docs:build": "minista build ./docs",
     "docs:preview": "minista preview ./docs",
-    "play": "npm run build:src && vite ./playground/_default",
+    "play": "npm run build && vite ./playground/_default",
     "play:canvas": "vite ./playground/canvas",
     "play:check": "tsc -p playground/tsconfig.json",
     "play:test": "node --test playground/canvas/src/*.test.ts",
@@ -40,9 +37,7 @@
     "up:u": "npx npm-check-updates --deep --cooldown 1 -u",
     "rev": "npx npm-replace-versions",
     "release": "npm run release:main",
-    "release:main": "cd ./packages/yakuhanjp && npm publish",
-    "clean": "npm run clean:main",
-    "clean:main": "cd ./packages/yakuhanjp && npm run clean"
+    "release:main": "cd ./packages/yakuhanjp && npm publish"
   },
   "workspaces": [
     "docs",
@@ -59,7 +54,6 @@
     "minista": "^5.1.2",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "rimraf": "^6.1.3",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",
