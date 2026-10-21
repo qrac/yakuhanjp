@@ -4,6 +4,7 @@ YakuHanJPの開発中の仕様変更と、その判断材料を記録します�
 チャットをまたぐ進捗・判断の記録方法は、[AGENTS.md](../AGENTS.md)に定めています。
 
 - [v4.1.1からv5.0.0への変更点](v4.1.1-to-v5.0.0.md)：公開APIの維持範囲、フォント生成、ビルド・ZIP作成・公開手順、サイトとPlaygroundの変更、検証結果
+- [mergedサブセット版の調査・計画](merged-subset-plan.md)：ゲーム・アプリ内包向けの文字セット、頻度資料、全文字版の基準値、生成・命名・配布案と未決事項（未実装）
 - [ルートREADME](../README.md)：現在のコマンドと開発手順
 - [coreの編集ガイド](../packages/core/README.md)：文字追加、左右余白、固定幅、縦書きの設定
 - [Playgroundのガイド](../playground/README.md)：ブラウザーでの比較とCanvas画像生成
