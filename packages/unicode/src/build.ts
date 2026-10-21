@@ -1,29 +1,22 @@
-import path from "node:path"
-import fs from "fs-extra"
+import { mkdir, writeFile } from "node:fs/promises"
+import { fileURLToPath } from "node:url"
 
-import { fonts } from "yakuhanjp/project.json" assert { type: "json" }
+import { fonts } from "yakuhanjp/project.json" with { type: "json" }
 import { glyphs2unicodes } from "."
 
 async function main() {
-  const cwd = process.cwd()
-  const outPath = path.join(cwd, "dist", "data.json")
-  const data = fonts.map((item) => {
-    return {
-      name: item.name,
-      glyphs: {
-        str: item.glyphs,
-        unicode: glyphs2unicodes(item.glyphs),
-      },
-    }
-  })
-  await fs
-    .outputJSON(outPath, data, { spaces: 2 })
-    .then(() => {
-      console.log(outPath)
-    })
-    .catch((err) => {
-      console.error(err)
-    })
+  const outDir = new URL("../dist/", import.meta.url)
+  const outPath = new URL("data.json", outDir)
+  const data = fonts.map(({ name, glyphs }) => ({
+    name,
+    glyphs: {
+      str: glyphs,
+      unicode: glyphs2unicodes(glyphs),
+    },
+  }))
+  await mkdir(outDir, { recursive: true })
+  await writeFile(outPath, JSON.stringify(data, null, 2) + "\n", "utf8")
+  console.log(fileURLToPath(outPath))
 }
 
 await main()

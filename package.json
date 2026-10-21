@@ -50,14 +50,12 @@
     "playground/*"
   ],
   "devDependencies": {
-    "@types/fs-extra": "^11.0.4",
     "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "canvas": "^3.2.3",
     "clsx": "^2.1.1",
-    "fs-extra": "^11.4.1",
     "minista": "^5.1.2",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
