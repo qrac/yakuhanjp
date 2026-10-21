@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import classNames from "classnames"
+import clsx from "clsx"
 
 import {
   getFontName,
@@ -131,7 +131,7 @@ export default function PageHomeSimulator({ settings, codeExamples }: Props) {
           ))}
         </li>
       </ul>
-      <ul className={classNames("simulator-grid is-previews")}>
+      <ul className={clsx("simulator-grid is-previews")}>
         <li className="simulator-grid-col">
           <p className="simulator-preview-label">{settings.labels.before}</p>
           <div
@@ -190,7 +190,7 @@ function SimulatorButton({
   return (
     <button
       onClick={() => onChange(setValueObject)}
-      className={classNames("simulator-button", active && "is-active")}
+      className={clsx("simulator-button", active && "is-active")}
       type="button"
     >
       {label}

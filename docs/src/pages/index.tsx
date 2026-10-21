@@ -39,6 +39,7 @@ export default function ({
         license={pkg.license}
         repositoryUrl={pjt.site.social.github.url}
       />
+
       <ElementSection id="simulator" heading={headings.simulator}>
         <PageHomeSimulator
           settings={pjt.home.simulator}
@@ -46,9 +47,11 @@ export default function ({
           client:load
         />
       </ElementSection>
+
       <ElementSection id="fonts" heading={headings.fonts}>
         <PageHomeFontsGrid />
       </ElementSection>
+
       <ElementSection id="how-to-browser" heading={headings.howToBrowser}>
         <ElementCard>
           <CommonDocs>
@@ -61,6 +64,7 @@ export default function ({
           </CommonDocs>
         </ElementCard>
       </ElementSection>
+
       <ElementSection id="how-to-other" heading={headings.howToOther}>
         <ElementCard>
           <CommonDocs>
@@ -68,6 +72,7 @@ export default function ({
           </CommonDocs>
         </ElementCard>
       </ElementSection>
+
       <ElementSection id="license" heading={headings.license}>
         <ElementCard>
           <CommonDocs>

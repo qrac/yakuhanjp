@@ -1,4 +1,4 @@
-import classNames from "classnames"
+import clsx from "clsx"
 
 import pjt from "yakuhanjp/project.json"
 import "./style.css"
@@ -15,7 +15,7 @@ export default function PageHomeFontsGrid() {
             <span>{`（${font.target.name}）`}</span>
           </h4>
           <p
-            className={classNames(
+            className={clsx(
               "fonts-grid-glyphs",
               `is-${font.dist.variable}`,
             )}

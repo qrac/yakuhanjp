@@ -1,6 +1,7 @@
 import type { LayoutProps } from "minista/types"
 
 import CommonFooter from "../components/common/footer"
+
 import pjt from "../../project.json"
 import "./globals.css"
 import "./style.css"
