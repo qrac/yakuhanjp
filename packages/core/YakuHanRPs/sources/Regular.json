@@ -342,7 +342,7 @@
     "unitsPerEm": 1000,
     "head": {
       "tableVersion": 1.0,
-      "fontRevision": 1.0590057373046875,
+      "fontRevision": 1.058990478515625,
       "magicNumber": 1594834165,
       "flags": 3,
       "macStyle": 0,
@@ -391,7 +391,7 @@
     },
     "os2": {
       "version": 4,
-      "xAvgCharWidth": 788,
+      "xAvgCharWidth": 787,
       "usWeightClass": 400,
       "usWidthClass": 5,
       "fsType": 0,
@@ -423,7 +423,7 @@
       "ulUnicodeRange3": 33554450,
       "ulUnicodeRange4": 0,
       "achVendID": "M+  ",
-      "fsSelection": 64,
+      "fsSelection": 192,
       "usFirstCharIndex": 32,
       "usLastCharIndex": 65373,
       "sTypoAscender": 860,
@@ -433,8 +433,8 @@
       "usWinDescent": 320,
       "ulCodePageRange1": 1611792831,
       "ulCodePageRange2": 3757506560,
-      "sxHeight": 500,
-      "sCapHeight": 700,
+      "sxHeight": -1,
+      "sCapHeight": -1,
       "usDefaultChar": 0,
       "usBreakChar": 32,
       "usMaxContext": 1

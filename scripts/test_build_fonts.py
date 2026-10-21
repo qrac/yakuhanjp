@@ -41,6 +41,18 @@ def bounds(font, name, glyphs=None):
 
 
 class FontBuildTests(unittest.TestCase):
+    def test_exported_names_and_weight_metadata(self):
+        weights = {"Thin": 250, "ExtraLight": 250, "Light": 300, "Regular": 400,
+                   "Medium": 500, "SemiBold": 600, "Bold": 700, "ExtraBold": 800, "Black": 900}
+        for source in (ROOT / "packages/core").glob("*/sources/*.json"):
+            family, style = source.parents[1].name, source.stem
+            with self.subTest(family=family, style=style):
+                font = core_font(source)
+                self.assertEqual(font["name"].getDebugName(6), f"{family}-{style}")
+                self.assertEqual(font["name"].getDebugName(3).split(";")[-1], f"{family}-{style}")
+                self.assertEqual(font["OS/2"].usWeightClass, weights[style])
+                self.assertEqual(font["OS/2"].fsSelection, 160 if style == "Bold" else 192)
+
     def test_all_sources_preserve_core_metrics_and_shaping(self):
         logging.basicConfig(level=logging.ERROR)
         project = json.loads((ROOT / "packages/yakuhanjp/project.json").read_text())

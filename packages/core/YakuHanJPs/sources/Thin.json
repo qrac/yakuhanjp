@@ -370,8 +370,8 @@
     },
     "os2": {
       "version": 4,
-      "xAvgCharWidth": 763,
-      "usWeightClass": 400,
+      "xAvgCharWidth": 762,
+      "usWeightClass": 250,
       "usWidthClass": 5,
       "fsType": 0,
       "ySubscriptXSize": 650,
@@ -402,7 +402,7 @@
       "ulUnicodeRange3": 22,
       "ulUnicodeRange4": 0,
       "achVendID": "ADBO",
-      "fsSelection": 64,
+      "fsSelection": 192,
       "usFirstCharIndex": 32,
       "usLastCharIndex": 65373,
       "sTypoAscender": 880,
@@ -442,7 +442,7 @@
         "platformID": 3,
         "platEncID": 1,
         "langID": 1033,
-        "value": "Yaku Han JP s ExtraLight"
+        "value": "Yaku Han JP s Thin"
       },
       {
         "nameID": 2,
@@ -456,14 +456,14 @@
         "platformID": 3,
         "platEncID": 1,
         "langID": 1033,
-        "value": "2.004;ADBO;YakuHanJPs-ExtraLight"
+        "value": "2.004;ADBO;YakuHanJPs-Thin"
       },
       {
         "nameID": 4,
         "platformID": 3,
         "platEncID": 1,
         "langID": 1033,
-        "value": "Yaku Han JP s ExtraLight"
+        "value": "Yaku Han JP s Thin"
       },
       {
         "nameID": 5,
@@ -477,7 +477,7 @@
         "platformID": 3,
         "platEncID": 1,
         "langID": 1033,
-        "value": "YakuHanJPs-ExtraLight"
+        "value": "YakuHanJPs-Thin"
       },
       {
         "nameID": 7,
@@ -533,7 +533,7 @@
         "platformID": 3,
         "platEncID": 1,
         "langID": 1033,
-        "value": "ExtraLight"
+        "value": "Thin"
       }
     ]
   }

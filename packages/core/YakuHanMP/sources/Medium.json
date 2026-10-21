@@ -401,7 +401,7 @@
     "unitsPerEm": 1000,
     "head": {
       "tableVersion": 1.0,
-      "fontRevision": 1.001007080078125,
+      "fontRevision": 1.0009918212890625,
       "magicNumber": 1594834165,
       "flags": 3,
       "macStyle": 0,
@@ -451,7 +451,7 @@
     "os2": {
       "version": 4,
       "xAvgCharWidth": 756,
-      "usWeightClass": 400,
+      "usWeightClass": 500,
       "usWidthClass": 5,
       "fsType": 0,
       "ySubscriptXSize": 650,
@@ -482,7 +482,7 @@
       "ulUnicodeRange3": 22,
       "ulUnicodeRange4": 0,
       "achVendID": "GOOG",
-      "fsSelection": 64,
+      "fsSelection": 192,
       "usFirstCharIndex": 32,
       "usLastCharIndex": 65373,
       "sTypoAscender": 880,
@@ -536,7 +536,7 @@
         "platformID": 3,
         "platEncID": 1,
         "langID": 1033,
-        "value": "1.001;GOOG;NotoSerifJP-Medium-VKana"
+        "value": "1.001;GOOG;YakuHanMP-Medium"
       },
       {
         "nameID": 4,
@@ -557,7 +557,7 @@
         "platformID": 3,
         "platEncID": 1,
         "langID": 1033,
-        "value": "NotoSerifJP-Medium-VKana"
+        "value": "YakuHanMP-Medium"
       },
       {
         "nameID": 7,
