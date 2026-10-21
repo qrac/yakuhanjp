@@ -61,18 +61,47 @@ npm run test:fonts
 また、既存のマージ版には約物ソースと幅が異なる文字があります（例：YakuHanJP Regularの`！`）。
 新しいマージ版は約物ソースの幅を採用するため、既存のマージ版から文字送りが変わる場合があります。
 
-### 配布用CSSとplayground
+### 配布物の一括ビルド
 
 ルートの`npm run build`は次の順番で実行します。途中で失敗した場合は、後続の処理を実行しません。
 
 1. `build:fonts:packages`：全形式のフォントを生成・検証し、`packages/core`と`packages/merged`に反映
 2. `build:unicode`：`packages/unicode/dist/data.json`を更新
 3. `build:main`：最新のcoreフォントからCSSとWOFF2を`packages/yakuhanjp/dist`に生成
+4. `build:zip`：core・mergedのTTFとOTFを`build/zip/YakuHanJP_v<version>.zip`に梱包
 
 Unicodeと配布用の`dist`は削除してから生成するため、古い成果物は残りません。
 `packages/yakuhanjp`の`prepublishOnly`もルートの`build`を実行し、公開前に同じ更新を行います。
 フォントの入力・形式が変わっていなければ、キャッシュを再利用します。
 CSSだけを作り直す場合は`npm run build:main`を実行してください。
+
+### ダウンロード版ZIP
+
+`npm run build`でWeb用配布物とダウンロード版ZIPをまとめて生成します。
+ZIP名と展開後のフォルダー名には`packages/yakuhanjp/package.json`のバージョンを使います
+（例：`build/zip/YakuHanJP_v5.0.0.zip`、展開後は`YakuHanJP_v5.0.0/`）。
+
+ZIPには`core/<family>/{otf,ttf}/`と`merged/<family>/{otf,ttf}/`の全6ファミリー・46スタイル、
+合計184フォントと、専用README・ライセンスを収録します。WOFF2・CSS・編集用JSONは含みません。
+READMEとMIT本文は`scripts/zip/`、元3フォントのOFL本文・著作権表記は`resource/*/OFL.txt`から同梱します。
+
+```sh
+# 生成済みのpackages/core・packages/mergedからZIPだけを作り直す
+npm run build:zip
+
+# フォントの変更を反映してZIPを作る（Web用配布物の生成は省略）
+npm run build:fonts:packages && npm run build:zip
+```
+
+`build:zip`単独ではフォントを再生成しません。定義されたフォントやライセンスが欠損・空の場合は失敗し、
+同じバージョンの既存ZIPも削除します。ZIPは完成してから出力先に配置します。
+梱包処理のテストは`npm run test:fonts`に含まれます。
+GitHub Releasesへの添付は別途行ってください。
+
+`prepublishOnly`・`npm run play`・ドキュメントサイトのCIでもルートの`build`を呼ぶためZIPを生成します。
+ZIP生成に失敗した場合は後続処理を停止します。
+
+### 配布用CSSの生成設定
 
 `packages/yakuhanjp/project.json` のフォント情報と `packages/core` のWOFF2を元に、
 `src/build.ts` が通常版CSS・jsDelivr向けCSS・ライセンスバナーを生成します。

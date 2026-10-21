@@ -20,7 +20,8 @@
     "url": "https://qranoko.jp"
   },
   "scripts": {
-    "build": "npm run build:fonts:packages && npm run build:unicode && npm run build:main",
+    "build": "npm run build:fonts:packages && npm run build:unicode && npm run build:main && npm run build:zip",
+    "build:zip": "uv run --locked python scripts/build_zip.py",
     "build:main": "cd ./packages/yakuhanjp && npm run build",
     "build:unicode": "cd ./packages/unicode && npm run build",
     "build:fonts": "uv run --locked python scripts/build_fonts.py",
