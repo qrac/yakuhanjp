@@ -31,8 +31,10 @@
     "docs": "minista ./docs",
     "docs:build": "minista build ./docs",
     "docs:preview": "minista preview ./docs",
-    "play": "vite ./playground/_default",
+    "play": "npm run build:src && vite ./playground/_default",
     "play:canvas": "vite ./playground/canvas",
+    "play:check": "tsc -p playground/tsconfig.json",
+    "play:test": "node --test playground/canvas/src/*.test.ts",
     "audit": "npx npm-audit-trace",
     "up": "npx npm-check-updates --deep --cooldown 1",
     "up:u": "npx npm-check-updates --deep --cooldown 1 -u",
@@ -40,9 +42,7 @@
     "release": "npm run release:main",
     "release:main": "cd ./packages/yakuhanjp && npm publish",
     "clean": "npm run clean:main",
-    "clean:main": "cd ./packages/yakuhanjp && npm run clean",
-    "play:check": "tsc -p playground/tsconfig.json",
-    "play:test": "node --test playground/canvas/src/*.test.ts"
+    "clean:main": "cd ./packages/yakuhanjp && npm run clean"
   },
   "workspaces": [
     "docs",
@@ -63,7 +63,6 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",
-    "vite-plugin-banner": "^0.8.1",
     "vitest": "^5.0.5"
   }
 }

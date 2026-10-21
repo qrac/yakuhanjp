@@ -15,6 +15,16 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 - [merged](https://github.com/qrac/yakuhanjp/tree/main/packages/merged) — YakuHanJP を元フォントにマージしたデータ
 - [unicode](https://github.com/qrac/yakuhanjp/tree/main/packages/unicode) — 内包文字の unicode を生成するスクリプト
 
+## Development
+
+`npm run build` で配布用のCSSとWOFF2を `packages/yakuhanjp/dist` に生成します。
+`packages/yakuhanjp/project.json` のフォント情報と `packages/core` のWOFF2を元に、
+`src/build.ts` が通常版CSS・jsDelivr向けCSS・ライセンスバナーを生成します。
+フォントやウェイト、収録文字を変更するときは `project.json` を編集してください。
+
+`npm run play` は配布用ファイルを生成してからplaygroundを起動します。
+フォント情報を変更した後は、再度 `npm run build` を実行してください。
+
 ## Media
 
 - [OG 画像の約物を詰める - YakuHanJP v4](https://zenn.dev/qrac/articles/791fd61483a989)
