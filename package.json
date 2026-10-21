@@ -23,6 +23,8 @@
     "build": "npm run build:main",
     "build:main": "cd ./packages/yakuhanjp && npm run build",
     "build:unicode": "cd ./packages/unicode && npm run build",
+    "build:fonts": "uv run --locked python scripts/build_fonts.py",
+    "test:fonts": "uv run --locked python -m unittest discover -s scripts -p 'test_*.py'",
     "test": "vitest run",
     "test:w": "vitest watch",
     "docs": "minista ./docs",

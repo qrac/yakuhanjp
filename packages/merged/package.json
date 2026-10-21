@@ -1,4 +1,7 @@
 {
   "name": "merge",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "uv run --locked python ../../scripts/build_fonts.py --target merged --output ../../packages"
+  }
 }

@@ -4,3 +4,7 @@ db.json
 *.log
 node_modules
 dist
+build/
+.venv/
+__pycache__/
+.font-build-cache.json

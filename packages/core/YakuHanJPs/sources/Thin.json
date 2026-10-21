@@ -1,0 +1,540 @@
+{
+  "baseFont": "Noto_Sans_JP/static/NotoSansJP-Thin.ttf",
+  "outlines": "../outlines/Thin.json",
+  "glyphs": {
+    ".notdef": {
+      "characters": "",
+      "left": 100,
+      "right": 100,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880
+    },
+    "space": {
+      "characters": "  ",
+      "left": 0,
+      "right": 220,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880
+    },
+    "angleleft": {
+      "characters": "〈〈",
+      "left": 200,
+      "right": 50,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE3F"
+    },
+    "angleright": {
+      "characters": "〉〉",
+      "left": 50,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE40"
+    },
+    "uni3010": {
+      "characters": "【",
+      "left": 200,
+      "right": 40,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE3B"
+    },
+    "uni3011": {
+      "characters": "】",
+      "left": 40,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE3C"
+    },
+    "uniFF5B": {
+      "characters": "｛",
+      "left": 200,
+      "right": 40,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE37"
+    },
+    "uniFF5D": {
+      "characters": "｝",
+      "left": 40,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE38"
+    },
+    "uni300C": {
+      "characters": "「",
+      "left": 200,
+      "right": 40,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE41"
+    },
+    "uni300D": {
+      "characters": "」",
+      "left": 40,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE42"
+    },
+    "uni300A": {
+      "characters": "《",
+      "left": 200,
+      "right": 46,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE3D"
+    },
+    "uni300B": {
+      "characters": "》",
+      "left": 45,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE3E"
+    },
+    "uni3014": {
+      "characters": "〔",
+      "left": 200,
+      "right": 52,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE39"
+    },
+    "uni3015": {
+      "characters": "〕",
+      "left": 52,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE3A"
+    },
+    "uni300E": {
+      "characters": "『",
+      "left": 200,
+      "right": 40,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE43"
+    },
+    "uni300F": {
+      "characters": "』",
+      "left": 40,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE44"
+    },
+    "uni3016": {
+      "characters": "〖",
+      "left": 200,
+      "right": 40,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE17"
+    },
+    "uni3017": {
+      "characters": "〗",
+      "left": 40,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE18"
+    },
+    "uniFE3F": {
+      "characters": "︿",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 585,
+      "verticalOrigin": 880
+    },
+    "uniFE40": {
+      "characters": "﹀",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 585,
+      "verticalOrigin": 880
+    },
+    "uniFE3B": {
+      "characters": "︻",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 528,
+      "verticalOrigin": 880
+    },
+    "uniFE3C": {
+      "characters": "︼",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 528,
+      "verticalOrigin": 880
+    },
+    "uniFF3B": {
+      "characters": "［",
+      "left": 200,
+      "right": 40,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE47"
+    },
+    "uniFF3D": {
+      "characters": "］",
+      "left": 40,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE48"
+    },
+    "uniFE41": {
+      "characters": "﹁",
+      "left": 255,
+      "right": 25,
+      "advanceHeight": 540,
+      "verticalOrigin": 880
+    },
+    "uniFE42": {
+      "characters": "﹂",
+      "left": 25,
+      "right": 255,
+      "advanceHeight": 540,
+      "verticalOrigin": 880
+    },
+    "uniFE3D": {
+      "characters": "︽",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 659,
+      "verticalOrigin": 880
+    },
+    "uniFE3E": {
+      "characters": "︾",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 659,
+      "verticalOrigin": 880
+    },
+    "uniFF08": {
+      "characters": "（",
+      "left": 200,
+      "right": 47,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE35"
+    },
+    "uniFF09": {
+      "characters": "）",
+      "left": 47,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 880,
+      "verticalGlyph": "uniFE36"
+    },
+    "uniFE39": {
+      "characters": "︹",
+      "left": 29,
+      "right": 29,
+      "advanceHeight": 468,
+      "verticalOrigin": 880
+    },
+    "uniFE3A": {
+      "characters": "︺",
+      "left": 29,
+      "right": 29,
+      "advanceHeight": 468,
+      "verticalOrigin": 880
+    },
+    "uniFE43": {
+      "characters": "﹃",
+      "left": 296,
+      "right": 40,
+      "advanceHeight": 585,
+      "verticalOrigin": 880
+    },
+    "uniFE44": {
+      "characters": "﹄",
+      "left": 40,
+      "right": 296,
+      "advanceHeight": 585,
+      "verticalOrigin": 880
+    },
+    "uniFE17": {
+      "characters": "︗",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 583,
+      "verticalOrigin": 880
+    },
+    "uniFE18": {
+      "characters": "︘",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 583,
+      "verticalOrigin": 880
+    },
+    "uniFE37": {
+      "characters": "︷",
+      "left": 26,
+      "right": 26,
+      "advanceHeight": 478,
+      "verticalOrigin": 880
+    },
+    "uniFE38": {
+      "characters": "︸",
+      "left": 26,
+      "right": 26,
+      "advanceHeight": 478,
+      "verticalOrigin": 880
+    },
+    "uniFE47": {
+      "characters": "﹇",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 490,
+      "verticalOrigin": 880
+    },
+    "uniFE48": {
+      "characters": "﹈",
+      "left": 40,
+      "right": 40,
+      "advanceHeight": 490,
+      "verticalOrigin": 880
+    },
+    "uniFE35": {
+      "characters": "︵",
+      "left": 29,
+      "right": 29,
+      "advanceHeight": 473,
+      "verticalOrigin": 880
+    },
+    "uniFE36": {
+      "characters": "︶",
+      "left": 29,
+      "right": 29,
+      "advanceHeight": 473,
+      "verticalOrigin": 880
+    }
+  },
+  "metadata": {
+    "unitsPerEm": 1000,
+    "head": {
+      "tableVersion": 1.0,
+      "fontRevision": 2.003997802734375,
+      "magicNumber": 1594834165,
+      "flags": 3,
+      "macStyle": 0,
+      "lowestRecPPEM": 6,
+      "fontDirectionHint": 2,
+      "indexToLocFormat": 0,
+      "glyphDataFormat": 0
+    },
+    "hhea": {
+      "tableVersion": 65536,
+      "ascent": 1160,
+      "descent": -288,
+      "lineGap": 0,
+      "advanceWidthMax": 1000,
+      "minLeftSideBearing": 25,
+      "minRightSideBearing": 25,
+      "xMaxExtent": 975,
+      "caretSlopeRise": 1000,
+      "caretSlopeRun": 0,
+      "caretOffset": 0,
+      "reserved0": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0,
+      "metricDataFormat": 0,
+      "numberOfHMetrics": 31
+    },
+    "vhea": {
+      "tableVersion": 69632,
+      "ascent": 500,
+      "descent": -500,
+      "lineGap": 1000,
+      "advanceHeightMax": 1000,
+      "minTopSideBearing": 0,
+      "minBottomSideBearing": 0,
+      "yMaxExtent": 1000,
+      "caretSlopeRise": 0,
+      "caretSlopeRun": 1,
+      "caretOffset": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0,
+      "reserved4": 0,
+      "metricDataFormat": 0,
+      "numberOfVMetrics": 41
+    },
+    "os2": {
+      "version": 4,
+      "xAvgCharWidth": 763,
+      "usWeightClass": 400,
+      "usWidthClass": 5,
+      "fsType": 0,
+      "ySubscriptXSize": 650,
+      "ySubscriptYSize": 600,
+      "ySubscriptXOffset": 0,
+      "ySubscriptYOffset": 75,
+      "ySuperscriptXSize": 650,
+      "ySuperscriptYSize": 600,
+      "ySuperscriptXOffset": 0,
+      "ySuperscriptYOffset": 350,
+      "yStrikeoutSize": 50,
+      "yStrikeoutPosition": 325,
+      "sFamilyClass": 0,
+      "panose": {
+        "bFamilyType": 2,
+        "bSerifStyle": 11,
+        "bWeight": 2,
+        "bProportion": 0,
+        "bContrast": 0,
+        "bStrokeVariation": 0,
+        "bArmStyle": 0,
+        "bLetterForm": 0,
+        "bMidline": 0,
+        "bXHeight": 0
+      },
+      "ulUnicodeRange1": 536871043,
+      "ulUnicodeRange2": 719272976,
+      "ulUnicodeRange3": 22,
+      "ulUnicodeRange4": 0,
+      "achVendID": "ADBO",
+      "fsSelection": 64,
+      "usFirstCharIndex": 32,
+      "usLastCharIndex": 65373,
+      "sTypoAscender": 880,
+      "sTypoDescender": -120,
+      "sTypoLineGap": 0,
+      "usWinAscent": 1160,
+      "usWinDescent": 288,
+      "ulCodePageRange1": 1611006215,
+      "ulCodePageRange2": 0,
+      "sxHeight": 543,
+      "sCapHeight": 733,
+      "usDefaultChar": 0,
+      "usBreakChar": 32,
+      "usMaxContext": 1
+    },
+    "post": {
+      "formatType": 2.0,
+      "italicAngle": 0.0,
+      "underlinePosition": -100,
+      "underlineThickness": 50,
+      "isFixedPitch": 0,
+      "minMemType42": 0,
+      "maxMemType42": 0,
+      "minMemType1": 0,
+      "maxMemType1": 0
+    },
+    "names": [
+      {
+        "nameID": 0,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      },
+      {
+        "nameID": 1,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Yaku Han JP s ExtraLight"
+      },
+      {
+        "nameID": 2,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Regular"
+      },
+      {
+        "nameID": 3,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "2.004;ADBO;YakuHanJPs-ExtraLight"
+      },
+      {
+        "nameID": 4,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Yaku Han JP s ExtraLight"
+      },
+      {
+        "nameID": 5,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Version 2.004"
+      },
+      {
+        "nameID": 6,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "YakuHanJPs-ExtraLight"
+      },
+      {
+        "nameID": 7,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Source is a trademark of Adobe in the United States and/or other countries."
+      },
+      {
+        "nameID": 8,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Adobe"
+      },
+      {
+        "nameID": 9,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Ryoko NISHIZUKA 西塚涼子 (kana, bopomofo & ideographs); Paul D. Hunt (Latin, Greek & Cyrillic); Sandoll Communications 산돌커뮤니케이션, Soo-young JANG 장수영 & Joo-yeon KANG 강주연 (hangul elements, letters & syllables)"
+      },
+      {
+        "nameID": 11,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "http://www.adobe.com/type/"
+      },
+      {
+        "nameID": 13,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+      },
+      {
+        "nameID": 14,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "http://scripts.sil.org/OFL"
+      },
+      {
+        "nameID": 16,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Yaku Han JP s"
+      },
+      {
+        "nameID": 17,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "ExtraLight"
+      }
+    ]
+  }
+}

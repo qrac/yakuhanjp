@@ -1,4 +1,7 @@
 {
   "name": "core",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "uv run --locked python ../../scripts/build_fonts.py --target core --output ../../packages"
+  }
 }

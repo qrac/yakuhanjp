@@ -1,0 +1,606 @@
+{
+  "baseFont": "M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf",
+  "outlines": "../outlines/Bold.json",
+  "glyphs": {
+    ".notdef": {
+      "characters": "",
+      "left": 0,
+      "right": 364,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "space": {
+      "characters": " ",
+      "left": 0,
+      "right": 284,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "uni00A0": {
+      "characters": " ",
+      "left": 0,
+      "right": 284,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "uni3001": {
+      "characters": "、",
+      "left": 79,
+      "right": 197,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE11"
+    },
+    "uniFE11": {
+      "characters": "",
+      "left": 676,
+      "right": 77,
+      "advanceHeight": 542,
+      "verticalOrigin": 860
+    },
+    "uni3002": {
+      "characters": "。",
+      "left": 51,
+      "right": 400,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE12"
+    },
+    "uniFE12": {
+      "characters": "",
+      "left": 622,
+      "right": 51,
+      "advanceHeight": 778,
+      "verticalOrigin": 860
+    },
+    "uni30FB": {
+      "characters": "・",
+      "left": 150,
+      "right": 150,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "uni2027": {
+      "characters": "‧",
+      "left": 150,
+      "right": 150,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "uniFF1A": {
+      "characters": "：",
+      "left": 150,
+      "right": 150,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFF1A.vert"
+    },
+    "uniFF01": {
+      "characters": "！",
+      "left": 149,
+      "right": 149,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "uniFF1F": {
+      "characters": "？",
+      "left": 146,
+      "right": 150,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "uniFF1B": {
+      "characters": "；",
+      "left": 146,
+      "right": 150,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "uniFF1A.vert": {
+      "characters": "",
+      "left": 420,
+      "right": 420,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "angleleft": {
+      "characters": "〈",
+      "left": 200,
+      "right": 29,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "angleright": {
+      "characters": "〉",
+      "left": 29,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860
+    },
+    "uni3008": {
+      "characters": "〈",
+      "left": 186,
+      "right": 112,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE3F"
+    },
+    "uni3009": {
+      "characters": "〉",
+      "left": 112,
+      "right": 186,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE40"
+    },
+    "uni3010": {
+      "characters": "【",
+      "left": 200,
+      "right": 122,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE3B"
+    },
+    "uni3011": {
+      "characters": "】",
+      "left": 122,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE3C"
+    },
+    "uniFF5B": {
+      "characters": "｛",
+      "left": 200,
+      "right": 112,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE37"
+    },
+    "uniFF5D": {
+      "characters": "｝",
+      "left": 112,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE38"
+    },
+    "uni300C": {
+      "characters": "「",
+      "left": 200,
+      "right": 63,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE41"
+    },
+    "uni300D": {
+      "characters": "」",
+      "left": 63,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE42"
+    },
+    "uni300A": {
+      "characters": "《",
+      "left": 186,
+      "right": 112,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE3D"
+    },
+    "uni300B": {
+      "characters": "》",
+      "left": 112,
+      "right": 186,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE3E"
+    },
+    "uni3014": {
+      "characters": "〔",
+      "left": 200,
+      "right": 118,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE39"
+    },
+    "uni3015": {
+      "characters": "〕",
+      "left": 118,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE3A"
+    },
+    "uni300E": {
+      "characters": "『",
+      "left": 200,
+      "right": 63,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE43"
+    },
+    "uni300F": {
+      "characters": "』",
+      "left": 63,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE44"
+    },
+    "uni3016": {
+      "characters": "〖",
+      "left": 200,
+      "right": 119,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE17"
+    },
+    "uni3017": {
+      "characters": "〗",
+      "left": 119,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE18"
+    },
+    "uniFE3F": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 683,
+      "verticalOrigin": 860
+    },
+    "uniFE40": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 683,
+      "verticalOrigin": 860
+    },
+    "uniFE3B": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 610,
+      "verticalOrigin": 860
+    },
+    "uniFE3C": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 610,
+      "verticalOrigin": 860
+    },
+    "uniFF3B": {
+      "characters": "［",
+      "left": 200,
+      "right": 118,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE47"
+    },
+    "uniFF3D": {
+      "characters": "］",
+      "left": 118,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE48"
+    },
+    "uniFE41": {
+      "characters": "",
+      "left": 203,
+      "right": 33,
+      "advanceHeight": 680,
+      "verticalOrigin": 860
+    },
+    "uniFE42": {
+      "characters": "",
+      "left": 33,
+      "right": 203,
+      "advanceHeight": 680,
+      "verticalOrigin": 860
+    },
+    "uniFE3D": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 873,
+      "verticalOrigin": 860
+    },
+    "uniFE3E": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 873,
+      "verticalOrigin": 860
+    },
+    "uniFF08": {
+      "characters": "（",
+      "left": 200,
+      "right": 132,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE35"
+    },
+    "uniFF09": {
+      "characters": "）",
+      "left": 132,
+      "right": 200,
+      "advanceHeight": 1000,
+      "verticalOrigin": 860,
+      "verticalGlyph": "uniFE36"
+    },
+    "uniFE39": {
+      "characters": "",
+      "left": 34,
+      "right": 34,
+      "advanceHeight": 712,
+      "verticalOrigin": 860
+    },
+    "uniFE3A": {
+      "characters": "",
+      "left": 34,
+      "right": 34,
+      "advanceHeight": 712,
+      "verticalOrigin": 860
+    },
+    "uniFE43": {
+      "characters": "",
+      "left": 160,
+      "right": 33,
+      "advanceHeight": 723,
+      "verticalOrigin": 860
+    },
+    "uniFE44": {
+      "characters": "",
+      "left": 33,
+      "right": 160,
+      "advanceHeight": 723,
+      "verticalOrigin": 860
+    },
+    "uniFE17": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 683,
+      "verticalOrigin": 860
+    },
+    "uniFE18": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 683,
+      "verticalOrigin": 860
+    },
+    "uniFE37": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 808,
+      "verticalOrigin": 860
+    },
+    "uniFE38": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 808,
+      "verticalOrigin": 860
+    },
+    "uniFE47": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 712,
+      "verticalOrigin": 860
+    },
+    "uniFE48": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 712,
+      "verticalOrigin": 860
+    },
+    "uniFE35": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 647,
+      "verticalOrigin": 860
+    },
+    "uniFE36": {
+      "characters": "",
+      "left": 30,
+      "right": 30,
+      "advanceHeight": 647,
+      "verticalOrigin": 860
+    }
+  },
+  "metadata": {
+    "unitsPerEm": 1000,
+    "head": {
+      "tableVersion": 1.0,
+      "fontRevision": 1.0590057373046875,
+      "magicNumber": 1594834165,
+      "flags": 3,
+      "macStyle": 1,
+      "lowestRecPPEM": 6,
+      "fontDirectionHint": 2,
+      "indexToLocFormat": 0,
+      "glyphDataFormat": 0
+    },
+    "hhea": {
+      "tableVersion": 65536,
+      "ascent": 1075,
+      "descent": -320,
+      "lineGap": 0,
+      "advanceWidthMax": 1000,
+      "minLeftSideBearing": 29,
+      "minRightSideBearing": 29,
+      "xMaxExtent": 970,
+      "caretSlopeRise": 1000,
+      "caretSlopeRun": 0,
+      "caretOffset": 0,
+      "reserved0": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0,
+      "metricDataFormat": 0,
+      "numberOfHMetrics": 45
+    },
+    "vhea": {
+      "tableVersion": 69632,
+      "ascent": 500,
+      "descent": -500,
+      "lineGap": 1000,
+      "advanceHeightMax": 1000,
+      "minTopSideBearing": 30,
+      "minBottomSideBearing": -30,
+      "yMaxExtent": 1030,
+      "caretSlopeRise": 0,
+      "caretSlopeRun": 1,
+      "caretOffset": 0,
+      "reserved1": 0,
+      "reserved2": 0,
+      "reserved3": 0,
+      "reserved4": 0,
+      "metricDataFormat": 0,
+      "numberOfVMetrics": 55
+    },
+    "os2": {
+      "version": 4,
+      "xAvgCharWidth": 784,
+      "usWeightClass": 400,
+      "usWidthClass": 5,
+      "fsType": 0,
+      "ySubscriptXSize": 650,
+      "ySubscriptYSize": 600,
+      "ySubscriptXOffset": 0,
+      "ySubscriptYOffset": 75,
+      "ySuperscriptXSize": 650,
+      "ySuperscriptYSize": 600,
+      "ySuperscriptXOffset": 0,
+      "ySuperscriptYOffset": 350,
+      "yStrikeoutSize": 49,
+      "yStrikeoutPosition": 258,
+      "sFamilyClass": 0,
+      "panose": {
+        "bFamilyType": 2,
+        "bSerifStyle": 11,
+        "bWeight": 7,
+        "bProportion": 2,
+        "bContrast": 2,
+        "bStrokeVariation": 2,
+        "bArmStyle": 3,
+        "bLetterForm": 2,
+        "bMidline": 2,
+        "bXHeight": 7
+      },
+      "ulUnicodeRange1": 3774876415,
+      "ulUnicodeRange2": 1783102971,
+      "ulUnicodeRange3": 33554450,
+      "ulUnicodeRange4": 0,
+      "achVendID": "M+  ",
+      "fsSelection": 32,
+      "usFirstCharIndex": 32,
+      "usLastCharIndex": 65373,
+      "sTypoAscender": 860,
+      "sTypoDescender": -140,
+      "sTypoLineGap": 90,
+      "usWinAscent": 1075,
+      "usWinDescent": 320,
+      "ulCodePageRange1": 1611792831,
+      "ulCodePageRange2": 3757506560,
+      "sxHeight": 500,
+      "sCapHeight": 700,
+      "usDefaultChar": 0,
+      "usBreakChar": 32,
+      "usMaxContext": 1
+    },
+    "post": {
+      "formatType": 2.0,
+      "italicAngle": 0.0,
+      "underlinePosition": -100,
+      "underlineThickness": 50,
+      "isFixedPitch": 0,
+      "minMemType42": 0,
+      "maxMemType42": 0,
+      "minMemType1": 0,
+      "maxMemType1": 0
+    },
+    "names": [
+      {
+        "nameID": 0,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Copyright 2016 The Rounded M+ Project Authors."
+      },
+      {
+        "nameID": 1,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Yaku Han RP"
+      },
+      {
+        "nameID": 2,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Bold"
+      },
+      {
+        "nameID": 3,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "1.059;M+  ;YakuHanRP-Bold"
+      },
+      {
+        "nameID": 4,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Yaku Han RP Bold"
+      },
+      {
+        "nameID": 5,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "Version 1.059"
+      },
+      {
+        "nameID": 6,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "YakuHanRP-Bold"
+      },
+      {
+        "nameID": 11,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "http://jikasei.me/"
+      },
+      {
+        "nameID": 13,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+      },
+      {
+        "nameID": 14,
+        "platformID": 3,
+        "platEncID": 1,
+        "langID": 1033,
+        "value": "http://scripts.sil.org/OFL"
+      }
+    ]
+  }
+}

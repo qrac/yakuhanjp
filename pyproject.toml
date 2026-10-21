@@ -1,0 +1,9 @@
+[project]
+name = "yakuhanjp-font-build"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fonttools==4.67.0",
+  "brotli==1.2.0",
+  "uharfbuzz==0.56.3",
+]

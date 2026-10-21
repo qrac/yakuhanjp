@@ -10,6 +10,30 @@ import {
   type FontWeight,
 } from "../../shared/options.ts"
 
+export async function resolveMergedFontPath(
+  fontName: FontName,
+  weight: FontWeight,
+): Promise<string | undefined> {
+  const family = `Merged${fontName}-${weightNames[weight]}`
+  const extensions = fontName.startsWith("YakuHanMP")
+    ? ["otf", "ttf"]
+    : ["ttf", "otf"]
+  for (const extension of extensions) {
+    const path = fileURLToPath(
+      new URL(
+        `../../../packages/merged/${fontName}/${extension}/${family}.${extension}`,
+        import.meta.url,
+      ),
+    )
+    try {
+      await access(path)
+      return path
+    } catch {
+      // Older releases of RP only contain OTF; accept either generated format.
+    }
+  }
+}
+
 export function pluginCanvas(): Plugin {
   const endpoint = "/api/generate-canvas"
   return {
@@ -45,18 +69,9 @@ export function pluginCanvas(): Plugin {
         }
 
         // Resolve from this module, independent of the directory Vite was started in.
-        const extension = fontName.startsWith("YakuHanJP") ? "ttf" : "otf"
         const family = `Merged${fontName}-${weightNames[weight]}`
-        const fontPath = fileURLToPath(
-          new URL(
-            `../../../packages/merged/${fontName}/${extension}/${family}.${extension}`,
-            import.meta.url,
-          ),
-        )
-
-        try {
-          await access(fontPath)
-        } catch {
+        const fontPath = await resolveMergedFontPath(fontName, weight)
+        if (!fontPath) {
           return sendError(
             404,
             "マージフォントが見つかりません。packages/mergedを確認してください。",

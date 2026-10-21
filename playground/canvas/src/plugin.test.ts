@@ -7,20 +7,16 @@ import {
   fonts,
   getFontWeights,
   readChoice,
-  weightNames,
 } from "../../shared/options.ts"
+import { resolveMergedFontPath } from "./plugin.ts"
 
 // Check the selectable combinations against the actual shipped font files.
 test("all offered fonts and weights have merged font files", async () => {
   for (const font of fonts) {
     for (const weight of getFontWeights(font)) {
-      const extension = font.startsWith("YakuHanJP") ? "ttf" : "otf"
-      await access(
-        new URL(
-          `../../../packages/merged/${font}/${extension}/Merged${font}-${weightNames[weight]}.${extension}`,
-          import.meta.url,
-        ),
-      )
+      const path = await resolveMergedFontPath(font, weight)
+      assert.ok(path)
+      await access(path)
     }
   }
   assert.equal(readChoice("invalid", fonts, fonts[0]), fonts[0])
