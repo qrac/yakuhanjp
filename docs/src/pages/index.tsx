@@ -1,51 +1,80 @@
-import AppLayout from "../components/AppLayout"
-import SectionHero from "../components/SectionHero"
-import SectionBasic from "../components/SectionBasic"
-import BlockSimulator from "../components/BlockSimulator"
-import BlockFontsGrid from "../components/BlockFontsGrid"
-import BlockCard from "../components/BlockCard"
-import BlockMarkdown from "../components/BlockMarkdown"
+import type { GetStaticData, PageProps } from "minista/types"
+
+import CommonDocs from "../components/common/docs"
+import ElementSection from "../components/element/section"
+import ElementCard from "../components/element/card"
+import PageHomeHero from "../components/page/home/hero"
+import PageHomeSimulator from "../components/page/home/simulator"
+import PageHomeFontsGrid from "../components/page/home/fonts-grid"
+import { createSimulatorExamples } from "../components/utils/highlight"
+import type { Props as SimulatorProps } from "../components/page/home/simulator/props"
 import MdCdn from "../assets/markdown/cdn.mdx"
 import MdNpm from "../assets/markdown/npm.mdx"
 import MdOther from "../assets/markdown/other.mdx"
 import MdLicense from "../assets/markdown/license.mdx"
 
-export default function () {
+import pkg from "yakuhanjp/package.json"
+import pjt from "../../project.json"
+
+export const getStaticData: GetStaticData = async () => ({
+  props: {
+    codeExamples: await createSimulatorExamples(
+      pkg.version,
+      pjt.home.simulator,
+    ),
+  },
+})
+
+export default function ({
+  codeExamples,
+}: PageProps & Pick<SimulatorProps, "codeExamples">) {
+  const headings = pjt.home.sections
   return (
-    <AppLayout>
-      <SectionHero id="hero" />
-      <SectionBasic id="simulator" heading={"Simulator"}>
-        <BlockSimulator client:load />
-      </SectionBasic>
-      <SectionBasic id="fonts" heading={"Fonts"}>
-        <BlockFontsGrid />
-      </SectionBasic>
-      <SectionBasic id="how-to-browser" heading={"How To Browser"}>
-        <BlockCard>
-          <BlockMarkdown>
+    <>
+      <PageHomeHero
+        id="hero"
+        name={pjt.site.name}
+        description={pjt.home.hero.description}
+        version={pkg.version}
+        license={pkg.license}
+        repositoryUrl={pjt.site.social.github.url}
+      />
+      <ElementSection id="simulator" heading={headings.simulator}>
+        <PageHomeSimulator
+          settings={pjt.home.simulator}
+          codeExamples={codeExamples}
+          client:load
+        />
+      </ElementSection>
+      <ElementSection id="fonts" heading={headings.fonts}>
+        <PageHomeFontsGrid />
+      </ElementSection>
+      <ElementSection id="how-to-browser" heading={headings.howToBrowser}>
+        <ElementCard>
+          <CommonDocs>
             <MdCdn />
-          </BlockMarkdown>
-        </BlockCard>
-        <BlockCard>
-          <BlockMarkdown>
+          </CommonDocs>
+        </ElementCard>
+        <ElementCard>
+          <CommonDocs>
             <MdNpm />
-          </BlockMarkdown>
-        </BlockCard>
-      </SectionBasic>
-      <SectionBasic id="how-to-other" heading={"How To Other"}>
-        <BlockCard>
-          <BlockMarkdown>
+          </CommonDocs>
+        </ElementCard>
+      </ElementSection>
+      <ElementSection id="how-to-other" heading={headings.howToOther}>
+        <ElementCard>
+          <CommonDocs>
             <MdOther />
-          </BlockMarkdown>
-        </BlockCard>
-      </SectionBasic>
-      <SectionBasic id="license" heading={"License & Credit"}>
-        <BlockCard>
-          <BlockMarkdown>
+          </CommonDocs>
+        </ElementCard>
+      </ElementSection>
+      <ElementSection id="license" heading={headings.license}>
+        <ElementCard>
+          <CommonDocs>
             <MdLicense />
-          </BlockMarkdown>
-        </BlockCard>
-      </SectionBasic>
-    </AppLayout>
+          </CommonDocs>
+        </ElementCard>
+      </ElementSection>
+    </>
   )
 }

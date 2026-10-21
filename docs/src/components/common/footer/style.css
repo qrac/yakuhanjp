@@ -1,0 +1,8 @@
+.footer {
+  padding: 7.5vh 20px;
+}
+
+.footer-copyright {
+  font-family: var(--theme-font-sans-en);
+  text-align: center;
+}

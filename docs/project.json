@@ -1,0 +1,140 @@
+{
+  "site": {
+    "name": "Yaku Han JP",
+    "description": "Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含まれる約物を半角にするフォントです。",
+    "url": "https://yakuhanjp.qranoko.jp",
+    "language": "ja",
+    "assets": {
+      "ogp": "/ogp.png",
+      "appleTouchIcon": "/apple-touch-icon.png",
+      "favicon": "/favicon.png"
+    },
+    "social": {
+      "x": {
+        "card": "summary_large_image",
+        "id": "Qrac_JP"
+      },
+      "github": {
+        "url": "https://github.com/qrac/yakuhanjp"
+      }
+    },
+    "copyright": {
+      "since": 2016,
+      "holder": "QRANOKO",
+      "url": "https://qranoko.jp"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "約物半角専用のフォント",
+      "description": "約物半角専用のフォント"
+    },
+    "sections": {
+      "simulator": "Simulator",
+      "fonts": "Fonts",
+      "howToBrowser": "How To Browser",
+      "howToOther": "How To Other",
+      "license": "License & Credit"
+    },
+    "simulator": {
+      "defaultText": "「約物半角専用のWebフォント」を優先的に当てることによって、Webテキストの日本語に含まれる約物を半角にすることができました。例えば「かっこ」や『二重かっこ』、【バッジに使いそうなかっこ】などを半角にできます。ウェイトは9種類。Noto Sans JPに沿っています。",
+      "weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      "sizes": [
+        "0.625rem",
+        "0.75rem",
+        "0.875rem",
+        "1rem",
+        "1.125rem",
+        "1.25rem",
+        "1.5rem",
+        "2rem"
+      ],
+      "googleFonts": [
+        {
+          "style": "sans-serif",
+          "font": "noto",
+          "family": "Noto+Sans+JP",
+          "weights": [100, 200, 300, 400, 500, 600, 700, 800, 900]
+        },
+        {
+          "style": "serif",
+          "font": "noto",
+          "family": "Noto+Serif+JP",
+          "weights": [200, 300, 400, 500, 600, 700, 900]
+        },
+        {
+          "style": "rounded-sans-serif",
+          "font": "mplusr1c",
+          "family": "M+PLUS+Rounded+1c",
+          "weights": [100, 300, 400, 500, 700, 800, 900]
+        }
+      ],
+      "initialOptions": {
+        "style": "sans-serif",
+        "target": "all",
+        "font": "hiragino",
+        "weight": 400,
+        "size": "1rem",
+        "vertical": false
+      },
+      "styles": [
+        {
+          "label": "ゴシック体",
+          "style": "sans-serif",
+          "font": "hiragino"
+        },
+        {
+          "label": "明朝体",
+          "style": "serif",
+          "font": "hiragino"
+        },
+        {
+          "label": "丸ゴシック",
+          "style": "rounded-sans-serif",
+          "font": "mplusr1c"
+        }
+      ],
+      "targets": [
+        {
+          "label": "すべて",
+          "value": "all"
+        },
+        {
+          "label": "カッコのみ",
+          "value": "small"
+        }
+      ],
+      "fonts": [
+        {
+          "label": "Hiragino",
+          "value": "hiragino",
+          "styles": ["sans-serif", "serif"]
+        },
+        {
+          "label": "Noto",
+          "value": "noto",
+          "styles": ["sans-serif", "serif"]
+        },
+        {
+          "label": "M PLUS Rounded 1c",
+          "value": "mplusr1c",
+          "styles": ["rounded-sans-serif"]
+        }
+      ],
+      "directions": [
+        {
+          "label": "横書き",
+          "vertical": false
+        },
+        {
+          "label": "縦書き",
+          "vertical": true
+        }
+      ],
+      "labels": {
+        "before": "Before",
+        "after": "After"
+      }
+    }
+  }
+}

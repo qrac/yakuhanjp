@@ -1,0 +1,44 @@
+.card {
+  position: relative;
+  margin: 0 auto;
+  padding: min(5vw, 32px);
+  background: var(--theme-bg-1);
+  overflow: hidden;
+}
+
+.card + .card {
+  margin-top: 1rem;
+}
+
+.card > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.card .docs {
+  z-index: 2;
+}
+
+.card .card-end-cover {
+  margin: 0;
+}
+
+.card .svg-yakuhan-kun {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  width: 28%;
+  height: 82%;
+  margin: 0;
+  transform: rotate(20deg) translateY(-50%);
+  z-index: 1;
+}
+
+.card .svg-yakuhan-kun path {
+  fill: var(--theme-ac-1);
+}
+
+@media (max-width: 800px) {
+  .card .svg-yakuhan-kun {
+    display: none;
+  }
+}

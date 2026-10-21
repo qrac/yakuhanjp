@@ -1,7 +1,5 @@
 import type { Metadata } from "minista/types"
 
-import AppLayout from "../components/AppLayout"
-
 export const metadata: Metadata & { noindex: boolean } = {
   title: "404",
   noindex: true,
@@ -9,7 +7,7 @@ export const metadata: Metadata & { noindex: boolean } = {
 
 export default function () {
   return (
-    <AppLayout>
+    <>
       <style dangerouslySetInnerHTML={{ __html: pageNotfoundStyle }} />
       <div className="section-notfound">
         <div className="section-notfound-box">
@@ -24,7 +22,7 @@ export default function () {
           </a>
         </div>
       </div>
-    </AppLayout>
+    </>
   )
 }
 

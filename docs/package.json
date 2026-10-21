@@ -4,5 +4,9 @@
   "type": "module",
   "dependencies": {
     "@tanstack/redact": "^0.1.4"
+  },
+  "devDependencies": {
+    "rehype-pretty-code": "^0.14.5",
+    "shiki": "^4.5.0"
   }
 }
