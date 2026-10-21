@@ -1,19 +1,26 @@
 import type { CanvasRenderingContext2D } from "canvas"
 import { createCanvas, registerFont } from "canvas"
 
+const registeredFonts = new Set<string>()
+
 function wrapText(
   ctx: CanvasRenderingContext2D,
   text: string,
   x: number,
   y: number,
   maxWidth: number,
-  lineHeight: number
+  lineHeight: number,
 ): void {
   let currentLine = ""
-  let testWidth
 
   for (const char of text) {
-    testWidth = ctx.measureText(currentLine + char).width
+    if (char === "\n") {
+      ctx.fillText(currentLine, x, y)
+      currentLine = ""
+      y += lineHeight
+      continue
+    }
+    const testWidth = ctx.measureText(currentLine + char).width
     if (testWidth > maxWidth && currentLine !== "") {
       ctx.fillText(currentLine, x, y)
       currentLine = char
@@ -27,7 +34,7 @@ function wrapText(
   }
 }
 
-export async function generateCanvas({
+export function generateCanvas({
   text,
   fontPath,
   family,
@@ -36,7 +43,10 @@ export async function generateCanvas({
   fontPath: string
   family: string
 }) {
-  registerFont(fontPath, { family })
+  if (!registeredFonts.has(fontPath)) {
+    registerFont(fontPath, { family })
+    registeredFonts.add(fontPath)
+  }
 
   const width = 1200
   const height = 630
@@ -57,7 +67,7 @@ export async function generateCanvas({
 
   ctx.textAlign = "left"
   ctx.textBaseline = "top"
-  wrapText(ctx, text, x, y, maxWidth, lineHeight)
+  wrapText(ctx, text.replace(/\r\n?/g, "\n"), x, y, maxWidth, lineHeight)
 
-  return canvas.toBuffer()
+  return canvas.toBuffer("image/png")
 }

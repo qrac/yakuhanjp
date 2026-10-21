@@ -1,159 +1,132 @@
-import { useState, useEffect, useRef } from "react"
-import queryString from "query-string"
+import { useEffect, useRef, useState } from "react"
+import { fonts, getFontWeights, readChoice } from "../../shared/options.ts"
+import { useQueryState } from "../../shared/use-query-state.ts"
 
 const defaultText =
   "「OGP生成に使える！！？」そう、これはYakuHanJPを『元フォント』にマージしている。だから【1ファイル】のみで《約物》を〈半角〉にできるのだ。"
-const fonts = [
-  "YakuHanJP",
-  "YakuHanJPs",
-  "YakuHanMP",
-  "YakuHanMPs",
-  "YakuHanRP",
-  "YakuHanRPs",
-]
-const weights = [100, 200, 300, 400, 500, 600, 700, 800, 900]
-const weightList: { [key: number]: string } = {
-  100: "Thin",
-  200: "ExtraLight",
-  300: "Light",
-  400: "Regular",
-  500: "Medium",
-  600: "SemiBold",
-  700: "Bold",
-  800: "ExtraBold",
-  900: "Black",
+
+function readSettings(params: URLSearchParams) {
+  const font = readChoice(params.get("font"), fonts, fonts[0])
+  return {
+    text: params.get("text") ?? defaultText,
+    font,
+    weight: readChoice(params.get("weight"), getFontWeights(font), 700),
+  }
 }
 
-export default function () {
-  const [mounted, setMounted] = useState(false)
-  const [text, setText] = useState(defaultText)
-  const [font, setFont] = useState(fonts[0])
-  const [weight, setWeight] = useState(weights[6])
+export default function App() {
+  const [settings, setSettings] = useQueryState(readSettings)
+  const { text, font, weight } = settings
+  const [imageUrl, setImageUrl] = useState<string>()
+  const [pending, setPending] = useState(false)
+  const [error, setError] = useState("")
+  const requestRef = useRef<AbortController | null>(null)
 
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+  useEffect(() => () => requestRef.current?.abort(), [])
+  useEffect(
+    () => () => {
+      if (imageUrl) URL.revokeObjectURL(imageUrl)
+    },
+    [imageUrl],
+  )
 
-  async function handleClick() {
+  async function generateImage() {
+    requestRef.current?.abort()
+    const request = new AbortController()
+    requestRef.current = request
+    setPending(true)
+    setError("")
     try {
-      const weightName = weightList[weight]
-      const params = {
+      const params = new URLSearchParams({
         text,
         fontName: font,
-        weight,
-        weightName,
-      }
-      const paramString = queryString.stringify(params)
-      const response = await fetch(`/api/generate-canvas?${paramString}`)
-
-      if (response.ok) {
-        const buffer = await response.arrayBuffer()
-        const base64 = btoa(
-          new Uint8Array(buffer).reduce(
-            (data, byte) => data + String.fromCharCode(byte),
-            ""
-          )
+        weight: String(weight),
+      })
+      const response = await fetch(`/api/generate-canvas?${params}`, {
+        signal: request.signal,
+      })
+      if (!response.ok) throw new Error(await response.text())
+      const blob = await response.blob()
+      if (!request.signal.aborted) setImageUrl(URL.createObjectURL(blob))
+    } catch (error) {
+      if (!request.signal.aborted) {
+        setError(
+          error instanceof Error ? error.message : "画像の生成に失敗しました。",
         )
-
-        if (canvasRef.current) {
-          const canvas = canvasRef.current
-          const ctx = canvas.getContext("2d")
-          if (ctx) {
-            const image = new Image()
-            image.onload = () => {
-              ctx.clearRect(0, 0, canvas.width, canvas.height)
-              ctx.drawImage(image, 0, 0)
-            }
-            image.src = "data:image/png;base64," + base64
-          }
-        }
-      } else {
-        console.error("Failed to fetch file content")
       }
-    } catch (err) {
-      console.error("Error:", err)
+    } finally {
+      if (!request.signal.aborted) setPending(false)
     }
   }
 
-  useEffect(() => {
-    if (mounted) {
-      let paramString = window.location.search
-      let params = queryString.parse(paramString)
-
-      params = {
-        ...params,
-        text,
-        font,
-        weight: String(weight),
-      }
-      paramString = queryString.stringify(params)
-
-      const newUrl = window.location.pathname + "?" + paramString
-      window.history.pushState({}, "", newUrl)
-    }
-  }, [text, font, weight])
-
-  useEffect(() => {
-    const paramString = window.location.search
-
-    if (paramString) {
-      const params = queryString.parse(paramString)
-      params?.text && setText(params.text as string)
-      params?.font && setFont(params.font as string)
-      params?.weight && setWeight(Number(params.weight))
-    }
-    setMounted(true)
-  }, [])
   return (
     <>
       <header>
         <h1>YakuHanJP Canvas生成</h1>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-          <select value={font} onChange={(e) => setFont(e.target.value)}>
+        <div className="controls">
+          <select
+            aria-label="フォント"
+            value={font}
+            onChange={(event) => {
+              const nextFont = readChoice(event.target.value, fonts, fonts[0])
+              const availableWeights = getFontWeights(nextFont)
+              setSettings({
+                ...settings,
+                font: nextFont,
+                weight: availableWeights.includes(weight) ? weight : 700,
+              })
+            }}
+          >
             {fonts.map((item) => (
-              <option value={item} key={item}>
-                {item}
-              </option>
+              <option key={item}>{item}</option>
             ))}
           </select>
           <select
+            aria-label="ウェイト"
             value={weight}
-            onChange={(e) => setWeight(Number(e.target.value))}
+            onChange={(event) => {
+              setSettings({
+                ...settings,
+                weight: readChoice(
+                  event.target.value,
+                  getFontWeights(font),
+                  700,
+                ),
+              })
+            }}
           >
-            {weights.map((item) => (
-              <option value={item} key={item}>
+            {getFontWeights(font).map((item) => (
+              <option key={item} value={item}>
                 {item}
               </option>
             ))}
           </select>
         </div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr auto",
-            alignItems: "bottom",
-            gap: "8px",
-            marginTop: "8px",
+        <form
+          className="image-form"
+          onSubmit={(event) => {
+            event.preventDefault()
+            void generateImage()
           }}
         >
           <textarea
+            aria-label="画像に表示するテキスト"
             value={text}
-            onChange={(e) => setText(e.currentTarget.value)}
+            onChange={(event) =>
+              setSettings({ ...settings, text: event.target.value })
+            }
           />
-          <button type="button" onClick={handleClick}>
-            生成
+          <button type="submit" disabled={pending}>
+            {pending ? "生成中…" : "生成"}
           </button>
-        </div>
+        </form>
+        {error && <p role="alert">{error}</p>}
       </header>
-
-      <main>
-        <p>node-canvas</p>
-        <div>
-          <canvas
-            ref={canvasRef}
-            width={1200}
-            height={630}
-            style={{ display: "block", maxWidth: "100%" }}
-          />
-        </div>
+      <main aria-busy={pending}>
+        <p>node-canvas / 1200 × 630</p>
+        {imageUrl && (
+          <img src={imageUrl} alt="生成した画像" width={1200} height={630} />
+        )}
       </main>
     </>
   )

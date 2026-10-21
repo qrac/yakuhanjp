@@ -32,15 +32,37 @@ select {
   font-size: 1rem;
 }
 
+button,
 textarea {
-  width: 100%;
+  font: inherit;
+  color: inherit;
+  background-color: var(--theme-bg-1);
   border: 1px solid var(--theme-bd-1);
-  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-    "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.image-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 6rem;
+  resize: vertical;
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
