@@ -1,13 +1,13 @@
 import { mkdir, rm, writeFile } from "node:fs/promises"
 import { fileURLToPath } from "node:url"
 
-import { fonts } from "yakuhanjp/project.json" with { type: "json" }
+import project from "yakuhanjp/project.json" with { type: "json" }
 import { glyphs2unicodes } from "./index.ts"
 
 async function main() {
   const outDir = new URL("../dist/", import.meta.url)
   const outPath = new URL("data.json", outDir)
-  const data = fonts.map(({ name, glyphs }) => ({
+  const data = project.fonts.map(({ name, glyphs }) => ({
     name,
     glyphs: {
       str: glyphs,

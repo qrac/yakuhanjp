@@ -36,6 +36,6 @@
   },
   "scripts": {
     "build": "node --import tsx ./src/build.ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm --prefix ../.. run build"
   }
 }

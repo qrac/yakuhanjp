@@ -20,10 +20,11 @@
     "url": "https://qranoko.jp"
   },
   "scripts": {
-    "build": "npm run build:main",
+    "build": "npm run build:fonts:packages && npm run build:unicode && npm run build:main",
     "build:main": "cd ./packages/yakuhanjp && npm run build",
     "build:unicode": "cd ./packages/unicode && npm run build",
     "build:fonts": "uv run --locked python scripts/build_fonts.py",
+    "build:fonts:packages": "npm run build:fonts -- --merged-format both --output packages",
     "test:fonts": "uv run --locked python -m unittest discover -s scripts -p 'test_*.py'",
     "test": "vitest run",
     "test:w": "vitest watch",

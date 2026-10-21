@@ -83,7 +83,6 @@ npm run build:fonts -- --merged-format both
 npm run build:fonts -- --force
 
 # 公開前に配布元を全形式で更新してCSSも生成する
-npm run build:fonts -- --merged-format both --output packages
 npm run build
 ```
 
@@ -98,6 +97,7 @@ npm run build
 キャッシュ情報は`build/fonts/.font-build-cache.json`で、削除しても再生成できます。
 別の形式で過去に生成したファイルは自動では削除しません。
 公開時に両形式を配布する場合は`--merged-format both`を指定して全形式を更新します。
+ルートの`npm run build`と`yakuhanjp`の`prepublishOnly`は、この全形式の更新とUnicode・配布ファイルの生成をまとめて実行します。
 
 `npm run test:fonts`には既存版との数値比較が含まれています。
 意図的に余白や収録文字を変えた場合は、比較対象のフォントも更新したうえで再確認してください。

@@ -17,6 +17,8 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 
 ## Development
 
+v4.1.1から開発中のv5.0.0への変更点は[context](context/README.md)にまとめています。
+
 ### フォントの生成（Glyphsアプリ不要）
 
 Python 3.12以上と[uv](https://docs.astral.sh/uv/)を用意し、リポジトリのルートで実行します。
@@ -51,7 +53,7 @@ npm run test:fonts
 同じ入力と形式で生成済みなら、出力先を変えても再ビルドせず、不足する形式だけ生成します。
 マージは元フォントの収録文字とOpenType機能を維持し、約物と縦書き用の代替字形を置き換えます。
 置き換えた約物には`palt`・`halt`・`vpal`・`vhal`による追加の詰め処理を適用しません。
-通常の`npm run build`はPythonを必要とせず、これまでどおりチェックイン済みのWOFF2を使用します。
+ルートの`npm run build`もPythonとuvを使用し、全形式のフォント更新から配布ファイルの生成まで実行します。
 `npm run build -w core`と`npm run build -w merge`は各パッケージのフォントを直接更新します。
 
 バイナリの完全一致は保証しません。Glyphsとコンパイラが異なるため、ヒンティングや曲線変換、
@@ -61,8 +63,17 @@ npm run test:fonts
 
 ### 配布用CSSとplayground
 
-`npm run build` で配布用のCSSとWOFF2を `packages/yakuhanjp/dist` に生成します。
-ビルド時には出力先の `dist` を削除してから生成するため、古い成果物は残りません。
+ルートの`npm run build`は次の順番で実行します。途中で失敗した場合は、後続の処理を実行しません。
+
+1. `build:fonts:packages`：全形式のフォントを生成・検証し、`packages/core`と`packages/merged`に反映
+2. `build:unicode`：`packages/unicode/dist/data.json`を更新
+3. `build:main`：最新のcoreフォントからCSSとWOFF2を`packages/yakuhanjp/dist`に生成
+
+Unicodeと配布用の`dist`は削除してから生成するため、古い成果物は残りません。
+`packages/yakuhanjp`の`prepublishOnly`もルートの`build`を実行し、公開前に同じ更新を行います。
+フォントの入力・形式が変わっていなければ、キャッシュを再利用します。
+CSSだけを作り直す場合は`npm run build:main`を実行してください。
+
 `packages/yakuhanjp/project.json` のフォント情報と `packages/core` のWOFF2を元に、
 `src/build.ts` が通常版CSS・jsDelivr向けCSS・ライセンスバナーを生成します。
 フォントやウェイト、収録文字を変更するときは `project.json` を編集してください。
