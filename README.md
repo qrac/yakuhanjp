@@ -121,8 +121,20 @@ npm run build:fonts:packages && npm run build:zip
 梱包処理のテストは`npm run test:fonts`に含まれます。
 GitHub Releasesへの添付は別途行ってください。
 
-`prepublishOnly`・`npm run play`・ドキュメントサイトのCIでもルートの`build`を呼ぶためZIPを生成します。
+`prepublishOnly`・`npm run play`でもルートの`build`を呼ぶためZIPを生成します。
 ZIP生成に失敗した場合は後続処理を停止します。
+
+### ドキュメントサイトのビルド
+
+GitHub Pagesでは、コミット済みの`packages/core`のWOFF2を使用します。
+`dist`はコミット対象外のため、CSS生成とWOFF2のコピーを行ってからサイトをビルドします。
+
+```sh
+npm run build:main
+npm run docs:build
+```
+
+フォントの再生成・Unicode生成・ZIP生成は行いません。サイトのビルドにPythonとuvは不要です。
 
 ### 配布用CSSの生成設定
 
