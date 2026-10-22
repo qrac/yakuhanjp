@@ -10,10 +10,10 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 
 ## Packages
 
-- [yakuhanjp](https://github.com/qrac/yakuhanjp/tree/main/packages/yakuhanjp) — ブラウザで使用する YakuHanJP
-- [core](https://github.com/qrac/yakuhanjp/tree/main/packages/core) — YakuHanJP のフォントデータ
-- [merged](https://github.com/qrac/yakuhanjp/tree/main/packages/merged) — YakuHanJP を元フォントにマージしたデータ
-- [unicode](https://github.com/qrac/yakuhanjp/tree/main/packages/unicode) — 内包文字の unicode を生成するスクリプト
+- [yakuhanjp](https://github.com/qrac/yakuhanjp/tree/main/packages/yakuhanjp) — ブラウザで使用するYakuHanJP
+- [core](https://github.com/qrac/yakuhanjp/tree/main/packages/core) — YakuHanJPのフォントデータ
+- [merged](https://github.com/qrac/yakuhanjp/tree/main/packages/merged) — YakuHanJPを元フォントにマージしたデータ
+- [unicode](https://github.com/qrac/yakuhanjp/tree/main/packages/unicode) — 内包文字のunicodeを生成するスクリプト
 
 ## Development
 
@@ -126,16 +126,16 @@ ZIP生成に失敗した場合は後続処理を停止します。
 
 ### 配布用CSSの生成設定
 
-`packages/yakuhanjp/project.json` のフォント情報と `packages/core` のWOFF2を元に、
-`src/build.ts` が通常版CSS・jsDelivr向けCSS・ライセンスバナーを生成します。
-フォントやウェイト、収録文字を変更するときは `project.json` を編集してください。
+`packages/yakuhanjp/project.json`のフォント情報と`packages/core`のWOFF2を元に、
+`src/build.ts`が通常版CSS・jsDelivr向けCSS・ライセンスバナーを生成します。
+フォントやウェイト、収録文字を変更するときは`project.json`を編集してください。
 
-`npm run play` は配布用ファイルを生成してからplaygroundを起動します。
-フォント情報を変更した後は、再度 `npm run build` を実行してください。
+`npm run play`は配布用ファイルを生成してからplaygroundを起動します。
+フォント情報を変更した後は、再度`npm run build`を実行してください。
 
 ## Media
 
-- [OG 画像の約物を詰める - YakuHanJP v4](https://zenn.dev/qrac/articles/791fd61483a989)
+- [OG画像の約物を詰める - YakuHanJP v4](https://zenn.dev/qrac/articles/791fd61483a989)
 - [HTML5 Conference 2016 LT "Yaku Han JP" by Qrac // Speaker Deck](https://speakerdeck.com/qrac/html5-conference-2016-lt-yaku-han-jp-by-qrac)
 
 ## License
