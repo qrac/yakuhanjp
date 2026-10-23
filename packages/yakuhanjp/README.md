@@ -10,7 +10,7 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 
 このブラウザ版は font-family（CSS）のフォールバック機能を利用し、文字幅を調整した「約物だけの Web フォント」を優先的適応させます。1 フォントが 4〜5KB と軽量なのが特長で、CMS 出力などの動的コンテンツへの利用に向いています。
 
-## Font Family
+### Font Family
 
 ゴシック体（Noto Sans JP）・明朝体（Noto Serif JP）・丸ゴシック（M PLUS Rounded 1c）を使用可能。フォント名末尾に s が付いているものはカッコだけを半角にします。
 
@@ -23,7 +23,7 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 | `YakuHanRP`  | 丸ゴシック | 約物すべて | `、。！？〈〉《》「」『』【】〔〕・（）：；［］｛｝` |
 | `YakuHanRPs` | 丸ゴシック | カッコのみ | `〈〉《》「」『』【】〔〕（）［］｛｝`               |
 
-## Font Weight
+### Font Weight
 
 |  フォント名  | W100 |    W200    | W300  |  W400   |  W500  |   W600   | W700 |   W800    | W900  |
 | :----------: | :--: | :--------: | :---: | :-----: | :----: | :------: | :--: | :-------: | :---: |
@@ -34,7 +34,7 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 | `YakuHanRP`  | Thin |     -      | Light | Regular | Medium |    -     | Bold | ExtraBold | Black |
 | `YakuHanRPs` | Thin |     -      | Light | Regular | Medium |    -     | Bold | ExtraBold | Black |
 
-## How To Use
+## Setup
 
 フォントを呼び出す CSS ファイルを読み込んで、font-family の先頭にフォント名を追記します。※以下は `YakuHanJP`（ゴシック体・約物すべて）を使った場合の例
 
@@ -48,7 +48,7 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 }
 ```
 
-## CDN
+### CDN
 
 - https://cdn.jsdelivr.net/npm/yakuhanjp/
 
@@ -56,7 +56,7 @@ Yaku Han JP（ヤクハンジェイピー）は、日本語テキストに含ま
 2. 表示された `<link>` タグをサイトの `<head>` タグ内に配置
 3. CSS を記述：`font-family` の日本語フォントより前に `YakuHanJP` などを優先指定
 
-## npm
+### npm
 
 - https://www.npmjs.com/package/yakuhanjp
 

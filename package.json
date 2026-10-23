@@ -30,8 +30,10 @@
     "test": "vitest run",
     "test:w": "vitest watch",
     "docs": "minista ./docs",
-    "docs:build": "minista build ./docs",
+    "docs:build": "npm run build:main && minista build ./docs",
     "docs:preview": "minista preview ./docs",
+    "docs:preview:workers": "npm run docs:build && wrangler dev",
+    "docs:deploy": "npm run docs:build && wrangler deploy",
     "play": "npm run build && vite ./playground/_default",
     "play:canvas": "vite ./playground/canvas",
     "play:check": "tsc -p playground/tsconfig.json",
@@ -61,6 +63,7 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",
-    "vitest": "^5.0.5"
+    "vitest": "^5.0.5",
+    "wrangler": "^4.152.0"
   }
 }

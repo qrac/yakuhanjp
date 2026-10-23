@@ -484,7 +484,7 @@ curl --fail --location \
 .venv/bin/python -m unittest discover -s scripts -p 'test_research_merged_subset.py'
 ```
 
-初回環境構築はルートREADMEのフォント生成手順を参照。通常の調査は`--font-output`を省略すれば集計のみで済む。
+初回環境構築は[開発・生成・公開の手順](development.md)を参照。通常の調査は`--font-output`を省略すれば集計のみで済む。
 
 ## 別資料評価と基礎文字の補助枠案
 
